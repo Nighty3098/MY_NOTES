@@ -1,0 +1,15 @@
+---
+tags:
+  - qt
+  - git_api
+  - qml
+  - Algorithms
+  - CPP
+  - Git
+  - MySql
+  - OOP
+  - python
+  - License
+  - Project
+  - JavaScript
+---
