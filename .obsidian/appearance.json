@@ -1,0 +1,24 @@
+{
+  "accentColor": "",
+  "cssTheme": "Things",
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "monospaceFontFamily": "",
+  "baseFontSize": 17,
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "style",
+    "banner",
+    "list_styling",
+    "tooltip",
+    "rounded_table",
+    "safari_tabs",
+    "outline_nums",
+    "loading_screen",
+    "kanban_tweaks",
+    "file_explorer",
+    "command_pallete",
+    "checkbox"
+  ],
+  "nativeMenus": false
+}

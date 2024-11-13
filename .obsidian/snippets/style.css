@@ -1,0 +1,49 @@
+.nav-buttons-container {
+  display: none;
+}
+.callout {
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+Centered H1
+/* EDIT MODE */
+.HyperMD-header.HyperMD-header-1 {
+  text-align: center;
+}
+/* PREVIEW MODE */
+.markdown-preview-view h1 {
+  text-align: center;
+}
+
+.inline-title {
+  align-items: center;
+  align-content: center;
+}
+
+.popover {
+  border: solid var(--text-accent);
+}
+
+.callout::after {
+  content: "";
+  width: 48px;
+  height: 15px;
+  border-radius: 8px;
+  position: absolute;
+  display: inline-block;
+  background: rgb(var(--callout-color));
+  margin-top: 0.3%;
+  margin-left: auto;
+  border: var(--border-lowOp);
+  box-shadow: var(--sbs);
+}
+
+.callout {
+  background: transparent;
+}
+
+body {
+  --callout-border-width: 2px;
+  --callout-border-opacity: 1;
+}

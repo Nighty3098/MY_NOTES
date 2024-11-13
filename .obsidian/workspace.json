@@ -1,0 +1,241 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3b63c12c3bb06c80",
+    "type": "split",
+    "children": [
+      {
+        "id": "4cdeba3478db6085",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ed15b78cf26db7db",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "f6a598ceafb5e60c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "2fa4125bc6b5d053",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265.0040512084961
+  },
+  "right": {
+    "id": "c3afcab963e39ab3",
+    "type": "split",
+    "children": [
+      {
+        "id": "a36ea1a514a5c682",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a0b7bbbe68977914",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Dev/Git/RestApi/Repository/Download a repository archive (tar).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Download a repository archive (tar)"
+            }
+          },
+          {
+            "id": "37dcb43a808c036b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Dev/Git/RestApi/Repository/Download a repository archive (tar).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Download a repository archive (tar)"
+            }
+          },
+          {
+            "id": "274cfda97d8fd7ae",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "2ba293f2c356890c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Dev/Git/RestApi/Repository/Download a repository archive (tar).md"
+              },
+              "icon": "lucide-list",
+              "title": "Структура Download a repository archive (tar)"
+            }
+          },
+          {
+            "id": "b707947905ecfcb2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 360.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Граф": false,
+      "switcher:Меню быстрого перехода": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "audio-recorder:Начать/остановить запись": false,
+      "markdown-importer:Импорт Markdown-файлов": false,
+      "workspaces:Пространства": false,
+      "publish:Публикация изменений": false,
+      "random-note:Открыть случайную заметку": false,
+      "zk-prefixer:Создать заметку с уникальным идентификатором": false,
+      "obsidian-kanban:Создать новую доску": false,
+      "homepage:Open homepage": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "🛠️ Dev/🎲 Алгоритмы/Бинарный поиск.md",
+    "🧭 Projects/IPSA/Tasks.md",
+    "🧭 Projects/IPSA/IPSA_README.md",
+    "Home.md",
+    "💵 Freelance",
+    "🧭 Projects/LogInsight/Tasks.md",
+    "Без названия.md",
+    "🧭 Projects/LogInsight/LogInsight_README.md",
+    "🧭 Projects/LogInsight",
+    "🛠️ Dev/⚡ JavaScript/Работа с Условными Конструкциями в JavaScript.md",
+    "🛠️ Dev/🧩 Git/RestApi/Repository/List repository languages.md",
+    "🛠️ Dev/🔥 C/Безопасность С.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/Plotly.md",
+    "Teamplates/Git Api.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/Обработка видео.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/Работаем с буфером обмена.md",
+    "🧭 Projects/TGSB/Tasks.md",
+    "🧭 Projects/TGSB/TGSB_README.md",
+    "🧭 Projects/TGSB/Tasks TGSB.md",
+    "🧭 Projects/IPSA/Tasks IPSA.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/Обрабатываем номера телефонов.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/Вычисляем размер объектов в памяти.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/Tesseract.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/Singleton.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/SH.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/PyTest.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/Python.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules/PyQtGraph.md",
+    "🛠️ Dev/🐍 Python/🐍 Modules",
+    "🧭 Projects/TGSB",
+    "🧭 Projects/IPSA",
+    "🧭 Projects",
+    "🛠️ Dev/🧩 Git/RestApi/Repository",
+    "🛠️ Dev/🧩 Git/RestApi/License",
+    "🛠️ Dev/🧩 Git/RestApi/Branches",
+    "🛠️ Dev/🧩 Git/RestApi",
+    "imgs/header.png",
+    "header.png",
+    "imgs/Pasted image 20240527171808.png",
+    "imgs/Pasted image 20240527171700.png",
+    "imgs/Pasted image 20240527171504.png",
+    "Без названия.canvas",
+    "imgs/Pasted image 20240617131228.png",
+    "imgs/Pasted image 20240617131120.png",
+    "imgs/Pasted image 20240617131021.png",
+    "imgs/Pasted image 20240617130931.png",
+    "imgs/Pasted image 20240617130842.png",
+    "Untitled.canvas"
+  ]
+}
