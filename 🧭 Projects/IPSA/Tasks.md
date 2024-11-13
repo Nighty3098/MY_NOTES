@@ -1,8 +1,10 @@
 ---
+
 kanban-plugin: list
 tags:
   - IPSA
   - Tasks
+
 ---
 
 ## В планах
@@ -40,6 +42,6 @@ tags:
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false],"show-checkboxes":true,"new-card-insertion-method":"prepend-compact","full-list-lane-width":true,"move-tags":true,"move-dates":true,"show-relative-date":true}
+{"kanban-plugin":"list","list-collapse":[false,false,false,false,false],"show-checkboxes":false,"new-card-insertion-method":"prepend-compact","full-list-lane-width":true,"move-tags":true,"move-dates":true,"show-relative-date":true}
 ```
 %%
