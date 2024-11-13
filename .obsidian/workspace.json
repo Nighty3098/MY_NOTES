@@ -4,23 +4,91 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "4f8466bb2ed7ea09",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "dimension": 42.01846965699209,
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "Home"
+                }
+              },
+              {
+                "id": "b7da87b6d1bbcf07",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projects/IPSA/IPSA_README.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "IPSA_README"
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "b31e96a5b08c5a41",
+            "type": "tabs",
+            "dimension": 57.98153034300791,
+            "children": [
+              {
+                "id": "7e32c88ca2bd9f20",
+                "type": "leaf",
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "Projects/IPSA/Tasks.md",
+                    "kanbanViewState": {
+                      "kanban-plugin": "list",
+                      "list-collapse": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                      ]
+                    }
+                  },
+                  "icon": "lucide-trello",
+                  "title": "Tasks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      },
+      {
+        "id": "dac980a10b82f05b",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "8d7e92c071fbed52",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Home.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Home"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
         ]
@@ -79,7 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.0040512084961
+    "width": 294.5069465637207
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -187,44 +255,44 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "b7da87b6d1bbcf07",
   "lastOpenFiles": [
-    "🛠️ Dev/🎲 Алгоритмы/Бинарный поиск.md",
-    "🧭 Projects/IPSA/Tasks.md",
-    "🧭 Projects/IPSA/IPSA_README.md",
+    "Projects/IPSA/IPSA_README.md",
+    "Projects/IPSA/Tasks.md",
+    "Dev/С++/Работа с памятью/Управление памятью в C++.md",
     "Home.md",
-    "💵 Freelance",
-    "🧭 Projects/LogInsight/Tasks.md",
+    "Dev/Алгоритмы/Бинарный поиск.md",
+    "Freelance",
+    "Projects/LogInsight/Tasks.md",
     "Без названия.md",
-    "🧭 Projects/LogInsight/LogInsight_README.md",
-    "🧭 Projects/LogInsight",
-    "🛠️ Dev/⚡ JavaScript/Работа с Условными Конструкциями в JavaScript.md",
-    "🛠️ Dev/🧩 Git/RestApi/Repository/List repository languages.md",
-    "🛠️ Dev/🔥 C/Безопасность С.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules/Plotly.md",
+    "Projects/LogInsight/LogInsight_README.md",
+    "Projects/LogInsight",
+    "Dev/JavaScript/Работа с Условными Конструкциями в JavaScript.md",
+    "Dev/Git/RestApi/Repository/List repository languages.md",
+    "Dev/C/Безопасность С.md",
+    "Dev/Python/🐍 Modules/Plotly.md",
     "Teamplates/Git Api.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules/Обработка видео.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules/Работаем с буфером обмена.md",
-    "🧭 Projects/TGSB/Tasks.md",
-    "🧭 Projects/TGSB/TGSB_README.md",
+    "Dev/Python/🐍 Modules/Обработка видео.md",
+    "Dev/Python/🐍 Modules/Работаем с буфером обмена.md",
+    "Projects/TGSB/Tasks.md",
+    "Projects/TGSB/TGSB_README.md",
     "🧭 Projects/TGSB/Tasks TGSB.md",
     "🧭 Projects/IPSA/Tasks IPSA.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules/Обрабатываем номера телефонов.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules/Вычисляем размер объектов в памяти.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules/Tesseract.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules/Singleton.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules/SH.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules/PyTest.md",
+    "Dev/Python/🐍 Modules/Обрабатываем номера телефонов.md",
+    "Dev/Python/🐍 Modules/Вычисляем размер объектов в памяти.md",
+    "Dev/Python/🐍 Modules/Tesseract.md",
+    "Dev/Python/🐍 Modules/Singleton.md",
+    "Dev/Python/🐍 Modules/SH.md",
+    "Dev/Python/🐍 Modules/PyTest.md",
     "🛠️ Dev/🐍 Python/🐍 Modules/Python.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules/PyQtGraph.md",
-    "🛠️ Dev/🐍 Python/🐍 Modules",
-    "🧭 Projects/TGSB",
-    "🧭 Projects/IPSA",
-    "🧭 Projects",
-    "🛠️ Dev/🧩 Git/RestApi/Repository",
-    "🛠️ Dev/🧩 Git/RestApi/License",
-    "🛠️ Dev/🧩 Git/RestApi/Branches",
-    "🛠️ Dev/🧩 Git/RestApi",
+    "Dev/Python/🐍 Modules",
+    "Projects/TGSB",
+    "Projects/IPSA",
+    "Projects",
+    "Dev/Git/RestApi/Repository",
+    "Dev/Git/RestApi/License",
+    "Dev/Git/RestApi/Branches",
+    "Dev/Git/RestApi",
     "imgs/header.png",
     "header.png",
     "imgs/Pasted image 20240527171808.png",
