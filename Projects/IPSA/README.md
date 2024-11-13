@@ -1,4 +1,10 @@
-<img src="https://github.com/Nighty3098/InvestingAssistant/blob/main/header.png?raw=true" width="60%"/>
+---
+tags:
+  - Repository
+  - Project
+  - IPSA
+---
+<img src="https://github.com/Nighty3098/InvestingAssistant/blob/main/header.png?raw=true" width="100%"/>
 
 **IPSA - Телеграм бот для инвестиционного портфолио.**
 
