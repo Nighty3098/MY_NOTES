@@ -1,6 +1,6 @@
 ---
 tags:
-  - api_branches
+  - git_api
 ---
 ### cURL
 ```bash

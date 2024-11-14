@@ -7,18 +7,12 @@
   "baseFontSize": 17,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
-    "style",
     "banner",
-    "list_styling",
-    "tooltip",
-    "rounded_table",
-    "safari_tabs",
-    "outline_nums",
-    "loading_screen",
-    "kanban_tweaks",
-    "file_explorer",
     "command_pallete",
-    "checkbox"
+    "checkbox",
+    "rounded_table",
+    "list_styling",
+    "kanban_tweaks"
   ],
   "nativeMenus": false
 }

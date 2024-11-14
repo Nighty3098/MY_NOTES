@@ -1,5 +1,10 @@
 {
-  "readableLineLength": false,
+  "readableLineLength": true,
   "vimMode": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "strictLineBreaks": false,
+  "showLineNumber": false,
+  "foldIndent": true,
+  "foldHeading": true,
+  "spellcheck": false
 }

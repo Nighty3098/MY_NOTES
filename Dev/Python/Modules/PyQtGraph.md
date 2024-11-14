@@ -1,6 +1,5 @@
 ---
 tags:
-  - qt
   - py_modules
 ---
 ![[Pasted image 20240617130842.png]]

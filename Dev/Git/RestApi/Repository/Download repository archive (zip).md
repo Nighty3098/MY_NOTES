@@ -1,6 +1,6 @@
 ---
 tags:
-  - Repository
+  - git_api
 ---
 ### cURL
 ```bash
