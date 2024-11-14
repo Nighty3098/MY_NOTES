@@ -27,14 +27,22 @@
             "id": "b5a5437d84fcdd3d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "Dev/JavaScript/Кэширование/Кэширование данных.md",
-                "mode": "source",
-                "source": false
+                "file": "Projects/IPSA/Tasks.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "list",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                  ]
+                }
               },
-              "icon": "lucide-file",
-              "title": "Кэширование данных"
+              "icon": "lucide-trello",
+              "title": "Tasks"
             }
           },
           {
@@ -214,13 +222,14 @@
   },
   "active": "b5a5437d84fcdd3d",
   "lastOpenFiles": [
+    "Projects/IPSA/IPSA_README.md",
+    "Projects/IPSA/Tasks.md",
+    "Dev/JavaScript/Кэширование/Кэширование данных.md",
     "Dev/Python/Modules/PyQtGraph.md",
     "Dev/QT/Многоязычное приложение. C++ QT.md",
-    "Dev/JavaScript/Кэширование/Кэширование данных.md",
     "Dev/JavaScript/Кэширование/Пример 2.md",
     "Dev/JavaScript/Кэширование",
     "Home.md",
-    "Projects/IPSA/IPSA_README.md",
     "Dev/Git/Ветки в Git.md",
     "Dev/Git/Конфликты слияния.md",
     "Dev/Git/Badges.md",
@@ -240,7 +249,6 @@
     "Dev/Git/RestApi/Repository/Create or update file contents.md",
     "Dev/Git/RestApi/License/Licenses.md",
     "Dev/Git/RestApi/License/Get the license for a repository.md",
-    "Dev/Git/RestApi/License/Get license.md",
     "Dev/Python/Modules",
     "Freelance",
     "Projects/LogInsight",

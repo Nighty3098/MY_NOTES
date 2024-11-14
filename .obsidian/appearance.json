@@ -11,8 +11,7 @@
     "command_pallete",
     "checkbox",
     "rounded_table",
-    "list_styling",
-    "kanban_tweaks"
+    "list_styling"
   ],
   "nativeMenus": false
 }
