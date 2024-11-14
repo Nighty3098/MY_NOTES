@@ -1,22 +1,79 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
   "showTags": true,
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
-  "colorGroups": [],
-  "collapse-display": false,
-  "showArrow": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "tag:#SocialStudies  ",
+      "color": {
+        "a": 1,
+        "rgb": 16732754
+      }
+    },
+    {
+      "query": "tag:#Russian  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "tag:#ComputerScience  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "tag:#English  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "tag:#Geometry  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "tag:#Math  ",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "tag:#C tag:#CPP  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "tag:#py_modules tag:#python  ",
+      "color": {
+        "a": 1,
+        "rgb": 11621088
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
   "textFadeMultiplier": -1.1,
   "nodeSizeMultiplier": 1.66488777459408,
   "lineSizeMultiplier": 2.15872952853598,
-  "collapse-forces": false,
-  "centerStrength": 0.3375682382134,
-  "repelStrength": 12.347182425979,
+  "collapse-forces": true,
+  "centerStrength": 0.18205574912892,
+  "repelStrength": 7.54355400696864,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.14190159643764308,
-  "close": true
+  "scale": 0.38137954410440744,
+  "close": false
 }

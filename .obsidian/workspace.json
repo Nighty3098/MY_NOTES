@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "49bc5259d98ece9a",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
@@ -24,41 +24,31 @@
             }
           },
           {
-            "id": "b5a5437d84fcdd3d",
+            "id": "9605ed67038eaac5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev/JavaScript/Кэширование/Пример 2.md",
-                "mode": "source",
+                "file": "Education/SocialStudies/Политическая власть.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Пример 2"
+              "title": "Политическая власть"
+            }
+          },
+          {
+            "id": "bbeb202d09cf9486",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
         ],
-        "currentTab": 1
-      },
-      {
-        "id": "065f53bf2cea6cec",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4334583b8d1fd792",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dev/JavaScript/Кэширование/Кэширование данных.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Кэширование данных"
-            }
-          }
-        ]
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -70,7 +60,7 @@
       {
         "id": "4cdeba3478db6085",
         "type": "tabs",
-        "dimension": 58.52904820766378,
+        "dimension": 70.70457354758962,
         "children": [
           {
             "id": "ed15b78cf26db7db",
@@ -99,7 +89,7 @@
       {
         "id": "0db6a1e8d4475866",
         "type": "tabs",
-        "dimension": 41.47095179233622,
+        "dimension": 29.295426452410382,
         "children": [
           {
             "id": "f6a598ceafb5e60c",
@@ -137,7 +127,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.51103591918945
+    "width": 283.51103591918945
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -198,11 +188,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Dev/JavaScript/Кэширование/Пример 2.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Структура Пример 2"
+              "title": "Структура"
             }
           }
         ],
@@ -210,7 +198,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 360.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,23 +219,33 @@
       "obsidian-kanban:Создать новую доску": false
     }
   },
-  "active": "b5a5437d84fcdd3d",
+  "active": "bbeb202d09cf9486",
   "lastOpenFiles": [
-    "Dev/JavaScript/Кэширование/Кэширование данных.md",
+    "Education/SocialStudies/Политическая власть.md",
+    "Education/Education.md",
+    "Education/ComputerScience/Graph.md",
+    "Home.md",
+    "Dev/С++/Работа с памятью/Библиотека memory.md",
+    "Dev/Git/Ветки в Git.md",
+    "Dev/Git/Конфликты слияния.md",
+    "Dev/Git/Badges.md",
+    "Dev/Git/Git.md",
+    "Dev/Git/Markdown.md",
+    "Education/ComputerScience",
+    "Education/English/Без названия.md",
+    "Education/English",
+    "Education/Math&Geometry",
+    "Dev/Git/README TEAMPLATE GIT.md",
     "Dev/JavaScript/Кэширование/Пример 2.md",
+    "Education/SocialStudies",
+    "Education",
+    "Dev/JavaScript/Кэширование/Кэширование данных.md",
     "Projects/IPSA/Tasks.md",
     "Projects/IPSA/IPSA_README.md",
     "Dev/Python/Modules/PyQtGraph.md",
     "Dev/QT/Многоязычное приложение. C++ QT.md",
     "Dev/JavaScript/Кэширование",
-    "Home.md",
-    "Dev/Git/Ветки в Git.md",
-    "Dev/Git/Конфликты слияния.md",
-    "Dev/Git/Badges.md",
-    "Dev/Git/Git.md",
     "Dev/Git/Dev icons.md",
-    "Dev/Git/Markdown.md",
-    "Dev/Git/README TEAMPLATE GIT.md",
     "Dev/Git/RestApi/Repository/List repository languages.md",
     "Dev/Git/RestApi/RestApi.md",
     "Dev/Git/RestApi/Repository/List repository contributors.md",
@@ -254,20 +253,10 @@
     "Dev/Git/RestApi/Repository/Get a repository README.md",
     "Dev/Git/RestApi/Repository/Get a repository.md",
     "Dev/Git/RestApi/Repository/Download repository archive (zip).md",
-    "Dev/Git/RestApi/Repository/Download a repository archive (tar).md",
-    "Dev/Git/RestApi/Repository/Delete a file.md",
-    "Dev/Git/RestApi/Repository/Create or update file contents.md",
-    "Dev/Git/RestApi/License/Licenses.md",
-    "Dev/Git/RestApi/License/Get the license for a repository.md",
     "Dev/Python/Modules",
     "Freelance",
     "Projects/LogInsight",
     "Dev/Python/Modules",
-    "Projects/TGSB",
-    "Projects/IPSA",
-    "Projects",
-    "Dev/Git/RestApi/Repository",
-    "Dev/Git/RestApi/License",
     "imgs/header.png",
     "header.png",
     "imgs/Pasted image 20240527171808.png",

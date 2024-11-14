@@ -4,14 +4,16 @@
   "interfaceFontFamily": "",
   "textFontFamily": "",
   "monospaceFontFamily": "",
-  "baseFontSize": 17,
+  "baseFontSize": 15,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "banner",
     "command_pallete",
     "checkbox",
     "rounded_table",
-    "list_styling"
+    "list_styling",
+    "safari_tabs",
+    "style"
   ],
   "nativeMenus": false
 }

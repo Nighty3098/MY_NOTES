@@ -54,7 +54,13 @@
     "Tasks": 40,
     "TGSB": 41,
     "py_modules": 42,
-    "LogInsight": 43
+    "LogInsight": 43,
+    "SocialStudies": 44,
+    "ComputerScience": 45,
+    "Math": 46,
+    "Geometry": 47,
+    "English": 48,
+    "Russian": 49
   },
   "_version": 3
 }
