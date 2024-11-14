@@ -29,16 +29,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Education/SocialStudies/Политическая власть.md",
-                "mode": "preview",
+                "file": "Education/Statistic/Пересечение независимых событий/Примеры задач.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Политическая власть"
+              "title": "Примеры задач"
             }
           },
           {
-            "id": "bbeb202d09cf9486",
+            "id": "4240d16c84d58ab0",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -48,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -188,9 +188,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Education/Statistic/Пересечение независимых событий/Примеры задач.md"
+              },
               "icon": "lucide-list",
-              "title": "Структура"
+              "title": "Структура Примеры задач"
             }
           }
         ],
@@ -198,8 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5,
-    "collapsed": true
+    "width": 360.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,12 +220,18 @@
       "obsidian-kanban:Создать новую доску": false
     }
   },
-  "active": "bbeb202d09cf9486",
+  "active": "9605ed67038eaac5",
   "lastOpenFiles": [
-    "Education/SocialStudies/Политическая власть.md",
+    "Education/Statistic/Пересечение независимых событий/Пересечение независимых событий.md",
+    "Education/Statistic/объединение независимых событий/Объединение независимых событий.md",
+    "Education/Statistic/Пересечение независимых событий/Примеры задач.md",
+    "Education/Statistic/объединение независимых событий",
+    "Home.md",
+    "Education/Statistic/Пересечение независимых событий",
     "Education/Education.md",
     "Education/ComputerScience/Graph.md",
-    "Home.md",
+    "Education/Statistic",
+    "Education/SocialStudies/Политическая власть.md",
     "Dev/С++/Работа с памятью/Библиотека memory.md",
     "Dev/Git/Ветки в Git.md",
     "Dev/Git/Конфликты слияния.md",
@@ -250,12 +257,6 @@
     "Dev/Git/RestApi/RestApi.md",
     "Dev/Git/RestApi/Repository/List repository contributors.md",
     "Dev/Git/RestApi/Repository/List forks.md",
-    "Dev/Git/RestApi/Repository/Get a repository README.md",
-    "Dev/Git/RestApi/Repository/Get a repository.md",
-    "Dev/Git/RestApi/Repository/Download repository archive (zip).md",
-    "Dev/Python/Modules",
-    "Freelance",
-    "Projects/LogInsight",
     "Dev/Python/Modules",
     "imgs/header.png",
     "header.png",

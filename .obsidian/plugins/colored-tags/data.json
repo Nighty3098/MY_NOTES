@@ -60,7 +60,8 @@
     "Math": 46,
     "Geometry": 47,
     "English": 48,
-    "Russian": 49
+    "Russian": 49,
+    "Statistic": 50
   },
   "_version": 3
 }

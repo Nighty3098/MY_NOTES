@@ -6,4 +6,5 @@ tags:
   - SocialStudies
   - English
   - Russian
+  - Statistic
 ---
