@@ -1,6 +1,5 @@
 ---
 tags:
-  - python
   - qt
   - py_modules
 ---

@@ -1,6 +1,5 @@
 ---
 tags:
-  - python
   - py_modules
 ---
 ![[Pasted image 20240527171825.png]]

@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "effedbd0bb2f1deb",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "39c5756aa6b5a337",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "c772736d8d457388",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "d2b7af57e5d7a6e6",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "4be18bc5b2f6481e",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      },
+      {
+        "id": "1dad741080d283d2",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "49db6623b4fee899",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "36e58d1fcca688c6",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Dev/JavaScript/Работа с типами данных в JavaScript.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "793f770265875f32",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "imgs/header.png",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "665aaecc77fbe2cb",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "imgs/header.png"
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "markdown-importer:Open format converter": false,
+      "zk-prefixer:Create new unique note": false,
+      "random-note:Open random note": false,
+      "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
+      "obsidian-kanban:Create new board": false,
+      "homepage:Open homepage": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "Dev/JavaScript/Работа с типами данных в JavaScript.md",
+    "Dev/Python/🐍 Modules/dateparser.md",
+    "Dev/Python/🐍 Modules/Работа со временем.md",
+    "Dev/С++/Работа с памятью/Управление памятью в C++.md",
+    "Home.md",
+    "Dev/С++/Двоичное дерево поиска.md",
+    "Projects/IPSA/Tasks.md",
+    "Projects/LogInsight/LogInsight_README.md",
+    "Dev/Git/README TEAMPLATE GIT.md",
+    "Dev/C/Безопасность С.md",
+    "Teamplates/License.md",
+    "Dev/Python/🐍 Modules/Упаковка параметров с помощью urlencode.md",
+    "Dev/Python/🐍 Modules/Удаление дубликатов в списке.md",
+    "Dev/Python/🐍 Modules/Скачиваем вебсайты целиком.md",
+    "Dev/Python/🐍 Modules/Сделать список плоским.md",
+    "Dev/Python/🐍 Modules/Работаем с буфером обмена.md",
+    "Dev/Python/🐍 Modules/Работаем с JSON Web Tokens в Python.md",
+    "Dev/Python/🐍 Modules/Работа с регулярными выражениями.md",
+    "Dev/Python/🐍 Modules/Работа с данными в Python используя Pydantic.md",
+    "Dev/Python/🐍 Modules/Планировщик задач.md",
+    "Dev/Python/🐍 Modules/Перегрузка операторов сравнения.md",
+    "Dev/Python/🐍 Modules/Обработка видео.md",
+    "Dev/Python/🐍 Modules/Обрабатываем номера телефонов.md",
+    "Dev/Python/🐍 Modules/Лямбда функции.md",
+    "Dev/Python/🐍 Modules/Копирование объектов.md",
+    "Dev/Python/🐍 Modules/Дизассемблирование.md",
+    "imgs/Pasted image 20240529201026.png",
+    "imgs/header.png",
+    "🧭 Projects/TGSB"
+  ]
+}

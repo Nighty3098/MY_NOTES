@@ -1,6 +1,5 @@
 ---
 tags:
-  - python
   - py_modules
 ---
 Читаем текст с картинки используя Tesseract от Google
