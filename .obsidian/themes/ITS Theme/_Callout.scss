@@ -1,0 +1,13 @@
+.callout {
+    border-radius: var(--radius);
+    background: var(--background-secondary);
+    display: flow-root;
+    
+    & a,
+    & .internal-link,
+    & .external-link
+    { text-decoration: none; }
+}
+.callout-fold svg {
+    margin-bottom: -3px;
+}

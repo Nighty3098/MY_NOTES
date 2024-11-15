@@ -1,0 +1,43 @@
+/* MAKE.md */
+.mk-sidebar {
+    //Spaces
+    & .mk-main-menu-button:hover { color: var(--text-dl); }
+    //Hide ITS Icon
+    & .mk-tree-text::before { display: none; }
+    
+    --nav-item-background-selected: var(--nav-item-background-active);
+    --file-header-color-active: var(--text-dl);
+    --nav-item-color-selected: var(--text-dl);
+    & .mk-tree-item { 
+        --vertical-padding: unset; 
+        // height: unset; 
+
+        &.is-selected,
+        &.is-active,
+        &:hover { 
+            --folder-open-text-color: var(--text-dl);
+
+            & svg {
+                --icon-color: var(--text-dl);
+                color: var(--text-dl);
+            }
+        }
+
+        &.tree-item-self { gap: 1px; }
+    }
+}
+
+// .menu.mk-style-menu { display: none; }
+// .mk-flow-seamless .markdown-embed { 
+//     margin-top: 0;
+//     border-radius: 0;
+//     padding: 0;
+// }
+// .mk-tree-item.nav-folder-title.nav-folder-title { 
+//     margin-left: var(--spacing); 
+//     padding: 0; 
+// }
+
+// .mk-collapsed.mk-collapsed { margin-left: -24px;} 
+// .mk-folder-lines .mk-tree-item.nav-folder-title::before { left: 12px; }
+// .mk-list-container .mk-list-item::before { display: none; }

@@ -1,0 +1,55 @@
+body {
+    --outline-symbol: "H";
+    --outline-symbol-padding-right: 4px;
+
+    --outline-arrow-visibility: hidden;
+    --outline-arrow-display: none;
+    --outline-arrow-margin: -16px;
+}
+
+//Outline Icon
+body .outline,
+body [data-type="outline"] {
+    // padding: var(--size-4-3) var(--size-4-2);
+    
+    & .tree-item-children { transition: all 0.3s ease-in-out; }
+    --nav-item-children-margin-left: 12px;
+    
+
+    //Arrow
+    & .collapse-icon svg { visibility: var(--outline-arrow-visibility); }
+
+    & .tree-item:not(.is-collapsed) > .mod-collapsible .tree-item-icon.collapse-icon 
+    { margin-inline-start: var(--outline-arrow-margin); }
+
+    //Symbol
+    & .tree-item-self::before {
+        content: var(--outline-symbol);
+        font-family: var(--font-default);
+        font-weight: 900;
+        color: var(--headers);
+        padding-inline-end: var(--outline-symbol-padding-right);
+    }
+    & .tree-item-self.is-active::before,
+    & .tree-item-self:hover::before { color: var(--text-dl); }
+    
+    //Collapsed Fixes
+    & .tree-item.is-collapsed {
+        & .collapse-icon svg { visibility: visible; }
+        
+        & .tree-item-self::before { display: none; }
+    } 
+} 
+//Mobile Panel Alignment Fix
+.is-mobile .outline,
+.is-mobile [data-type="outline"] {
+    --nav-item-children-margin-left: 28px;
+    --nav-item-children-padding-left: 0;
+}
+
+.hide-outline-heading [data-type="outline"] {
+    --outline-symbol: '';
+    --outline-arrow-visibility: visible;
+    --outline-arrow-margin: -3px;
+    --outline-symbol-padding-right: 0;
+}

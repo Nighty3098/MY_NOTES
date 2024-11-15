@@ -1,0 +1,25 @@
+
+// Mini Sidebar Ribbon Float
+.sidebar-ribbon-mini-float:not(.is-mobile) {
+    & .side-dock-ribbon:not(:hover) .sidebar-toggle-button.mod-left { 
+        height: 0;
+        
+        position: relative; 
+        padding: 0 7px;
+
+        align-items: center;
+    }
+
+    //Minimized Ribbon
+    & .side-dock-ribbon:not(:hover) {
+        padding: calc(var(--icon-size) + 2px);
+        width: var(--ribbon-width);
+        animation-duration: 5s;
+
+        --tab-outline-width: 0;
+    }
+
+    //Hide Ribbon Icons
+    & .side-dock-ribbon.mod-left:not(:hover) :is(.side-dock-actions, .side-dock-settings) 
+    { display: none; }
+}

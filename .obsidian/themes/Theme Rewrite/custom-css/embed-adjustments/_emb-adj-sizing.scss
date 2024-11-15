@@ -1,0 +1,26 @@
+.internal-embed:not(.image-embed) {
+    //Height Adjustment
+    &[alt*="htiny"]     .markdown-embed-content { height: var(--tiny); }
+    &[alt*="hsmall"]    .markdown-embed-content { height: var(--small); }
+    &[alt*="hs-med"]    .markdown-embed-content { height: var(--small-med); }
+    &[alt*="hm-sm"]     .markdown-embed-content { height: var(--med-small); }
+    &[alt*="hmed"]      .markdown-embed-content { height: var(--medium); }
+    &[alt*="hm-tl"]     .markdown-embed-content { height: var(--med-tall); }
+    &[alt*="htall"]     .markdown-embed-content { height: var(--tall); }
+
+    &[alt*="full"] {
+        & .markdown-embed-content,
+        & .markdown-embed-content > .markdown-preview-view 
+        { max-height: unset; }
+    } 
+
+
+    //Width Adjustment
+    &[alt*="wtiny"]     { width: 20%; }
+    &[alt*="wsmall"]    { width: 30%; }
+    &[alt*="ws-med"]    { width: 40%; }
+    &[alt*="wm-small"]  { width: 50%; }
+    &[alt*="wmed"]      { width: 60%; }
+    &[alt*="wm-tl"]     { width: 80%; }
+    &[alt*="wtall"]     { width: 95%; }
+}

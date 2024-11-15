@@ -1,0 +1,10 @@
+.callout[data-callout="blank"] {
+    
+    --callout-color: transparent;
+    margin: 0;
+    padding: 0;
+    --callout-border-width: 0;
+    .callout-content { padding: 0; }
+    
+    & > .callout-title { display: none; }
+}

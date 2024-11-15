@@ -1,0 +1,74 @@
+
+/*--Kanban--*/
+/*Credit: https://github.com/Braweria/Spectrum*/
+
+.kanban {
+    // --list-indent: -15px;
+    
+    //Columns
+    :is(ul, ol) { 
+        display: flex;
+        flex-direction: row;
+        border-radius: 0;
+        flex-wrap: wrap;
+        
+        & li {
+            flex: 1 1 10%;
+            // margin-left: 0px;
+            // margin-right: 10px;
+            // border: 0;
+        }
+    }
+    // & ol li { margin-left: 15px; }
+
+    //Sub List Items
+    & :is(ul ul, ol ol)
+    {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        margin-right: 20px; //Alt BG Alignment
+        // margin-top: 5px;
+        
+        
+        & > li {
+            min-width: 15ch;
+            margin-left: 20px;
+            margin-right: 0;
+            width: 100%;   
+            
+            &:nth-child(odd) { background: var(--td); }
+        }
+
+    }    
+    //Spaced List
+    & li p:first-of-type { --p-spacing: 0; }
+}
+
+/*Hide Bullet*/
+// .kanban ul { 
+//     list-style: none; 
+    
+//     & li::before {
+//         content: "";
+//         margin: 0px;
+//         padding: 0;
+//         float: unset;
+//     }
+//     & li > ul::before { left: 0; }
+// }
+
+
+
+
+//
+// .kanban.markdown-rendered .list-collapse-indicator {
+//     margin-left: -15px;
+//     padding-right: 0px;
+// }
+
+// .kanban.markdown-rendered ol .list-collapse-indicator 
+// { margin-left: -30px; }
+
+
+

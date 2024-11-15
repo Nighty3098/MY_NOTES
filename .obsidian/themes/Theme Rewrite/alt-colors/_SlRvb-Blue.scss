@@ -1,0 +1,107 @@
+/*----Theme: SlRvb Blue----*/
+.slrvb-b {
+    --font: 'Recursive Sans Linear Static Black', 'Oleo Script', 'Calisto MT'; /*Works, but if it doesn't, needs !important*/
+    --font-monospace: "Fira Code";
+
+    --highlight: rgba(46, 124, 214, 0.3);
+    --hvr: rgba(0, 137, 255, 0.4);
+    --hvr-active: rgba(60, 102, 168, 0.4);
+
+}
+.theme-dark {
+    &.slrvb-b,
+    & .slrvb-b {
+        --outer-bar: #0e0f15;
+        --dark-sidebar: #10161d;
+        --side-bar: var(--note);
+
+        --note: #1a1e24;
+        --note-rgb: 26, 30, 36;
+        
+        --accent-color: 57, 77, 100;
+        --accent: #394d64;
+        --lite-accent: #6ca6e0;
+        --dark-accent: #293e64;
+        --deep-dark-accent: #1f283b;
+        --accent2: #4c78cc;
+        --accent2-lite: #4c87cc;
+
+        --headers: #2b71cd;
+        --text: #AAB3CA;
+        --soft-text: #6d7a9b;
+        --code-text: slategray;
+        --i-at: #5d7b98;
+        --footnote: #6e7e89;
+        
+        --folder-open: #386ab6;
+        --file-icon-color: #63748d;
+
+        --code-bg: #232831;
+        --tag: var(--dark-accent);
+        
+        --th: var(--dark-accent);
+        --td: #030a1495;
+        
+        --hr: #3c5274;
+        --lines: #465164;
+
+        --theme-rainbow-1: var(--accent2);
+        --theme-rainbow-2: var(--headers);
+        --theme-rainbow-3: var(--dark-accent);
+        --theme-rainbow-4: var(--deep-dark-accent);
+        --theme-rainbow-5: var(--accent);
+        --theme-rainbow-6: var(--soft-text);
+    }
+}
+.theme-light {
+    &.slrvb-b,
+    & .slrvb-b {
+        --outer-bar: #eef3fd;
+        --dark-sidebar: #f1f5ff;
+        --side-bar: var(--note);
+
+        --note: #f8fbff;
+        --note-rgb: 248, 251, 255;
+        
+        --accent-color: 100, 160, 219;
+        --accent: #64a0db;
+        --lite-accent: #5174a3;
+        --dark-accent: #517cbf;
+        --deep-dark-accent: #101b2f;
+        --accent2: #4c78cc;
+        --accent2-lite: #5599d0;
+        
+        --headers: #4378c1;
+        --text: #283a67;
+        --soft-text: #4e99d0;
+        --code-text: #4296ea;
+        --i-at: var(--headers);
+        --footnote: #8996a0;
+        --inactive: #a6bbde;
+        
+        --folder-open: #6da5ce;
+        --file-icon-color: #8897b4;
+        // --f-hover: #3685e0;
+        
+        --bg: #dde4ef;
+        --fg: #025d9f;
+        --code-bg: #f1f5ff;
+        --tag: #5885b2;
+        
+        --th: #587aa8;
+        --td: #d0ddef62;
+        
+        --table: #ccd6eb;
+        --hr: #d6deea;
+        --lines: #b5c2d8;
+
+        --highlight: rgba(46, 124, 214, 0.2);
+
+        --theme-rainbow-1: var(--accent);
+        --theme-rainbow-2: var(--headers);
+        --theme-rainbow-3: var(--th);
+        --theme-rainbow-4: var(--text);
+        --theme-rainbow-5: var(--file-icon-color);
+        --theme-rainbow-6: var(--inactive);
+    }
+}

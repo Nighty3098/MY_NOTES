@@ -1,0 +1,73 @@
+.sizing-readable.sizing-readable {
+    --font-ui-smaller: 13.5px;
+    --font-ui-small: 14px;
+    --font-ui-medium: 15px;
+    --font-ui-large: 20px;
+    
+    --font-smallest:.88em;
+    --font-smaller:.9em;
+    --font-small: .95em;
+
+    --icon-xs: 14px;
+    --icon-s: 16px;
+    --icon-m: 17px;
+    --icon-l: 18px;
+
+    --header-height: 40px;
+    --ribbon-width: 40px;
+}
+
+.sizing-mini.sizing-mini {
+    --font-ui-smaller: 11px; //.88em
+    --font-ui-small: 12px;
+    --font-ui-medium: 14px;
+    --font-ui-large: 20px;
+    
+    --font-smallest: .70em;
+    --font-smaller: .88em;
+    --font-small: .95em;
+
+    // --font-text-size: 14px;
+
+    --icon-xs: 12px;
+    --icon-s: 13px;
+    --icon-m: 14px;
+    --icon-l: 15px;
+
+    --vault-name-font-size: 14px;
+    --header-height: 35px;
+    --ribbon-width: 30px;
+    --inline-title-size: 20px;
+
+    --scrollbar-width: 8px;
+    --scrollbar-height: 8px;
+}
+
+.sizing-large.sizing-large,
+.sizing-large.sizing-large div {
+    --font-ui-smaller: 16px;
+    --font-ui-small: 18px;
+    --font-ui-medium: 20px;
+    --font-ui-large: 24px;
+    
+    --font-smallest: 1em;
+    --font-smaller: 1.2em;
+    --font-small: 1.5em;
+
+    // --font-text-size: 18px;
+    // --font-size: var(--font-smallest);
+    --table-row-edit-font-size: var(--font-text-size);
+    --font-frontmatter: var(--font-text-size);
+    --code-size: var(--font-text-size);
+
+    --icon-xs: 16px;
+    --icon-s: 18px;
+    --icon-m: 20px;
+    --icon-l: 24px;
+
+    --header-height: 50px;
+    --ribbon-width: 50px;
+    --inline-title-size: 40px;
+
+    --scrollbar-width: 15px;
+}

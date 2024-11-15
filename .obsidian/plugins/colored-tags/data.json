@@ -61,7 +61,8 @@
     "Geometry": 47,
     "English": 48,
     "Russian": 49,
-    "Statistic": 50
+    "Statistic": 50,
+    "moc": 51
   },
   "_version": 3
 }

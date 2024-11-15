@@ -1,0 +1,17 @@
+/*Justify text*/
+.justify,
+.justified {
+    & .markdown-preview-section,
+    &.markdown-preview-view > *,
+    
+    & .cm-line:not(.HyperMD-header, .HyperMD-list-line),
+    & .cm-line:not(.HyperMD-header) [class*="cm-list"] //Lists TEXT (not embeds)
+    {
+        text-align: justify;
+        // hyphens: auto;
+        // -webkit-hyphens: auto;
+        word-spacing: -.05em;
+        text-justify: distribute;
+        // text-align-last: left; 
+    }
+}

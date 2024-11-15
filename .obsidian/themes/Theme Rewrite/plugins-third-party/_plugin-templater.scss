@@ -1,0 +1,8 @@
+.cm-s-obsidian {
+    //Fix BG Coloring
+    & .templater-command-bg,
+    & .templater-inline .cm-templater-command {
+        background-color: var(--code-bg);
+        box-shadow: var(--code-shadow);
+    } 
+}

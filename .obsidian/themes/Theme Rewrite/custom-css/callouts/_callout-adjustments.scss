@@ -1,0 +1,158 @@
+
+// No Title
+.callout.callout.callout.callout:is(
+    [data-callout-metadata~="no-t"], 
+    [data-callout-metadata~="no-title"]
+) > .callout-title { display: none; }
+
+// Show Title
+.callout.callout.callout.callout:is(
+    [data-callout-metadata~="s-t"], 
+    [data-callout-metadata~="show-title"]
+) {
+    & > .callout-title { display: flex; }
+    
+    & > .callout-content > p { margin-top: 0; }
+} 
+// Subtitle
+.callout.callout.callout.callout:is(
+    [data-callout-metadata~="subtitle"], 
+    [data-callout-metadata~="subt"]
+) {
+    & .callout-title {
+        align-content: center;
+        align-items: center;
+        
+        & em {
+            display: block;
+            font-style: normal;
+            font-size: var(--font-small);
+            line-height: 12px;
+            font-weight: normal;
+
+            & em {
+                font-style: italic;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+
+// No Icon
+.callout.callout:is(
+    [data-callout-metadata~="no-i"], 
+    [data-callout-metadata~="no-icon"]
+) > .callout-title > .callout-icon { 
+    width: 0; height: 0; 
+    --icon-size: 0;
+} // For Export
+
+
+
+//No Table Header
+.callout:is(
+    [data-callout-metadata~="n-th"], 
+    [data-callout-metadata~="no-table-header"]
+) > .callout-content {
+    & table { 
+        margin-bottom: 5px; 
+        
+        & thead,
+        & th { display: none; }
+    }
+}
+//Wide Table
+.callout:is(
+    [data-callout-metadata~="t-w"], 
+    [data-callout-metadata~="table-wide"]
+) {
+    & table { 
+        width: 100%; 
+        
+        & td { width: calc(var(--tbl-w) / 2); }
+    }
+} 
+//Table Text Alignment
+.callout[data-callout-metadata~="table-cell-top"] table td 
+{ vertical-align: top; }
+//Table Margins
+.callout.callout:is(
+    [data-callout-metadata~=t-nmg],
+    [data-callout-metadata~=table-no-margin]
+) table {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+
+//Expand for Embed
+.callout[data-callout-metadata~="embed"] {
+    & .callout-content,
+    & > .callout-content > p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+
+//Collapse
+.callout[data-callout-metadata~="collapse"] * {
+    margin: 0 !important;
+    padding: 0 !important;
+    grid-gap: 0 !important;
+}
+
+//Borderless
+.callout.callout.callout:is(
+    [data-callout-metadata~="nbrd"], 
+    [data-callout-metadata~="no-border"]
+) { border: 0; }
+
+//Clean
+.callout.callout.callout[data-callout-metadata~="clean"],
+.callout.callout.callout[data-callout-metadata~="clean"] > .callout-content {
+    border: 0;
+    box-shadow: none;
+    --callout-color: transparent;
+    --callout-padding: 0;
+
+    & .callout-content {
+        padding: 0;
+    }
+}
+
+//Clear
+.callout[data-callout-metadata~="clear"] { clear: both; }
+
+.callout.callout.callout[data-callout-metadata~="block"] { 
+    display: block; 
+    float: unset;
+    
+    &[data-callout-metadata~="right"] { margin-left: auto; }
+    &[data-callout-metadata~="left"] { margin-right: auto; }
+}
+
+
+
+
+//Fix iframe Code
+.callout #vid { text-align: left; }
+
+
+
+//Inspired by Davey
+.callout:is(
+    [data-callout-metadata~="dim-hvr"],
+    [data-callout-metadata~="dim-hover"],
+    [data-callout-metadata~="dim-closed"].is-collapsed,
+    [data-callout-metadata~="dim"]
+):not(:hover) {
+    // opacity: 30%;
+    filter: brightness(50%);
+    transition: filter 300ms;
+}

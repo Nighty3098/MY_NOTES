@@ -1,0 +1,24 @@
+body {
+    --titlebar-background: var(--note);
+    --titlebar-background-focused: var(--outer-bar);
+    --titlebar-text-color: var(--text-normal);
+    
+    // --titlebar-height: calc(var(--header-height) - 1px);
+    
+}
+
+// .is-frameless.is-hidden-frameless .titlebar.titlebar {
+//     height: var(--titlebar-height);
+// }
+
+//Windows Window Icons
+.is-hidden-frameless:not(.is-fullscreen) {
+    &.is-focused .titlebar-button-container.mod-right,
+    & .titlebar-button-container.mod-right 
+    { background: transparent }
+}
+
+//Fix Tab Button Colors
+.workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
+    color: var(--tab-text-color-focused-active-current);
+}

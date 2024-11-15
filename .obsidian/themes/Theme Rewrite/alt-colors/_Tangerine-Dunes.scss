@@ -1,0 +1,99 @@
+
+/*----Theme: Tangerine Dunes----*/
+.t-d {
+    --hr-sym: "\e564";
+    --hr-f: var(--mdi);
+
+    --header-weight: 500;
+
+    background: var(--note);
+}
+
+.theme-dark {
+    &.t-d,
+    & .t-d {
+    --outer-bar: #0b0f13;
+    --side-bar: var(--note);
+
+    --note: #1a1e24;
+    
+    --accent-color: 223, 123, 65;
+    --accent: #DF7B41;
+    --lite-accent: #C48A69;
+    --dark-accent: #c66c39;
+    --deep-dark-accent: #62250F;
+    --accent2: #8F3F2B;
+    --accent2-lite: #E57858;
+    
+    --headers: #DF7B41;
+    --text: #bccad8;
+    --code-text: #FA8A45;
+    --i-at: #BF7F5E;
+    
+    --folder-open: #D8AF97;
+    --file-icon-color: #8F3F2B;
+
+    --tag: var(--th);
+    
+    --th: #a66038;
+    --td: rgba(12,9,6,0.38);
+    
+    --table: #463228;
+    --hr: #744F3C;
+
+    --highlight: rgba(148, 87, 49, 0.575);
+    --hvr: rgba(253,162,115,0.25);
+    --hvr-active: rgba(236, 110, 52, 0.3);
+
+    --theme-rainbow-1: var(--i-at);
+    --theme-rainbow-2: var(--headers);
+    --theme-rainbow-3: var(--accent2);
+    --theme-rainbow-4: var(--tag);
+    --theme-rainbow-5: var(--table);
+    --theme-rainbow-6: var(--dark-sidebar);
+}}
+.theme-light {
+    &.t-d,
+    & .t-d {
+        --outer-bar: #eef3fd;
+        --side-bar: var(--note);
+    
+        --note: #f8fbff;
+        
+        --accent-color: 232, 175, 142;
+        --accent: #E8AF8E;
+        --lite-accent: #C48A69;
+        --accent2: #A9523C;
+        --accent2-lite: #E57858;
+        --dark-accent: #dc8a67;
+        --deep-dark-accent: #7B4430;
+    
+        --headers: #E19363;
+        --text: #697580;
+        --soft-text: #CF9870;
+        --code-text: #EA7542;
+        --i-at: #C16E43;
+    
+        --folder-open: #EDB595;
+        --folder: #BA5D4B;
+        
+        --fg: #91542E;
+        --tag: #e48751;
+        
+        --table: #CCD6EB;
+        --hr: #CFC2BB;
+    
+        --th: var(--dark-accent);
+    
+        --highlight: rgba(255, 158, 89, 0.4);
+        --hvr: rgba(253,157,115,0.25);
+        --hvr-active: rgba(255, 158, 89, 0.4);
+    
+        --theme-rainbow-1: var(--headers);
+        --theme-rainbow-2: var(--soft-text);
+        --theme-rainbow-3: var(--i-at);
+        --theme-rainbow-4: var(--file-icon-color);
+        --theme-rainbow-5: var(--tag);
+        --theme-rainbow-6: var(--file-icon-color);
+    }
+}

@@ -1,0 +1,112 @@
+body.theme-dark,
+body.theme-light
+{
+    //Fonts
+    --font-default: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+    --font-monospace: 'Fira Code', 'Fira Code Medium', 'Source Code Pro', monospace;
+    
+
+    --font-text: var(--font-text-override), var(--font-default);
+    --font-monospace-default: var(--font-monospace-default-override), var(--font-monospace);
+    --font-interface: var(--font-interface-override), var(--font-default);
+
+    --rmx: 'remixicon';
+    --mdi: 'Material Icons Sharp';
+    --its: 'its';
+    --fa5: 'Font Awesome 5 Free Solid';
+    --fa6: 'Font Awesome 6 Free Solid';
+    --rpg: 'rpg-awesome';
+
+
+    
+
+
+    //Radius
+    --radius-s: 0; //4px
+    --radius-m: calc(var(--radius-s) * 1.1); //8px
+    --radius-l: calc(var(--radius-s) * 1.2); //10px
+    --radius-xl: calc(var(--radius-s) * 1.5);
+    --radius-h: calc(var(--radius-s) / .50); //50%
+
+    --slider-track-radius: var(--radius-h);
+    --input-radius: var(--radius-s);
+    --icon-btn-radius: var(--radius-s);
+    
+    --tag-radius: var(--radius-l);
+    
+    --slider-thumb-radius: var(--radius-h);
+    --status-bar-radius: var(--radius-m) 0 0 0;
+    --checkbox-radius: var(--radius-m);
+    --toggle-radius: var(--radius-h);
+    --toggle-thumb-radius: var(--radius-h);
+    --clickable-icon-radius: var(--radius-s);
+    // --swatch-radius: var(--radius-h);
+    --pill-radius: var(--radius-m);
+
+
+    --bold-weight: 900;
+    --bold-modifier: 500;
+
+    
+    
+    //Size
+    --font-ui-smaller: 13.5px; //.88em
+    --font-ui-small: 14px;
+    --font-ui-medium: 15px;
+    --font-ui-large: 20px;
+    
+    --font-smallest: .85em;
+    --font-smaller:.90em;
+    --font-small: .95em;
+
+    --icon-xs: 14px;
+    --icon-s: 16px;
+    --icon-m: 17px;
+    --icon-l: 18px;
+    --line-height-tight: 1.3em;
+
+ 
+    --scroll-size: 7px;
+    --divider-width: 2px;
+    --divider-width-hover: 5px;
+    
+    --tag-padding-x: 7px;
+    --tag-padding-y: 3px;
+
+    //_tables
+    //_lists
+
+
+
+    // Border
+    --prompt-border-width: 3px;
+
+
+    //Shadow
+    --shadow-s: 2px 2px 0 var(--outline);
+    --shadow-m: 3px 3px 0 var(--outline);
+    --shadow-ml: 4px 4px 0 var(--outline);
+    --shadow-l: 5px 5px 0 var(--outline);
+
+    --input-shadow: var(--shadow-s);
+    --input-shadow-hover: var(--shadow-m);
+    --embed-block-shadow-hover: var(--input-shadow); 
+
+    
+    --message-color: var(--text-dl); //Personal
+    --message-box-shadow: var(--shadow-s); //Personal
+    --message-border-width: 0px; //Personal
+    --message-border-color: var(--outline); //Personal
+
+    //Icons
+
+
+    //Link
+
+    //Personal variables
+    --toggle-shadow: none;
+    --box-border-s: 1px solid var(--outline);
+    --box-border: 2px solid var(--outline);
+    --box-border-m: 3px solid var(--outline);
+    
+}

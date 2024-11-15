@@ -1,0 +1,18 @@
+.wide,
+.note-width-wide {
+    --file-line-width: 100%;
+}
+.readable,
+.note-width-readable {
+    --file-line-width: 700px;
+    --page-width: 700px;
+
+    &.markdown-source-view.mod-cm6 .cm-sizer,
+    & .markdown-source-view.mod-cm6 .cm-scroller .cm-sizer,
+    & .markdown-preview-sizer 
+    {
+        max-width: var(--file-line-width);
+        margin: auto;
+    }
+}
+

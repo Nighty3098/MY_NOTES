@@ -24,31 +24,20 @@
             }
           },
           {
-            "id": "9605ed67038eaac5",
+            "id": "762f4e20921256f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Education/Statistic/Пересечение независимых событий/Примеры задач.md",
+                "file": "Education/SocialStudies/Политическая власть.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Примеры задач"
-            }
-          },
-          {
-            "id": "4240d16c84d58ab0",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
+              "title": "Политическая власть"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,10 +178,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Education/Statistic/Пересечение независимых событий/Примеры задач.md"
+                "file": "Home.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Примеры задач"
+              "title": "Структура Home"
             }
           }
         ],
@@ -220,55 +209,55 @@
       "obsidian-kanban:Создать новую доску": false
     }
   },
-  "active": "9605ed67038eaac5",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Education/Statistic/Пересечение независимых событий/Пересечение независимых событий.md",
-    "Education/Statistic/объединение независимых событий/Объединение независимых событий.md",
-    "Education/Statistic/Пересечение независимых событий/Примеры задач.md",
-    "Education/Statistic/объединение независимых событий",
-    "Home.md",
-    "Education/Statistic/Пересечение независимых событий",
-    "Education/Education.md",
-    "Education/ComputerScience/Graph.md",
-    "Education/Statistic",
     "Education/SocialStudies/Политическая власть.md",
-    "Dev/С++/Работа с памятью/Библиотека memory.md",
-    "Dev/Git/Ветки в Git.md",
-    "Dev/Git/Конфликты слияния.md",
-    "Dev/Git/Badges.md",
-    "Dev/Git/Git.md",
-    "Dev/Git/Markdown.md",
-    "Education/ComputerScience",
-    "Education/English/Без названия.md",
-    "Education/English",
-    "Education/Math&Geometry",
-    "Dev/Git/README TEAMPLATE GIT.md",
-    "Dev/JavaScript/Кэширование/Пример 2.md",
-    "Education/SocialStudies",
-    "Education",
-    "Dev/JavaScript/Кэширование/Кэширование данных.md",
-    "Projects/IPSA/Tasks.md",
-    "Projects/IPSA/IPSA_README.md",
-    "Dev/Python/Modules/PyQtGraph.md",
-    "Dev/QT/Многоязычное приложение. C++ QT.md",
-    "Dev/JavaScript/Кэширование",
-    "Dev/Git/Dev icons.md",
-    "Dev/Git/RestApi/Repository/List repository languages.md",
-    "Dev/Git/RestApi/RestApi.md",
-    "Dev/Git/RestApi/Repository/List repository contributors.md",
-    "Dev/Git/RestApi/Repository/List forks.md",
-    "Dev/Python/Modules",
-    "imgs/header.png",
-    "header.png",
-    "imgs/Pasted image 20240527171808.png",
-    "imgs/Pasted image 20240527171700.png",
-    "imgs/Pasted image 20240527171504.png",
+    "Home.md",
+    "[.md",
+    "obsidian-banner-2.png",
+    "Education/Education.md",
+    "Education/Statistic/объединение независимых событий/Объединение независимых событий.md",
+    "obsidian-banner-2.png.md",
+    "Guide/CSS-Classes.md",
+    "Guide/Asides.md",
+    "Guide/Alternate-Checkboxes.md",
+    "Slide Shows/Image Adjustments.md",
+    "Slide Shows/Folder Styles.md",
+    "Slide Shows/Embed Adjustments.md",
+    "Slide Shows/Aside.md",
+    "ITS.png",
+    "README.md",
+    "theme.css",
+    "publish.css",
+    "obsidian.css",
+    "manifest.json",
+    "LICENSE",
+    "ITS Icons.yml",
+    "Snippets/Defunct/Theme - All Alternate Themes.css",
+    "Snippets/Defunct/S - Kanban.css",
+    "Snippets/Defunct/S - Folder Styles.css",
+    "Snippets/Defunct/S - Aside.css",
+    "Slide Shows/Style Settings + Alternate Themes.md",
+    "Slide Shows/Kanban.md",
+    "Slide Shows/D&D Vault.md",
+    "Images/Note-Showcase/T-DnD--Locale.png",
+    "Images/Note-Showcase/T-DnD--Locale-Query.png",
+    "Images/Note-Showcase/T-DnD--Character-Sheet.png",
+    "Images/Theme-Tangerine-Dunes--Lightmode.png",
+    "Images/Theme-Tangerine-Dunes--Darkmode.png",
+    "Images/Theme-SlRvb-Gray--Lightmode.png",
+    "Images/Theme-SlRvb-Gray--Darkmode.png",
+    "Images/Theme-SlRvb-Blue--Lightmode.png",
+    "Guide/Snippet--Folder-Styles.md",
+    "Guide/Kanban.md",
+    "Guide/Image-Positions.md",
+    "Guide/HTML-I-Attributes.md",
+    "Guide/Embed-Adjustments.md",
+    "Guide/Callouts.md",
+    "Guide/Alternate-Themes.md",
+    "Guide/Alternate-Admonitions.md",
+    "Education/Statistic/Пересечение независимых событий/Примеры задач.md",
     "Без названия.canvas",
-    "imgs/Pasted image 20240617131228.png",
-    "imgs/Pasted image 20240617131120.png",
-    "imgs/Pasted image 20240617131021.png",
-    "imgs/Pasted image 20240617130931.png",
-    "imgs/Pasted image 20240617130842.png",
     "Untitled.canvas"
   ]
 }

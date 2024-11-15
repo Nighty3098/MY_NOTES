@@ -1,0 +1,75 @@
+body.theme-dark {
+    --graph-line: var(--dark-accent);
+}
+.published-container {
+
+    //Headers
+    & .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin: 15px 0 10px;
+    }
+    & .publish-article-heading:hover .clickable-icon:hover {
+        background: unset;
+    }
+
+    //Center Image
+    & .site-body-left-column-site-logo {
+        margin: 0 auto;
+        display: block;
+    }
+
+
+    //Light/Dark Mode Toggle
+    & .site-body-left-column-site-theme-toggle {
+        & .option.mod-light { left: 2px; }
+
+        & .checkbox-container {
+            border-radius: var(--radius-m);
+            width: 30px;
+    
+            &::after { display: none; }
+        }
+
+    }
+
+    //Note Sizing Fixes
+    & .publish-renderer > .markdown-preview-view > .markdown-preview-sizer {
+        max-width: var(--page-width);
+        // padding: 0;
+        margin: var(--page-margins);
+    }
+
+    //Lists Re-add 
+    & ul ul.has-list-bullet {
+        border-left: 2px solid var(--indentation-guide-color);
+        padding-left: 35px;
+        margin-left: -15px;
+    }
+    & .callout ul ul.has-list-bullet { margin-left: unset; }
+    & .callout[data-callout=kanban] ul ul {
+        border-left: unset;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    
+    
+    // readable line length fixed
+    &.is-readable-line-width {
+        --page-width: 700px;
+        --page-margins: none;
+        
+        & .markdown-preview-view,
+        & .publish-renderer > .markdown-preview-view > .markdown-preview-sizer
+        {
+            --sidebar-right-width: 0;
+            width: var(--page-width);
+            margin: var(--page-margins);
+        }
+    }
+
+    //Fix File Explorer Hover Color
+    .nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self.mod-active:hover {
+        --nav-parent-item-color-active: var(--text-on-accent);
+    }
+} 

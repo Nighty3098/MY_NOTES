@@ -1,0 +1,227 @@
+.theme-dark,
+.theme-light
+{
+    --checkbox-size: var(--font-text-size);
+
+    --checkbox-color: var(--accent);
+    --checkbox-color-hover: var(--dark-accent);
+
+    --checkbox-border-color: var(--accent);
+    --checkbox-border-color-hover: var(--dark-accent);
+
+    --checklist-done-color: var(--inactive);
+    --checklist-done-decoration: none;
+    --checklist-done-weight: 900;
+
+    --bullet: "\e802";
+    --bullet-font: var(--its);
+    
+    --list-indent: 25px;
+    --list-spacing: 1px; //keep at 1 or popover bullet alignment breaks(??)
+    --root-list-spacing: 10px;
+    --root-list-bullet-spacing: 0;
+    
+    --list-marker-min-width: 0;
+    --list-marker-color: var(--accent);
+    --list-marker-color-other: var(--accent2);
+    --list-marker-color-collapsed: var(--inactive);
+    --list-numbered-color: var(--headers);
+    
+    --list-bullet-size: calc(var(--font-text-size) / 2.5);
+    --list-bullet-transform: rotate(45deg);
+    --list-bullet-radius: var(--radius-h);
+    --list-bullet-box-shadow-color: var(--table); //Personal
+    --collapse-icon-color-collapsed: var(--inactive);
+    
+    --indentation-guide-color: var(--lines);
+    --indentation-guide-width: 2px;
+    --indentation-guide-width-active: var(--indentation-guide-width);
+    --indentation-guide-color-active: var(--accent);
+    --indentation-guide-source-indent: calc(var(--checkbox-size) / 3 * -1 + (var(--checkbox-size) / 2.5));
+    --indentation-guide-editing-indent: calc(var(--checkbox-size) / 3);
+    --indentation-guide-reading-indent: calc(var(--checkbox-size) * -1 + 2px);
+    
+    --list-color-1: var(--indentation-guide-color);
+    --list-color-2: var(--indentation-guide-color);
+    --list-color-3: var(--indentation-guide-color);
+    --list-color-4: var(--indentation-guide-color);
+    --list-color-5: var(--indentation-guide-color);
+    --list-color-6: var(--indentation-guide-color);
+}
+
+ul, ol { display: flow-root; }
+
+//Fix List Spacing Issues
+.markdown-rendered {
+    & ul,
+    & ol {
+        margin-block-start: var(--root-list-spacing);
+        margin-block-end: var(--root-list-spacing);
+        
+        & ul, 
+        & ol {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+    }
+}
+
+
+//Bullet List
+//Remove Obsidian Bullet
+body:not(.list-default-bullet) {
+    & .list-bullet {
+        &::after,
+        &::before { display: none; }
+    }
+    & ul > li:not(.task-list-item)::marker { margin-right: -10px; }
+    & .is-live-preview .cm-formatting-list-ul::before,
+    & ul > li:not(.task-list-item)::before {
+        content: var(--bullet);
+        font-family: var(--bullet-font);
+        font-size: var(--font-text-size);
+        font-weight: 100;
+    
+        color: var(--list-marker-color);
+        background-color: transparent;
+        
+        transform: unset;
+        position: unset;
+        
+        height: unset;
+    }
+    & ul > li:not(.task-list-item)::marker,
+    & .is-live-preview .cm-formatting-list-ul { color: transparent; }
+}
+
+//Alignment
+ul > li:not(.task-list-item)::before { 
+    float: inline-start; //Spaced list bullet fix
+    margin-inline-start: -21px;
+    margin-inline-end: 7px;
+}
+.markdown-preview-view .task-list-item-checkbox 
+{ margin-right: 8px; }
+ul > li.task-list-item.task-list-item .task-list-item-checkbox 
+{ margin-inline-start: calc(var(--checkbox-size) * -1.4); }
+
+
+//Both LP & Source
+.cm-formatting-list-ol, 
+.cm-formatting-list-ul { padding-inline-start: var(--root-list-bullet-spacing); }
+
+
+//Live Preview
+.is-live-preview.markdown-source-view.mod-cm6 {
+    //
+    & .cm-formatting-list-ul { 
+        font-family: var(--font-monospace); 
+        
+        &::before { 
+            margin-inline-end: -16px;
+            // margin-left: -5px;
+        }
+    }
+
+    //Checkboxes
+    & .task-list-label { 
+        margin-inline-start: 0; 
+
+        & .task-list-item-checkbox { margin: 0; }
+    }
+    
+} 
+
+//Indentation Line
+// .markdown-rendered.show-indentation-guide li > :is(ul, ol)::before {
+//     transform: translateX(var(--indentation-guide-reading-indent));
+// }
+
+
+
+
+//Numbered List
+ol > li::marker,
+.cm-line .cm-formatting-list-ol { color: var(--list-numbered-color); }
+
+
+
+//Rainbow Indentation Line Colors
+:is(ul, ol) > li,
+.cm-hmd-list-indent .cm-indent:nth-child(1)::before { --indentation-guide-color: var(--list-color-1); }
+:is(ul ul, ol ol) > li,
+.cm-hmd-list-indent .cm-indent:nth-child(2)::before { --indentation-guide-color: var(--list-color-2); }
+:is(ul ul ul, ol ol ol) > li,
+.cm-hmd-list-indent .cm-indent:nth-child(3)::before { --indentation-guide-color: var(--list-color-3); }
+:is(ul ul ul ul, ol ol ol ol) > li,
+.cm-hmd-list-indent .cm-indent:nth-child(4)::before { --indentation-guide-color: var(--list-color-4); }
+:is(ul ul ul ul ul, ol ol ol ol ol) > li,
+.cm-hmd-list-indent .cm-indent:nth-child(5)::before { --indentation-guide-color: var(--list-color-5); }
+:is(ul ul ul ul ul ul, ol ol ol ol ol ol) > li,
+.cm-hmd-list-indent .cm-indent:nth-child(6)::before { --indentation-guide-color: var(--list-color-6); }
+
+
+
+// Spaced Lists: Fix breaking when Space in between Lists
+body:not(.disable-spaced-lists) :is(ul, ol) li:not(:first-of-type) p:first-of-type 
+{ margin-block-start: var(--p-spacing); }
+
+:is(.markdown-source-view, .markdown-rendered) :is(ul, ol) li 
+{ 
+    padding-top: unset; 
+    padding-bottom: var(--list-spacing); 
+    margin-block-start: var(--list-spacing);
+}
+
+
+
+//List Collapse Outline
+li.is-collapsed .list-bullet:after,
+.is-collapsed ~ .cm-formatting-list .list-bullet:after 
+{ box-shadow: 0 0 0 4px var(--list-bullet-box-shadow-color); }
+
+
+
+// Right to Left
+// .rtl ul li::before {
+//     float: right;
+//     margin-left: unset;
+//     margin-right: -22px;
+// }
+
+
+/*List Arrows*/
+.markdown-rendered .list-collapse-indicator {
+    margin-inline-start: -2.2em;
+    padding-inline-end: 0;
+}
+
+
+
+
+// .markdown-preview-view ul .list-collapse-indicator {
+//     padding-left: 1em;
+//     color: var(--soft-text);
+// }
+// .snug-bul-arrow:not(.is-mobile) .is-live-preview .HyperMD-list-line.HyperMD-list-line.HyperMD-list-line:not(.HyperMD-task-line) .collapse-indicator {
+//     padding-right: 0;
+//     margin-right: -2px;
+// }
+// .markdown-preview-view ol .list-collapse-indicator {
+//     padding-left: .5em;
+//     position: relative;
+// }
+// ol li:nth-child(n+10):nth-child(-n+99) > .list-collapse-indicator {
+//     padding-left: 0em;
+// }
+// ol li:nth-child(n+100):nth-child(-n+999) > .list-collapse-indicator {
+//     padding-left: 0em;
+//     margin-left: -57px;
+// }
+// .markdown-preview-view .task-list-item .list-collapse-indicator {
+//     padding-left: .5em;
+//     position: relative;
+// }
+
+
+

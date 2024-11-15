@@ -1,0 +1,25 @@
+/*-- Publish Settings --*/
+
+
+//Upload Flair
+.publish-upload-item .flair {
+    background-color: var(--interactive-normal);
+    color: var(--text);
+}
+
+.publish-upload-item-title {
+    color: var(--text);
+    font-weight: 600;
+}
+
+
+.publish-change-list {
+    & .tree-item-children { --nav-item-children-margin-left: 12px; }
+
+    & .file-tree-item-checkbox { --checkbox-border-color-hover: var(--text); }
+
+    & .tree-item-self.mod-file { margin-left: 16px; }
+}
+
+
+

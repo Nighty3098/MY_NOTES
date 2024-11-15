@@ -1,0 +1,56 @@
+@use 'callout-positions';
+@use 'callout-adjustments';
+@use 'callout-coloring';
+@use 'callout-sizing';
+@use 'callout-text-adj';
+
+@use 'callout-type-infobox';
+@use 'callout-type-statblocks';
+
+@use 'callout-type-img-grids';
+@use 'callout-type-cards';
+@use 'callout-type-captions';
+@use 'callout-type-recite';
+@use 'callout-type-table';
+@use 'callout-type-blank';
+
+@use 'callout-type-metadata';
+@use 'callout-type-columns';
+@use 'callout-type-kanban';
+@use 'callout-type-timeline';
+
+@use 'callout-type-kith';
+@use 'callout-type-checks';
+
+
+@use 'callout-type-asides';
+@use 'callout-type-quotes';
+
+@use 'callout-styling';
+
+
+
+//Fix Obsidian's Callout Print Display Issue
+@media print {
+    .print.print .markdown-preview-view .callout {
+        &:is(
+            [data-callout*="cards"],
+            [data-callout*="column"]
+        ) .callout-content { display: grid !important; }
+
+        &:is(
+            [data-callout*="column"][data-callout-metadata*="flex"]
+        ) .callout-content { display: flex !important; }
+    }
+}
+
+//Fix Table Editor Issues for Cards
+.markdown-rendered table tr { height: unset; }
+
+.callout.callout.callout {
+    --callout-blend-mode: normal;
+    
+    margin: var(--callout-margin);
+    z-index: 1;
+    position: relative;
+}

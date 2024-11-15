@@ -1,0 +1,128 @@
+.callout-original .callout,
+.callout:is(
+    [data-callout-metadata~='callout-original'], 
+    [data-callout-metadata~='co-o']
+) {
+    --callout-padding: 0;
+    --callout-title-padding: 10px 15px;
+    --callout-content-padding: 5px 15px;
+    --callout-border-opacity: 1;
+    --callout-margin: 5px 5px 5px 0;
+    --callout-border-width: 0 0 0 3px;
+    
+    background-color: var(--note, var(--background-primary));
+    box-shadow: var(--shadow-m);
+    margin: var(--callout-margin);
+
+    & .callout-title {
+        background: rgba(var(--callout-color), .1);
+    }
+}
+
+.callout-block .callout,
+.callout:is(
+    [data-callout-metadata~='callout-block'], 
+    [data-callout-metadata~='co-block']
+) {
+
+    --callout-padding: 0;
+    --callout-content-padding: 0 10px;
+
+    --callout-title-padding: 6px 10px;
+    --callout-title-background: var(--callout-color);
+    --callout-border-opacity: .5;
+
+    & .callout-title { 
+        background-color: rgba(var(--callout-title-background, var(--callout-color)), .2); 
+    }
+    // & .callout-title-inner { color: var(--text-dl); }
+
+    &.is-collapsible:not(.is-collapsed) > .callout-content {
+        border-bottom: 1px solid rgba(var(--callout-color), var(--callout-border-opacity));
+    }
+}
+
+// .callout-side-icon .callout,
+// .callout:is(
+//     [data-callout-metadata~='callout-side-icon'], 
+//     [data-callout-metadata~='co-si']
+// ) {
+//     --callout-title-padding: 0 10px 0 10px;
+//     --callout-title-background: blue;
+//     --callout-border-width: 0;
+//     background-color: transparent;
+
+//     display: flex;
+//     flex-direction: row-reverse;
+//     align-items: center;
+//     & > .callout-title > .callout-title-inner { display: none; }
+//     & > .callout-title { 
+//         background-color: var(--callout-title-background);
+//     }
+// }
+
+.callout-alternate-line .callout,
+.callout.callout[data-callout-metadata~="alt-line"] {
+    border: 0;
+    background-color: transparent;
+    --callout-padding: 0;
+    --callout-title-padding: 5px 10px;
+    --callout-content-padding: 0px 10px 10px;
+
+    & .callout-title {
+        background: transparent; 
+        border-bottom: 2px solid var(--table, var(--background-modifier-border));
+        // border-bottom: 2px solid rgb(var(--callout-color), 0.5);
+        // padding: 5px 0;
+    }
+    & .callout-fold { color: rgb(var(--callout-color)); }
+    & .callout-content.callout-content {
+        border: 0;
+        border-bottom: 1px solid rgba(var(--callout-color), 0.5);
+    }
+}
+
+.callout-bordered .callout:not(
+    [data-callout-metadata~='callout-block'], 
+    [data-callout-metadata~='co-block'],
+    [data-callout-metadata~='callout-original'], 
+    [data-callout-metadata~='co-o'],
+    [data-callout-metadata~="alt-line"]
+):not(
+    [data-callout="aside"],
+    [data-callout="blank"],
+    [data-callout="captions"],
+    [data-callout="cards"],
+    [data-callout="checks"],
+    [data-callout="column"],
+    [data-callout="grid"],
+    [data-callout="infobox"],
+    [data-callout="kanban"],
+    [data-callout="metadata"],
+    [data-callout="quotes"],
+    [data-callout="recite"],
+    [data-callout="statblocks"],
+    [data-callout="timeline"]
+),
+.callout[data-callout-metadata~="callout-bordered"] {
+    --callout-border-width: 2px;
+    --callout-title-padding: 5px;
+    --callout-content-padding: 0px 10px 10px;
+    --callout-shadow: 0px 0px 0px 1px var(--outline);
+
+    &[data-callout-metadata*="bg-"] {
+        --callout-border-color: var(--callout-background);
+        border-color: var(--callout-border-color);
+    }
+}
+
+
+// .callout-outline .callout,
+// .callout.callout:is([data-callout-metadata~="callout-outline"], [data-callout-metadata~="c-out"])
+// {
+//     background-color: transparent;
+//     --callout-border-opacity: .7;
+//     --callout-border-width: 1px;
+
+//     & .callout-content { }
+// }

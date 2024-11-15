@@ -1,0 +1,47 @@
+/*Live Preview Indent Style*/
+.alternate-indent .is-live-preview {
+    --indentation-guide-color: transparent;
+    --indentation-guide-color-active: transparent;
+    --list-color-1: var(--indentation-guide-color);
+    --list-color-2: var(--indentation-guide-color);
+    --list-color-3: var(--indentation-guide-color);
+    --list-color-4: var(--indentation-guide-color);
+    --list-color-5: var(--indentation-guide-color);
+    --list-color-6: var(--indentation-guide-color);
+
+    .cm-hmd-list-indent
+    { margin-right: 5px; margin-left: -2px; }
+
+    & .HyperMD-list-line-2 .cm-hmd-list-indent  { background-color: var(--theme-rainbow-1); }
+    & .HyperMD-list-line-3 .cm-hmd-list-indent  { background-color: var(--theme-rainbow-2); }
+    & .HyperMD-list-line-4 .cm-hmd-list-indent  { background-color: var(--theme-rainbow-3); }
+    & .HyperMD-list-line-5 .cm-hmd-list-indent  { background-color: var(--theme-rainbow-4); }
+    & .HyperMD-list-line-6 .cm-hmd-list-indent  { background-color: var(--theme-rainbow-5); }
+    & .HyperMD-list-line-7 .cm-hmd-list-indent  { background-color: var(--theme-rainbow-6); }
+    & .HyperMD-list-line-8 .cm-hmd-list-indent  { background-color: var(--rainbow-1); }
+    & .HyperMD-list-line-9 .cm-hmd-list-indent  { background-color: var(--rainbow-2); }
+    & .HyperMD-list-line-10 .cm-hmd-list-indent { background-color: var(--rainbow-3); }
+    & .HyperMD-list-line-11 .cm-hmd-list-indent { background-color: var(--rainbow-4); }
+    & .HyperMD-list-line-12 .cm-hmd-list-indent { background-color: var(--rainbow-5); }
+    & .HyperMD-list-line-13 .cm-hmd-list-indent { background-color: var(--rainbow-6); }
+
+    //Arrow Color
+    & .HyperMD-list-line-2,
+    & .HyperMD-list-line-3,
+    & .HyperMD-list-line-4,
+    & .HyperMD-list-line-5,
+    & .HyperMD-list-line-6,
+    & .HyperMD-list-line-7,
+    & .HyperMD-list-line-8,
+    & .HyperMD-list-line-9,
+    & .HyperMD-list-line-10,
+    & .HyperMD-list-line-11,
+    & .HyperMD-list-line-12,
+    & .HyperMD-list-line-13 
+    { 
+        --collapse-icon-color: var(--text-dl); 
+        --collapse-icon-color-collapsed: var(--text-dl); 
+    }
+}
+
+

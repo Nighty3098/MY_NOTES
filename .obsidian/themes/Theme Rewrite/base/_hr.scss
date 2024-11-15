@@ -1,0 +1,75 @@
+body {
+    --hr-icon-symbol: "\e817";
+    --hr-icon-font: var(--its);
+    --hr-icon-background: var(--note);
+    --hr-icon-padding-x: 4px;
+    
+    --hr-icon-color: var(--headers);
+    --hr-color: var(--hr);
+    --hr-thickness: 2px;
+    --hr-width: auto;
+    --hr-alignment: -50%, -50%;
+    --hr-text-offset: 12px;
+}
+
+
+/*Stylized HR/Horizontal Line*/
+.hr.cm-line:not(.cm-active),
+.markdown-rendered hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--hr-width);
+
+    // //From @FireIsGood
+    // border-image-slice: 1;
+    // border-image-source: linear-gradient(
+    //     to right,
+    //     var(--hr-color),
+    //     var(--hr-color) calc(50% - var(--hr-text-offset)),
+
+    //     transparent calc(50% - var(--hr-text-offset)),
+    //     transparent calc(50% + var(--hr-text-offset)),
+
+    //     var(--hr-color) calc(50% + var(--hr-text-offset)),
+    //     var(--hr-color)
+    // );
+
+    &::after {
+        content: var(--hr-icon-symbol);
+        font-family: var(--hr-icon-font);
+        font-size: var(--font-text-size);
+
+        display: inline-block;
+        position: absolute;
+        
+        left: 50%;
+        transform: translate(var(--hr-alignment)) rotate(0deg);
+        transform-origin: 50% 50%;
+        
+        color: transparent;
+        text-shadow: 0 0 0 var(--hr-icon-color);
+
+        padding: 0 var(--hr-icon-padding-x); //Symbol Padding
+        background-color: var(--hr-icon-background); //Color bg to cover line
+    }
+}
+//Live Preview hr
+.hr.cm-line { 
+    border-top: var(--hr-thickness) solid var(--hr); 
+    --hr-color: transparent; 
+}
+
+
+
+//Unset Live Preview's Contain Paint for HR & Plugins
+.markdown-source-view.mod-cm6 .cm-content :is(.hr, .HyperMD-hr) { 
+    contain: style !important;
+}
+
+//Fix Sidebar HR Icon BG Color
+:is(.mod-left-split, .mod-right-split) {
+    --hr-icon-background: var(--side-bar);
+}
+
+//Fix Community hr issue
+.community-modal-readme hr::after { display: none; }

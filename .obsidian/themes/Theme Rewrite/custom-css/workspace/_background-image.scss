@@ -1,0 +1,115 @@
+.background-image {
+    --background-image-url: url();
+    --background-image-height: 50%;
+    --background-image-width: 50%;
+    --background-image-blur: 11px;
+
+    --background-image-shadow: var(--outline);
+    
+    --background-image-opacity: 90%;
+    --background-image-sidebar-opacity: var(--background-image-opacity);
+    --background-image-note-padding: 20px;
+    --background-image-note-width: calc(var(--file-line-width) + var(--background-image-note-padding));
+    --file-margins: 0 0;
+    
+    --scrollbar-bg: rgba(var(--note-rgb));
+
+    &.theme-light {
+        --background-image-shadow: #0E0F1530;
+    }
+}
+
+
+
+body.background-image {
+    //Background Image
+    &:is(.theme-dark, .theme-light) .workspace {
+        background: var(--background-image-url);
+        // background-image: var(--background-image-url);
+        background-repeat: no-repeat;
+        background-position: var(--background-image-width) var(--background-image-height);
+        background-size: cover;
+    }
+    
+    //Background Image Blur
+    & .workspace-tab-header-container,
+    & .workspace > .workspace-leaf,
+    & .workspace-split.mod-root .view-content,
+    & .workspace-tabs .workspace-leaf
+    { backdrop-filter: blur(var(--background-image-blur)); }
+
+    // Note
+    & .workspace-leaf-content[data-type="style-settings"],
+    & .kanban-plugin.kanban-plugin,
+    & .markdown-preview-section.markdown-preview-section:not(.kanban-plugin__markdown-preview-view),
+    & .cm-editor .cm-contentContainer,
+    & .cm-editor .inline-title
+    { background: rgba(var(--note-rgb), var(--background-image-opacity)); }
+
+
+    & .markdown-preview-section.markdown-preview-section:not(.kanban-plugin__markdown-preview-view),
+    & .cm-editor .cm-contentContainer 
+    { height: auto; }
+  
+    // Sidebars
+    // .workspace-tab-header-inner
+    &.is-focused .workspace-leaf.mod-active .view-header,
+    & .view-header,
+    & .view-header-title-parent, 
+    & .view-header-title,
+    & :is(.view-header-nav-buttons, .view-actions) > .clickable-icon,
+
+    & .workspace-split:is(.mod-left-split, .mod-right-split) .workspace-tab-container,
+    & .workspace-tabs 
+    { background: rgba(var(--note-rgb), var(--background-image-sidebar-opacity)); }    
+
+
+    
+    // --- ---
+    // Transparent
+    & .kanban-plugin.kanban-plugin,
+    & .workspace > .workspace-split,
+    & .workspace-split.mod-root .view-content,
+    // & .workspace-tab-header-container,
+    & .workspace-tabs .workspace-leaf,
+    &.is-focused .workspace-tabs.mod-top,
+    & .workspace-tabs.mod-top,
+
+    //Theme Background Color Overrides
+    & :is(.markdown-preview-view, .markdown-source-view)
+    { background: transparent; }
+
+
+
+    // --- ---
+    //Note Padding Fixes
+    & :is(
+        .markdown-preview-view,
+        .markdown-source-view.mod-cm6 .cm-scroller 
+    ) { 
+        padding-top: 0; 
+        padding-bottom: 0;
+    }
+    
+    & .cm-editor .inline-title,
+    & .markdown-preview-section,
+    & .view-content .cm-s-obsidian > .cm-editor .cm-contentContainer
+    {
+        height: auto;
+        padding: 0 var(--background-image-note-padding);
+        box-shadow: 0 0 20px var(--background-image-shadow);
+        
+        // width: var(--background-image-note-width);
+    }
+    & .cm-contentContainer .cm-gutter { margin-left: calc(var(--background-image-note-padding) * -1); }
+    
+    
+    //height 100%
+    // & .workspace-leaf-content { justify-content: center; } 
+    
+    //Undo
+    & .markdown-embed-content .markdown-preview-section:not(.kanban-plugin__markdown-preview-view),
+    & .popover.popover .markdown-preview-section {
+        box-shadow: unset;
+    }
+}

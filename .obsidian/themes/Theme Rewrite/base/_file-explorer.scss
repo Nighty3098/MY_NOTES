@@ -1,0 +1,113 @@
+body,
+body.mod-rtl {
+    //Vault Title
+    --vault-name-font-size: 20px;
+    --vault-name-font-weight: var(--font-bold);
+    --vault-name-color: var(--headers);
+    --vault-font: var(--font);
+
+    
+    //File Explorer
+    --nav-item-color: var(--text);
+    --nav-item-color-hover: var(--text-dl);
+    --nav-item-color-active: var(--text-dl);
+    --nav-item-color-highlighted: var(--text-dl); //Dragged item
+    --folder-open-text-color: var(--text);
+
+    --nav-item-background-hover: var(--dark-accent);
+    --nav-item-background-active: var(--dark-accent);
+    --nav-item-background-selected: var(--hvr);
+    
+    --nav-item-border-width: 0px;//Personal
+    --nav-item-border-color: var(--lite-accent);//Personal
+    --nav-item-background-border-color-hover: var(--dark-accent);
+
+    --nav-item-padding: 4px 8px;
+    --explorer-padding: 4px 4px 4px 3px;
+    --explorer-item-padding: 2px 8px;
+    --nav-item-children-padding-left: 8px;
+    --nav-item-children-margin-left: 15px;
+    
+    --folder-text-color: var(--nav-item-color);
+    --file-text-color: var(--nav-item-color);
+
+    --nav-item-size: var(--font-ui-small);
+    --nav-item-weight: 500;
+    --nav-item-weight-hover: 700;
+    --nav-item-weight-active: 700;
+    --nav-item-white-space: wrap;
+    
+    --nav-indentation-guide-width: 2px;
+    --nav-indentation-guide-color: var(--lines);
+
+    --folder-weight: 700;
+    --folder-weight-hover: var(--folder-weight);
+}
+
+// Hide Collapse Indicator
+body:not(.folder-arrow-display) .nav-folder .tree-item-icon.collapse-icon,
+.nav-folder-collapse-indicator,
+.tree-item-icon.nav-folder-collapse-indicator { display: none; }
+
+//Thick Folder Text
+.nav-folder-title { --nav-item-weight: var(--folder-weight); }
+.nav-folder-title:hover 
+{ --nav-item-weight-hover: var(--folder-weight-hover); }
+
+//Fix File Explorer
+.nav-folder.mod-root > .nav-folder-title:hover 
+{ color: var(--dark-accent); }
+
+.nav-files-container { 
+    padding: var(--explorer-padding);
+}
+
+.nav-folder.is-collapsed .nav-folder-title:not(.is-being-dragged) { 
+    color: var(--folder-text-color); 
+}
+.nav-folder:not(.mod-root) > .nav-folder-title:not(.is-being-dragged) {
+    color: var(--folder-open-text-color);
+}
+.nav-folder-title.nav-folder-title.is-active.is-active {
+    color: var(--text-dl);
+    
+    & .nav-folder-title-content::before { color: var(--text-dl); }
+}
+.nav-file-title { color: var(--file-text-color); }
+
+
+.nav-file-tag {
+    margin-left: auto;
+}
+
+
+//Hover
+// .nav-file-title:hover .nav-file-title-content,
+// .nav-folder-title:hover .nav-folder-title-content {
+//     text-decoration-line: underline;
+//     text-decoration-color: var(--nav-item-decoration-border-color);
+//     text-decoration-thickness: var(--nav-item-decoration-border-width);
+// }
+
+//Vault Name
+// .nav-folder.mod-root > .nav-folder-title,
+// .workspace-drawer-vault-name
+// { font-family: var(--vault-font); }
+
+//nav-folder
+.nav-folder.mod-root > .nav-folder-children {
+    & .nav-folder > .nav-folder-title,
+    & .nav-file > .nav-file-title { 
+        // align-items: center;
+        border: 2px solid transparent; 
+        margin-bottom: 0; 
+        padding: var(--explorer-item-padding);
+
+        &:hover { border-color: var(--nav-item-background-border-color-hover); }
+    }
+
+    // & .has-focus {
+    //     border-color: var(--nav-item-border-color);
+    // }
+}
+
