@@ -12,31 +12,52 @@ cssclasses:
 <img src="https://github.com/Nighty3098/MY_NOTES/blob/main/obsidian-banner-2.png?raw=true" style="border-radius: 30px" />
 
 
-````col
-height=max
-===
-```col-md
-# NOTES
 
-```dataview  
-TABLE WITHOUT ID  
-link(file.name) AS "`ris:StickyNote` Latests notes"
-FROM "/"  
-WHERE file.mtime >= date(today) - dur(30 days)  
-AND file.name != this.file.name  
-AND !contains(file.path, "z_Assets")  
-AND !contains(file.path, "Inline Scripts")  
-AND !contains(file.path, "z_Templates")  
-AND !contains(file.path, "daily notes")  
-AND !contains(file.path, "BRAT")  
-SORT file.mtime DESC  
-LIMIT 10  
+```widgets
+type: clock
 ```
 
-```col-md
-# HOME
+```widgets
+type: quote
+quote: 💚 Better late than never
+author: Nighty3098
 ```
-````
 
 
+--- start-multi-column: ExampleRegion1  
+```column-settings  
+number of columns: 3   
+alignment: [Left, Center, Left]
+border: off
+shadow: off
+```
+
+--- end-column ---
+
+#Tasks 
+
+#Algorithms
+#C 
+#CPP 
+#Git 
+
+#qt 
+#python
+#Project
+#MySql
+#JavaScript
+
+#English 
+#Geometry 
+#ComputerScience 
+#Statistic 
+#SocialStudies 
+#Russian 
+#Math 
+
+
+--- end-column ---
+
+
+--- end-multi-column
 

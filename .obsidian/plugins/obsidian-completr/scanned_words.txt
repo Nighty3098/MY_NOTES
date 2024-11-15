@@ -968,6 +968,7 @@ Space
 Show
 Showcase
 SocialStudies
+StickyNote
 moc
 modified
 my
@@ -2609,6 +2610,7 @@ coloring
 column
 colored
 cap
+col
 hide
 hosted
 heading
@@ -3583,6 +3585,8 @@ psu
 part
 pictures
 pill
+python
+plugin
 ITS
 In
 Included
@@ -4561,6 +4565,7 @@ Tables
 Turn
 Table
 Tags
+Tasks
 by
 better
 br
@@ -7087,6 +7092,7 @@ GAK
 GZW
 GbP
 Geometry
+Git
 Check
 Checkboxes
 Callouts
@@ -7534,6 +7540,7 @@ Classes
 Centers
 Create
 ComputerScience
+CPP
 out
 on
 of
@@ -8418,6 +8425,7 @@ Portrait
 Profile
 Photo
 Precise
+Project
 Depreciated
 Download
 Dark
@@ -9908,6 +9916,7 @@ AIfY
 Add
 Apply
 Accent
+Algorithms
 you
 your
 yt
@@ -10884,6 +10893,7 @@ levels
 lists
 list
 lines
+ldots
 and
 are
 across
@@ -11846,6 +11856,7 @@ icons
 inspired
 into
 iframe
+img
 used
 using
 upon
@@ -12887,6 +12898,7 @@ Note
 Notion
 Numbers
 Neon
+NOTES
 need
 near
 ns
@@ -14453,6 +14465,8 @@ specific
 sub
 styled
 sized
+src
+settings
 vault
 vn
 vY
@@ -15410,6 +15424,8 @@ row
 rounded
 rectangle
 ratio
+radius
+ris
 work
 with
 within
@@ -17854,6 +17870,7 @@ Links
 Location
 Left
 Lists
+LogInsight
 Heading
 Horizontal
 Headings
@@ -19282,6 +19299,7 @@ MLD
 MbAh
 Markdown
 Math
+MySql
 Zoom
 ZTz
 ZW
@@ -25675,6 +25693,7 @@ JGs
 JfV
 JCl
 Justifies
+JavaScript
 ümi
 üv
 üs

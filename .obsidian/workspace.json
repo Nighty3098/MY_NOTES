@@ -22,20 +22,6 @@
               "icon": "lucide-file",
               "title": "Home"
             }
-          },
-          {
-            "id": "762f4e20921256f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Education/SocialStudies/Политическая власть.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Политическая власть"
-            }
           }
         ]
       }
@@ -49,7 +35,6 @@
       {
         "id": "4cdeba3478db6085",
         "type": "tabs",
-        "dimension": 70.70457354758962,
         "children": [
           {
             "id": "ed15b78cf26db7db",
@@ -60,7 +45,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Файловый менеджер"
+              "title": "Files"
             }
           },
           {
@@ -70,23 +55,16 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Закладки"
+              "title": "Bookmarks"
             }
-          }
-        ]
-      },
-      {
-        "id": "0db6a1e8d4475866",
-        "type": "tabs",
-        "dimension": 29.295426452410382,
-        "children": [
+          },
           {
             "id": "f6a598ceafb5e60c",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"tags\"]",
+                "query": "tag:#Math",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +72,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Поиск"
+              "title": "Search"
             }
           },
           {
@@ -108,11 +86,10 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Все свойства"
+              "title": "All properties"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,7 +158,7 @@
                 "file": "Home.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Home"
+              "title": "Outline of Home"
             }
           }
         ],
@@ -189,33 +166,42 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 360.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "homepage:Open homepage": false,
-      "graph:Граф": false,
-      "switcher:Меню быстрого перехода": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
-      "audio-recorder:Начать/остановить запись": false,
-      "markdown-importer:Импорт Markdown-файлов": false,
-      "workspaces:Пространства": false,
-      "publish:Публикация изменений": false,
-      "random-note:Открыть случайную заметку": false,
-      "zk-prefixer:Создать заметку с уникальным идентификатором": false,
-      "obsidian-kanban:Создать новую доску": false
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "zk-prefixer:Create new unique note": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
+      "obsidian-kanban:Create new board": false,
+      "homepage:Open homepage": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Education/SocialStudies/Политическая власть.md",
     "Home.md",
-    "[.md",
-    "obsidian-banner-2.png",
+    "Education/Statistic/Пересечение независимых событий/Пересечение независимых событий.md",
+    "Education/Statistic/Пересечение независимых событий/Примеры задач.md",
     "Education/Education.md",
+    "LatestNotes.md",
+    "Projects/LogInsight/Tasks.md",
+    "Education/Math/1/Tasks.md",
+    "Снимок экрана 2024-11-15 190620.png",
+    "Education/Math/1",
+    "Education/Math",
+    "obsidian-banner-2.png",
+    "Education/SocialStudies/Политическая власть.md",
+    "[.md",
     "Education/Statistic/объединение независимых событий/Объединение независимых событий.md",
     "obsidian-banner-2.png.md",
     "Guide/CSS-Classes.md",
@@ -235,8 +221,6 @@
     "ITS Icons.yml",
     "Snippets/Defunct/Theme - All Alternate Themes.css",
     "Snippets/Defunct/S - Kanban.css",
-    "Snippets/Defunct/S - Folder Styles.css",
-    "Snippets/Defunct/S - Aside.css",
     "Slide Shows/Style Settings + Alternate Themes.md",
     "Slide Shows/Kanban.md",
     "Slide Shows/D&D Vault.md",
@@ -247,16 +231,10 @@
     "Images/Theme-Tangerine-Dunes--Darkmode.png",
     "Images/Theme-SlRvb-Gray--Lightmode.png",
     "Images/Theme-SlRvb-Gray--Darkmode.png",
-    "Images/Theme-SlRvb-Blue--Lightmode.png",
     "Guide/Snippet--Folder-Styles.md",
     "Guide/Kanban.md",
     "Guide/Image-Positions.md",
     "Guide/HTML-I-Attributes.md",
-    "Guide/Embed-Adjustments.md",
-    "Guide/Callouts.md",
-    "Guide/Alternate-Themes.md",
-    "Guide/Alternate-Admonitions.md",
-    "Education/Statistic/Пересечение независимых событий/Примеры задач.md",
     "Без названия.canvas",
     "Untitled.canvas"
   ]

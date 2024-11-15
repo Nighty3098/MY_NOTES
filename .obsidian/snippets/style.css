@@ -44,3 +44,15 @@ body {
 .two-columns {
   column-count: var(--column-count, 2);
 }
+
+.top-right-iframe iframe {
+  position: absolute;
+  top: -400px;
+  right: -270px;
+  left: auto;
+  bottom: auto;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: 1;
+}
