@@ -5,5 +5,7 @@
   "obsidian-tikzjax",
   "homepage",
   "obsidian-completr",
-  "obsidian-icons-plugin"
+  "obsidian-icons-plugin",
+  "multi-column-markdown",
+  "obsidian-columns"
 ]

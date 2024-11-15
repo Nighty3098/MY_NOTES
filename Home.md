@@ -9,9 +9,14 @@ cssclasses:
   - hide-properties
   - hide-title
 ---
-<img src="" style="border-radius: 30px" />
+<img src="https://github.com/Nighty3098/MY_NOTES/blob/main/obsidian-banner-2.png?raw=true" style="border-radius: 30px" />
 
 
+````col
+height=max
+===
+```col-md
+# NOTES
 
 ```dataview  
 TABLE WITHOUT ID  
@@ -27,3 +32,11 @@ AND !contains(file.path, "BRAT")
 SORT file.mtime DESC  
 LIMIT 10  
 ```
+
+```col-md
+# HOME
+```
+````
+
+
+

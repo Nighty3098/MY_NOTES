@@ -35,3 +35,12 @@ body {
 .mod-close {
   display: none;
 }
+
+
+.two-columns {
+  columns: 2;
+}
+
+.two-columns {
+  column-count: var(--column-count, 2);
+}

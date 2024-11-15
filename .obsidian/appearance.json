@@ -13,7 +13,6 @@
     "rounded_table",
     "list_styling",
     "safari_tabs",
-    "style",
     "S - Callouts",
     "S - Encoded Fonts",
     "S - Embed Adjustments",
@@ -22,7 +21,8 @@
     "S - External Link Icons",
     "S - Folder Styles Rewritten",
     "S - Images Adjustments",
-    "S - Checkboxes"
+    "S - Checkboxes",
+    "style"
   ],
   "nativeMenus": false
 }
