@@ -6,6 +6,8 @@
   "homepage",
   "obsidian-completr",
   "obsidian-icons-plugin",
-  "multi-column-markdown",
-  "widgets"
+  "widgets",
+  "obsidian-columns",
+  "obsidian-banners",
+  "obsidian-icon-folder"
 ]
