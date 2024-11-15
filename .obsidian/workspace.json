@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "LatestNotes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "LatestNotes"
             }
           }
         ],
@@ -170,10 +170,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home.md"
+                "file": "LatestNotes.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Home"
+              "title": "Outline of LatestNotes"
             }
           }
         ],
@@ -203,12 +203,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "ed15b78cf26db7db",
+  "active": "49129ef947f7664a",
   "lastOpenFiles": [
+    "Home.md",
     "Education/Statistic/объединение независимых событий/Объединение независимых событий.md",
     "Education/Statistic/Пересечение независимых событий/Пересечение независимых событий.md",
     "Education/Statistic/Пересечение независимых событий/Примеры задач.md",
-    "Home.md",
     "Education/Math/1/Tasks.md",
     "LatestNotes.md",
     "imgs/Снимок экрана 2024-11-15 190620.png",
