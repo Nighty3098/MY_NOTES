@@ -144,7 +144,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "imgs/header.png"
+            "file": "Home.md"
           },
           "icon": "lucide-list",
           "title": "Outline"
@@ -155,6 +155,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "widgets:Add widget": false,
       "markdown-importer:Open format converter": false,
       "zk-prefixer:Create new unique note": false,
       "random-note:Open random note": false,
@@ -171,13 +172,14 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "39c5756aa6b5a337",
   "lastOpenFiles": [
+    "obsidian-banner-2.png",
+    "Home.md",
     "Dev/JavaScript/Работа с типами данных в JavaScript.md",
     "Dev/Python/🐍 Modules/dateparser.md",
     "Dev/Python/🐍 Modules/Работа со временем.md",
     "Dev/С++/Работа с памятью/Управление памятью в C++.md",
-    "Home.md",
     "Dev/С++/Двоичное дерево поиска.md",
     "Projects/IPSA/Tasks.md",
     "Projects/LogInsight/LogInsight_README.md",
@@ -198,7 +200,6 @@
     "Dev/Python/🐍 Modules/Обрабатываем номера телефонов.md",
     "Dev/Python/🐍 Modules/Лямбда функции.md",
     "Dev/Python/🐍 Modules/Копирование объектов.md",
-    "Dev/Python/🐍 Modules/Дизассемблирование.md",
     "imgs/Pasted image 20240529201026.png",
     "imgs/header.png",
     "🧭 Projects/TGSB"
