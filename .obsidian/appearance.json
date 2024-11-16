@@ -4,7 +4,7 @@
   "interfaceFontFamily": "SF Pro Display",
   "textFontFamily": "Iosevka Nerd Font Mono",
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
-  "baseFontSize": 17,
+  "baseFontSize": 16,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "banner",
@@ -22,8 +22,8 @@
     "S - Folder Styles Rewritten",
     "S - Images Adjustments",
     "S - Checkboxes",
-    "style",
-    "file_explorer"
+    "file_explorer",
+    "style"
   ],
   "nativeMenus": false
 }

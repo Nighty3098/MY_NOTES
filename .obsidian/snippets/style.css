@@ -7,24 +7,6 @@
   border: solid var(--text-accent);
 }
 
-.callout::after {
-  content: "";
-  width: 48px;
-  height: 15px;
-  border-radius: 10px;
-  position: absolute;
-  display: inline-block;
-  background: var(--callout-color);
-  margin-top: 0.3%;
-  margin-left: auto;
-  border: var(--border-lowOp);
-  box-shadow: var(--sbs);
-}
-
-.callout {
-  background: transparent;
-}
-
 body {
   --callout-border-width: 2px;
   --callout-border-opacity: 1;
@@ -62,4 +44,43 @@ body {
   padding: 0px;
   margin: 0px;
   width: 100%;
+}
+
+.launchpad .inline-title {
+  display: none;
+}
+
+.launchpad .metadata-properties-heading {
+  display: none;
+}
+
+.launchpad .metadata-content {
+  display: none;
+}
+
+.launchpad .main_header {
+  text-align: center;
+  font-size: 60px;
+}
+
+.launchpad .clock_widget {
+  display: flex;
+  justify-content: center;
+}
+
+.launchpad .note_2 {
+  display: block;
+  margin: auto auto;
+}
+
+.launchpad .note_2 .note {
+  align-content: left;
+  text-align: left;
+  font-size: xx-large;
+}
+
+.launchpad .note_2 .author {
+  align-content: right;
+  text-align: right;
+  font-size: small;
 }
