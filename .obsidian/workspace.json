@@ -14,31 +14,37 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Launchpad.md",
-                "mode": "preview",
+                "file": "Home.md",
+                "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Launchpad"
+              "title": "Home"
             }
           },
           {
-            "id": "2793c669ca37470f",
+            "id": "f685d23299ca3104",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "Launchpad.md",
-                "mode": "source",
-                "source": false
+                "file": "Projects/CodeKeeper/Tasks/UI.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "list",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false,
+                    false
+                  ]
+                }
               },
-              "icon": "lucide-file",
-              "title": "Launchpad"
+              "icon": "lucide-trello",
+              "title": "UI"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -79,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Math",
+                "query": "tag:#IPSA",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +93,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Поиск"
             }
           },
           {
@@ -170,10 +176,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Launchpad.md"
+                "file": "Home.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Launchpad"
+              "title": "Структура Home"
             }
           },
           {
@@ -215,10 +221,21 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "2793c669ca37470f",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Projects/CodeKeeper/Tasks/UI.md",
+    "Projects/CodeKeeper/Tasks/Features.md",
+    "Projects/CodeKeeper/Tasks/DB.md",
+    "Home.md",
+    "Projects/CodeKeeper/CodeKeeper.md",
+    "imgs/Pasted image 20241116234420.png",
+    "Projects/CodeKeeper/Tasks/Functional.md",
+    "Projects/IPSA/IPSA.md",
+    "Projects/CodeKeeper/Tasks.md",
+    "Projects/CodeKeeper/Tasks",
+    "Projects/CodeKeeper",
+    "banner.png",
     "obsidian-banner-2.png",
-    "Launchpad.md",
     "LatestNotes.md",
     "obsidian-home-showcase/001 Demo/Home.md",
     "obsidian-home-showcase/screenshots/dark.png",
@@ -246,22 +263,11 @@
     "Projects/LogInsight/Tasks.md",
     "Education/Math/1",
     "Education/Math",
-    "Education/SocialStudies/Политическая власть.md",
-    "[.md",
-    "obsidian-banner-2.png.md",
-    "Guide/CSS-Classes.md",
-    "Guide/Asides.md",
-    "Guide/Alternate-Checkboxes.md",
-    "Slide Shows/Image Adjustments.md",
     "ITS.png",
     "theme.css",
     "publish.css",
-    "obsidian.css",
-    "manifest.json",
     "Images/Note-Showcase/T-DnD--Locale.png",
     "Images/Note-Showcase/T-DnD--Locale-Query.png",
-    "Images/Note-Showcase/T-DnD--Character-Sheet.png",
-    "Images/Theme-Tangerine-Dunes--Lightmode.png",
     "Без названия.canvas",
     "Untitled.canvas"
   ]

@@ -633,6 +633,10 @@ tEh
 tjY
 tpy
 tKs
+theme
+tasks
+taking
+team
 Statistic
 SlRvb
 Story
@@ -1227,6 +1231,13 @@ SWW
 SmF
 Sqc
 Sio
+Support
+Server
+Saving
+SQLite
+Sync
+Spanish
+Swedish
 moc
 modified
 my
@@ -1878,6 +1889,13 @@ mVTtl
 mVZi
 mmm
 main
+minor
+major
+movement
+menu
+moving
+members
+manager
 Root
 Rectangular
 Relationships
@@ -2467,6 +2485,9 @@ RqP
 ROs
 RYA
 RkBcs
+Repository
+Registering
+REPO
 created
 cssclasses
 customize
@@ -3199,6 +3220,11 @@ cXe
 cguU
 cCx
 clock
+contribution
+contact
+community
+channel
+creation
 hide
 hosted
 heading
@@ -3791,6 +3817,8 @@ hNk
 hxx
 hOl
 hGZ
+href
+helpful
 properties
 png
 page
@@ -4410,6 +4438,10 @@ pxxxd
 pqb
 pnl
 pWW
+project
+probably
+projects
+path
 ITS
 In
 Included
@@ -5038,6 +5070,8 @@ Ihg
 IpVq
 IDATk
 IJD
+IPSA
+Information
 Theme
 The
 Themes
@@ -5663,6 +5697,10 @@ TXG
 TnbI
 TKw
 TASKS
+Tech
+Task
+Teamwork
+TGSB
 by
 better
 br
@@ -6392,6 +6430,10 @@ bolS
 bGx
 byS
 baSn
+button
+board
+bugs
+badge
 for
 fonts
 files
@@ -6984,6 +7026,10 @@ fON
 fFb
 fCG
 frameborder
+fixing
+features
+functionality
+flows
 Obsidian
 Other
 Outline
@@ -7567,6 +7613,7 @@ OIT
 OOk
 Oqy
 OiB
+Optimization
 Vault
 VB
 Vv
@@ -8723,6 +8770,7 @@ Gmg
 GZD
 Goz
 GNr
+German
 Check
 Checkboxes
 Callouts
@@ -9294,6 +9342,10 @@ CRiPd
 Cxc
 Cqh
 Ctj
+CodeKeeper
+Crossplatform
+Context
+CMake
 out
 on
 of
@@ -9829,6 +9881,11 @@ ohc
 oJs
 oVWu
 otv
+obsidian
+open
+official
+our
+optimization
 Publish
 Pills
 Positions
@@ -10408,6 +10465,8 @@ PKc
 PCq
 Pkcy
 POq
+PROJECTS
+Projects
 Depreciated
 Download
 Dark
@@ -11028,6 +11087,8 @@ DHc
 DNl
 Dzk
 DrhI
+Discord
+Distribution
 experience
 enlarges
 either
@@ -11649,6 +11710,7 @@ eol
 eME
 erW
 eSf
+editor
 Allows
 Already
 Adjustments
@@ -12212,6 +12274,9 @@ AmtVb
 Abl
 Amtvb
 ApC
+Added
+AppImage
+Allocation
 you
 your
 yt
@@ -13320,7 +13385,6 @@ ldots
 lock
 late
 lYN
-launchpad
 learn
 lMsf
 lLf
@@ -13411,6 +13475,7 @@ lTj
 lZA
 lnJ
 lmi
+light
 and
 are
 across
@@ -14003,6 +14068,11 @@ aGFh
 aGg
 aCx
 author
+align
+any
+adding
+application
+among
 icon
 in
 if
@@ -14605,6 +14675,8 @@ isj
 iaG
 iqB
 iGt
+investing
+issues
 used
 using
 upon
@@ -17046,6 +17118,9 @@ dmaF
 dSmk
 dyiL
 div
+developers
+dev
+decorations
 snippets
 spans
 smaller
@@ -17800,6 +17875,9 @@ swk
 saD
 srO
 saP
+selection
+swither
+shortcuts
 vault
 vn
 vY
@@ -18336,6 +18414,9 @@ vCX
 vNb
 vlc
 vjy
+view
+visual
+via
 re
 right
 rdf
@@ -18978,6 +19059,7 @@ rGuQ
 rRX
 rYm
 rjG
+roadmap
 work
 with
 within
@@ -19586,6 +19668,9 @@ wMX
 wbtT
 wLa
 widget
+would
+welcome
+wiki
 Embed
 Edges
 Embeded
@@ -21330,6 +21415,12 @@ FNP
 FzS
 Fnd
 FtJ
+FIPSA
+Fix
+Flatpak
+Functional
+Functionality
+French
 Light
 Larger
 Line
@@ -21968,6 +22059,8 @@ LQe
 LLl
 LYn
 LAUNCHPAD
+Linux
+LICENSE
 Heading
 Horizontal
 Headings
@@ -23129,6 +23222,7 @@ UUU
 UIr
 UIO
 UWz
+Update
 Metadata
 Move
 Main
@@ -23739,6 +23833,10 @@ MPd
 MxW
 Myc
 Mys
+Migrate
+MySQL
+Mac
+Multilang
 Zoom
 ZTz
 ZW
@@ -25553,6 +25651,7 @@ WIL
 WwOoE
 WbW
 WGg
+Windows
 Quotation
 Query
 Qss
@@ -28535,6 +28634,7 @@ goQ
 gOj
 gNq
 gyg
+github
 qtt
 qa
 qY
@@ -29164,6 +29264,7 @@ qui
 qhl
 qGK
 qMe
+qmake
 jQ
 jB
 ja
@@ -30339,6 +30440,7 @@ kGr
 ksh
 kZG
 kzV
+kbd
 zg
 zS
 zY
@@ -31488,6 +31590,7 @@ Jhs
 Jrb
 JkU
 JZgb
+Japanese
 ümi
 üv
 üs

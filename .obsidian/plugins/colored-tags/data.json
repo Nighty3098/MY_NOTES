@@ -73,7 +73,9 @@
     "productivity": 59,
     "studying": 60,
     "mm": 61,
-    "work": 62
+    "work": 62,
+    "CodeKeeper": 63,
+    "CodeKeeper_tasks": 64
   },
   "_version": 3
 }
