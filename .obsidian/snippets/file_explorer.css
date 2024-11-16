@@ -7,7 +7,7 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
 
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder {
-  --nav-item-color: var(--background-color);
+  --nav-item-color: var(--nav-item-color);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:hover {
@@ -15,45 +15,45 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 2) {
-  --background-color: rgb(243, 139, 168);
+  --nav-item-color: rgb(243, 139, 168);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 3) {
-  --background-color: rgb(235, 160, 172);
+  --nav-item-color: rgb(235, 160, 172);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 4) {
-  --background-color: rgb(250, 179, 135);
+  --nav-item-color: rgb(250, 179, 135);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 5) {
-  --background-color: rgb(249, 226, 175);
+  --nav-item-color: rgb(249, 226, 175);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 6) {
-  --background-color: rgb(166, 227, 161);
+  --nav-item-color: rgb(166, 227, 161);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 7) {
-  --background-color: rgb(148, 226, 213);
+  --nav-item-color: rgb(148, 226, 213);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 8) {
-  --background-color: rgb(137, 220, 235);
+  --nav-item-color: rgb(137, 220, 235);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 9) {
-  --background-color: rgb(116, 199, 236);
+  --nav-item-color: rgb(116, 199, 236);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 10) {
-  --background-color: rgb(135, 176, 249);
+  --nav-item-color: rgb(135, 176, 249);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 11) {
-  --background-color: rgb(180, 190, 254);
+  --nav-item-color: rgb(180, 190, 254);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 12) {
-  --background-color: rgb(203, 166, 247);
+  --nav-item-color: rgb(203, 166, 247);
 }

@@ -6,6 +6,8 @@ cssclasses:
 <img src="https://github.com/Nighty3098/MY_NOTES/blob/main/obsidian-banner-2.png?raw=true" class="header_image" />
 
 
+
+
 <h1 class="main_header">🍀 LAUNCHPAD</h1>
 
 
@@ -13,11 +15,22 @@ cssclasses:
 
 
 
+
+
 <div class="note_2">
-	<h1 class="note">Better late than never</h1>
+	<h1 class="note"> - Better late than never</h1>
 	<h3 class="author">~ Nighty3098 ~</h3>
 </div>
 
+
+
+
+
+
+
+---
+
+<h1 class="main_header">🗒️ NOTES</h1>
 
 
 ````col
@@ -56,13 +69,14 @@ cssclasses:
 
 
 
-
+---
 
 <h1 class="main_header">🚀 TASKS</h1>
 
 
-- [ ] Сделать домашку по руссому
+- [x] Сделать домашку по руссому
 - [ ] Сделать домашку по биологии
+- [ ] Сделать общество
 - [ ] Подготовиться к контрольной по биологии
 - [ ] Подготовиться к алгебре
 - [ ] Прорешать ЕГЭ по информатике

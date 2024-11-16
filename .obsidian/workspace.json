@@ -15,7 +15,7 @@
               "type": "markdown",
               "state": {
                 "file": "Launchpad.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "pinned": true,
@@ -24,13 +24,13 @@
             }
           },
           {
-            "id": "d5b54b7347829214",
+            "id": "2793c669ca37470f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Launchpad.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -108,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5110321044922,
-    "collapsed": true
+    "width": 273.504695892334
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -176,13 +175,23 @@
               "icon": "lucide-list",
               "title": "Структура Launchpad"
             }
+          },
+          {
+            "id": "ca07560dc23dc679",
+            "type": "leaf",
+            "state": {
+              "type": "timer-view",
+              "state": {},
+              "icon": "timer",
+              "title": "Timer"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 360.5,
+    "width": 455.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -202,16 +211,30 @@
       "obsidian-kanban:Создать новую доску": false,
       "widgets:Add widget": false,
       "homepage:Open homepage": false,
-      "pomodoro-timer:Toggle timer panel": false
+      "pomodoro-timer:Toggle timer panel": false,
+      "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "d5b54b7347829214",
+  "active": "2793c669ca37470f",
   "lastOpenFiles": [
-    "Education/Statistic/объединение независимых событий/Объединение независимых событий.md",
-    "LatestNotes.md",
-    "Launchpad.md",
-    "Education/ComputerScience/Graph.md",
     "obsidian-banner-2.png",
+    "Launchpad.md",
+    "LatestNotes.md",
+    "obsidian-home-showcase/001 Demo/Home.md",
+    "obsidian-home-showcase/screenshots/dark.png",
+    "obsidian-home-showcase/001 Demo/Incremental Reading.md",
+    "obsidian-home-showcase/001 Demo/Dummy Note.md",
+    "obsidian-home-showcase/001 Demo/20 rules of knowledge.md",
+    "obsidian-home-showcase/001 Demo/meetings/Index.md",
+    "obsidian-home-showcase/screenshots/light.png",
+    "obsidian-home-showcase/screenshots",
+    "obsidian-home-showcase/README.md",
+    "obsidian-home-showcase/001 Demo/meetings/Meeting 1.md",
+    "obsidian-home-showcase/001 Demo/meetings",
+    "obsidian-home-showcase/001 Demo",
+    "obsidian-home-showcase",
+    "Education/Statistic/объединение независимых событий/Объединение независимых событий.md",
+    "Education/ComputerScience/Graph.md",
     "Teamplates/Daily note.md",
     "Teamplates/Git.md",
     "Education/Statistic/Пересечение независимых событий/Пересечение независимых событий.md",
@@ -230,29 +253,15 @@
     "Guide/Asides.md",
     "Guide/Alternate-Checkboxes.md",
     "Slide Shows/Image Adjustments.md",
-    "Slide Shows/Folder Styles.md",
-    "Slide Shows/Embed Adjustments.md",
-    "Slide Shows/Aside.md",
     "ITS.png",
-    "README.md",
     "theme.css",
     "publish.css",
     "obsidian.css",
     "manifest.json",
-    "LICENSE",
-    "ITS Icons.yml",
-    "Snippets/Defunct/Theme - All Alternate Themes.css",
-    "Snippets/Defunct/S - Kanban.css",
-    "Slide Shows/Style Settings + Alternate Themes.md",
-    "Slide Shows/Kanban.md",
-    "Slide Shows/D&D Vault.md",
     "Images/Note-Showcase/T-DnD--Locale.png",
     "Images/Note-Showcase/T-DnD--Locale-Query.png",
     "Images/Note-Showcase/T-DnD--Character-Sheet.png",
     "Images/Theme-Tangerine-Dunes--Lightmode.png",
-    "Images/Theme-Tangerine-Dunes--Darkmode.png",
-    "Images/Theme-SlRvb-Gray--Lightmode.png",
-    "Guide/Snippet--Folder-Styles.md",
     "Без названия.canvas",
     "Untitled.canvas"
   ]

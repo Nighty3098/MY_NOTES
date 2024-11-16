@@ -1,6 +1,6 @@
 {
   "accentColor": "",
-  "cssTheme": "Atom",
+  "cssTheme": "Everforest",
   "interfaceFontFamily": "SF Pro Display",
   "textFontFamily": "Iosevka Nerd Font Mono",
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
@@ -22,8 +22,8 @@
     "S - Folder Styles Rewritten",
     "S - Images Adjustments",
     "S - Checkboxes",
-    "file_explorer",
-    "style"
+    "style",
+    "file_explorer"
   ],
   "nativeMenus": false
 }

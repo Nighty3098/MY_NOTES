@@ -62,7 +62,18 @@
     "English": 48,
     "Russian": 49,
     "Statistic": 50,
-    "moc": 51
+    "moc": 51,
+    "personal": 52,
+    "knowledge": 53,
+    "flashcards": 54,
+    "notes": 55,
+    "memory": 56,
+    "backlog": 57,
+    "review": 58,
+    "productivity": 59,
+    "studying": 60,
+    "mm": 61,
+    "work": 62
   },
   "_version": 3
 }

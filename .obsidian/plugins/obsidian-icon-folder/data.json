@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiFormInput",
-      "LiComputer",
-      "LiDatabase",
-      "LiFileJson",
-      "LiGithub"
+      "LiBookMarked",
+      "LiChartArea",
+      "LiImage",
+      "LiGithub",
+      "LiBook"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -46,5 +46,12 @@
   "Dev/QML": "LiCodeXml",
   "Dev/QT": "LiCodeXml",
   "Education/ComputerScience": "LiComputer",
-  "Education/Math": "LiFormInput"
+  "Education/Math": "LiFormInput",
+  "Launchpad.md": "LiFlower",
+  "Teamplates": "LiBook",
+  "Projects": "LiGithub",
+  "imgs": "LiImage",
+  "Education/Education.md": "LiBook",
+  "Education/Statistic": "LiChartArea",
+  "Education/SocialStudies": "LiBookMarked"
 }
