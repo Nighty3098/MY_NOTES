@@ -5783,6 +5783,7 @@ TrI
 TrueType
 ToUnicode
 ToH
+Theory
 by
 better
 br
@@ -9469,6 +9470,7 @@ Contents
 CEJn
 CapHeight
 CreationDate
+CLASSWORK
 out
 on
 of
@@ -22361,6 +22363,7 @@ LCi
 LastChar
 LII
 LRA
+LESSON
 Heading
 Horizontal
 Headings
@@ -22924,6 +22927,7 @@ HXcy
 HMR
 HQE
 HSa
+HOMEWORK
 Underline
 Ue
 Uy

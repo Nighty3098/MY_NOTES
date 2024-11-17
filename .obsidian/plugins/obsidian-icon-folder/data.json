@@ -40,5 +40,7 @@
   "Home.md": {
     "iconName": "LiActivity",
     "iconColor": "#ff5c5c"
-  }
+  },
+  "Education/Math/Lesson_1/ДЗ.pdf": "LiBookMarked",
+  "Education/Math/Lesson_1/Lesson.md": "LiBookMarked"
 }
