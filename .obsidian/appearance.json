@@ -4,7 +4,7 @@
   "interfaceFontFamily": "SF Pro Display",
   "textFontFamily": "Iosevka Nerd Font Mono",
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
-  "baseFontSize": 14,
+  "baseFontSize": 13,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "banner",
