@@ -22,6 +22,44 @@
               "icon": "lucide-file",
               "title": "Home"
             }
+          },
+          {
+            "id": "5f03e6ee125b87ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Education/SocialStudies/Политическая власть.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Политическая власть"
+            }
+          },
+          {
+            "id": "d7d3600fa882707a",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
+            }
+          },
+          {
+            "id": "13e3423e21932698",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Education/Biology/Закон Харди-Вайнберга/Закон Харди-Вайнберга.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Закон Харди-Вайнберга"
+            }
           }
         ]
       }
@@ -45,7 +83,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -55,7 +93,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Закладки"
             }
           },
           {
@@ -64,7 +102,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#ComputerScience",
+                "query": "tag:#IPSA",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,7 +110,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Поиск"
             }
           },
           {
@@ -88,6 +126,53 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 278.01103591918945
+  },
+  "right": {
+    "id": "c3afcab963e39ab3",
+    "type": "split",
+    "children": [
+      {
+        "id": "a36ea1a514a5c682",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a0b7bbbe68977914",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Dev/Git/RestApi/Repository/Download a repository archive (tar).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Download a repository archive (tar)"
+            }
+          },
+          {
+            "id": "37dcb43a808c036b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Dev/Git/RestApi/Repository/Download a repository archive (tar).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Download a repository archive (tar)"
+            }
           },
           {
             "id": "274cfda97d8fd7ae",
@@ -99,24 +184,9 @@
                 "useHierarchy": true
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Теги"
             }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 273.504695892334,
-    "collapsed": true
-  },
-  "right": {
-    "id": "c3afcab963e39ab3",
-    "type": "split",
-    "children": [
-      {
-        "id": "a36ea1a514a5c682",
-        "type": "tabs",
-        "children": [
+          },
           {
             "id": "2ba293f2c356890c",
             "type": "leaf",
@@ -126,7 +196,7 @@
                 "file": "Home.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Home"
+              "title": "Структура Home"
             }
           },
           {
@@ -138,63 +208,30 @@
               "icon": "timer",
               "title": "Timer"
             }
-          },
-          {
-            "id": "baf1ddc38b36f54c",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Home.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Home"
-            }
-          },
-          {
-            "id": "f261773cd72e2d39",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Home.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Home"
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 368,
+    "width": 321,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "zk-prefixer:Create new unique note": false,
-      "random-note:Open random note": false,
-      "audio-recorder:Start/stop recording": false,
-      "workspaces:Manage workspace layouts": false,
-      "publish:Publish changes...": false,
-      "obsidian-kanban:Create new board": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "markdown-importer:Импорт Markdown-файлов": false,
+      "zk-prefixer:Создать заметку с уникальным идентификатором": false,
+      "random-note:Открыть случайную заметку": false,
+      "audio-recorder:Начать/остановить запись": false,
+      "workspaces:Пространства": false,
+      "publish:Публикация изменений": false,
+      "obsidian-kanban:Создать новую доску": false,
       "widgets:Add widget": false,
       "homepage:Open homepage": false,
       "pomodoro-timer:Toggle timer panel": false,
@@ -203,51 +240,52 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Home.md",
-    "Life Progress.md",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian/Attachements/Pasted image 20230103220838.png",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian/Attachements/Pasted image 20230103220853.png",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian/Attachements/Pasted image 20230103221308.png",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Homepage/Button Dash.md",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Homepage/Button Dev.md",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Homepage/Dashboard.md",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Homepage/Homepage v0.15 Old Version.md",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Homepage/Homepage v1.0 Minimalist.md",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Homepage/Homepage v1.0 New Version.md",
-    "0. Homepage.md",
-    "obsidian-homepage/background.png",
-    "obsidian-homepage/README.md",
-    "obsidian-homepage/LICENSE.txt",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Others Features/Table Links.md",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Others Features/Shiba Buttons.md",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Others Features/Countdown.md",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Others Features",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian/Attachements/shibabanner1x1.gif",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian/Attachements/faroukhomepage3.png",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian/Attachements/faroukhomepage2.png",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian/Attachements/faroukhomepage.png",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian/Attachements/Pasted image 20230103221255.png",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian/Attachements/Pasted image 20230103220858.png",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian/Attachements",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Obsidian",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu/Homepage",
-    "obsidian-homepage/Farouk's Homepage - Shiba Inu",
-    "obsidian-homepage",
     "Education/SocialStudies/Политическая власть.md",
+    "Education/Biology/Закон Харди-Вайнберга/Закон Харди-Вайнберга.md",
+    "Education/Biology/Закон Харди-Вайнберга/Частоты аллелей.md",
+    "Home.md",
+    "Education/SocialStudies/Легитимность власти.md",
+    "Education/SocialStudies/Критерии эффективности власти.md",
+    "[.md",
+    "Education/Biology/Закон Харди-Вайнберга",
+    "Education/Biology",
+    "Life Progress.md",
     "Projects/CodeKeeper/Tasks/UI.md",
     "Projects/CodeKeeper/Tasks/Features.md",
     "Projects/CodeKeeper/Tasks/DB.md",
     "Projects/CodeKeeper/CodeKeeper.md",
+    "imgs/Pasted image 20241116234420.png",
     "Projects/CodeKeeper/Tasks/Functional.md",
     "Projects/IPSA/IPSA.md",
     "Projects/CodeKeeper/Tasks.md",
     "Projects/CodeKeeper/Tasks",
     "Projects/CodeKeeper",
+    "banner.png",
+    "obsidian-banner-2.png",
     "LatestNotes.md",
     "obsidian-home-showcase/001 Demo/Home.md",
+    "obsidian-home-showcase/screenshots/dark.png",
     "obsidian-home-showcase/001 Demo/Incremental Reading.md",
     "obsidian-home-showcase/001 Demo/Dummy Note.md",
+    "obsidian-home-showcase/001 Demo/20 rules of knowledge.md",
+    "obsidian-home-showcase/001 Demo/meetings/Index.md",
+    "obsidian-home-showcase/screenshots/light.png",
     "obsidian-home-showcase/screenshots",
+    "obsidian-home-showcase/README.md",
+    "obsidian-home-showcase/001 Demo/meetings/Meeting 1.md",
+    "obsidian-home-showcase/001 Demo/meetings",
+    "obsidian-home-showcase/001 Demo",
+    "obsidian-home-showcase",
+    "Education/Statistic/объединение независимых событий/Объединение независимых событий.md",
+    "Education/ComputerScience/Graph.md",
+    "Teamplates/Daily note.md",
+    "imgs/Снимок экрана 2024-11-15 190620.png",
+    "imgs/obsidian-banner-2.png",
+    "Education/Math/Lesson_1",
+    "Education/Math",
+    "ITS.png",
+    "Images/Note-Showcase/T-DnD--Locale.png",
+    "Images/Note-Showcase/T-DnD--Locale-Query.png",
     "Без названия.canvas",
     "Untitled.canvas"
   ]
