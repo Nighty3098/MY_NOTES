@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Education/Math/Theory/Derivative of a function/Значения производных.md",
-                "mode": "source",
+                "file": "Education/Math/Theory/Derivative of a function/Геометрический смысл производной.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Значения производных"
+              "title": "Геометрический смысл производной"
             }
           },
           {
@@ -47,7 +47,8 @@
               "title": "Граф"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -117,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.51103591918945,
-    "collapsed": true
+    "width": 290.51103591918945
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home.md",
+                "file": "Education/Math/Theory/Derivative of a function/Геометрический смысл производной.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Home"
+              "title": "Обратные ссылки для Геометрический смысл производной"
             }
           },
           {
@@ -153,12 +153,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Home.md",
+                "file": "Education/Math/Theory/Derivative of a function/Геометрический смысл производной.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Home"
+              "title": "Исходящие ссылки из Геометрический смысл производной"
             }
           },
           {
@@ -180,10 +180,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home.md"
+                "file": "Education/Math/Theory/Derivative of a function/Геометрический смысл производной.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Home"
+              "title": "Структура Геометрический смысл производной"
             }
           },
           {
@@ -225,13 +225,13 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "547c926e97593a5f",
   "lastOpenFiles": [
+    "Education/Math/Theory/Derivative of a function/Знак производной.md",
     "Education/Math/Theory/Derivative of a function/Значения производных.md",
     "Home.md",
     "sync.sh",
     "Education/Math/Theory/Derivative of a function/Геометрический смысл производной.md",
-    "Education/Math/Theory/Derivative of a function/Знак производной.md",
     "Education/Math/Theory/Derivative of a function/Физический смысл производной.md",
     "Education/Math/Theory/Derivative of a function/Производная.md",
     "Education/Math/Theory/Derivative of a function/Точки экстремума.md",
