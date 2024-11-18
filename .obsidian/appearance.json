@@ -21,10 +21,10 @@
     "S - Folder Styles Rewritten",
     "S - Images Adjustments",
     "S - Checkboxes",
-    "style",
     "file_explorer",
     "launchpad",
-    "loading_screen"
+    "loading_screen",
+    "style"
   ],
   "nativeMenus": false
 }

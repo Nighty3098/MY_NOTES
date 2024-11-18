@@ -15,7 +15,7 @@
               "type": "markdown",
               "state": {
                 "file": "Home.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "pinned": true,
@@ -117,7 +117,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.01103591918945
+    "width": 290.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -200,7 +201,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321
+    "width": 321,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,9 +227,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "sync.sh",
-    "Home.md",
     "Education/Math/Theory/Derivative of a function/Значения производных.md",
+    "Home.md",
+    "sync.sh",
     "Education/Math/Theory/Derivative of a function/Геометрический смысл производной.md",
     "Education/Math/Theory/Derivative of a function/Знак производной.md",
     "Education/Math/Theory/Derivative of a function/Физический смысл производной.md",
@@ -268,7 +270,6 @@
     "obsidian-home-showcase/screenshots/dark.png",
     "obsidian-home-showcase/screenshots/light.png",
     "obsidian-home-showcase/screenshots",
-    "obsidian-home-showcase/001 Demo/meetings",
     "imgs/obsidian-banner-2.png",
     "ITS.png",
     "Без названия.canvas",

@@ -9,47 +9,43 @@
     position: sticky;
     top: 0;
     left: 0;
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-    opacity: 0.8;
-    z-index: -1;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 30px;
 }
-  
+
 .content {
     margin-top: 200px;
 }
-  
+
 .view-content {
     padding: 0px;
     margin: 0px;
     width: 100%;
 }
-  
+
 .launchpad .inline-title {
     display: none;
 }
-  
+
 .launchpad .metadata-properties-heading {
     display: none;
 }
-  
+
 .launchpad .metadata-content {
     display: none;
 }
-  
+
 .launchpad .main_header {
     text-align: center;
     font-size: 60px;
     font-family: "Nova Mono", system-ui;
     color: var(--text-accent);
 }
-  
+
 .launchpad .clock_widget {
     display: flex;
     justify-content: center;
 }
-  
+
 .launchpad .note_2 {
     display: block;
     margin: auto auto;
@@ -57,7 +53,7 @@
     border-radius: 20px;
     padding: 30px;
 }
-  
+
 .launchpad .note_2 .note {
     align-content: left;
     text-align: left;
@@ -65,7 +61,7 @@
     font-family: "Nova Mono", monospace;
     color: var(--text-accent);
 }
-  
+
 .launchpad .note_2 .author {
     align-content: right;
     text-align: right;
@@ -73,16 +69,15 @@
     font-family: "Nova Mono", monospace;
     color: var(--text-normal);
 }
-  
-  
+
 a.tag {
     font-family: "Formular", var(--font-text);
     display: flex;
     padding: 7px 7px 7px 7px;
     margin: -5px 10px -5px 10px;
-    justify-content: space-between;
+justify-content: space-between;
 }
-  
+
 .launchpad .callout {
     background-color: var(--background-primary-alt);
     border: none;
