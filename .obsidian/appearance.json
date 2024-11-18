@@ -1,10 +1,10 @@
 {
   "accentColor": "",
-  "cssTheme": "Things",
+  "cssTheme": "Atom",
   "interfaceFontFamily": "SF Pro Display",
-  "textFontFamily": "JetBrainsMono Nerd Font",
+  "textFontFamily": "",
   "monospaceFontFamily": "",
-  "baseFontSize": 14,
+  "baseFontSize": 16,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "banner",
