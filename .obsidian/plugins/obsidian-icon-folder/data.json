@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiActivity",
-      "LiBiohazard",
-      "LiApple",
-      "LiBookMarked",
-      "LiChartArea"
+      "LiFolder",
+      "LiTerminal",
+      "LiChartSpline",
+      "LiCalculator",
+      "LiPickaxe"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -43,5 +43,25 @@
   "Education/Math/Lesson_1/ДЗ.pdf": "LiBookMarked",
   "Education/Math/Lesson_1/Lesson.md": "LiBookMarked",
   "Education/Math/Lesson_1/Теорема Безу.md": "LiBookMarked",
-  "Education/Math/Lesson_1/Схема Горнера.md": "LiBookMarked"
+  "Education/Math/Lesson_1/Схема Горнера.md": "LiBookMarked",
+  "imgs": "LiImage",
+  "Projects": "LiGithub",
+  "Teamplates": "LiDownloadCloud",
+  "Education": "LiBook",
+  "Education/Biology": "LiBiohazard",
+  "Education/ComputerScience": "LiPickaxe",
+  "Education/Math": "LiCalculator",
+  "Education/SocialStudies": "LiBook",
+  "Education/Statistic": "LiChartSpline",
+  "Dev": "LiTerminal",
+  "Dev/QT": "LiFolder",
+  "Dev/QML": "LiFolder",
+  "Dev/Python": "LiFolder",
+  "Dev/MySQL": "LiFolder",
+  "Dev/JavaScript": "LiFolder",
+  "Dev/Git": "LiFolder",
+  "Dev/C": "LiFolder",
+  "Dev/С++": "LiFolder",
+  "Dev/ООП": "LiFolder",
+  "Dev/Алгоритмы": "LiFolder"
 }
