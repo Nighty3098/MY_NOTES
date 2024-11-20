@@ -33,8 +33,7 @@
               "title": "Граф"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -166,9 +165,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Home.md"
+              },
               "icon": "lucide-list",
-              "title": "Структура"
+              "title": "Структура Home"
             }
           },
           {
@@ -210,7 +211,7 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "769d7f9f456e9770",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "Home.md",
     "imgs/Pasted image 20241120164316.png",
