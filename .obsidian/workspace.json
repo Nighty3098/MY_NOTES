@@ -24,21 +24,7 @@
             }
           },
           {
-            "id": "5e69e63c3895c376",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Education/Math/Homework/ДЗ.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ДЗ"
-            }
-          },
-          {
-            "id": "f6b649d812243d5c",
+            "id": "769d7f9f456e9770",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -118,7 +104,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.51103591918945
+    "width": 290.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -179,11 +166,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Education/Math/Homework/ДЗ.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Структура ДЗ"
+              "title": "Структура"
             }
           },
           {
@@ -197,11 +182,11 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 321,
+    "width": 235.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -225,11 +210,26 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "5e69e63c3895c376",
+  "active": "769d7f9f456e9770",
   "lastOpenFiles": [
+    "Home.md",
+    "imgs/Pasted image 20241120164316.png",
+    "Education/Geometry/Vector/Скалярное произведение векторов.md",
+    "imgs/Pasted image 20241120192454.png",
+    "imgs/Pasted image 20241120192442.png",
+    "imgs/Pasted image 20241120192425.png",
+    "imgs/Pasted image 20241120192412.png",
+    "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
+    "imgs/Pasted image 20241120191253.png",
+    "imgs/Pasted image 20241120191246.png",
+    "imgs/Pasted image 20241120191239.png",
+    "imgs/Pasted image 20241120191229.png",
+    "imgs/Pasted image 20241120191218.png",
+    "Education/Geometry/Vector/Вектор.md",
+    "Education/Geometry/Vector",
+    "Education/Geometry",
     "Education/Math/Homework/ДЗ.md",
     "Education/Math/Homework",
-    "Home.md",
     "Education/Math/Theory/Derivative of a function/Значения производных.md",
     "Education/Math/Theory/Derivative of a function/Знак производной.md",
     "data.db-journal",
@@ -239,14 +239,11 @@
     "Education/Math/Theory/Derivative of a function/Физический смысл производной.md",
     "Education/Math/Theory/Derivative of a function/Производная.md",
     "Education/Math/Theory/Derivative of a function/Точки экстремума.md",
-    "imgs/Pasted image 20241118154822.jpg",
-    "imgs/primery-resheniya-proizvodnyh-01.webp",
     "Education/Math/Lesson_1/Lesson.md",
     "Education/Math/Theory/Derivative of a function",
     "Education/Math/Theory",
     "Education/Math/Lesson_1/Схема Горнера.md",
     "Education/Math/Lesson_1/Теорема Безу.md",
-    "imgs/Снимок экрана 2024-11-15 190620.png",
     "Education/Math/Lesson_1/ДЗ.pdf",
     "Education/Math/Lesson_1/Артем ЕГЭ.pdf",
     "Education/SocialStudies/Политическая власть.md",
@@ -255,23 +252,11 @@
     "Education/SocialStudies/Легитимность власти.md",
     "Education/SocialStudies/Критерии эффективности власти.md",
     "[.md",
-    "Education/Biology/Закон Харди-Вайнберга",
-    "Education/Biology",
     "Life Progress.md",
     "Projects/CodeKeeper/Tasks/UI.md",
     "Projects/CodeKeeper/Tasks/Features.md",
     "Projects/CodeKeeper/Tasks/DB.md",
     "Projects/CodeKeeper/CodeKeeper.md",
-    "imgs/Pasted image 20241116234420.png",
-    "Projects/CodeKeeper/Tasks/Functional.md",
-    "Projects/IPSA/IPSA.md",
-    "Projects/CodeKeeper/Tasks.md",
-    "banner.png",
-    "obsidian-banner-2.png",
-    "obsidian-home-showcase/screenshots/dark.png",
-    "obsidian-home-showcase/screenshots/light.png",
-    "imgs/obsidian-banner-2.png",
-    "ITS.png",
     "Без названия.canvas",
     "Untitled.canvas"
   ]

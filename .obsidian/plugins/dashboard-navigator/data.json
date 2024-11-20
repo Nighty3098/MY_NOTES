@@ -14,7 +14,7 @@
   "color_audios": "#bfbf00",
   "color_pdf": "#00a300",
   "color_other": "#828282",
-  "colored_files": false,
+  "colored_files": true,
   "hide_ext": false,
   "hide_path": false,
   "hide_size": false,

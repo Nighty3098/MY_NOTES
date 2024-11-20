@@ -1,10 +1,10 @@
 {
   "palette": {
-    "seed": 4,
+    "seed": 1,
     "selected": "adaptive-soft",
     "custom": "e17329"
   },
-  "mixColors": true,
+  "mixColors": false,
   "transition": true,
   "accessibility": {
     "highTextContrast": true

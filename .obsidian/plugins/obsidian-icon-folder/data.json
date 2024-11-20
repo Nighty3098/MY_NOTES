@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiCylinder",
       "LiFolder",
       "LiTerminal",
       "LiChartSpline",
-      "LiCalculator",
-      "LiPickaxe"
+      "LiCalculator"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -63,5 +63,6 @@
   "Dev/C": "LiFolder",
   "Dev/С++": "LiFolder",
   "Dev/ООП": "LiFolder",
-  "Dev/Алгоритмы": "LiFolder"
+  "Dev/Алгоритмы": "LiFolder",
+  "Education/Geometry": "LiCylinder"
 }
