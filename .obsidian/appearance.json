@@ -1,7 +1,7 @@
 {
   "accentColor": "",
-  "cssTheme": "Atom",
-  "interfaceFontFamily": "SF Pro Display",
+  "cssTheme": "PLN",
+  "interfaceFontFamily": "SF Pro Display,Google Sans Text",
   "textFontFamily": "",
   "monospaceFontFamily": "",
   "baseFontSize": 16,
@@ -21,9 +21,10 @@
     "S - Folder Styles Rewritten",
     "S - Images Adjustments",
     "S - Checkboxes",
-    "file_explorer",
     "launchpad",
+    "file_explorer",
     "style"
   ],
-  "nativeMenus": false
+  "nativeMenus": false,
+  "theme": "system"
 }

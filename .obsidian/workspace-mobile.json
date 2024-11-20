@@ -22,8 +22,23 @@
               "icon": "lucide-file",
               "title": "Home"
             }
+          },
+          {
+            "id": "311274ebe3f1e23c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,7 +126,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Dev/JavaScript/Работа с типами данных в JavaScript.md",
+            "file": "Home.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -155,6 +170,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "pomodoro-timer:Toggle timer panel": false,
+      "dashboard-navigator:Open dashboard navigator": false,
       "widgets:Add widget": false,
       "markdown-importer:Open format converter": false,
       "zk-prefixer:Create new unique note": false,
@@ -172,10 +189,11 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "39c5756aa6b5a337",
+  "active": "311274ebe3f1e23c",
   "lastOpenFiles": [
-    "obsidian-banner-2.png",
     "Home.md",
+    "Education/Math/Theory/Derivative of a function/Значения производных.md",
+    "obsidian-banner-2.png",
     "Dev/JavaScript/Работа с типами данных в JavaScript.md",
     "Dev/Python/🐍 Modules/dateparser.md",
     "Dev/Python/🐍 Modules/Работа со временем.md",
