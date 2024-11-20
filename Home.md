@@ -20,6 +20,7 @@ cssclasses:
 <br><br>
 
 > [!note] NOTES
+> 
 > #C 
 > #CPP 
 > #python 
