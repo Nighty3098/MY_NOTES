@@ -2,9 +2,9 @@
   "accentColor": "",
   "cssTheme": "PLN",
   "interfaceFontFamily": "SF Pro Display,Google Sans Text",
-  "textFontFamily": "",
+  "textFontFamily": "Cartograph CF",
   "monospaceFontFamily": "",
-  "baseFontSize": 16,
+  "baseFontSize": 14,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "banner",
