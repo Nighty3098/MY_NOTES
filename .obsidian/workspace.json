@@ -36,23 +36,9 @@
               "icon": "lucide-file",
               "title": "Lesson"
             }
-          },
-          {
-            "id": "2e3952ea1a553212",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TOKEN.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TOKEN"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "d1dd610f6ec1e9e5",
@@ -204,10 +190,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOKEN.md"
+                "file": "Education/Math/Lesson_2/Lesson.md"
               },
               "icon": "lucide-list",
-              "title": "Структура TOKEN"
+              "title": "Структура Lesson"
             }
           },
           {
@@ -248,8 +234,9 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "2e3952ea1a553212",
+  "active": "e5843167d80a0a51",
   "lastOpenFiles": [
+    "TOKEN.md",
     "Education/Math/Theory/Derivative of a function/Значения производных.md",
     "imgs/Pasted image 20241121175142.jpg",
     "Education/Math/Lesson_2/Lesson.md",
@@ -260,7 +247,6 @@
     "Home.md",
     "Education/Math/Lesson_2",
     "Education/Geometry/Vector/Скалярное произведение векторов.md",
-    "TOKEN.md",
     "Education/Geometry/Vector/Вектор.md",
     "Dev/Git/Badges.md",
     "README.md",
