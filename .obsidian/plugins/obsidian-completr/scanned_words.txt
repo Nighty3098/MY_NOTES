@@ -1930,6 +1930,7 @@ mtuN
 mxt
 maa
 mailto
+macOS
 Root
 Rectangular
 Relationships
@@ -3280,6 +3281,7 @@ cyZ
 cey
 cKs
 cPh
+command
 hide
 hosted
 heading
@@ -13679,6 +13681,7 @@ lDm
 lAd
 logo
 logoColor
+log
 and
 are
 across
@@ -25426,6 +25429,7 @@ BBox
 BaseFont
 Bey
 Build
+Bash
 Wider
 Wrapping
 WQQ
@@ -29067,6 +29071,7 @@ gfaFUrj
 gff
 game
 gmail
+git
 qtt
 qa
 qY
