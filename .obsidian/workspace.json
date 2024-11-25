@@ -27,12 +27,14 @@
             "id": "0ac27b867835f8b7",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "DOCUMENTS/ДЗ.pdf"
+                "file": "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "ДЗ"
+              "icon": "lucide-file",
+              "title": "Координаты вектора на плоскости и в пространстве"
             }
           },
           {
@@ -60,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -130,7 +132,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5069465637207
+    "width": 275.5069465637207,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -192,10 +195,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOKEN.md"
+                "file": "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md"
               },
               "icon": "lucide-list",
-              "title": "Структура TOKEN"
+              "title": "Структура Координаты вектора на плоскости и в пространстве"
             }
           },
           {
@@ -237,14 +240,15 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "8d7359240c675592",
+  "active": "0ac27b867835f8b7",
   "lastOpenFiles": [
+    "Education/Geometry/Vector/Скалярное произведение векторов.md",
     "DOCUMENTS/ДЗ.pdf",
+    "TOKEN.md",
     "Education/Math/Lesson_1/Схема Горнера.md",
     "DOCUMENTS",
     "Education/Math/Homework/ДЗ 2.md",
     "Home.md",
-    "TOKEN.md",
     "Dev/Git/Badges.md",
     "Dev/Git/Git.md",
     "Education/Math/Theory/Derivative of a function/Значения производных.md",
@@ -253,7 +257,6 @@
     "imgs/Pasted image 20241121173707.png",
     "Education/Math/Lesson_1/Lesson.md",
     "Education/Math/Lesson_2",
-    "Education/Geometry/Vector/Скалярное произведение векторов.md",
     "Education/Geometry/Vector/Вектор.md",
     "README.md",
     "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
