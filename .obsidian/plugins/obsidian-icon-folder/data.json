@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiBook",
       "LiCylinder",
       "LiFolder",
       "LiTerminal",
-      "LiChartSpline",
-      "LiCalculator"
+      "LiChartSpline"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -36,7 +36,6 @@
   "Projects/TGSB/TGSB.md": "LiGithub",
   "Projects/LogInsight/LogInsight.md": "LiGithub",
   "Projects/IPSA/IPSA.md": "LiGithub",
-  "Education/Math/Lesson_1/ДЗ.pdf": "LiBookMarked",
   "Education/Math/Lesson_1/Lesson.md": "LiBookMarked",
   "Education/Math/Lesson_1/Теорема Безу.md": "LiBookMarked",
   "Education/Math/Lesson_1/Схема Горнера.md": "LiBookMarked",
@@ -60,5 +59,7 @@
   "Dev/С++": "LiFolder",
   "Dev/ООП": "LiFolder",
   "Dev/Алгоритмы": "LiFolder",
-  "Education/Geometry": "LiCylinder"
+  "Education/Geometry": "LiCylinder",
+  "DOCUMENTS": "LiBook",
+  "DOCUMENTS/ДЗ.pdf": "LiBookMarked"
 }
