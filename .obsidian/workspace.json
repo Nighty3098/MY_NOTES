@@ -62,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -132,8 +132,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5069465637207,
-    "collapsed": true
+    "width": 275.5069465637207
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -195,10 +194,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOKEN.md"
+                "file": "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md"
               },
               "icon": "lucide-list",
-              "title": "Структура TOKEN"
+              "title": "Структура Координаты вектора на плоскости и в пространстве"
             }
           },
           {
@@ -240,10 +239,10 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "8d7359240c675592",
+  "active": "0ac27b867835f8b7",
   "lastOpenFiles": [
-    "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
     "TOKEN.md",
+    "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
     "Education/Geometry/Vector/Скалярное произведение векторов.md",
     "DOCUMENTS/ДЗ.pdf",
     "Education/Math/Lesson_1/Схема Горнера.md",
