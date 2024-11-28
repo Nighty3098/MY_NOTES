@@ -50,9 +50,18 @@
               "icon": "lucide-file",
               "title": "Координаты вектора на плоскости и в пространстве"
             }
+          },
+          {
+            "id": "88cb139183a321c6",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,10 +193,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOKEN.md"
+                "file": "Home.md"
               },
               "icon": "lucide-list",
-              "title": "Структура TOKEN"
+              "title": "Структура Home"
             }
           },
           {
@@ -229,11 +238,11 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "3bbb679dfec8d01f",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "TOKEN.md",
     "Home.md",
     "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
-    "TOKEN.md",
     "Education/Geometry/Vector/Скалярное произведение векторов.md",
     "DOCUMENTS/ДЗ.pdf",
     "Education/Math/Lesson_1/Схема Горнера.md",
