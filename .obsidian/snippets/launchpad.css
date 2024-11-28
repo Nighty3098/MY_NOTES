@@ -2,94 +2,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Neonderthaw&family=Warnes&family=WindSong:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Rubik+Glitch&family=Tsukimi+Rounded&display=swap");
 
-
 .header_image {
-    width: 100%;
-    margin: 0px auto;
-    position: sticky;
-    top: 0;
-    left: 0;
-    border-radius: 30px;
+  width: 100%;
+  margin: 0px auto;
+  position: static;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
 }
 
 .content {
-    margin-top: 200px;
+  margin-top: 200px;
 }
 
 .view-content {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
 }
 
 .launchpad .inline-title {
-    display: none;
+  display: none;
 }
 
 .launchpad .metadata-properties-heading {
-    display: none;
+  display: none;
 }
 
 .launchpad .metadata-content {
-    display: none;
+  display: none;
 }
 
 .launchpad .main_header {
-    text-align: center;
-    font-size: 60px;
-    font-family: "Nova Mono", system-ui;
-    color: var(--text-accent);
+  text-align: center;
+  font-size: 60px;
+  font-family: "Nova Mono", system-ui;
+  color: var(--text-accent);
 }
 
 .launchpad .clock_widget {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .launchpad .note_2 {
-    display: block;
-    margin: auto auto;
-    background-color: var(--background-primary-alt);
-    border-radius: 20px;
-    padding: 30px;
+  display: block;
+  margin: auto auto;
+  background-color: var(--background-primary-alt);
+  border-radius: 20px;
+  padding: 30px;
 }
 
 .launchpad .note_2 .note {
-    align-content: left;
-    text-align: left;
-    font-size: xx-large;
-    font-family: "Nova Mono", monospace;
-    color: var(--text-accent);
+  align-content: left;
+  text-align: left;
+  font-size: xx-large;
+  font-family: "Nova Mono", monospace;
+  color: var(--text-accent);
 }
 
 .launchpad .note_2 .author {
-    align-content: right;
-    text-align: right;
-    font-size: medium;
-    font-family: "Nova Mono", monospace;
-    color: var(--text-normal);
+  align-content: right;
+  text-align: right;
+  font-size: medium;
+  font-family: "Nova Mono", monospace;
+  color: var(--text-normal);
 }
 
 a.tag {
-    font-family: "Formular", var(--font-text);
-    display: flex;
-    padding: 7px 7px 7px 7px;
-    margin: -5px 10px -5px 10px;
-justify-content: space-between;
+  font-family: "Formular", var(--font-text);
+  display: flex;
+  padding: 7px 7px 7px 7px;
+  margin: -5px 10px -5px 10px;
+  justify-content: space-between;
 }
 
 .launchpad .callout {
-    background-color: var(--background-primary-alt);
-    border: none;
-    border-radius: 20px;
+  background-color: var(--background-primary-alt);
+  border: none;
+  border-radius: 20px;
 }
 
 .launchpad .callout-title {
-    display: none;
+  display: none;
 }
 
 .launchpad .callout-content {
-    padding: 20px 20px 20px 20px;
-    display: grid;
-    grid-template-columns: auto auto;
+  padding: 20px 20px 20px 20px;
+  display: grid;
+  grid-template-columns: auto auto;
 }

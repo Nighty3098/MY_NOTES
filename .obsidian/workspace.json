@@ -15,7 +15,7 @@
               "type": "markdown",
               "state": {
                 "file": "Home.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "pinned": true,
@@ -203,8 +203,8 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "Home.md",
-    "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
     "TOKEN.md",
+    "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
     "Education/Geometry/Vector/Скалярное произведение векторов.md",
     "DOCUMENTS/ДЗ.pdf",
     "Education/Math/Lesson_1/Схема Горнера.md",
