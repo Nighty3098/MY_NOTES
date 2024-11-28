@@ -40,6 +40,13 @@
   color: var(--text-accent);
 }
 
+.launchpad .main_header_2 {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Nova Mono", system-ui;
+  color: var(--text-accent);
+}
+
 .launchpad .clock_widget {
   display: flex;
   justify-content: center;
@@ -88,7 +95,7 @@ a.tag {
 }
 
 .launchpad .callout-content {
-  padding: 20px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
   display: grid;
   grid-template-columns: auto auto;
 }

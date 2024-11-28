@@ -55,7 +55,7 @@ cssclasses:
 > - [x] Выучить уроки на завтра
 
 
-<h1 class="main_header">🚀 Project [IPSA]</h1>
+<h2 class="main_header_2">🚀 Project [IPSA]</h2>
 
 > [!todo]
 > - [ ] Написать тесты для проекта
@@ -63,4 +63,14 @@ cssclasses:
 > - [ ] Написать введение для документации проекта
 > - [ ] Алгоритм анализа курса акций
 > - [ ] Нейронная сеть для анализа курса акций
- 
+
+
+
+
+
+
+> [!info] 
+> File Count: `$=dv.pages().length`
+> Dev: `$=dv.pages('"Dev"').length`
+> Education: `$=dv.pages('"Education"').length`
+> Projects: `$=dv.pages('"Projects"').length`
