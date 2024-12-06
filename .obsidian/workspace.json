@@ -24,17 +24,7 @@
             }
           },
           {
-            "id": "19b293ad6428bcec",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
-            }
-          },
-          {
-            "id": "fe7d600ee7b98a1f",
+            "id": "d4fd377e21d86ade",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,7 +38,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,15 +215,22 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "fe7d600ee7b98a1f",
+  "active": "d4fd377e21d86ade",
   "lastOpenFiles": [
-    "Projects/IPSA/Documentation.md",
     "Home.md",
-    "Education/Math/Trigonometry/Свойства котангенса.md",
+    "test",
+    "data.db-journal",
+    "Projects/IPSA/Tasks.md",
+    "data.db",
+    "data2.db",
+    "Education/Math/Trigonometry/Свойства",
+    "TOKEN.md",
+    "Projects/IPSA/Documentation.md",
+    "Education/Math/Trigonometry/Свойства/Свойства котангенса.md",
     "imgs/Pasted image 20241203213227.png",
-    "Education/Math/Trigonometry/Свойства косинуса.md",
-    "Education/Math/Trigonometry/Свойства синуса.md",
-    "Education/Math/Trigonometry/Тангенс.md",
+    "Education/Math/Trigonometry/Свойства/Свойства косинуса.md",
+    "Education/Math/Trigonometry/Свойства/Свойства синуса.md",
+    "Education/Math/Trigonometry/Свойства/Свойства тангенса.md",
     "imgs/Pasted image 20241203213104.png",
     "imgs/Pasted image 20241203212942.jpg",
     "Education/Math/Trigonometry/Trigonometry.md",
@@ -242,9 +239,6 @@
     "Education/Math/Trigonometry",
     "Education/Math/Без названия.md",
     "Projects/IPSA/IPSA.md",
-    "TOKEN.md",
-    "Projects/IPSA/Tasks.md",
-    "data.db-journal",
     "imgs/Roadmap.svg",
     "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
     "Education/Geometry/Vector/Скалярное произведение векторов.md",
@@ -264,13 +258,9 @@
     "README.md",
     "imgs/Pasted image 20241120164316.png",
     "Education/Geometry/Vector",
-    "Education/Geometry",
     "Education/Math/Homework/ДЗ 1.md",
-    "Education/Math/Homework",
     "Education/Math/Theory/Derivative of a function/Знак производной.md",
-    "data.db",
     "Education/Math/Theory/Derivative of a function/Геометрический смысл производной.md",
-    "sync.sh",
     "Education/Math/Theory/Derivative of a function/Физический смысл производной.md",
     "Без названия.canvas",
     "Untitled.canvas"
