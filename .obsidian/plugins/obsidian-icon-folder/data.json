@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiLanguages",
       "LiBook",
       "LiCylinder",
       "LiFolder",
-      "LiTerminal",
-      "LiChartSpline"
+      "LiTerminal"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -61,5 +61,6 @@
   "Dev/Алгоритмы": "LiFolder",
   "Education/Geometry": "LiCylinder",
   "DOCUMENTS": "LiBook",
-  "DOCUMENTS/ДЗ.pdf": "LiBookMarked"
+  "DOCUMENTS/ДЗ.pdf": "LiBookMarked",
+  "Education/Russian": "LiLanguages"
 }
