@@ -1,6 +1,6 @@
 {
-  "accentColor": "",
-  "cssTheme": "Atom",
+  "accentColor": "#58b9bb",
+  "cssTheme": "Everforest",
   "interfaceFontFamily": "SF Pro Display,Google Sans Text",
   "textFontFamily": "Cartograph CF",
   "monospaceFontFamily": "",
@@ -21,9 +21,10 @@
     "S - Folder Styles Rewritten",
     "S - Images Adjustments",
     "S - Checkboxes",
-    "launchpad",
     "file_explorer",
-    "style"
+    "style",
+    "safari_tabs",
+    "launchpad"
   ],
   "nativeMenus": false,
   "theme": "system"

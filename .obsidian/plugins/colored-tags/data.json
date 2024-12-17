@@ -78,7 +78,10 @@
     "CodeKeeper_tasks": 64,
     "Biology": 65,
     "Math_Theory": 66,
-    "Trigonometry": 67
+    "Trigonometry": 67,
+    "AI": 68,
+    "tensorflow": 69,
+    "matplotlib": 70
   },
   "_version": 3
 }

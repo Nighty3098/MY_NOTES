@@ -644,6 +644,7 @@ tMT
 txy
 trailer
 tyXX
+tensorflow
 Statistic
 SlRvb
 Story
@@ -1262,6 +1263,10 @@ SRRI
 SKhSQ
 Size
 Siq
+Stochastic
+Sequential
+Scatter
+Subplots
 moc
 modified
 my
@@ -1931,6 +1936,7 @@ mxt
 maa
 mailto
 macOS
+matplotlib
 Root
 Rectangular
 Relationships
@@ -2538,6 +2544,9 @@ RrMu
 Rvv
 Regular
 RussianInvestbot
+RNN
+RMSProp
+Recurrent
 created
 cssclasses
 customize
@@ -4515,6 +4524,9 @@ psKD
 pmi
 pWv
 pQcO
+propagation
+pip
+pyplot
 ITS
 In
 Included
@@ -5794,6 +5806,8 @@ ToUnicode
 ToH
 Theory
 Trigonometry
+TensorFlow
+Training
 by
 better
 br
@@ -6535,6 +6549,7 @@ black
 blank
 badges
 bot
+batch
 for
 fonts
 files
@@ -7136,6 +7151,7 @@ false
 fNF
 fkT
 fQxJtf
+forward
 Obsidian
 Other
 Outline
@@ -8295,6 +8311,7 @@ VSw
 VUhS
 VPk
 VdT
+Validation
 Guide
 Graph
 Gee
@@ -8902,6 +8919,8 @@ Gamma
 GME
 GRAD
 GEc
+Gradient
+Google
 Check
 Checkboxes
 Callouts
@@ -9488,6 +9507,11 @@ CreationDate
 CLASSWORK
 Count
 ChatGPT
+Cross
+Connected
+Convolutional
+Chart
+Contour
 out
 on
 of
@@ -10032,6 +10056,8 @@ obj
 oAS
 okj
 opsz
+object
+oriented
 Publish
 Pills
 Positions
@@ -10623,6 +10649,12 @@ PQE
 PAe
 Producer
 PDFContext
+Python
+Propagation
+PyTorch
+Plot
+Pie
+Plots
 Depreciated
 Download
 Dark
@@ -11254,6 +11286,7 @@ Descent
 DmeX
 Dev
 Docker
+Dropout
 experience
 enlarges
 either
@@ -11883,6 +11916,7 @@ endobj
 eRU
 eiun
 eve
+epochs
 Allows
 Already
 Adjustments
@@ -12472,6 +12506,11 @@ AAAABE
 AAAABJ
 AqXX
 API
+Adam
+AdaGrad
+Adagrad
+Accuracy
+Absolute
 you
 your
 yt
@@ -16204,6 +16243,10 @@ Nrs
 NrGN
 NNr
 NYX
+NumPy
+Neural
+Networks
+NLP
 need
 near
 ns
@@ -16731,6 +16774,7 @@ nbN
 niR
 neq
 night
+numpy
 download
 depending
 does
@@ -18151,6 +18195,7 @@ scr
 startxref
 summary
 skill
+size
 vault
 vn
 vY
@@ -20544,6 +20589,9 @@ EWI
 Eec
 Encoding
 Education
+Error
+Entropy
+Epochs
 Kanban
 KD
 KuTyw
@@ -21108,6 +21156,7 @@ KKI
 KVM
 KTCF
 KSa
+Keras
 Features
 Folder
 File
@@ -21753,6 +21802,9 @@ Flags
 FontBBox
 FontFile
 FJK
+Feedforward
+Forward
+Function
 Light
 Larger
 Line
@@ -22400,6 +22452,7 @@ LastChar
 LII
 LRA
 LESSON
+Loss
 Heading
 Horizontal
 Headings
@@ -24203,6 +24256,12 @@ MaxWidth
 MacRomanEncoding
 MJa
 ModDate
+Mean
+MSE
+MNIST
+Matplotlib
+MATLAB
+MAE
 Zoom
 ZTz
 ZW
@@ -25440,6 +25499,10 @@ Bey
 Build
 Bash
 Beatbet
+Backpropagation
+Binary
+Batch
+Bar
 Wider
 Wrapping
 WQQ

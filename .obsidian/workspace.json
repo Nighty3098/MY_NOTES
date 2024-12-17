@@ -22,8 +22,33 @@
               "icon": "lucide-file",
               "title": "Home"
             }
+          },
+          {
+            "id": "1d09ee64d4696756",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dev/Python/AI/Графики обучения/Пример графика обучения.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Пример графика обучения"
+            }
+          },
+          {
+            "id": "334bbde4eb5eb8ec",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5069465637207
+    "width": 221.50469207763672
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -155,10 +180,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home.md"
+                "file": "Dev/Python/AI/Графики обучения/Пример графика обучения.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Home"
+              "title": "Структура Пример графика обучения"
             }
           },
           {
@@ -176,7 +201,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5,
+    "width": 280.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -200,10 +225,22 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "1d09ee64d4696756",
   "lastOpenFiles": [
-    "Dev/Git/Badges.md",
+    "Dev/Python/AI/Графики обучения/Пример графика обучения.md",
+    "Dev/Python/AI/Графики обучения",
+    "imgs/Figure_1.png",
+    "imgs/training_history2.png",
+    "Dev/Python/AI/Обучение нейронных сетей.md",
+    "Dev/Python/AI/Нейронные сети на Python.md",
     "Home.md",
+    "Dev/Python/AI/Использование tensorflow.md",
+    "Dev/Python/Matplotlib/Matplotlib.md",
+    "Dev/Python/Matplotlib",
+    "TOKEN.md",
+    "Dev/Python/AI",
+    "README.md",
+    "Dev/Git/Badges.md",
     "data.db-journal",
     "Education/Math/Theory/Derivative of a function/Производная.md",
     "Education/Math/Theory/Derivative of a function/Значения производных.md",
@@ -211,7 +248,6 @@
     "Education/Russian/Homework/9 Dec.md",
     "Education/Russian/Homework",
     "Education/Russian",
-    "TOKEN.md",
     "test",
     "Projects/IPSA/Tasks.md",
     "data.db",
@@ -228,25 +264,14 @@
     "Education/Math/Trigonometry/Trigonometry.md",
     "imgs/Pasted image 20241203212408.png",
     "imgs/efad30cae126970c26c2b75a31255b9d10a79f36.svg",
-    "Education/Math/Trigonometry",
     "Education/Math/Без названия.md",
     "Projects/IPSA/IPSA.md",
     "imgs/Roadmap.svg",
     "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
     "Education/Geometry/Vector/Скалярное произведение векторов.md",
-    "DOCUMENTS/ДЗ.pdf",
     "Education/Math/Lesson_1/Схема Горнера.md",
-    "DOCUMENTS",
-    "Education/Math/Homework/ДЗ 2.md",
-    "Dev/Git/Git.md",
     "imgs/Pasted image 20241121175142.jpg",
     "imgs/Pasted image 20241121173713.png",
-    "imgs/Pasted image 20241121173707.png",
-    "Education/Math/Lesson_1/Lesson.md",
-    "Education/Geometry/Vector/Вектор.md",
-    "README.md",
-    "imgs/Pasted image 20241120164316.png",
-    "Education/Math/Homework/ДЗ 1.md",
     "Без названия.canvas",
     "Untitled.canvas"
   ]
