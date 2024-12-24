@@ -81,7 +81,9 @@
     "Trigonometry": 67,
     "AI": 68,
     "tensorflow": 69,
-    "matplotlib": 70
+    "matplotlib": 70,
+    "nvim": 71,
+    "olympics": 72
   },
   "_version": 3
 }

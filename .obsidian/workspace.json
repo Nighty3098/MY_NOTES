@@ -22,6 +22,20 @@
               "icon": "lucide-file",
               "title": "Home"
             }
+          },
+          {
+            "id": "e30590c0e2b051c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Olympics/Высший пилотаж/IPSA_DOCUMENT.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IPSA_DOCUMENT"
+            }
           }
         ]
       }
@@ -93,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 221.50469207763672
+    "width": 291.5046920776367
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -202,51 +216,52 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Dev/Python/AI/Графики обучения/Пример графика обучения.md",
+    "Olympics/Высший пилотаж/IPSA_DOCUMENT.md",
+    "Olympics/Высший пилотаж/Документация.md",
+    "Olympics/Высший пилотаж/Высший пилотаж (Новосибирск).md",
+    "Olympics/Высший пилотаж",
+    "Olympics/Высший пилотаж.md",
+    "Olympics/Высший пилотаж/Приложения.md",
+    "image1.md",
+    "Dev/NEOVIM/Shortcuts.md",
+    "Olympics",
+    "Home.md",
+    "imgs/Pasted image 20241224175947.png",
+    "Dev/NEOVIM/Options_lua.md",
+    "Dev/NEOVIM/Config structure.md",
+    "Dev/QML/QML.md",
+    "Dev/NEOVIM/Keymaps_lua.md",
+    "Dev/Python/Matplotlib/Matplotlib.md",
+    "Dev/JavaScript/NODE JS.md",
+    "Dev/JavaScript/Работа с Циклами в JavaScript.md",
+    "Dev/NEOVIM/Без названия",
+    "Dev/NEOVIM",
     "data.db-journal",
+    "Education/Geometry/Vector/Скалярное произведение векторов.md",
+    "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
+    "Education/Geometry/Vector/Вектор.md",
+    "TOKEN.md",
+    "Projects/IPSA/Tasks.md",
+    "Teamplates/TEST.md",
+    "Dev/Python/AI/Графики обучения/Пример графика обучения.md",
     "Dev/Python/AI/Графики обучения",
     "imgs/Figure_1.png",
     "imgs/training_history2.png",
     "Dev/Python/AI/Обучение нейронных сетей.md",
     "Dev/Python/AI/Нейронные сети на Python.md",
-    "Home.md",
     "Dev/Python/AI/Использование tensorflow.md",
-    "Dev/Python/Matplotlib/Matplotlib.md",
     "Dev/Python/Matplotlib",
-    "TOKEN.md",
     "Dev/Python/AI",
     "README.md",
-    "Dev/Git/Badges.md",
-    "Education/Math/Theory/Derivative of a function/Производная.md",
-    "Education/Math/Theory/Derivative of a function/Значения производных.md",
-    "Education/Math/Theory/Derivative of a function/Геометрический смысл производной.md",
-    "Education/Russian/Homework/9 Dec.md",
     "Education/Russian/Homework",
     "Education/Russian",
-    "test",
-    "Projects/IPSA/Tasks.md",
-    "data.db",
-    "data2.db",
-    "Education/Math/Trigonometry/Свойства",
-    "Projects/IPSA/Documentation.md",
-    "Education/Math/Trigonometry/Свойства/Свойства котангенса.md",
     "imgs/Pasted image 20241203213227.png",
-    "Education/Math/Trigonometry/Свойства/Свойства косинуса.md",
-    "Education/Math/Trigonometry/Свойства/Свойства синуса.md",
-    "Education/Math/Trigonometry/Свойства/Свойства тангенса.md",
     "imgs/Pasted image 20241203213104.png",
     "imgs/Pasted image 20241203212942.jpg",
-    "Education/Math/Trigonometry/Trigonometry.md",
     "imgs/Pasted image 20241203212408.png",
     "imgs/efad30cae126970c26c2b75a31255b9d10a79f36.svg",
-    "Education/Math/Без названия.md",
-    "Projects/IPSA/IPSA.md",
     "imgs/Roadmap.svg",
-    "Education/Geometry/Vector/Координаты вектора на плоскости и в пространстве.md",
-    "Education/Geometry/Vector/Скалярное произведение векторов.md",
-    "Education/Math/Lesson_1/Схема Горнера.md",
     "imgs/Pasted image 20241121175142.jpg",
-    "imgs/Pasted image 20241121173713.png",
     "Без названия.canvas",
     "Untitled.canvas"
   ]

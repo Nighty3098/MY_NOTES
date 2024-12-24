@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FarFlag",
       "LiLanguages",
       "LiBook",
       "LiCylinder",
-      "LiFolder",
-      "LiTerminal"
+      "LiFolder"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -62,5 +62,7 @@
   "Education/Geometry": "LiCylinder",
   "DOCUMENTS": "LiBook",
   "DOCUMENTS/ДЗ.pdf": "LiBookMarked",
-  "Education/Russian": "LiLanguages"
+  "Education/Russian": "LiLanguages",
+  "Dev/NEOVIM": "LiFolder",
+  "Olympics": "FarFlag"
 }

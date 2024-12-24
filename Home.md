@@ -45,12 +45,6 @@ cssclasses:
 
 
 
----
-
-
-<h1 class="main_header">🗒️ NOTES</h1>
-
-
 
 > [!info] 
 > File Count: `$=dv.pages().length`
