@@ -2,113 +2,112 @@
 tags:
   - nvim
 ---
-
 ![[Pasted image 20241224175947.png]]
 
-# Сочетания клавиш в Neovim
+# Neovim keyboard shortcuts
 
-## Общие сочетания клавиш
+## General keyboard shortcuts
 
-- **`jk`**: Выход из вставочного режима.
-- **`<leader>nh`**: Очистить подсветку поиска.
-- **`x`**: Удалить один символ без копирования в регистр.
-- **`<leader>+`**: Увеличить число под курсором.
-- **`<leader>-`**: Уменьшить число под курсором.
+- **`jk`**: Exit insert mode.
+- **`<leader>nh`**: Clear search highlighting.
+- **`x`**: Delete one character without copying to register.
+- **`<leader>+`**: Increase number under cursor.
+- **`<leader>-`**: Decrease number under cursor.
 
-## Управление окнами
+## Window management
 
-- **`<leader>sv`**: Разделить окно вертикально.
-- **`<leader>sh`**: Разделить окно горизонтально.
-- **`<leader>se`**: Сделать размеры разделенных окон равными.
-- **`<leader>cs`**: Закрыть текущее разделенное окно.
-- **`<leader>nt`**: Открыть новую вкладку.
-- **`<leader>ct`**: Закрыть текущую вкладку.
-- **`<leader>tn`**: Перейти к следующей вкладке.
-- **`<leader>tp`**: Перейти к предыдущей вкладке.
+- **`<leader>sv`**: Split window vertically.
+- **`<leader>sh`**: Split window horizontally.
+- **`<leader>se`**: Make split windows equal in size.
+- **`<leader>cs`**: Close current split window.
+- **`<leader>nt`**: Open a new tab.
+- **`<leader>ct`**: Close the current tab.
+- **`<leader>tn`**: Go to the next tab.
+- **`<leader>tp`**: Go to the previous tab.
 
-## Плагины
+## Plugins
 
 ### LSP (Language Server Protocol)
 
-- **`gR`**: Показать ссылки на определение.
-- **`gD`**: Перейти к объявлению.
-- **`gd`**: Показать определения LSP.
-- **`gi`**: Показать реализации LSP.
-- **`gt`**: Показать типовые определения LSP.
-- **`<leader>ca`**: Показать доступные действия кода (в визуальном режиме применить к выделению).
-- **`<leader>rn`**: Умное переименование.
-- **`<leader>D`**: Показать диагностику для файла.
-- **`<leader>d`**: Показать диагностику для строки.
-- **`[d`**: Перейти к предыдущей диагностике в буфере.
-- **`]d`**: Перейти к следующей диагностике в буфере.
-- **`K`**: Показать документацию для элемента под курсором.
-- **`<leader>rs`**: Перезапустить LSP, если это необходимо.
+- **`gR`**: Show definition references.
+- **`gD`**: Go to declaration.
+- **`gd`**: Show LSP definitions.
+- **`gi`**: Show LSP implementations.
+- **`gt`**: Show typical LSP definitions.
+- **`<leader>ca`**: Show available code actions (in visual mode, apply to selection).
+- **`<leader>rn`**: Smart rename.
+- **`<leader>D`**: Show diagnostics for file.
+- **`<leader>d`**: Show diagnostics for line.
+- **`[d`**: Go to previous diagnostic in buffer.
+- **`]d`**: Go to next diagnostic in buffer.
+- **`K`**: Show documentation for element under cursor.
+- **`<leader>rs`**: Restart LSP if needed.
 
-### Управление буферами
+### Buffer management
 
-- **`<A-1>` - `<A-9>`**: Перейти к соответствующему буферу (1-9).
-- **`<A-0>`**: Перейти к буферу 0.
+- **`<A-1>` - `<A-9>`**: Go to matching buffer (1-9).
+- **`<A-0>`**: Go to buffer 0.
 
 ### vim-maximizer
 
-- **`<leader>mt`**: Переключить максимизацию разделенного окна.
+- **`<leader>mt`**: Toggle split window maximization.
 
 ### Neo Tree
 
-- **`<leader>e`**: Переключить файловый проводник.
-- **`<leader>ef`**: Открыть файловый проводник во всплывающем окне.
-- **`<leader>ec`**: Закрыть файловый проводник.
-- **`<leader>eg`**: Открыть файловый проводник с git статусом.
+- **`<leader>e`**: Toggle file explorer.
+- **`<leader>ef`**: Open file explorer in popup.
+- **`<leader>ec`**: Close file explorer.
+- **`<leader>eg`**: Open file explorer with git status.
 
 ### Tagbar
 
-- **`<leader>t`**: Переключить Tagbar.
+- **`<leader>t`**: Toggle Tagbar.
 
-### Терминал
+### Terminal
 
-- **`<leader>ot`**: Открыть терминал.
+- **`<leader>ot`**: Open terminal.
 
 ### Telescope
 
-- **`<leader>ff`**: Найти файлы в текущем рабочем каталоге.
-- **`<leader>fw`**: Найти строку в текущем рабочем каталоге.
-- **`<leader>fs`**: Найти строку под курсором в текущем рабочем каталоге.
-- **`<leader>fb`**: Показать открытые буферы.
-- **`<leader>fh`**: Показать доступные теги помощи.
+- **`<leader>ff`**: Find files in current working directory.
+- **`<leader>fw`**: Find string in current working directory.
+- **`<leader>fs`**: Find string under cursor in current working directory.
+- **`<leader>fb`**: Show open buffers.
+- **`<leader>fh`**: Show available help tags.
 
-### Git команды в Telescope
+### Git commands in Telescope
 
-- **`<leader>gc`**: Показать все git коммиты.
-- **`<leader>gbc`**: Показать git коммиты для текущего файла/буфера.
-- **`<leader>gb`**: Показать git ветки.
-- **`<leader>gs`**: Показать текущие изменения по файлам.
+- **`<leader>gc`**: Show all git commits.
+- **`<leader>gbc`**: Show git commits for the current file/buffer.
+- **`<leader>gb`**: Show git branches.
+- **`<leader>gs`**: Show current changes by file.
 
-### Сессии
+### Sessions
 
-- **`<leader>wr`**: Восстановить последнюю сессию для текущего каталога.
-- **`<leader>ws`**: Сохранить сессию для текущего рабочего каталога.
+- **`<leader>wr`**: Restore the last session for the current directory.
+- **`<leader>ws`**: Save the session for the current working directory.
 
 ### Harpoon
 
-- **`<leader>hm`**: Пометить файл c помощью Harpoon.
-- **`<leader>hn`**: Перейти к следующей метке Harpoon.
-- **`<leader>hp`**: Перейти к предыдущей метке Harpoon.
+- **`<leader>hm`**: Tag a file with Harpoon.
+- **`<leader>hn`**: Jump to the next Harpoon tag.
+- **`<leader>hp`**: Jump to the previous Harpoon label.
 
-### Темы
+### Themes
 
-- **`<leader>tt`**: Переключить тему с помощью Themery.
+- **`<leader>tt`**: Switch theme using Themery.
 
-### Диагностика
+### Diagnostics
 
-- **`<leader>ch`**: Показать диагностику для текущей строки.
+- **`<leader>ch`**: Show diagnostics for the current line.
 
-### Выбор всего текста
+### Select all text
 
-- **`<C-a>`**: Выделить весь текст в буфере.
+- **`<C-a>`**: Select all text in the buffer.
 
-### Дополнительные сочетания клавиш
+### Additional keyboard shortcuts
 
-- **`<C-n>`**: Перейти к следующему слову.
-- **`<C-m>`**: Сохранить файл.
-- **`<C-c>`**: Копировать выделенный текст в системный буфер.
-- **`<C-v>`**: Вставить текст из системного буфера.
+- **`<C-n>`**: Jump to the next word.
+- **`<C-m>`**: Save file.
+- **`<C-c>`**: Copy selected text to the system buffer.
+- **`<C-v>`**: Paste text from the system buffer.

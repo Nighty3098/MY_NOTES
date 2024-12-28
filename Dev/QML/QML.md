@@ -3,19 +3,19 @@ tags:
   - qml
 ---
 
-## QML как средство для построения пользовательских интерфейсов
+## QML as a tool for building user interfaces
 
-Мы разработаем простой текстовый редактор, который сможет загружать, сохранять и редактировать текст. Это руководство состоит из двух частей. Первая часть затрагивает разработку внешнего вида приложения и его поведения, используя декларативный язык QML. Во второй части на основе библиотек Qt и языка C++ будут реализованы функции загрузки и сохранения документов. Используя механизм метаобъектов Qt ([Meta-Object System](https://doc.qt.io/qt-4.8/metaobjects.html)), мы можем сделать функции на языке C++ доступными в качестве свойств QML элементов. Используя QML и C++, мы можем эффективно отделять логику интерфейса от логики приложения.
+We will develop a simple text editor that can load, save, and edit text. This tutorial consists of two parts. The first part covers the development of the application's appearance and behavior using the declarative language QML. The second part will implement document loading and saving functions based on Qt libraries and C++. Using Qt's meta-object mechanism ([Meta-Object System](https://doc.qt.io/qt-4.8/metaobjects.html)), we can make C++ functions available as properties of QML elements. Using QML and C++, we can effectively separate the interface logic from the application logic.
 
 ![qml-texteditor5_editmenu.png](https://doc.qt.io/qt-4.8/images/qml-texteditor5_editmenu.png)
 
-Для запуска примеров на QML, существует утилита [qmlviewer](https://doc.qt.io/qt-4.8/qmlviewer.html), принимающая QML-файл в качестве аргумента. Для понимания части руководства, затрагивающей C, читателю потребуется знание основ разработки приложений с использованием Qt.
+To run QML examples, there is a utility [qmlviewer](https://doc.qt.io/qt-4.8/qmlviewer.html) that takes a QML file as an argument. To understand the C portion of the tutorial, the reader will need to know the basics of developing applications using Qt.
 
-## Создание кнопки и меню
+### Creating a button and menu
 
-### Базовый компонент - кнопка
+### The basic component is a button
 
-Мы начнем разработку нашего текстового редактора с создания кнопки (button). Функционально кнопка содержит чувствительную к нажатию мыши область и текстовый ярлык. Кнопка выполняет действие, когда пользователь нажимает на нее. В QML базовый визуальный элемент - [Rectangle](https://doc.qt.io/qt-4.8/qml-rectangle.html) (Прямоугольник). _Rectangle_ имеет свойства, отвечающие за его внешний вид и расположение.
+We will begin the development of our text editor by creating a button. Functionally, a button contains a mouse clickable area and a text label. The button performs an action when the user clicks on it. In QML, the basic visual element is [Rectangle](https://doc.qt.io/qt-4.8/qml-rectangle.html). A _Rectangle_ has properties that are responsible for its appearance and location.
 
 ```qml
 import Qt 4.8
@@ -33,49 +33,49 @@ Rectangle{
  }
 ```
 
-Первая строка: _import Qt 4.8_ разрешает утилите _qmlviewer_ импортировать QML-элементы, которые мы будем использовать позже. Эта строка должна присутствовать во всех QML-файлах. Эта строка указывает на то, какая версия библиотек Qt будет использоваться.
+The first line: _import Qt 4.8_ allows the _qmlviewer_ utility to import the QML elements we will use later. This line must be present in all QML files. This line indicates which version of the Qt libraries will be used.
 
-Созданный нами прямоугольник имеет уникальный идентификатор _simplebutton_, который задается в свойстве _id_. Значение свойств задаются после двоеточия. Так, например, для указания цвета прямоугольника, серый (grey) цвет определяется в свойстве _color_ (строка _color: "grey"_). Аналогично, мы можем задать свойства _width_ (ширина) и _height_ (высота).
+The rectangle we create has a unique identifier _simplebutton_, which is set in the _id_ property. Property values are set after the colon. For example, to specify the color of the rectangle, gray is defined in the _color_ property (string _color: “grey”_). Similarly, we can specify the _width_ (width) and _height_ (height) properties.
 
-Подэлемент _Text_ (текст) является неизменяемым текстовым полем. Для него мы установим _id_ равным _buttonLabel_. Чтобы установить отображаемый этим элементом текст, мы установим значение свойства _text_. Текстовая метка находится внутри прямоугольника и для того, чтобы разместить ее в центре нашего компонента, мы свяжем якоря (_anchors_) текстового элемента с его родителем (parent) через использование свойства _anchors.centerIn_ (центрировать на указанном объекте). Положение элементов можно привязывать друг к другу через использование свойства _anchors_. Это позволяет упростить и ускорить процесс компоновки элементов на форме.
+The _Text_ (text) sub-element is an immutable text field. We will set its _id_ to _buttonLabel_. To set the text displayed by this element, we will set the _text_ property to _text_. The text label is inside the rectangle and in order to place it in the center of our component, we will bind the anchors (_anchors_) of the text element to its parent through the use of the _anchors.centerIn_ property (center on the specified object). The position of elements can be anchored to each other through the use of the _anchors_ property. This simplifies and speeds up the process of arranging elements on the form.
 
-Мы сохраним код в файл _SimpleButton.qml_. Запуск _qmlviewer_ с этим файлом в качестве аргумента (команда "_qmlviewer SimpleButton.qml_") покажет на экране серый прямоугольник с текстом.
+We will save the code to the _SimpleButton.qml_ file. Running _qmlviewer_ with this file as an argument (command “_qmlviewer SimpleButton.qml_”) will show a gray rectangle with text on the screen.
 
 ![qml-texteditor1_simplebutton.png](https://doc.qt.io/qt-4.8/images/qml-texteditor1_simplebutton.png)
 
-Для реализации нажатий на кнопку мы можем использовать обработку событий QML. Она очень похожа на механизм сигналов-слотов в Qt ([Signals and Slots](https://doc.qt.io/qt-4.8/signalsandslots.html)). С определенным сигналом (_signal_) мы можем связать выполнение заданных действий. Таким образом, при появлении указанного сигнала, запустится функция, называемая слотом (_slot_).
+We can use QML event handling to implement button clicks. It is very similar to Qt's ([Signals and Slots](https://doc.qt.io/qt-4.8/signalsandslots.html)) signal-slots mechanism. We can associate the execution of specified actions with a specific signal (_signal_). Thus, when the specified signal occurs, a function called a slot (_slot_) will run.
 
 ```qml
 Rectangle{
  id:simplebutton
- …
+ ...
  MouseArea{
  id: buttonMouseArea
- anchors.fill: parent //область для приема событий от мышки будет занимать всю родительскую область
- //сигнал onClicked обрабатывает клики мышкой по области MouseArea
- onClicked: console.log(buttonLabel.text'' " clicked" )
+ anchors.fill: parent // the area to receive mouse events will occupy the entire parent area
+ //the onClicked signal handles mouse clicks on the MouseArea area
+ onClicked: console.log(buttonLabel.text'' “ clicked” )
  }
  }
 ```
 
-Мы добавляем элемент [MouseArea](https://doc.qt.io/qt-4.8/qml-mousearea.html) в наш _simplebutton_. _MouseArea_ описывает интерактивную область, в которой обрабатываются все события от мышки (клики, перемещение, действия колеса прокрутки). Для нашей кнопки, мы закрепим _MouseArea_ поверх всего _simplebutton_. Запись _anchors.fill_ - это один из способов доступа к специальному свойству _fill_ внутри группы свойств называемых _anchors_. QML использует механизм размещения элементов на основе якорей ([anchor based layout](https://doc.qt.io/qt-4.8/qml-anchor-layout.html)). Это означает, что элементы могут прикрепляться к другим объектам, создавая устойчивое размещение.
+We add a [MouseArea](https://doc.qt.io/qt-4.8/qml-mousearea.html) element to our _simplebutton_. The _MouseArea_ describes the interactive area where all mouse events (clicks, movement, scroll wheel actions) are handled. For our button, we'll anchor the _MouseArea_ on top of the entire _simplebutton_. The _anchors.fill_ entry is one way to access a special _fill_ property within a group of properties called _anchors_. QML uses an anchor-based element layout mechanism ([anchor based layout](https://doc.qt.io/qt-4.8/qml-anchor-layout.html)). This means that elements can attach to other objects, creating a stable layout.
 
-_MouseArea_ имеет множество обработчиков сигналов, вызываемых во время действий мышки в определенных границах. Так, обработчик события _onClicked_ вызывается каждый раз, когда происходит нажатие на кнопку мыши (на левую кнопку, по умолчанию). Мы можем связать необходимые действие с событием _onClicked_. В данном случае мы вызываем функцию _console.log(buttonLabel.text + " clicked")_ как ответ на нажатие кнопки. _console.log()_ - функция, которая позволяет выводить на консоль текстовые сообщения (это может быть полезно при отладке приложений). _buttonLabel.text_ - свойство объекта _buttonLabel_, содержащее заданный ранее текст.
+The _MouseArea_ has many signal handlers that are called during mouse actions within certain boundaries. For example, the _onClicked_ event handler is called every time a mouse button is clicked (the left button, by default). We can associate the required action with the _onClicked_ event. In this case, we call _console.log(buttonLabel.text + “ clicked”)_ as a response to a button click. _console.log()_ is a function that allows us to output text messages to the console (this can be useful when debugging applications). _buttonLabel.text_ - a property of the _buttonLabel_ object that contains the text specified earlier.
 
-Файл _SimpleButton.qml_ содержит все необходимое для отображения на экране текстовой кнопки и вывода в консоль сообщений о кликах по ней.
+The _SimpleButton.qml_ file contains everything you need to display a text button on the screen and output click messages to the console.
 
 ```qml
 Rectangle {
  id:Button
- …
+ ...
 
-property color buttonColor: "lightblue"
- property color onHoverColor: "gold"
- property color borderColor: "white"
+property color buttonColor: “lightblue”
+ property color onHoverColor: “gold”
+ borderColor: “white” property color
 
-signal buttonClick()
+buttonClick()
  onButtonClick: {
- console.log(buttonLabel.text + " clicked" )
+ console.log(buttonLabel.text + “ clicked” )
  }
 
 MouseArea{
@@ -85,40 +85,40 @@ MouseArea{
  onExited: parent.border.color = borderColor
  }
 
-//определяем цвет кнопки с использованием условного оператора
+//define the color of the button using the conditional statement
  color: buttonMouseArea.pressed ? Qt.darker(buttonColor, 1.5) : buttonColor
  }
 ```
 
-В файле _Button.qml_ находится описание более функциональной кнопки. Для экономии места и большей наглядности, части кода, описанные ранее или не относящиеся к текущей теме, будут заменяться многоточием (…). В конце статьи вы сможете найти ссылки на конечные файлы.
+The _Button.qml_ file contains a description of a more functional button. To save space and to make it clearer, parts of the code described earlier or not relevant to the current topic will be replaced with an ellipsis (...). At the end of the article you can find links to the final files.
 
-Помимо предустановленных свойств, объекты в QML могут иметь и дополнительные свойства, определенные самим разработчиком. Эти так называемые "пользовательские свойства" (_custom properties_) объявляются с помощью выражения вида: _property type name_ (_property_ - ключевое слово для объявления свойства, _type_ - тип данных свойства, _name_ - имя свойства).
+In addition to the predefined properties, objects in QML can have additional properties defined by the developer himself. These so-called “custom properties” (_custom properties_) are declared using an expression like: _property type name_ (_property_ is the keyword for declaring a property, _type_ is the property's data type, _name_ is the property's name).
 
-Свойство _buttonColor_ типа _color_ объявлено и связано со значением "lightblue". В дальнейшем это свойство используется в операции определения цвета заливки кнопки. Отметим, что для установки значения свойств можно использовать не только двоеточие, но и более привычный знак равенства (=). Пользовательские свойства, разрешенные внутри элемента будут доступны и снаружи (когда мы будем создавать функции на языке C++). Базовые [типы QML](https://doc.qt.io/qt-4.8/qdeclarativebasictypes.html) это: _int_, _string_, _real_, а также тип, называемый _variant_.
+The _buttonColor_ property of type _color_ is declared and associated with the value “lightblue”. This property is further used in the operation of determining the button's fill color. Note that not only the colon, but also the more familiar equal sign (=) can be used to set property values. Custom properties allowed inside the element will be available outside (when we create C++ functions). The basic [QML types](https://doc.qt.io/qt-4.8/qdeclarativebasictypes.html) are: _int_, _string_, _real_, and a type called _variant_.
 
-В обработчиках сигналов _onEntered_ (курсор мышки появился над объектом) и _onExited_ (курсор покинул объект) мы меняем цвет рамки у кнопки. Когда курсор появляется над кнопкой, цвет ее рамки становится золотым ("gold"); когда курсор покидает кнопку, рамка снова станет белой ("white").
+In the _onEntered_ (the mouse cursor appeared over an object) and _onExited_ (the cursor left the object) signal handlers, we change the border color of the button. When the cursor appears over the button, the color of its frame becomes gold (“gold”); when the cursor leaves the button, the frame becomes white (“white”) again.
 
-Сигнал _buttonClick_ объявлен в _Button.qml_ с помощью ключевого слова _signal_. Все сигналы имеют свои обработчики, создаваемые автоматически, их имена начинаются с _on_. В результате, _onButtonClick_ - это обработчик сигнала _buttonClick_, в котором выполняются необходимые действия (в данном случае, вывод текста в консоль). Далее мы связываем событие _onClicked_ с обработчиком _onButtonClicked_. Такой механизм позволяет легко получить доступ к обработчику _onButtonClicked_ из различных объектов. Например, элемент может иметь несколько областей типа _MouseArea_, и мы можем связать сигнал _buttonClick_ с событиями в каждой из этих областей.
+The _buttonClick_ signal is declared in _Button.qml_ using the _signal_ keyword. All signals have their handlers created automatically, and their names begin with _on_. As a result, _onButtonClick_ is a handler for the _buttonClick_ signal, which performs the necessary actions (in this case, outputting text to the console). We then bind the _onClicked_ event to the _onButtonClicked_ handler. This mechanism makes it easy to access the _onButtonClicked_ handler from different objects. For example, an element may have multiple areas of type _MouseArea_, and we can bind the _buttonClick_ signal to events in each of these areas.
 
-Итак, теперь мы имеем базовые представления о создании элементов с использованием QML, а также мы научились обрабатывать базовые события мыши. Мы создали текстовое поле внутри прямоугольника, настроили его свойства и указали реакцию на действия мыши. Идея создания элементов внутри других элементов применяется во всем текстовом редакторе.
+So now we have a basic understanding of creating elements using QML, and we have learned how to handle basic mouse events. We have created a text box inside a rectangle, customized its properties, and specified the response to mouse actions. The idea of creating elements inside other elements applies throughout the text editor.
 
-Созданная кнопка бесполезна, если не использовать ее как компонент для выполнения каких-либо действий. В следующем разделе мы создадим меню, содержащее несколько кнопок.
+The button created is useless unless you use it as a component to perform some action. In the next section, we will create a menu that contains several buttons.
 
 ![qml-texteditor1_button.png](https://doc.qt.io/qt-4.8/images/qml-texteditor1_button.png)
 
-### Создание элементов меню
+### Creating menu items
 
-Мы уже научились создавать элементы и определять их поведение в одном QML-файле. В этом разделе мы научимся импортировать созданные ранее элементы и повторно использовать их при разработке новых компонентов.
+We have already learned how to create items and define their behavior in a single QML file. In this section, we will learn how to import previously created items and reuse them when developing new components.
 
-Меню представляет собой компонент, содержащий список из нескольких элементов, определяющих различные действия. Существует несколько способов создания меню с использованием QML. Для начала, мы создадим меню из нескольких кнопок. Код, реализующий меню "Файл" (File), можно найти в файле _FileMenu.qml_.
+A menu is a component that contains a list of several items that define different actions. There are several ways to create a menu using QML. First, we'll create a menu from a few buttons. The code that implements the File menu can be found in the _FileMenu.qml_ file.
 
- import Qt 4.8 //импортируем модуль Qt QML
- import "folderName" //импортируем содержимое папки
- import "script.js" as Script //импортируем код из файла Javascript, назовем этот код именем Script
+ import Qt 4.8 //import Qt QML module
+ import “folderName” //import the contents of the folder
+ import “script.js” as Script //import code from a Javascript file, call this code by the name Script
 
-Представленный выше код показывает, как можно использовать ключевое слово _import_. Это необходимо для того, чтобы использовать файлы JavaScript или QML, которые расположены в другом каталоге. Так как файл _Button.qml_ находится в той же папке, что и файл _FileMenu.qml_, то у нас нет необходимости импортировать файл _Button.qml_ для работы с ним. Мы можем просто создать элемент класса _Button_, объявив _Button{}_ так же как мы ранее использовали объявление _Rectangle{}_.
+The above code shows how the _import_ keyword can be used. This is necessary in order to use JavaScript or QML files that are located in a different directory. Since the _Button.qml_ file is in the same folder as the _FileMenu.qml_ file, we don't need to import the _Button.qml_ file to work with it. We can simply create an element of class _Button_ by declaring _Button{}_ just like we previously used the _Rectangle{}_ declaration.
 
- В файле FileMenu.qml:
+ In the FileMenu.qml file:
 
 ```qml
  Row {
@@ -145,27 +145,26 @@ MouseArea{
  }
 ```
 
-В файле _FileMenu.qml_ мы создали три элемента класса _Button_. Все эти кнопки расположены внутри элемента класса _Row_, который позволяет располагать дочерние элементы в вертикальных столбцах. Определение класса _Button_ дано в файле _Button.qml_, описанном в предыдущем разделе. Для новых кнопок мы задаем новые значения свойств, которые перезапишут значения по умолчанию, указанные в файле _Button.qml_. При клике на кнопку с именем _exitButton_ приложение закрывается. Стоит заметить, что действия обработчика _onButtonClick_ из _Button.qml_ будут вызываться в дополнение к обработчику _onButtonClick_ в описании _exitButton_.
+In the _FileMenu.qml_ file, we have created three elements of the _Button_ class. All these buttons are located inside an element of the _Row_ class, which allows child elements to be arranged in vertical columns. The _Button_ class is defined in the _Button.qml_ file described in the previous section. For new buttons, we set new property values that will overwrite the default values specified in the _Button.qml_ file. Clicking on a button named _exitButton_ closes the application. It is worth noting that the _onButtonClick_ handler actions from _Button.qml_ will be called in addition to the _onButtonClick_ handler in the _exitButton_ description.
 
 ![qml-texteditor1_filemenu.png](https://doc.qt.io/qt-4.8/images/qml-texteditor1_filemenu.png)
 
-Класс Row создает прямоугольный контейнер для расположения кнопок по столбцам. Этот дополнительный прямоугольник позволяет организовать группу кнопок в виде простого меню.
+The Row class creates a rectangular container for arranging buttons by columns. This additional rectangle allows you to organize a group of buttons as a simple menu.
 
-Меню "Правка" (_Edit_) определяется аналогичным образом как и меню "Файл" и содержит кнопки с ярлыками "Копировать" (Copy), "Вставить" (Paste) и "Выбрать все" (Select All).
-
+The _Edit_ menu is defined in the same way as the File menu and contains buttons labeled Copy, Paste, and Select All.
 ![qml-texteditor1_editmenu.png](https://doc.qt.io/qt-4.8/images/qml-texteditor1_editmenu.png)
 
-Освоив импорт и повторное использование ранее созданных элементов, мы теперь можем перейти к созданию панели меню. Также нам предстоит освоить способы структурирования данных в QML.
+Having mastered importing and reusing previously created elements, we can now move on to creating a menu bar. We also have to learn how to structure data in QML.
 
-## Создание панели меню
+## Create a menu bar
 
-Для нашего текстового редактора необходимо найти способ отображения различных меню. Поэтому в данном разделе мы займемся реализацией специальной панели (_Menu Bar_), которая позволит нам переключаться между различным дочерними меню. Это означает, что нам необходимо определить структуру, позволяющую не просто отображать кнопки в строку, но и переключаться между несколькими меню. Для подобных задач в QML реализован механизм "модель-представление" (_Model-View_), позволяющий отделить структурированные данные от их отображения на экране.
+For our text editor, we need to find a way to display the different menus. Therefore, in this section we will implement a special panel (_Menu Bar_) that will allow us to switch between different child menus. This means that we need to define a structure that allows us not just to display buttons in a row, but also to switch between multiple menus. For such tasks, QML implements the _Model-View_ mechanism, which allows us to separate structured data from its display on the screen.
 
-### Использование моделей и представлений
+### Using Models and Views
 
-В QML имеется несколько представлений ([data view](https://doc.qt.io/qt-4.8/qdeclarativemodels.html)) для отображения моделей данных ([data model](https://doc.qt.io/qt-4.8/qdeclarativemodels.html)). Наша панель будет отображать строку со списком меню, содержащим названия меню. Список меню определен внутри модели [VisualItemModel](https://doc.qt.io/qt-4.8/qml-visualitemmodel.html). Элемент класса _VisualItemModel_ содержит объекты, которые уже имеют свои представления (_view_) и могут отображать свои данные самостоятельно, например, с помощью рассмотренного ранее объекта _Rectangle_. Остальные типы моделей (например, [ListModel](https://doc.qt.io/qt-4.8/qml-listmodel.html)) требуют наличие объектов-делегатов (_delegate_).
+QML has several views ([data view](https://doc.qt.io/qt-4.8/qdeclarativemodels.html)) for displaying data models ([data model](https://doc.qt.io/qt-4.8/qdeclarativemodels.html)). Our panel will display a row with a menu list containing menu names. The menu list is defined inside the [VisualItemModel](https://doc.qt.io/qt-4.8/qml-visualitemmodel.html) model. The _VisualItemModel_ class element contains objects that already have their own views (_view_) and can display their data independently, for example, with the previously discussed _Rectangle_ object. Other types of models (e.g., [ListModel](https://doc.qt.io/qt-4.8/qml-listmodel.html)) require delegate objects (_delegate_).
 
-Мы определим два визуальных элемента (_FileMenu_ и _EditMenu_) внутри модели _menuListModel_, а затем настроим оба меню и отобразим их с использованием [ListView](https://doc.qt.io/qt-4.8/qml-listview.html). QML-файл _MenuBar.qml_ содержит описания этих меню, а в файле _EditMenu.qml_ можно найти реализацию простого меню "Правка" (Edit).
+We will define two visual elements (_FileMenu_ and _EditMenu_) inside the _menuListModel_, and then customize both menus and display them using [ListView](https://doc.qt.io/qt-4.8/qml-listview.html). The QML file _MenuBar.qml_ contains descriptions of these menus, and in the file _EditMenu.qml_ we can find an implementation of a simple Edit menu.
 
 ```qml
  VisualItemModel {
@@ -183,22 +182,22 @@ MouseArea{
  }
 ```
 
-Компонент [ListView](https://doc.qt.io/qt-4.8/qml-listview.html) может отображать элементы опираясь на делегат (_delegate_). С помощью делегата может задать, чтобы данные отображались либо в строку с использованием элемента класса _Row_, либо в виде таблицы. Наша _menuListModel_ уже содержит отображаемые элементы, поэтому нет необходимости использовать делегат.
+The [ListView](https://doc.qt.io/qt-4.8/qml-listview.html) component can display items based on a delegate (_delegate_). The delegate can be used to set the data to be displayed either as a row using an element of the _Row_ class, or as a table. Our _menuListModel_ already contains the items to be displayed, so there is no need to use a delegate.
 
 ```qml
  ListView {
   id: menuListView
 
-  //якоря (anchors) привязаны к размерам родительского компонента
+  //anchors are bound to the size of the parent component
   anchors.fill: parent
   anchors.bottom: parent.bottom
   width: parent.width
   height: parent.height
 
-  //model содержит данные
+  //model contains data
   model: menuListModel
 
-  //контролируем жесты мышкой для смены меню
+  //control mouse gestures to change menus
   snapMode: ListView.SnapOneItem
   orientation: ListView.Horizontal
   boundsBehavior: Flickable.StopAtBounds
@@ -209,11 +208,11 @@ MouseArea{
   }
 ```
 
-_ListView_ является потомком класса [Flickable](https://doc.qt.io/qt-4.8/qml-flickable.html), что позволяет списку реагировать на жесты мышкой. Последняя часть кода устанавливает свойства для _Flickable_. Это позволяет контролировать жесты мышкой для смены меню на нашем компоненте. Так, свойство _highlightMoveDuration_ устанавливает длительность анимации при реакции на жесты - чем больше _highlightMoveDuration_, тем медленнее будет происходить переключение меню.
+_ListView_ is a descendant of the [Flickable](https://doc.qt.io/qt-4.8/qml-flickable.html) class, which allows the list to respond to mouse gestures. The last part of the code sets the properties for _Flickable_. This allows us to control mouse gestures to change menus on our component. For example, the _highlightMoveDuration_ property sets the duration of the animation when responding to gestures - the larger the _highlightMoveDuration_, the slower the menu switching will be.
 
-_ListView_ позволяет получить доступ ко всем элементам модели с использованием индекса, присвоенного элементу при добавлении в список или определении в QML-файле. Изменение свойства _currentIndex_ вызывает смену текущего выбранного элемента на _ListView_. Что можно видеть в заголовке нашей панели с меню. В заголовке расположено две кнопки, при клике на которые отображается соответствующее меню. При клике на кнопку _fileButton_ выбирается меню "Файл" (File), индекс которого равен 0, так как этот элемент был первым определен в описании _menuListModel_. Аналогично, кнопка _editButton_ позволяет отобразить меню "Правка" (Edit).
+_ListView_ allows access to all items in the model using the index assigned to the item when it is added to a list or defined in a QML file. Changing the _currentIndex_ property causes the currently selected element to change to _ListView_. Which can be seen in the header of our menu bar. There are two buttons in the header, when clicked on, the corresponding menu is displayed. Clicking on the _fileButton_ selects the File menu, whose index is 0 because this element was first defined in the _menuListModel_ description. Similarly, the _editButton_ displays the Edit menu.
 
-Положение элементов в QML можно описывать не только с помощью якорей, отвечающий за размещение по осям _x_ и _y_, но и с помощью свойства _z_, которое позволяет размещать одни элементы поверх других, как в слоеном пироге. Чем больше _z_, тем выше располагается слой элемента в стеке слоев. По умолчанию свойство _z_ равно 0, поэтому все элементы располагаются в одном слое. Для прямоугольника _labelList_ мы установили значение _z_ равным 1, что позволяет отображать этот объект поверх всех остальных элементов, у которых _z_ не менялось и равно 0.
+The position of elements in QML can be described not only by using anchors, which are responsible for placement along the _x_ and _y_ axes, but also by using the _z_ property, which allows you to place some elements on top of others, as in a layer cake. The larger the _z_, the higher the element layer is placed in the layer stack. By default, the _z_ property is 0, so all elements are placed on the same layer. For the _labelList_ rectangle, we set _z_ to 1, which allows this object to be displayed on top of all other elements whose _z_ has not changed and is 0.
 
 ```qml
  Rectangle {
@@ -239,15 +238,15 @@ _ListView_ позволяет получить доступ ко всем эле
   }
 ```
 
-Панель меню (menu bar), которую мы только что создали, позволяет переключать меню не только с помощью жестов мышки (в данном случае - перетаскивание), но через нажатие на соответствующие кнопки вверху панели.
+The menu bar we just created allows you to switch menus not only by using mouse gestures (in this case, dragging and dropping), but also by clicking on the corresponding buttons at the top of the bar.
 
 ![qml-texteditor2_menubar.png](https://doc.qt.io/qt-4.8/images/qml-texteditor2_menubar.png)
 
-## Разработка текстового редактора
+### Developing a text editor
 
-### Объявление TextArea
+### TextArea declaration
 
-Наш текстовый редактор не будет текстовым редактором, если в нем не будет редактируемого текстового поля. Элемент QML [TextEdit](https://doc.qt.io/qt-4.8/qml-textedit.html) позволяет описать многострочное редактируемое поле. [TextEdit](https://doc.qt.io/qt-4.8/qml-textedit.html) отличается от элемента [Text](https://doc.qt.io/qt-4.8/qml-text.html), который не позволяет пользователю напрямую редактировать текст.
+Our text editor won't be a text editor if it doesn't have an editable text field. The QML element [TextEdit](https://doc.qt.io/qt-4.8/qml-textedit.html) allows us to describe a multi-line editable field. [TextEdit](https://doc.qt.io/qt-4.8/qml-textedit.html) is different from the [Text](https://doc.qt.io/qt-4.8/qml-text.html) element, which does not allow the user to directly edit text.
 
 ```qml
 TextEdit {
@@ -263,7 +262,7 @@ TextEdit {
  }
 ```
 
-У редактора установлены свойства: цвет шрифта и режим переноса. _TextEdit_ находиться внутри _Flickable_ области, которая будет прокручивать текст, если курсор находиться за пределами видимости. Функция _ensureVisible()_ проверяет, если курсор находится за пределом видимых границ, то она соответственно перемещает текстовую область. QML использует синтаксис Javascript для выполнения этого скрипта, и, как уже упоминалось ранее, файлы Javascript могут быть импортированы и использованы в QML-файле.
+The editor has the following properties: font color and hyphenation mode. The _TextEdit_ is inside the _Flickable_ area, which will scroll the text if the cursor is out of range. The _ensureVisible()_ function checks to see if the cursor is outside of the visible bounds, then it moves the text area accordingly. QML uses Javascript syntax to execute this script, and as mentioned earlier, Javascript files can be imported and used in a QML file.
 
 ```qml
 function ensureVisible (r) {
@@ -278,17 +277,17 @@ function ensureVisible (r) {
  }
 ```
 
-### Объединение компонентов для текстового редактора
+### Combining components for the text editor
 
-Сейчас мы готовы разместить визуальные элементы для нашего текстового редактора, используя QML. Текстовый редактор имеет два компонента, главное меню, которое мы создали, и текстовое поле. QML позволяет нам использовать компоненты повторно. Поэтому, чтобы упростить наш код, мы импортируем компоненты и настроим их расположение. Окно нашего текстового редактора будет разбито на две части. Одну треть окна займет меню, а оставшиеся две трети - текстовое поле. Меню будет отображаться поверх остальных элементов.
+We are now ready to deploy the visual elements for our text editor using QML. The text editor has two components, the main menu we created and the text box. QML allows us to reuse the components. So to simplify our code, we will import the components and customize their layout. Our text editor window will be split into two parts. One third of the window will be taken up by the menu and the remaining two thirds will be taken up by the text box. The menu will be displayed on top of the other elements.
 
 ```qml
 Rectangle {
 
- id: screen
+ identifier: screen
  width: 1000; height: 1000
 
- //экран разделяется между MenuBar и TextArea. 1/3 экрана отдается под MenuBar
+ //screen is divided between MenuBar and TextArea. 1/3 of the screen is given to MenuBar
  property int partition: height/3
 
  MenuBar {
@@ -301,27 +300,27 @@ Rectangle {
  TextArea {
   id:textArea
   anchors.bottom:parent.bottom
-  y: partition
-  color: "white"
+  y: section
+  color: “white”
   height: partition*2
   width:parent.width
   }
  }
 ```
 
-Благодаря повторному использованию компонентов, код нашего _TextEditor_ выглядит достаточно простым. Мы можем настроить основное приложение, не заботясь о свойствах, поведение которых уже описано. Создание компонентов пользовательского интерфейса и размещение компонентов приложения может стать очень простой задачей при использовании этого подхода.
+The reuse of components makes the code of our _TextEditor_ look quite simple. We can customize the core application without worrying about properties whose behavior is already described. Creating UI components and placing application components can be a very simple task when using this approach.
 
 ![qml-texteditor3_texteditor.png](https://doc.qt.io/qt-4.8/images/qml-texteditor3_texteditor.png)
 
-## Оформление текстового редактора
+### Text editor design
 
-### Реализация выдвижной панели
+### Sliding panel implementation
 
-Наш текстовый редактор выглядит очень просто, поэтому мы попробуем его украсить. Используя QML, мы можем объявить переходы (_transitions_) и добавить анимацию нашему редактору. Меню занимает одну треть окна и будет здорово, если оно будет отображаться только тогда, когда нам это нужно.
+Our text editor looks very simple, so we will try to decorate it. Using QML, we can declare transitions (_transitions_) and add animations to our editor. The menu takes up one third of the window and it will be great if it is displayed only when we need it.
 
-Мы можем добавить выдвижную панель, которая будет сворачивать или разворачивать меню по клику. В нашей реализации, мы сделаем узкий прямоугольник, который будет реагировать на нажатия мыши. Панель также как и приложение будет иметь два состояния: "открыта" и "закрыта".
+We can add a sliding panel that will collapse or expand the menu on click. In our implementation, we will make a narrow rectangle that will respond to mouse clicks. The panel as well as the application will have two states: “open” and “closed”.
 
-Элемент _drawer_ - это узкая горизонтальная полоска. Вложенный элемент [Image](https://doc.qt.io/qt-4.8/qml-image.html) отображает картинку со стрелкой в центре панели. _drawer_ меняет состояние всего приложения с помощью идентификатора _screen_, каждый раз когда пользователь кликнул по нему.
+The _drawer_ element is a narrow horizontal bar. The nested element [Image](https://doc.qt.io/qt-4.8/qml-image.html) displays an image with an arrow in the center of the panel. The _drawer_ changes the state of the entire application using the _screen_ identifier, each time the user clicks on it.
 
 ```qml
 Rectangle {
@@ -349,7 +348,9 @@ Rectangle {
  }
 ```
 
-_state_ - это простая коллекция настроек, она объявляется в элементе [State](https://doc.qt.io/qt-4.8/qml-state.html). Группы состояний могут быть связаны в свойство _states_. В нашем приложении существуют два состояния _DRAWER_CLOSED_ и _DRAWER_OPEN_. Настройки элемента объявляются в элементах [PropertyChanges](https://doc.qt.io/qt-4.8/qml-propertychanges.html). В состоянии _DRAWER_OPEN_ у всех четырех элементов будут изменены свойства. _menuBar_ изменит значение свойства _y_ на 0, _textArea_ опуститься ниже, а стрелка на панели изменит направление.
+
+_state_ is a simple collection of settings, it is declared in the [State](https://doc.qt.io/qt-4.8/qml-state.html) element. Groups of states can be linked in the _states_ property. In our application, there are two states _DRAWER_CLOSED_ and _DRAWER_OPEN_. The element settings are declared in the [PropertyChanges](https://doc.qt.io/qt-4.8/qml-propertychanges.html) elements. In the _DRAWER_OPEN_ state, all four elements will have their properties changed. The _menuBar_ will change the _y_ property value to 0, the _textArea_ will go lower, and the arrow on the panel will change direction.
+
 
 ```qml
 states: [
@@ -370,11 +371,13 @@ states: [
  ]
 ```
 
-Изменения состояний нуждаются в более плавном переходе. Переходы между состояниями объявляются в элементе [Transition](https://doc.qt.io/qt-4.8/qml-transition.html), который можно связать со свойством _transitions_ нашего элемента. Наш редактор находится в режиме перехода каждый раз, когда его состояние меняется с _DRAWER_OPEN_ на _DRAWER_CLOSED_ и наоборот. Важно заметить, что _Transition_ нуждается в объявленных свойствах _from_ и _to_ - начальном и конечном состоянии, но для наших переходов мы можем использовать обобщающий символ *, означающий, что переход применим для всех состояний.
 
-Во время перехода мы можем добавить анимацию для изменения свойств. Наш _menuBar_ меняет позицию с _y:0_ на **y:-partition** и мы можем анимировать этот переход используя элемент [NumberAnimation](https://doc.qt.io/qt-4.8/qml-numberanimation.html). Мы объявляем временной интервал и переходную кривую (_easing curve_) для свойств, которые будут изменяться при анимации. Переходные кривые контролируют коэффициенты анимации и поведение интерполяции во время переходов между состояниями. Кривая, которую мы выбрали- [Easing.OutQuint](https://doc.qt.io/qt-4.8/qml-propertyanimation.html#easing.type-prop), она замедляет движение в конце анимации.
+State changes need a smoother transition. Transitions between states are declared in the [Transition](https://doc.qt.io/qt-4.8/qml-transition.html) element, which can be associated with the _transitions_ property of our element. Our editor is in transition every time its state changes from _DRAWER_OPEN_ to _DRAWER_CLOSED_ and vice versa. It's important to note that _Transition_ needs the declared properties _from_ and _to_ - the start and end states, but for our transitions we can use the generalization symbol *, meaning that the transition applies to all states.
 
-Пожалуйста, прочитайте статью [QML Animation](https://doc.qt.io/qt-4.8/qdeclarativeanimation.html) для получения более подробного описания различных типов анимации.
+During a transition, we can add animations to change properties. Our _menuBar_ changes position from _y:0_ to **y:-partition** and we can animate this transition using the [NumberAnimation](https://doc.qt.io/qt-4.8/qml-numberanimation.html) element. We declare a time interval and a transition curve (_easing curve_) for the properties that will change during the animation. Transition curves control the animation coefficients and interpolation behavior during transitions between states. The curve we have chosen is [Easing.OutQuint](https://doc.qt.io/qt-4.8/qml-propertyanimation.html#easing.type-prop), it slows down the motion at the end of the animation.
+
+Please read the article [QML Animation](https://doc.qt.io/qt-4.8/qdeclarativeanimation.html) for a more detailed description of the different types of animation.
+
 
 ```qml
 transitions: [
@@ -387,7 +390,7 @@ transitions: [
  ]
 ```
 
-Другой способ анимации изменения свойств, это объявление элемента [Behavior](https://doc.qt.io/qt-4.8/qml-behavior.html). Переход работает только во время изменения состояний и [Behavior](https://doc.qt.io/qt-4.8/qml-behavior.html) может установить анимацию для основных изменяемых свойств. В нашем редакторе, стрелка имеет анимацию типа _NumberAnimation_, что позволяет поворачивать стрелку при запуске анимации. Это делается через изменение свойства _rotation_.
+Another way to animate property changes is to declare a [Behavior](https://doc.qt.io/qt-4.8/qml-behavior.html) element. The transition only works during state changes and [Behavior](https://doc.qt.io/qt-4.8/qml-behavior.html) can set animations for the main properties being changed. In our editor, the arrow has an animation of type _NumberAnimation_, which allows the arrow to be rotated when the animation starts. This is done through changing the _rotation_ property.
 
 ```qml
 In TextEditor.qml:
@@ -397,7 +400,9 @@ In TextEditor.qml:
   }
 ```
 
-Вернемся к нашим компонентам. Мы можем улучшить их внешний вид, используя полученные знания о состояниях и переходах. В файле _Button.qml_, мы можем добавить изменение свойств _color_ и _scale_ когда кнопка нажата. Цвета изменяются с помощью [ColorAnimation](https://doc.qt.io/qt-4.8/qml-coloranimation.html), а масштаб с помощью [NumberAnimation](https://doc.qt.io/qt-4.8/qml-numberanimation.html). Запись _on propertyName_ полезна когда требуется применить анимацию только на одно свойство.
+
+Let's return to our components. We can improve their appearance using the knowledge we have gained about states and transitions. In the _Button.qml_ file, we can add changing the _color_ and _scale_ properties when the button is pressed. The colors are changed with [ColorAnimation](https://doc.qt.io/qt-4.8/qml-coloranimation.html) and the scale with [NumberAnimation](https://doc.qt.io/qt-4.8/qml-numberanimation.html). The _on propertyName_ entry is useful when you want to apply animation to only one property.
+
 
 ```
 In Button.qml:
@@ -410,9 +415,11 @@ scale: buttonMouseArea.pressed ? 1.1 : 1.00
  Behavior on scale { NumberAnimation{ duration: 55} }
 ```
 
-Также мы можем улучшить внешний вид наших QML-компонентов, добавив такие цветовые эффекты как градиенты и изменение прозрачности. Объявление элемента [Gradient](https://doc.qt.io/qt-4.8/qml-gradient.html) переопределяет свойство _color_. Вы можете объявить цвет градиента используя элемент [GradientStop](https://doc.qt.io/qt-4.8/qml-gradientstop.html). Позиция (_position_) элементов _GradientStop_ может принимать значения между 0.0 и 1.0.
 
-В MenuBar.qml
+We can also enhance the appearance of our QML components by adding color effects such as gradients and transparency changes. Declaring a [Gradient](https://doc.qt.io/qt-4.8/qml-gradient.html) element overrides the _color_ property. You can declare a gradient color using the [GradientStop](https://doc.qt.io/qt-4.8/qml-gradientstop.html) element. The _position_ of _GradientStop_ elements can take values between 0.0 and 1.0.
+
+
+In MenuBar.qml
 ```qml
  gradient: Gradient {
   GradientStop { position: 0.0; color: "#8C8F8C" }
@@ -422,261 +429,4 @@ scale: buttonMouseArea.pressed ? 1.1 : 1.00
   }
 ```
 
-Этот градиент используется для придания объема панели меню. Первый цвет начинается с 0.0 и последний заканчивается на 1.0
-
-### Что делать дальше?
-
-Мы закончили разработку пользовательского интерфейса очень простого текстового редактора. Продолжаем двигаться дальше, пользовательский интерфейс готов, и мы можем разрабатывать логику приложения, используя обычный Qt и C++. QML хорошо подходит как инструмент для построения прототипов и отделения логики приложения от графического пользовательского интерфейса.
-
-![qml-texteditor4_texteditor.png](https://doc.qt.io/qt-4.8/images/qml-texteditor4_texteditor.png)
-
-## Расширяем возможности QML с помощью C++
-
-Теперь, когда мы имеем макет нашего приложения, мы можем приступить к реализации возможностей текстового редактора на C++. Использование QML вместе с C++ позволяет нам реализовать логику приложения с помощью Qt. Мы можем создать QML-контекст в приложении C++ используя классы [Qt Declarative](https://doc.qt.io/qt-4.8/qtbinding.html) и отображать элементы QML при помощи [QDeclarativeView](https://doc.qt.io/qt-4.8/qdeclarativeview.html), который основан на [Graphics View Framework](https://doc.qt.io/qt-4.8/graphicsview.html). Или же, мы можем экспортировать C++ код в плагин, который сможет использоваться в _qmlviewer_. Для нашего приложения мы разработаем функции загрузки и сохранения файла на C++ и экспортируем их как плагин. Это позволит запускать QML-приложение непосредственно в _qmlviewer_, а также полноценно работать с дизайнером QML в Qt Creator.
-
-### Делаем C++ классы доступными в QML
-
-Мы будем реализовывать загрузку и сохранение файла используя Qt и C++. C++ классы и функции могут использоваться в QML только после того, как будут зарегистрированы в нем. Класс должен быть собран как Qt-плагин, а QML-приложение должно знать месторасположение плагина.
-
-Для нашего приложения, нам потребуется создать следующие элементы:
-
-1. Класс _Directory_, который хранит список файлов (объекты типа _File_) и отвечает за операции с каталогами
-2. Класс _File_, наследник [QObject](https://doc.qt.io/qt-4.8/qobject.html), который хранит имя файла
-3. Класс плагина, который будет регистрироваться QML-контексте
-4. Файл проекта Qt (с расширением .pro), для описания настроек сборки плагина
-5. Файл _qmldir_, который сообщает _qmlviewer_ о том, где искать наш плагин
-
-### Сборка плагина
-
-Чтобы собрать плагин, нам необходимо добавить указания на исходники, заголовки, и модули Qt в наш файл проекта. Весь код на C++ и файлы проекта находятся в директории _filedialog_.
-
-В cppPlugins.pro:
-
-```pro
-TEMPLATE = lib
- CONFIG ''= qt plugin
- QT''= declarative
-
-DESTDIR ''= ../plugins
- OBJECTS_DIR = tmp
- MOC_DIR = tmp
-
- TARGET = FileDialog
-
- HEADERS''= directory.h  file.h  dialogPlugin.h
-
-SOURCES += directory.cpp  file.cpp  dialogPlugin.cpp
-```
-
-Мы включаем в сборку модуль _declarative_ и указываем, что мы хотим собрать плагин (TEMPLATE = lib, CONFIG = plugin ). Также мы указываем, что собранный плагин должен быть помещен в директорию _plugins_, расположенную в родительском каталоге.
-
-### Регистрация класса в QML
-
- В dialogPlugin.h:
-
-```cpp
-#include <QDeclarativeExtensionPlugin>
-
-class DialogPlugin : public QDeclarativeExtensionPlugin
- {
- Q_OBJECT
-
-public:
- void registerTypes(const char *uri);
-
-};
-```
-
-Наш класс плагина _DialogPlugin_ является наследником [QDeclarativeExtensionPlugin](https://doc.qt.io/qt-4.8/qdeclarativeextensionplugin.html). Нам необходимо переопределить виртуальную функцию [registerTypes()](https://doc.qt.io/qt-4.8/qdeclarativeextensionplugin.html#registerTypes). Файл _dialogPlugin.cpp_ выглядит следующим образом:
-
-DialogPlugin.cpp:
-
-```cpp
-#include "dialogPlugin.h"
- #include "directory.h"
- #include "file.h"
- #include <qdeclarative.h>
-
-void DialogPlugin::registerTypes(const char *uri){
-
- qmlRegisterType<Directory>(uri, 1, 0, "Directory");
- qmlRegisterType<File>(uri, 1, 0,"File");
- }
-
- Q_EXPORT_PLUGIN2(FileDialog, DialogPlugin);
-```
-
-Функция [registerTypes()](https://doc.qt.io/qt-4.8/qdeclarativeextensionplugin.html#registerTypes) регистрирует наши классы _File_ И _Directory_ в QML. Эта функция требует названия классов для их прототипов, номера старшей и младшей версий классов и их имена.
-
-Нам необходимо экспортировать плагин с помощью макроса [Q_EXPORT_PLUGIN2](https://doc.qt.io/qt-4.8/qtplugin.html#Q_EXPORT_PLUGIN2#q-export-plugin2). Обратите внимание, что в файле dialogPlugin.h мы имеем макрос [Q_OBJECT](https://doc.qt.io/qt-4.8/qobject.html#Q_OBJECT) в начале нашего класса. Также нам надо запустить _qmake_ для генерации мета-информации о наших классах.
-
-### Создание QML-свойств в C++ классе
-
-Мы можем создавать QML-элементы и определять их свойства, используя C++ и систему мета-информации Qt ([Meta-Object System](https://doc.qt.io/qt-4.8/metaobjects.html)). Мы можем сообщить Qt о свойствах наших объектов, используя для этого сигналы и слоты, тогда эти свойства будут доступны в QML.
-
-Текстовый редактор должен иметь возможность загружать и сохранять файлы. Как правило, эти возможности содержатся в файловом диалоге. К счастью, мы можем использовать [QDir](https://doc.qt.io/qt-4.8/qdir.html), [QFile](https://doc.qt.io/qt-4.8/qfile.html) и [QTextStream](https://doc.qt.io/qt-4.8/qtextstream.html) для реализации чтения директории и операций ввода/вывода.
-
-```cpp
- class Directory : public QObject{
-
- Q_OBJECT
-
- Q_PROPERTY(int filesCount READ filesCount CONSTANT)
- Q_PROPERTY(QString filename READ filename WRITE setFilename NOTIFY filenameChanged)
- Q_PROPERTY(QString fileContent READ fileContent WRITE setFileContent NOTIFY fileContentChanged)
- Q_PROPERTY(QDeclarativeListProperty<File> files READ files CONSTANT )
-```
-
-Класс _Directory_ использует систему мета-информации Qt для регистрации свойств, необходимых для работы с файлами. Класс _Directory_ экспортируется как плагин и может использоваться как элемент в контексте QML. Каждое из перечисленных свойств, использующих макрос [Q_PROPERTY](https://doc.qt.io/qt-4.8/qobject.html#Q_PROPERTY), является свойством QML.
-
-[Q_PROPERTY](https://doc.qt.io/qt-4.8/qobject.html#Q_PROPERTY) объявляет свойство, а также его функции чтения и записи. Например, свойство filename, имеющее тип [QString](https://doc.qt.io/qt-4.8/qstring.html), читается при помощи функции filename() и устанавливается при помощи функции setFilename(). А каждый раз когда значение этого свойства меняется, генерируется сигнал filenameChanged(). Функции чтения и записи свойств объявлены как _public_ в файле заголовка.
-
-Точно так же у нас есть другие свойства, объявленные в соответствии с их использованием. Свойство _filesCount_ указывает количество файлов в директории. Свойство _filename_ содержит имя текущего выбранного файла. Содержимое файла для чтения и записи хранится в свойстве _fileContent_.
-
-Q_PROPERTY(QDeclarativeListProperty<File> files READ files CONSTANT )
-
-Свойство _files_ содержит список всех отфильтрованных файлов в директории. Класс _Directory_ реализован так, чтобы отображать только корректные текстовые файлы; в данном случае, корректными считаются только файлы с расширением ".txt". Объекты класса [QList](https://doc.qt.io/qt-4.8/qlist.html) могут использоваться в QML после объявления их с ключевым словом _QDeclarativeListProperty_ в коде на C++. Заметим, что класс, указанный в качестве параметр-класса, должен быть потомком _QObject_, то есть класс _File_ также должен наследовать класс _QObject_. В классе _Directory_ список объектов типа _File_ хранится в переменной _m_fileList_ типа [QList](https://doc.qt.io/qt-4.8/qlist.html).
-
-```cpp
- class File : public QObject{
-	 Q_OBJECT
-	 Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
- };
-```
-Свойства могут использоваться в QML как свойства элементов _Directory_. Заметим, что нам не следует создавать свойство _id_ для объектов на языке C++.
-
- Directory{
- id: directory
-
- filesCount
- filename
- fileContent
- files
-
- files[0].name
- }
-
-Поскольку QML использует синтаксис и структуру языка Javascript, мы можем пройти по списку файлов как по массиву и узнать их свойства. Например, чтобы получить имя первого файла, нам достаточно обратиться к свойству _files[0].name_.
-
-Обычные функции C++ также доступны из QML. Функции загрузки и сохранения файлов реализованы на языке C++ и определены с макросом _Q_INVOKABLE_. Также функцию можно объявить как слот (_slot_) и тогда она тоже будет доступна в QML.
-
- В файле Directory.h:
-
- Q_INVOKABLE void saveFile();
- Q_INVOKABLE void loadFile();
-
-Класс _Directory_ также должен сообщать другим объектам о том, что содержимое каталога изменилось. Для этого объект данного класса генерирует определенный сигнал (_signal_). Как уже отмечалось ранее, сигналы в QML имеют соответствующие обработчики, начинающиеся с приставки _on_. В данном случае, сигнал называется _directoryChanged_ и генерируется каждый раз при обновлении содержимого каталога. При обновлении заново загружается список файлов в каталоге и создается список корректных текстовых файлов. Для того, чтобы объекты QML могли получать этот сигнал, в них необходимо реализовать обработчик сигнала _onDirectoryChanged_.
-
-Более подробно стоит рассмотреть свойства объектов на C++. Свойства списка используют обратный вызов (_callback_) для получения и изменения содержимого списка. Свойства списка имеют тип _QDeclarativeListProperty<File>_. Каждый раз при обращении к списку, функция доступа должна возвращать _QDeclarativeListProperty<File>_. Так как параметр-класс _File_ является наследником _QObject_, то при создании свойств _QDeclarativeListProperty_ необходимо передать в конструктор ссылки на функции доступа и модификаторы. Также класс списка (в нашем случае _QList_) должен быть списком ссылок на объекты _File_.
-
-Ниже приведено определение конструктора _QDeclarativeListProperty_ из класса _Directory_:
-
- QDeclarativeListProperty ( QObject* object, void * data, AppendFunction append, CountFunction count = 0, AtFunction at = 0, ClearFunction clear = 0 )
- QDeclarativeListProperty<File>( this, &m_fileList, &appendFiles, &filesSize, &fileAt, &clearFilesPtr );
-
-В качестве аргументов, конструктору передаются ссылки на функции, которые позволяют добавлять элементы в список, узнавать количество элементов, получать элемент по индексу и очищать список. Однако, обязательной является только функция добавления элементов в список. Стоит заметить, что указатели должны ссылаться на функции, соответствующие описанию функций [AppendFunction](https://doc.qt.io/qt-4.8/qdeclarativelistproperty.html#AppendFunction-typedef), [CountFunction](https://doc.qt.io/qt-4.8/qdeclarativelistproperty.html#CountFunction-typedef), [AtFunction](https://doc.qt.io/qt-4.8/qdeclarativelistproperty.html#AtFunction-typedef) или [ClearFunction](https://doc.qt.io/qt-4.8/qdeclarativelistproperty.html#ClearFunction-typedef).
-
-```
- void appendFiles(QDeclarativeListProperty<File> * property, File * file)
- File* fileAt(QDeclarativeListProperty<File> * property, int index)
- int filesSize(QDeclarativeListProperty<File> * property)
- void clearFilesPtr(QDeclarativeListProperty<File> *property)
-```
-
-Чтобы упростить нашу диалоговую форму, класс _Directory_ отфильтровывает некорректные файлы, имеющие расширение, отличное от _.txt_. То есть пользователь в списке увидит только файлы с расширением _.txt_. Также проверяется, чтобы сохраняемый файл также имел расширение _.txt_. _Directory_ использует класс [QTextStream](https://doc.qt.io/qt-4.8/qtextstream.html) для чтения данных и записи в файл.
-
-Используя наш элемент _Directory_, мы можем получить список файлов, определить количество текстовых файлов в каталоге приложения, получить имя файла и его содержимое в виде строки [QString](https://doc.qt.io/qt-4.8/qstring.html), а также получить информацию об изменении содержимого каталога.
-
-Для создания плагина необходимо выполнить команду _qmake_ для файла проекта _cppPlugins.pro_. Чтобы собрать бинарный файл и поместить его в каталог с плагинами (_plugins), необходимо выполнить команду _make_.
-
-### Импорт плагина в QML
-
-Утилита _qmlviewer_ импортирует файлы, расположенные в той же директории, что и разрабатываемое QML-приложение. Мы также можем создать файл _qmldir_ содержащий пути до QML-файлов, которые мы хотим импортировать. Также в файле _qmldir_ мы можем хранить информацию о расположении плагинов и других ресурсов.
-
- В qmldir:
-
-Button ./Button.qml
- FileDialog ./FileDialog.qml
- TextArea ./TextArea.qml
- TextEditor ./TextEditor.qml
- EditMenu ./EditMenu.qml
-
-plugin FileDialog plugins
-
-Плагин, который мы создали, называется _FileDialog_, что указывается в поле _TARGET_ в файле описания проекта. Скомпилированный плагин располагается в каталоге _plugins_.
-
-### Интеграция файлового диалога в меню
-
-Наш элемент _FileMenu_ должен отображать элемент _FileDialog_, содержащий список текстовых файлов в директории, что позволяет пользователю выбрать файл, просто кликнув на него в списке. Также необходимо назначить действия для кнопок сохранения, загрузки и создания нового документа. _FileMenu_ содержит поле ввода, позволяющее пользователю ввести имя файла с помощью клавиатуры.
-
-Элемент _Directory_, используемый в файле _FileMenu.qml_, уведомляет элемент _FileDialog_ о том, что необходимо обновить список отображаемых файлов. Этот сигнал обрабатывается в функции _onDirectoryChanged_.
-
-In FileMenu.qml:
-
-Directory{
- id: directory
- filename: textInput.text
- onDirectoryChanged: fileDialog.notifyRefresh()
- }
-
-Чтобы упростить разработку нашего приложения, мы не будем скрывать наш файловый диалог. И как отмечалось ранее, наш файловый диалог будет отображать в списке только текстовые файлы с расширением _.txt_.
-
-В FileDialog.qml:
-
-signal notifyRefresh()
- onNotifyRefresh: dirView.model = directory.files
-
-Компонент _FileDialog_ будет отображать содержимое текущего каталога, используя список под названием _files_. Для отображения элементов этот список использует компонент(представление) _GridView_, который отображает данные в виде таблицы с использованием делегатов. Делегат отвечает за внешний вид модели, и наш файловый диалог просто отобразит текстовую таблицу, с расположенными в центре именами файлов. При клике по имени файла, появится прямоугольник, обрамляющий выбранный элемент. Также наш FileDialog будет обновлять список файлов при получении соответствующего сигнала.
-
-В FileMenu.qml:
-
-```qml
-Button {
- id: newButton
- label: "New"
- onButtonClick: {
-  textArea.textContent = ""
-  }
- }
- Button {
-  id: loadButton
-  label: "Load"
-  onButtonClick: {
-   directory.filename = textInput.text
-   directory.loadFile()
-   textArea.textContent = directory.fileContent
-   }
-  }
- Button {
-  id: saveButton
-  label: "Save"
-  onButtonClick: {
-   directory.fileContent = textArea.textContent
-   directory.filename = textInput.text
-   directory.saveFile()
-   }
-  }
- Button {
-  id: exitButton
-  label: "Exit"
-  onButtonClick: {
-   Qt.quit()
-   }
-  }
-```
-
-Теперь можно соединить элементы меню _FileMenu_ с соответствующими действиями. При нажатии на кнопку _saveButton_, текст будет передан из _TextEdit_ в свойство _fileContent_ элемента _directory_, а имя редактируемого файла будет скопировано из поля ввода. И после этого будет вызвана функция _saveFile()_ для сохранения файла. Кнопка _loadButton_ похожа по функциональности. Кнопка _newButton_ очищает содержимое _TextEdit_.
-
-Аналогично, кнопки _EditMenu_ будут связаны с функциями _TextEdit_, выполняющими копирование, вставку и выбор всего текста в редакторе.
-
-![qml-texteditor5_filemenu.png](https://doc.qt.io/qt-4.8/images/qml-texteditor5_filemenu.png)
-
-## Текстовый редактор завершен
-
-![qml-texteditor5_newfile.png](https://doc.qt.io/qt-4.8/images/qml-texteditor5_newfile.png)
-
-Итак, созданное приложение может использоваться как простой текстовый редактор, способное редактировать текст и сохранять его в файл.
-
-## Исходный код
-
-Полный исходный код этого приложения можно взять [здесь](https://doc.qt.io/qt-4.8/gettingstartedqml.html).
+This gradient is used to give volume to the menu bar. The first color starts at 0.0 and the last color ends at 1.0

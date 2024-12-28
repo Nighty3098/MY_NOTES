@@ -3,45 +3,47 @@ tags:
   - qt
 ---
 
-## Шаблон
-###  Использование qmake
+## Template
+
+### Using qmake
+
 ```qmake
 QT += core network xml 
-## укажем необходимые Qt компоненты
+### specify the necessary Qt components
 
-TARGET = lib1$${LIB_SUFFIX} 
-## укажем таргет
+TARGET = lib1$$${LIB_SUFFIX} 
+## specify the target
 
 TEMPLATE = lib 
-## скажем, что мы собираем библиотеку
+## say we are building the library
 
 DEFINES += LIB1_LIBRARY
-## добавить define, возможно где-то пригодится
+## add define, it may be useful somewhere
 
 include(lib1.pri) 
-## укажем .pri файл, содержащий перечисление исходников
+## specify a .pri file containing the source listing.
 ```
 
 
-### Использование cmake
+### Using cmake
 
-```
+```cmake
 project(gen LANGUAGES CXX) 
-## указываем проект и используемые языки
+## specify the project and the languages used
 
 find_package( 
 	QT NAMES Qt6 Qt5
 	COMPONENTS Core Network Xml
 	REQUIRED
 )
-## укажем, что мы хотим найти пакет Qt6 или Qt5
+## specify that we want to find a Qt6 or Qt5 package
 
 find_package(
 	Qt${QT_VERSION_MAJOR}
 	COMPONENTS Core Network Xml
 	REQUIRED
 )
-## укажем, что из найденного пакета нам нужны такие компоненты
+## specify that we need the following components from the found package
 
 add_library(
 	lib1 STATIC
@@ -50,7 +52,7 @@ add_library(
 	src.cpp
 	...
 )
-##  укажем, что мы хотим собрать статическую библиотеку
+## specify that we want to build a static library
 
 target_link_libraries(
 	lib1
@@ -58,17 +60,17 @@ target_link_libraries(
 	PRIVATE Qt${QT_VERSION_MAJOR}::Xml
 	PRIVATE Qt${QT_VERSION_MAJOR}::Network
 )
-## и слинковать ее с такими-то библиотеками
+## and link it to such and such libraries
 
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE ${PROJECT_NAME}_LIBRARY)
 
-## добавляем макрос
+## add macro
 ```
 
 
 
-## Пример использования в проекте
+## Example of using it in a project
 
 ```cmake
 project(App1)
@@ -78,25 +80,25 @@ set(PROJECT_VERSION_MINOR 0)
 set(PROJECT_VERSION_PATCH 0)
 
 
-## здесь версию можно указать разными способами
-## мы укажем так
+## here the version can be specified in different ways
+## we will specify it this way
 
 configure_file(
 	${CMAKE_SOURCE_DIR}/config.h.in
-	## взять такой файл за шаблон
+	## take this file as a template
 	${CMAKE_CURRENT_BINARY_DIR}/config.h
-	## сгенерировать из него новый по такому то пути
+	## generate a new one from it at this path
 	@ONLY
 )
 
 configure_file(
 	${CMAKE_SOURCE_DIR}/versioninfo.rc.in
 	${CMAKE_CURRENT_BINARY_DIR}/versioninfo.rc
-	## аналогичная генерация, но уже rc файлов
+	## similar generation, but already rc files
 	@ONLY
 )
 
-## генерируемые файлы
+## generated files
 
 find_package(
 
@@ -113,27 +115,27 @@ find_package(
 add_executable(${PROJECT_NAME}	
 	main.cpp
 	...
-	../../icon.rc # это тоже иконка но windows-only
+	../../icon.rc # this is also an icon but windows-only
 	${CMAKE_CURRENT_BINARY_DIR}/versioninfo.rc # windows-only
 )
 
   
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_BINARY_DIR}))
 
-## добавим в include directories нашу директорию, где будут лежать
+## add to include directories our directory, where the generated files will lie
 
-## сгенерированные файлы
+## generated files
 
   
 
-if(CMAKE_BUILD_TYPE STREQUAL "Release")
+if(CMAKE_BUILD_TYPE STREQUAL “Release”)
 
 	set_property(TARGET ${PROJECT_NAME} PROPERTY WIN32_EXECUTABLE true)
 
 endif()
 
-## куда ж без костылей, говорим, что запускать надо гуй без консоли
+## where without crutches, we say that it is necessary to run the gui without console
 
   
 
@@ -157,4 +159,3 @@ target_link_libraries(
 
 )
 ```
-

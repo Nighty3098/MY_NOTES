@@ -3,173 +3,173 @@ tags:
   - matplotlib
   - python
 ---
-# Использование Matplotlib в Python
+# Using Matplotlib in Python
 
-Matplotlib — это мощная библиотека для визуализации данных в Python, которая позволяет создавать широкий спектр графиков и диаграмм. В этом конспекте мы рассмотрим основные функции и возможности Matplotlib, а также приведем примеры использования.
+Matplotlib is a powerful data visualization library for Python that allows you to create a wide range of graphs and charts. In this article, we will look at the main features and capabilities of Matplotlib, and also provide examples of its use.
 
-## 1. Установка Matplotlib
+## 1. Installing Matplotlib
 
-Для начала необходимо установить библиотеку. Это можно сделать с помощью pip:
+First, you need to install the library. This can be done using pip:
 
 ```bash
 pip install matplotlib
 ```
 
-## 2. Основы работы с Matplotlib
+## 2. Basics of working with Matplotlib
 
-Matplotlib предоставляет два основных интерфейса для создания графиков: **pyplot** и **object-oriented API**. Наиболее распространенным является интерфейс pyplot, который имитирует MATLAB.
+Matplotlib provides two main interfaces for creating graphs: **pyplot** and **object-oriented API**. The most common is the pyplot interface, which mimics MATLAB.
 
-### 2.1 Импорт библиотеки
+### 2.1 Importing a library
 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
 ```
 
-## 3. Создание простых графиков
+## 3. Creating simple graphs
 
-### 3.1 Линейный график
+### 3.1 Line Plot
 
-Линейные графики используются для отображения зависимости между двумя переменными.
+Line plots are used to show the relationship between two variables.
 
 ```python
 x = np.linspace(0, 10, 100)
 y = np.sin(x)
 
 plt.plot(x, y)
-plt.title("Линейный график")
+plt.title("Line Plot")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.grid()
 plt.show()
 ```
 
-### 3.2 Точечный график (Scatter Plot)
+### 3.2 Scatter Plot
 
-Точечные графики отображают значения двух переменных в виде точек.
+Scatter plots display the values ​​of two variables as dots.
 
 ```python
 x = np.random.rand(50)
 y = np.random.rand(50)
 
 plt.scatter(x, y)
-plt.title("Точечный график")
+plt.title("Scatter Plot")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.show()
 ```
 
-### 3.3 Гистограмма
+### 3.3 Histogram
 
-Гистограммы используются для отображения распределения данных.
+Histograms are used to display the distribution of data.
 
 ```python
 data = np.random.randn(1000)
 
 plt.hist(data, bins=30, alpha=0.7)
-plt.title("Гистограмма")
-plt.xlabel("Значение")
-plt.ylabel("Частота")
+plt.title("Histogram")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
 plt.show()
 ```
 
-### 3.4 Столбчатая диаграмма (Bar Chart)
+### 3.4 Bar Chart
 
-Столбчатые диаграммы представляют данные в виде вертикальных или горизонтальных столбцов.
+Bar charts present data as vertical or horizontal columns.
 
 ```python
 categories = ['A', 'B', 'C', 'D']
-values = [4, 7, 1, 8]
+values ​​= [4, 7, 1, 8]
 
 plt.bar(categories, values)
-plt.title("Столбчатая диаграмма")
-plt.xlabel("Категории")
-plt.ylabel("Значения")
+plt.title("Bar Chart")
+plt.xlabel("Categories")
+plt.ylabel("Values")
 plt.show()
 ```
 
-### 3.5 Круговая диаграмма (Pie Chart)
+### 3.5 Pie Chart
 
-Круговые диаграммы показывают доли частей от целого.
+Pie charts show proportions of parts of a whole.
 
 ```python
 sizes = [15, 30, 45, 10]
 labels = ['A', 'B', 'C', 'D']
 
 plt.pie(sizes, labels=labels, autopct='%1.1f%%')
-plt.title("Круговая диаграмма")
+plt.title("Pie Chart")
 plt.show()
 ```
 
-## 4. Настройка графиков
+## 4. Customizing Plots
 
-### 4.1 Добавление заголовков и меток
+### 4.1 Adding Titles and Labels
 
-Вы можете добавлять заголовки и метки к осям с помощью функций `title()`, `xlabel()`, и `ylabel()`.
+You can add titles and labels to axes using the `title()`, `xlabel()`, and `ylabel()` functions.
 
 ```python
 plt.plot(x, y)
-plt.title("Заголовок графика")
-plt.xlabel("Ось X")
-plt.ylabel("Ось Y")
+plt.title("Graph Title")
+plt.xlabel("X-Axis")
+plt.ylabel("Y-Axis")
 ```
 
-### 4.2 Настройка стиля линий и маркеров
+### 4.2 Customizing Line and Marker Styles
 
-Вы можете изменять стиль линий и маркеров на графиках.
+You can change the style of lines and markers on graphs.
 
-```python
+``python
 plt.plot(x, y, linestyle='--', color='r', marker='o')
 ```
 
-### 4.3 Легенда
+### 4.3 Legend
 
-Легенды помогают идентифицировать разные линии на графике.
+Legends help identify different lines on a graph.
 
 ```python
-plt.plot(x, y, label='Синус')
-plt.plot(x, np.cos(x), label='Косинус')
+plt.plot(x, y, label='Sine')
+plt.plot(x, np.cos(x), label='Cosine')
 plt.legend()
 ```
 
-## 5. Работа с несколькими подграфиками (Subplots)
+## 5. Working with Multiple Subplots
 
-Вы можете создавать несколько подграфиков в одной фигуре с помощью функции `subplots()`.
+You can create multiple subplots in a single figure using the `subplots()` function.
 
 ```python
 fig, axs = plt.subplots(2, 2)
 
 axs[0, 0].plot(x, y)
-axs[0, 0].set_title('Синус')
+axs[0, 0].set_title('Sine')
 
 axs[0, 1].plot(x, np.cos(x))
-axs[0, 1].set_title('Косинус')
+axs[0, 1].set_title('Cosine')
 
 axs[1, 0].hist(data)
-axs[1, 0].set_title('Гистограмма')
+axs[1, 0].set_title('Histogram')
 
 axs[1, 1].pie(sizes, labels=labels)
-axs[1, 1].set_title('Круговая диаграмма')
+axs[1, 1].set_title('Pie Chart')
 
 plt.tight_layout()
 plt.show()
-```
+``
 
-## 6. Сохранение графиков
+## 6. Saving graphs
 
-Вы можете сохранять графики в различных форматах (PNG, PDF и т.д.) с помощью функции `savefig()`.
+You can save graphs in various formats (PNG, PDF, etc.) using the function `savefig()`.
 
 ```python
 plt.plot(x, y)
-plt.title("Сохранение графика")
+plt.title("Saving a plot")
 plt.savefig('my_plot.png')
 ```
 
-## 7. Специальные типы графиков
+## 7. Special types of plots
 
-### 7.1 Контурные графики (Contour Plots)
+### 7.1 Contour Plots
 
-Контурные графики отображают уровни значений на двумерной плоскости.
+Contour plots display levels of values ​​on a two-dimensional plane.
 
 ```python
 X = np.linspace(-5, 5, 100)
@@ -178,13 +178,13 @@ X, Y = np.meshgrid(X, Y)
 Z = np.sin(np.sqrt(X**2 + Y**2))
 
 contour = plt.contour(X, Y, Z)
-plt.title("Контурный график")
+plt.title("Contour Plot")
 plt.show()
 ```
 
-### 7.2 Графики в трехмерном пространстве (3D Plots)
+### 7.2 3D Plots
 
-Для создания трехмерных графиков необходимо импортировать модуль `mplot3d`.
+To create 3D plots, you need to import the `mplot3d` module.
 
 ```python
 from mpl_toolkits.mplot3d import Axes3D
@@ -197,7 +197,7 @@ y = np.random.rand(100)
 z = np.random.rand(100)
 
 ax.scatter(x, y, z)
-ax.set_title('3D Точечный график')
+ax.set_title('3D Scatter Plot')
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')

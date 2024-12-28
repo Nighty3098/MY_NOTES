@@ -2,59 +2,59 @@
 tags:
   - qt
 ---
-## Сортировка списка
+## Sort list
 
 ```cpp
 QList<QString> list;
-list << "Coconut" << "Banana" << "Avocado" << "Apple";
+list << “Coconut” << “Banana” << “Avocado” << “Apple”;
 
 qSort(list.begin(), list.end());
-qDebug() << "Список по алфавиту: " << list;
+qDebug() << “List alphabetically: ” << list;
 ```
 
-## Обратная сортировка списка
+## Reverse sort the list
 
 ```cpp
 QList<QString> list;
-list << "Coconut" << "Banana" << "Avocado" << "Apple";
+list << “Coconut” << “Banana” << “Avocado” << “Apple”;
 
 qSort(list.begin(), list.end(), qGreater<QString>());
-qDebug() << "Список в обратном порядке: " << list;
+qDebug() << “List in reverse order: “ << list;
 ```
 
-## Поиск по списку
+## Search the list
 
 ```cpp
 QList<QString> list;
-list << "Coconut" << "Banana" << "Avocado" << "Apple";
+list << “Coconut” << “Banana” << “Avocado” << “Apple”;
 
-QList<QString>::iterator it = qFind(list.begin(), list.end(), "Coconut");
+QList<QString>::iterator it = qFind(list.begin(), list.end(), “Coconut”);
 
 if(it != list.end()) {
-	qDebug() << "Найдено: " << *it;
+	qDebug() << “Found: ” << *it;
 }
 else {
-	qDebug() << "Не найдено";
+	qDebug() << “Not found.”
 }
 ```
 
-## Подсчёт количества нужного элемента в списке
+## Counting the number of the required item in the list
 
 ```cpp
 QList<QString> list3;
-list3 << "Яблоко" << "Вишня" << "Персик" << "Виноград" << "Груша" << "Персик";
+list3 << “Apple” << “Cherry” << “Peach” << “Grape” << “Pear” << “Peach”;
 
 int n = 0;
 
-qCount(list3, "Персик", n);
-qDebug() << " Количество данного элемента в списке: " << n;
+qCount(list3, “Peach”, n);
+qDebug() << “ The number of this item in the list: ” << n;
 ```
 
-## Удаление элемента и его дубликатов в списке
+## Deleting an item and its duplicates in the list
 
 ```cpp
 QList<QString> list;
-list << "Apple" << "Coconut" << "Banana" << "Avocado" << "Avocado" << "Banana" << "Mango" << "Coconut" << "Coconut";
+list << “Apple” << “Coconut” << “Banana” << “Avocado” << “Avocado” << “Banana” << “Mango” << “Coconut” << “Coconut”;
 
 qDebug() << list;
 QList<QString>::iterator it = list.begin();
@@ -68,5 +68,3 @@ for(;it != list.end(); ++it) {
 	}
 qDebug() << list;
 ```
-
-[[

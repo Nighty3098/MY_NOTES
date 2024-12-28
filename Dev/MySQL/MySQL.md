@@ -2,158 +2,155 @@
 tags:
   - MySql
 ---
-## **Что такое MySQL и как она появилась**
+## **What is MySQL and how did it appear**
 
-MySQL — это система управления базами данных (СУБД). Многие по привычке называют её просто базой данных, но это некорректно — разница между двумя этими понятиями примерно такая же, как между библиотекой и библиотекарем. При этом в роли первой выступают данные, а в роли второго — непосредственно СУБД. Именно она проводит все сложные манипуляции с данными: сортирует, добавляет, удаляет, находит, отображает по запросу пользователя и так далее.
+MySQL is a database management system (DBMS). Many people habitually call it just a database, but this is incorrect - the difference between these two concepts is about the same as between a library and a librarian. In this case, the data acts as the first, and the DBMS itself acts as the second. It is the DBMS that carries out all the complex manipulations with data: sorts, adds, deletes, finds, displays at the user's request, and so on.
 
-Чтобы к данным было удобнее обращаться, MySQL хранит их в виде связанных друг с другом таблиц. Такая модель называется **реляционной**, и она далеко не нова. Первыми её стали использовать банки и госучреждения ещё в 1970-х, чтобы организовать огромные пласты данных в единую систему и ускорить транзакции.
+To make it easier to access data, MySQL stores it in the form of tables related to each other. This model is called **relational**, and it is far from new. Banks and government agencies were the first to use it back in the 1970s to organize huge layers of data into a single system and speed up transactions.
 
-Вот упрощённый пример реляционной базы данных для импровизированного онлайн-кинотеатра — есть три отдельных таблицы для фильмов, пользователей и отзывов, которые связаны между собой специальными ключами (столбец ID).
+Here is a simplified example of a relational database for an impromptu online cinema - there are three separate tables for movies, users and reviews, which are linked by special keys (the ID column).
 
 ![](https://skillbox.ru/upload/setka_images/14161315012024_accf102caaa970ce65d217b9ae9a8e9a57caa67c.jpg)
 
+MySQL itself appeared much later, in the mid-1990s, in response to the rapid growth of the Internet and the dot-com boom. Mid-level webmasters and startup owners did not need complex and expensive systems for corporate servers like [Oracle DB](https://skillbox.ru/media/code/baza-dannykh-oracle-db-kak-ona-ustroena-i-chem-khorosha/?utm_source=media&utm_medium=link&utm_campaign=all_all_media_links_links_articles_all_all_skillbox) and [Microsoft's SQL Server](https://skillbox.ru/media/code/baza-dannykh-ms-sql-server-chto-eto-zachem-nuzhna-kak-poyavilas-i-chem-khorosha/?utm_source=media&utm_medium=link&utm_campaign=all_all_media_links_links_articles_all_all_skillbox). They want a simple, no-frills, and preferably inexpensive system — as they say, “plug and play.”
 
-Сама же MySQL появилась сильно позже, уже в середине 1990-х, в ответ на бурный рост интернета и бум доткомов. Веб-мастерам средней руки и владельцам стартапов не нужны были сложные и дорогущие системы для корпоративных серверов вроде [Oracle DB](https://skillbox.ru/media/code/baza-dannykh-oracle-db-kak-ona-ustroena-i-chem-khorosha/?utm_source=media&utm_medium=link&utm_campaign=all_all_media_links_links_articles_all_all_skillbox) и [майкрософтовской SQL Server](https://skillbox.ru/media/code/baza-dannykh-ms-sql-server-chto-eto-zachem-nuzhna-kak-poyavilas-i-chem-khorosha/?utm_source=media&utm_medium=link&utm_campaign=all_all_media_links_links_articles_all_all_skillbox). Им подавай простую, без излишеств и желательно недорогую систему — как говорится, «воткнул и поехал».
+And MySQL was a perfect fit for this request. Firstly, it’s incredibly easy to set up thanks to a large set of interface features and clear documentation. And secondly, from the very beginning it was distributed under the free GNU GPL license — that is, it can be used absolutely free of charge. True, only for non-commercial purposes — otherwise, you’ll still have to fork over the money for a paid license.
 
-И MySQL идеально подходила под этот запрос. Во-первых, она чертовски просто настраивается благодаря большому набору интерфейсных фишек и понятной документации. А во-вторых, с самого начала распространяется под свободной лицензией GNU GPL — то есть её можно использовать абсолютно бесплатно. Правда, только в некоммерческих целях — в противном случае отстегнуть деньги за платную лицензию всё-таки придётся.
+Thanks to its simplicity and flexibility, MySQL is included in many ready-to-use assemblies for setting up web servers. For example, the letter M in the name of the LAMP technology stack stands for MySQL. Moreover, the other three parts of the set — Linux, Apache, and PHP — can change depending on the version of the package, but MySQL is the constant.
 
-Благодаря своей простоте и гибкости MySQL входит состав многих ready-to-use-сборок для настройки веб-серверов. Например, буква M в названии технологического стека LAMP как раз обозначает MySQL. Причём три другие части набора — Linux, Apache и PHP — могут меняться в зависимости от версии пакета, но именно MySQL является константой.
+As for the name, everything is clear with the word SQL — it’s the name of the language for managing relational databases. But there are different versions about My:
 
-Что касается названия, со словом SQL всё понятно — это название языка для управления реляционными БД. А вот по поводу My есть разные версии:
+“It’s not entirely clear where the name MySQL comes from. At TcX (the company where MySQL was born. — Ed.), the base directory, as well as a significant number of libraries and utilities, had the My prefix for ten years. At the same time, my daughter (who is several years younger) is also called My. Therefore, it remains a mystery which of the two sources gave the name MySQL."
 
-«До конца не ясно, откуда идёт название MySQL. В TcX (компании, где зародилась MySQL. — Ред.) базовый каталог, а также значительное число библиотек и утилит в течение десятка лет имели префикс My. Вместе с тем мою дочь (которая на несколько лет младше) тоже зовут My. Поэтому остаётся тайной, какой из двух источников дал название MySQL».
+**MICHAEL (MONTY) WIDENIUS**,
+creator of MySQL
 
-**МАЙКЛ (МОНТИ) ВИДЕНИУС**,  
-создатель MySQL
+The roots of the world-famous DBMS are in Scandinavia. It was developed by Michael Widenius and put on a commercial footing by him together with his friends from Sweden, David Axmark and Allan Larsson. With joint efforts, Uncle Linus' followers founded MySQL AB in 1995, which was in charge of the project.
 
-Корни всемирно известной СУБД — в Скандинавии. Она разработана Майклом Видениусом и поставлена им на коммерческие рельсы вместе с друзьями из Швеции Дэвидом Аксмарком и Алланом Ларссоном. Совместными усилиями последователи дядюшки Линуса основали в 1995 году компанию MySQL AB, которая и ведала делами проекта.
+The free float lasted 13 years: in 2008, the company was bought by Sun Microsystems, the developer of the world-famous Java, and two years later, Sun itself came under the wing of Oracle. We must give credit to the oracles - they did not abandon the philosophy of free software and continue to develop the product together with the open community of developers.
 
-Свободное плавание продлилось 13 лет: в 2008 году компанию покупает Sun Microsystems, разработчик всемирно известного Java, а двумя годами позже и сама Sun переходит под крыло Oracle. Надо отдать должное оракулам — они не стали отказываться от философии свободного ПО и продолжают развивать продукт совместно с открытым сообществом разработчиков.
+## **Who and what uses MySQL**
 
-## **Кто и для чего использует MySQL**
+Currently MySQL is [at the top](https://db-engines.com/en/ranking) of the most popular DBMS in the world, it is used in a variety of companies and development areas. Here are some examples:
 
-Сейчас MySQL — [в топе](https://db-engines.com/en/ranking) самых популярных СУБД в мире, она используется в самых разных компаниях и областях разработки. Вот несколько примеров:
+**Websites and web applications**
 
-**Сайты и веб-приложения**
+Blogs, forums, social networks, marketplaces - millions of resources use MySQL for data management. Among the world-famous representatives: WordPress, Joomla, Drupal, social networks "Facebook"*, X, forums phpBB and vBulletin, CMS Magento and others.
 
-Блоги, форумы, соцсети, маркетплейсы — миллионы ресурсов используют MySQL для управления данными. Среди всемирно известных представителей: WordPress, Joomla, Drupal, соцсети «Фейсбук»*, X, форумы phpBB и vBulletin, CMS Magento и другие.
+**Startups and small businesses**
 
-**Стартапы и малый бизнес**
+For small projects mySQL is a real find. A popular case: test a project on a free version of MySQL, and if things go well, buy a license or move to a more powerful DBMS.
 
-Для небольших проектов mySQL — настоящая находка. Популярный кейс: обкатать проект на бесплатной версии MySQL, а если дело пойдёт, купить лицензию или переехать на СУБД помощнее.
+**Corporate systems**
 
-**Корпоративные системы**
+It is logical that MySQL allows you to manage data not only on web resources, but also at enterprises.
 
-Логично, что MySQL позволяет менеджерить данные не только на веб-ресурсах, но и на предприятиях.
+**Scientific research in the field of data science and data analytics.**
 
-**Научные исследования в области data science и аналитики данных.**
+MySQL allows engineers to manage big data, perform complex queries, analyze and visualize results - especially in combination with special libraries and tools.
 
-MySQL позволяет инженерам управлять большими данными, выполнять сложные запросы, анализировать и визуализировать результаты — особенно в сочетании со специальными библиотеками и инструментами.
+**Education**
 
-**Образование**
+Here MySQL has two hypostases. In addition to managing student data
+educational institutions, it is used to teach students the basics of databases.
 
-Здесь у MySQL целых две ипостаси. Помимо управления данными учащихся образовательных организаций, она используется для обучения студентов основам баз данных.
+**Online Games**
 
-**Онлайн-игры**
+MySQL is used to store data about users, scenarios, and other aspects of online games. It is used by Minecraft, Counter-Strike, and Warcraft III, among others.
 
-MySQL используется для хранения данных о пользователях, сценариях и других аспектах сетевых игр. Её среди прочих используют Minecraft, Counter-Strike и Warcraft III.
+Now that we have seen that knowing MySQL is a sought-after skill, we can move on to learning the inner workings of this system.
 
-Теперь, когда мы убедились, что знание MySQL — востребованный навык, можно переходить к изучению внутренней кухни этой системы.
+## **How ​​the MySQL database works**
 
-## **Как устроена база данных MySQL**
+MySQL is based on a **client-server architecture**. This is when the database and its management system are stored on the server, and users connect to it using their devices. For example, we watch YouTube videos from Google servers through mobile applications.
 
-В основе MySQL лежит **клиент-серверная архитектура**. Это когда база данных и система управления ею хранятся на сервере, а пользователи подключаются к ней с помощью своих устройств. Например, мы смотрим через мобильные приложения видеоролики на YouTube, которые лежат на гугловских серверах.
+But with the help of the "native" Embedded MySQL library, you can turn it into an **embedded** DBMS - that is, embed the server directly into the application and get a so-called thick client, as opposed to a thin one, which is only needed to receive data from the server.
 
-Но с помощью «родной» библиотеки Embedded MySQL можно превратить и во **встраиваемую** СУБД — то есть внедрить сервер прямо в приложение и получить так называемый толстый клиент, в противовес тонкому, который нужен только для получения данных с сервера.
+Let's take a look at the main components of MySQL.
 
-Давайте разберём, из каких основных компонентов состоит MySQL.
+**Server (MySQL Server).** This is the central part of MySQL, which manages all databases. The server processes SQL queries, receives, processes, sends data and provides interaction with clients.
 
-**Сервер (MySQL Server).** Это центральная часть MySQL, которая управляет всеми базами данных. Сервер обрабатывает SQL-запросы, принимает, обрабатывает, отправляет данные и обеспечивает взаимодействие с клиентами.
+**Storage engine.** Responsible for the actual storage and organization of data in tables. When you create a table in MySQL, you specify which storage engine to use for this table.
 
-**Хранилище данных (storage engine).** Отвечает за фактическое хранение и организацию данных в таблицах. Когда вы создаёте таблицу в MySQL, вы указываете, какое именно хранилище нужно использовать для этой таблицы.
+Which storage engine to choose depends on the task. Some provide high read speed, but do not know how to work with transactions. Others are designed for instant access to data, but when the server is restarted, this data is lost. You can read more about the main types of storage and their purpose [in the article on OpenNET](https://www.opennet.ru/opennews/art.shtml?num=6226).
 
-Какое хранилище выбрать — зависит от задачи. Одни обеспечивают высокую скорость чтения, но не умеют работать с транзакциями. Другие заточены на моментальный доступ к данным, но при перезапуске сервера эти самые данные теряются. Подробнее об основных типах хранилищ и их назначении можно почитать [в статье на OpenNET](https://www.opennet.ru/opennews/art.shtml?num=6226).
+**Physical data structure.** Data physically written to the server's hard drive. Photos, phone numbers, bank accounts, player locations on a map in an online shooter — everything your app deals with.
 
-**Физическая структура данных.** Данные, физически записанные на жёсткий диск сервера. Фотографии, номера телефонов, банковские счета, расположение игроков на карте в онлайн-шутере — всё, с чем имеет дело ваше приложение.
+**Logical structure.** A tabular representation of data written to disk. Each row of the table is a record, and each column is its attribute. In addition, each record has unique identifiers, or keys, that make it easy to find the data you need and link it to each other.
 
-**Логическая структура.** Табличное представление данных, записанных на диск. Каждая строка таблицы представляет собой запись, а каждый столбец — её атрибут. Помимо этого, у каждой записи есть уникальные идентификаторы, или ключи, — по ним можно легко найти нужные данные и связать их между собой.
-
-**Схемы (database schema).** Это логические структуры, которые описывают организацию таблиц и связей между ними в базе данных. Одна база данных может содержать несколько схем.
+**Database schema.** These are logical structures that describe the organization of tables and the relationships between them in a database. One database can contain multiple schemas.
 
 ![](https://skillbox.ru/upload/setka_images/14444115012024_08fda0244b5397e030ee401fd2bea5b24f78a72b.jpg)
 
+**Clients.** Web applications, applications in programming languages ​​(e.g. Python, Java) or administration tools that send SQL queries to the MySQL server to perform read, write, update and delete operations.
 
-**Клиенты.** Веб-приложения, приложения на языках программирования (например, Python, Java) или инструменты администрирования, которые отправляют SQL-запросы серверу MySQL для выполнения операций чтения, записи, обновления и удаления данных.
+**SQL.** This is a universal language for communicating with relational databases. And although no DBMS speaks pure SQL, the version of the language in MySQL is as close to the original as possible. But, like any dialect, it has its own peculiarities.
 
-**SQL.** Это универсальный язык общения с реляционными базами данных. И хотя на чистом SQL не говорит ни одна СУБД, версия языка в MySQL максимально близка к оригиналу. Но, как и в любом диалекте, в нём есть свои особенности.
-
-Давайте для примера напишем код, который создаст в базе данных таблицу с информацией о читателях Skillbox Media:
+Let's write code for example that will create a table in the database with information about Skillbox Media readers:
 
 ```MySQL
 
 CREATE TABLE skillbox_readers (
-	id INT AUTO_INCREMENT,
-	name VARCHAR(100),
-	email VARCHAR(100),
-	join_date DATE,
-	PRIMARY KEY(id)
+id INT AUTO_INCREMENT,
+name VARCHAR(100),
+email VARCHAR(100),
+join_date DATE,
+PRIMARY KEY(id)
 );
 
 INSERT INTO skillbox_readers (name, email, join_date) VALUES
-('Иван Иванов', 'ivanov@example.com', '2024-01-01'),
-('Мария Петрова', 'petrova@example.com', '2024-01-02'),
-('Алексей Сидоров', 'sidorov@example.com', '2024-01-03');
+('Ivan Ivanov', 'ivanov@example.com', '2024-01-01'),
+('Maria Petrova', 'petrova@example.com', '2024-01-02'),
+('Alexey Sidorov', 'sidorov@example.com', '2024-01-03');
 ```
 
-А теперь — отсортируем читателей по дате добавления в базу:
+Now — let's sort readers by the date they were added to the database:
 
-`   SELECT * FROM skillbox_readers ORDER BY join_date ASC;   `
+` SELECT * FROM skillbox_readers ORDER BY join_date ASC; `
 
-**Механизмы безопасности.** MySQL обеспечивает механизмы безопасности для контроля доступа к данным: аутентификацию пользователей, управление привилегиями и шифрование данных.
+**Security mechanisms.** MySQL provides security mechanisms for controlling access to data: user authentication, privilege management, and data encryption.
 
-**Бэкапы и восстановление.** MySQL предоставляет инструменты для создания резервных копий данных и их восстановления в случае сбоя. Бэкапы в MySQL бывают двух видов: физические и логические. Первый делает копию всех файлов на диске без табличной структуры, второй — делает полный дамп базы. О преимуществах и недостатках этих подходов можно почитать [здесь](https://habr.com/ru/companies/otus/articles/715808/).
+**Backups and recovery.** MySQL provides tools for creating backup copies of data and restoring them in case of failure. There are two types of backups in MySQL: physical and logical. The first makes a copy of all files on the disk without a table structure, the second makes a full dump of the database. You can read about the advantages and disadvantages of these approaches [here](https://habr.com/ru/companies/otus/articles/715808/).
 
-## **Для чего нужна MySQL**
+## **What is MySQL for**
 
-Как мы уже успели выяснить, главная задача MySQL — эффективно хранить, управлять и извлекать данные по запросу. Теперь давайте разберёмся, что это означает, на конкретных примерах.
+As we have already found out, the main task of MySQL is to effectively store, manage, and retrieve data on request. Now let's figure out what this means using specific examples.
 
-### **Удобное администрирование баз данных**
+### **Convenient database administration**
 
-Для этого в MySQL есть мощная графическая среда Workbench. В ней есть все нужные инструменты работы с базами данных: от создания до эксплуатации. Визуализировать модель базы данных? Пожалуйста! Вручную построить связи между таблицами? Не вопрос. Редактировать данные в них, как в каком-нибудь Excel? Раз плюнуть. Про удобный редактор SQL-запросов и говорить не стоит.
+For this, MySQL has a powerful graphical environment Workbench. It has all the necessary tools for working with databases: from creation to operation. Visualize the database model? Please! Manually build connections between tables? No problem. Edit data in them, like in some Excel? A piece of cake. It is not worth talking about the convenient SQL query editor.
 
 ![](https://skillbox.ru/upload/setka_images/14493715012024_6896a8696b8038f4fc8989ab005e4fccc3b90047.jpg)
 
+You can also administer databases via a browser. There is an open source application called phpMyAdmin for this. It is not as beautiful as Workbench, but it can be launched directly on the server — this makes it easier to manage the site and helps you get out of a jam if the hosting prohibits remote access to the server. You can try out the service and evaluate its features on the [official demo server](https://demo.phpmyadmin.net/master-config/public/).
 
-Можно администрировать базы данных и через браузер. Для этого существует опенсорсное приложение phpMyAdmin. Оно не такое красивое, как Workbench, зато умеет запускаться прямо на сервере — это облегчает управление сайтом и помогает выкрутиться, если хостинг запрещает удалённый доступ к серверу. Пощупать сервис и оценить его фишки можно на [официальном демосервере](https://demo.phpmyadmin.net/master-config/public/).
+Of course, there are a lot of other tools and methods of administration — but for now this is enough for a basic acquaintance :)
 
+### **Distributed data storage**
 
-Конечно, есть масса других инструментов и способов администрирования — но для базового знакомства пока хватит и этого :)
+In MySQL, it is implemented using replication and sharding mechanisms.
 
-### **Распределённое хранение данных**
+**Replication.** In this case, data is copied from the main master server to several secondary (called slaves). The master sends changes to its database, and the slaves repeat these changes and create a copy of the master's data. This ensures fault tolerance - if the main server suddenly fails and goes away for repairs, its work will be picked up by the others.
 
-В MySQL оно реализовано с помощью механизмов репликации и шардинга.
+**Sharding.** The process of dividing the database into several smaller fragments, called shards. Each shard is processed by a separate server, which distributes the load and increases performance.
 
-**Репликация.** В этом случае данные копируются с главного мастер-сервера на несколько побочных (называемых слейвами). Мастер отправляет изменения в своей базе данных, а слейвы повторяют эти изменения и создают копию данных мастера. Это обеспечивает отказоустойчивость — если главный сервер вдруг откажет и уедет на ремонт, его работу подхватят остальные.
+### **Multi-user access to the database**
 
-**Шардинг.** Процесс, при котором база разбивается на несколько более мелких фрагментов, называемых шардами. Каждый шард обрабатывается отдельным сервером, что распределяет нагрузку и повышает производительность.
+One of the most important missions of any DBMS is to ensure that users can work with files without interfering with each other. Imagine that you and a colleague simultaneously made changes to an Excel file located somewhere on the server. And in the same cells. Whose changes will be written? The big question.
 
-### **Многопользовательский доступ к базе данных**
+To avoid such questions, MySQL has a rule - when users access the same data, a queue is formed - you will not be able to make changes until the previous request is processed.
 
-Одна из важнейших миссий любой СУБД — сделать так, чтобы пользователи могли работать с файлами, не мешая друг другу. Представьте, что вы с коллегой одновременно внесли изменения в «эксельку», лежащую где-то на сервере. Причём в одни и те же ячейки. Чьи изменения запишутся? Большой вопрос.
+There are also more trivial rules - for example, each user must have a login and password (this is called authentication), as well as access rights to certain operations (this is called authorization). You can manage roles and privileges for user groups from the admin panel.
+### **Database status monitoring**
 
-Чтобы таких вопросов не возникало, в MySQL существует правило — при обращении пользователей к одним и тем же данным формируется очередь — вы не сможете внести изменения, пока не будет обработан предыдущий запрос.
+MySQL has utilities that help monitor performance, monitor activity and identify problems. For example, in the already mentioned MySQL Workbench, you can track query activity, resource usage and much more in a convenient graphical interface.
 
-Есть и более тривиальные правила — например, у каждого пользователя должны быть логин и пароль (это называется аутентификацией), а также права доступа к определённым операциям (это называется авторизацией). Управлять ролями и привилегиями для групп пользователей можно из панели администратора.
-### **Контроль состояния базы данных**
+Here are some more built-in tools:
 
-В MySQL есть утилиты, которые помогают мониторить производительность, наблюдать за активностью и выявлять проблемы. Например, в уже упомянутом MySQL Workbench можно отслеживать активность запросов, использование ресурсов и многое другое в удобном графическом интерфейсе.
+- System variables that can be configured to optimize performance. For example, the SHOW VARIABLES command displays the current values ​​​​of system variables.
+- Various types of logging (error log, general query log, slow query log) allow you to track errors, queries and slow queries.
+- Version control systems Liquibase or Flyway help control changes to the database schema.
+- Error and query logs help identify problems in MySQL.
+- MySQL Profiler - allows you to analyze queries and identify performance bottlenecks.
 
-Вот ещё несколько встроенных инструментов:
-
-- Системные переменные, которые можно настроить для оптимизации производительности. Например, команда SHOW VARIABLES отображает текущие значения системных переменных.
-- Различные виды логирования (error log, general query log, slow query log) позволяют отслеживать ошибки, запросы и медленные запросы.
-- Системы управления версиями Liquibase или Flyway помогают контролировать изменения схемы базы данных.
-- Журналы ошибок и запросов помогают выявлять проблемы в работе MySQL.
-- Профайлер MySQL Profiler — позволяет анализировать запросы и выявлять узкие места в производительности.
-
-Это лишь часть инструментов для контроля состояния БД.
+These are just a few of the tools for monitoring the state of the database.

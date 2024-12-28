@@ -2,11 +2,11 @@
 tags:
   - qt
 ---
-Класс CSplashScreen может быть использован в качестве замены класса Qt QSplashScreen, если необходимо использовать полупрозрачные изображения, использующие альфа-канал с более чем 1 битом.
+The CSplashScreen class can be used as a replacement for Qt's QSplashScreen class if semi-transparent images that use an alpha channel with more than 1 bit need to be used.
 
-Новый класс старается максимально имитировать функциональность и внешний вид оригинального класса QSplashScreen и пропускает только несколько методов, чтобы максимально упростить этот код.
+The new class tries to mimic the functionality and appearance of the original QSplashScreen class as much as possible, and only skips a few methods to keep this code as simple as possible.
 
-В реализации все сводится к использованию QFrame с атрибутом Qt::WA_TranslucentBackground и эмуляции функциональности QSplashScreen.
+The implementation is all about using a QFrame with the Qt::WA_TranslucentBackground attribute and emulating the functionality of QSplashScreen.
 
 
 ## CSplashScreen.pro

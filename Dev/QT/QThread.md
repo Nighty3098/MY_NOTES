@@ -3,17 +3,17 @@ tags:
   - qt
 ---
 
-Потоки в операционной системе - это очень простая вещь. Напишите функцию, возможно, обвяжите ее некоторыми данными и поместите ее во вновь созданный поток. При необходимости используйте мьютекс или другой метод для безопасного взаимодействия с потоком. Будь то потоки Win32, POSIX или другие, все они в основном работают одинаково и вполне защищены от дурака.
-[[Многоязычное приложение. C++ QT]]
-Те, кто открыл для себя радости фреймворка Qt, могут предположить, что потоки в Qt работают точно так же, и они будут правы. Однако существует несколько различных способов использования потоков в Qt, и может быть неочевидно, какой подход выбрать. В статье "Технологии многопоточности в Qt" сравниваются различные подходы.
+Threads in an operating system are a very simple thing. Write a function, perhaps tie some data around it, and place it in a newly created thread. If necessary, use a mutex or other method to safely interact with the thread. Whether it's Win32, POSIX, or other threads, they all basically work the same way and are quite foolproof.
 
-В этой части статьи демонстрируется один из этих методов: QThread + рабочий QObject. Этот метод предназначен для случаев использования, которые включают событийно-ориентированное программирование и сигналы + слоты между потоками.
+Those who have discovered the joys of the Qt framework may assume that threads in Qt work exactly the same way, and they would be right. However, there are several different ways to use threads in Qt, and it may not be obvious which approach to choose. The article “Multithreading Techniques in Qt” compares the different approaches.
 
-Использование с классом Worker
-Главное, о чем следует помнить при использовании QThread в этом примере, - это то, что это не поток. Это обертка вокруг объекта потока. Эта обертка предоставляет сигналы, слоты и методы, чтобы легко использовать объект потока в проекте Qt. Чтобы использовать ее, подготовьте подкласс QObject со всей необходимой вам функциональностью в нем. Затем создайте новый экземпляр QThread, поместите в него QObject с помощью moveToThread(QThread*) экземпляра QObject и вызовите start() на экземпляре QThread. Вот и все. Вы устанавливаете соответствующие сигнальные/слотовые соединения, чтобы он правильно выходил и все такое, и это все.
+This part of the article demonstrates one of these methods: the QThread + QObject worker. This method is intended for use cases that involve event-driven programming and signals + slots between threads.
 
-Объявление класса Worker
-Для базового примера посмотрите объявление класса Worker:
+Use with the Worker class
+The main thing to remember when using QThread in this example is that it is not a thread. It is a wrapper around a thread object. This wrapper provides signals, slots, and methods to easily use the thread object in a Qt project. To use it, prepare a QObject subclass with all the functionality you need in it. Then create a new QThread instance, place the QObject in it using moveToThread(QThread*) of the QObject instance, and call start() on the QThread instance. That's it. You set up the appropriate signal/slot connections so that it exits properly and all that, and that's it.
+
+Worker class declaration
+For a basic example, take a look at the Worker class declaration:
 
 ```cpp
 class Worker : public QObject {
@@ -21,40 +21,40 @@ class Worker : public QObject {
 public:
     Worker();
     ~Worker();
-публичные слоты:
+public slots:
     void process();
-сигналы:
+signals:
     void finished();
     void error(QString err);
 private:
-    // добавьте сюда свои переменные
+    // add your variables here
 };
 ```
 
-Мы добавляем по крайней мере один публичный слот, который будет использоваться для запуска экземпляра, чтобы он начал обрабатывать данные после запуска потока. Теперь давайте посмотрим, как выглядит реализация этого базового класса.
+We add at least one public slot that will be used to start the instance so that it will start processing data after the thread is started. Now let's see what the implementation of this base class looks like.
 
 ```cpp
-Worker::Worker() { // Конструктор
-    // здесь можно скопировать данные из аргументов конструктора во внутренние переменные.
+Worker::Worker() { // Constructor
+    // here you can copy data from constructor arguments to internal variables.
 }
 
-Worker::~Worker() { // Деструктор
-    // освобождение ресурсов
+Worker::~Worker() { // Destructor
+    // release resources
 }
 
-void Worker::process() { // Обработка. Начинаем обработку данных.
-    // выделение ресурсов с помощью new here
-    qDebug("Hello World!");
+void Worker::process() { // Processing. Start processing the data.
+    // resource allocation with new here
+    qDebug(“Hello World!”);
     emit finished();
 }
 ```
 
-Хотя этот класс Worker не делает ничего особенного, он, тем не менее, содержит все необходимые элементы. Он начинает обработку, когда вызывается его главная функция, в данном случае process(), и по окончании работы издает сигнал finished(), который затем будет использован для выключения экземпляра QThread, в котором он находится.
+Although this Worker class does nothing special, it does contain all the necessary elements. It starts processing when its main function is called, in this case process(), and when it is finished it emits a finished() signal, which will then be used to shut down the QThread instance it resides in.
 
-Кстати, здесь необходимо отметить одну очень важную вещь: вы НИКОГДА не должны выделять объекты кучи (используя new) в конструкторе класса QObject, поскольку это выделение происходит в главном потоке, а не в новом экземпляре QThread, что означает, что вновь созданный объект будет принадлежать главному потоку, а не экземпляру QThread. Это приведет к тому, что ваш код не будет работать. Вместо этого выделяйте такие ресурсы в слоте главной функции, например process(), поскольку при ее вызове объект будет находиться в новом экземпляре потока и, следовательно, будет владеть ресурсом.
+By the way, there is one very important thing to note here: you should NEVER allocate heap objects (using new) in the QObject class constructor, because this allocation takes place in the main thread and not in a new QThread instance, which means that the newly created object will belong to the main thread and not to the QThread instance. This will cause your code to fail. Instead, allocate such resources in a main function slot, such as process(), because when it is called, the object will be in the new thread instance and will therefore own the resource.
 
-Создание нового экземпляра Worker
-Теперь давайте посмотрим, как использовать эту новую конструкцию, создав новый экземпляр Worker и поместив его на экземпляр QThread:
+Creating a new Worker instance
+Now let's see how to use this new construct by creating a new Worker instance and placing it on a QThread instance:
 
 ```cpp
 QThread* thread = new QThread();
@@ -68,6 +68,6 @@ connect( thread, &QThread::finished, thread, &QThread::deleteLater);
 thread->start();
 ```
 
-Серия connect() здесь является самой важной частью. Первая строка connect() подключает сигнал сообщения об ошибке от рабочего к функции обработки ошибок в главном потоке. Вторая соединяет сигнал потока started() со слотом processing() в рабочем, вызывая его запуск.
+The connect() series is the most important part here. The first connect() line connects the error message signal from the worker to the error handling function in the main thread. The second connects the started() thread signal to the processing() slot in the worker, causing it to start.
 
-Затем очистка: когда экземпляр рабочего выдает finished(), как мы делали в примере, он сигнализирует потоку о выходе, то есть о завершении работы. Затем мы помечаем рабочий экземпляр с помощью того же сигнала finished() для удаления. Наконец, чтобы предотвратить неприятные сбои из-за того, что поток еще не полностью закрылся при удалении, мы подключаем finished() потока (не рабочего!) к его собственному слоту deleteLater(). Это приведет к тому, что поток будет удален только после того, как он полностью завершится.
+Then cleanup: when the worker instance produces finished(), as we did in the example, it signals the thread to exit, that is, to finish. We then mark the worker instance with the same finished() signal for deletion. Finally, to prevent nasty failures because the thread has not yet fully closed on deletion, we connect the finished() thread (not the worker!) to its own deleteLater() slot. This will cause the thread to be deleted only after it has fully closed.

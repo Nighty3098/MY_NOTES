@@ -1,10 +1,10 @@
 {
   "accentColor": "#58b9bb",
-  "cssTheme": "Atom",
+  "cssTheme": "Things",
   "interfaceFontFamily": "SF Pro Display,Google Sans Text",
   "textFontFamily": "Cartograph CF",
   "monospaceFontFamily": "",
-  "baseFontSize": 15,
+  "baseFontSize": 17,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "banner",
@@ -23,7 +23,6 @@
     "S - Checkboxes",
     "file_explorer",
     "style",
-    "safari_tabs",
     "launchpad"
   ],
   "nativeMenus": false,

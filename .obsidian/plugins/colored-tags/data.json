@@ -83,7 +83,14 @@
     "tensorflow": 69,
     "matplotlib": 70,
     "nvim": 71,
-    "olympics": 72
+    "olympics": 72,
+    "spm": 73,
+    "bugs": 74,
+    "nodejs": 75,
+    "react": 76,
+    "electron": 77,
+    "angular": 78,
+    "htmx": 79
   },
   "_version": 3
 }

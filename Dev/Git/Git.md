@@ -2,18 +2,17 @@
 tags:
   - Git
 ---
+### **Installation**
 
-### **Установка**
+Go to [git-scm.com](https://git-scm.com/downloads) and choose how to install Git for your operating system. For Windows, you can download the download file and install Git as a regular program. You don't need to change the basic settings.
 
-Перейдите на сайт [git-scm.com](https://git-scm.com/downloads) и выберите способ установки Git под свою операционную систему. Для Windows можно скачать загрузочный файл и поставить Git как обычную программу. Базовые настройки можно не менять.
-
-Git на macOS и Linux удобно устанавливать через программу «Терминал». Если у вас Linux — узнайте название своего дистрибутива. Если macOS — поставьте менеджер пакетов [Homebrew](https://brew.sh/ru/). После введите команду загрузки.
+It's convenient to install Git on macOS and Linux via the Terminal program. If you have Linux, find out the name of your distribution. If macOS, install the [Homebrew](https://brew.sh/ru/) package manager. Then enter the download command.
 
 ```bash
-# Устанавливаем Git на macOS
+# Install Git on macOS
 $ brew install git
 
-# Устанавливаем Git на популярные Linux-дистрибутивы
+# Install Git on popular Linux distributions
 # Fedora
 yum install git
 
@@ -21,78 +20,77 @@ yum install git
 apt-get install git
 
 # OpenSUSE
-zypper install git 
+zypper install git
 ```
-Если у вас macOS и Linux — оставайтесь в «Терминале». Если Windows — откройте программу Git Bash, которая установится вместе с системой Git.
+If you have macOS and Linux, stay in the Terminal. If you have Windows, open the Git Bash program, which will be installed along with the Git system.
 
-Введите в консоли команду и проверьте установку Git. Вы должны увидеть номер версии, которая загружена в вашу систему. Иногда вместо номера версии выводится сообщение об ошибке: Unsupported command: git. Это означает, что Git установить не получилось и процесс нужно повторить.
+Enter the command in the console and check the installation of Git. You should see the version number that is downloaded to your system. Sometimes, instead of the version number, an error message is displayed: Unsupported command: git. This means that Git could not be installed and the process must be repeated.
 
 ```bash
-# Команда для проверки установки Git
-git --version 
+# Command to check Git installation
+git --version
 ```
 
 ![](https://skillbox.ru/upload/setka_images/11495616052024_6caf85fa09e0642959e62c753d9a2f18236eb1da.jpg)
 
-Устанавливаем Git на Windows и через Git Bash проверяем номер актуальной версии  
+Install Git on Windows and check the current version number via Git Bash
 
-### **Настройка**
+### **Setup**
 
-После установки Git нужно провести его начальную настройку. Для этого вам нужно указать свои имя, фамилию и почту. Эти данные видны в коммитах, и по ним другие разработчики будут знать, когда вы вносили изменения в проект.
+After installing Git, you need to perform its initial setup. To do this, you need to specify your first name, last name, and email. This data is visible in commits, and other developers will know when you made changes to the project.
 
 ```bash
-# Команда для указания имени и фамилии
+# Command to specify first and last name
 git config --global user.name "Name Surname"
 
-# Команда для указания электронной почты
+# Command to specify email
 git config --global user.email "your@email"
 
-# Команда для проверки настроек
-git config --list 
+# Command to check settings
+git config --list
 ```
 
 ![](https://skillbox.ru/upload/setka_images/11495416052024_c0c954a3a268bfc515e88839a41a25de5bd1b194.jpg)
 
-Настраиваем тестовую конфигурацию Git на Windows через Git Bash  
+Configuring a test Git configuration on Windows via Git Bash
 
-### **Создание репозитория**
+### **Creating a repository**
 
-Когда Git настроен, вы можете создать проект. Для этого выполним несколько команд: создадим новую папку, зайдём в неё и инициализируем репозиторий.
+Once Git is configured, you can create a project. To do this, run a few commands: create a new folder, go into it and initialize the repository.
 
-Если репозиторий успешно инициализирован, то у вас в проекте появится скрытая папка .git. В этой папке система Git будет хранить метаинформацию, которая необходима для работы. Это ваш локальный репозиторий.
+If the repository is successfully initialized, then you will have a hidden folder .git in your project. In this folder, the Git system will store meta information that is necessary for work. This is your local repository.
 
 ```bash
-# Создаём новую папку
-mkdir название_проекта
-# Переходим в созданную папку
-cd название_проекта
-# Инициализируем локальный репозиторий
+# Create a new folder
+mkdir project_name
+# Go to the created folder
+cd project_name
+# Initialize the local repository
 git init
-# Проверяем список открытых и скрытых файлов и папок
-ls -a 
+# Check the list of open and hidden files and folders
+ls -a
 ```
 
 ![](https://skillbox.ru/upload/setka_images/11495516052024_cece785eb92cd643f5e788e5f37e3d933a76f56c.jpg)
 
-Создаём репозиторий в системе Windows через Git Bash  
+Create a repository in the Windows system via Git Bash
 
-
-Проверим работу репозитория. Для этого создадим новый файл и выполним коммит — сохраним его в нашем локальном репозитории. Нужные команды:
+Let's check the repository operation. To do this, create a new file and commit it — save it in our local repository. Necessary commands:
 
 ```bash
-# Создаём текстовый файл
+# Create a text file
 echo "# Test message" >> test.txt
 
-# Подготавливаем текстовый файл к коммиту
+# Prepare the text file for commit
 git add .
-# Делаем коммит и сохраняем файл в репозитории
+# Make a commit and save the file in the repository
 git commit -m "My first commit"
 ```
 
 ![](https://skillbox.ru/upload/setka_images/11495416052024_2229e417950c39bd1ac90259b6c781a232a40430.jpg)
 
-Сохраняем файл в локальном репозитории через Git Bash  
+Save the file in the local repository via Git Bash
 
-Введём команду git log и посмотрим в журнал. Перед вами должна появиться информация о сделанном коммите. Вы увидите дату внесения изменений, имя и фамилию автора, почту, текст сообщения и [хеш](https://skillbox.ru/media/code/kheshfunktsiya-chto-eto-dlya-chego-nuzhna-i-kak-rabotaet/?utm_source=media&utm_medium=link&utm_campaign=all_all_media_links_links_articles_all_all_skillbox) коммита. Теперь если вы продолжите разработку, то в любой момент сможете вернуться и посмотреть, в каком состоянии находился проект на этапе первого коммита.
+Enter the git log command and look at the log. You should see information about the commit made. You will see the date of the changes, the author's first and last name, email, message text, and [hash](https://skillbox.ru/media/code/kheshfunktsiya-chto-eto-dlya-chego-nuzhna-i-kak-rabotaet/?utm_source=media&utm_medium=link&utm_campaign=all_all_media_links_links_articles_all_all_skillbox) commit. Now if you continue developing, you can go back at any time and see what state the project was in at the first commit stage.
 
 ![](https://skillbox.ru/upload/setka_images/11495416052024_71b97f3681cfd481f98f8279e17d064ae63ea66a.jpg)
