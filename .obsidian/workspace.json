@@ -24,21 +24,31 @@
             }
           },
           {
-            "id": "8ebf1958fd674c02",
+            "id": "a09d2c514822001b",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "c0155c15ea60e8cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev/JavaScript/Electron/Console JS.md",
+                "file": "Dev/JavaScript/Electron/Unfocused elements.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Console JS"
+              "title": "Unfocused elements"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -60,7 +70,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Файловый менеджер"
+              "title": "Files"
             }
           },
           {
@@ -70,7 +80,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Закладки"
+              "title": "Bookmarks"
             }
           },
           {
@@ -108,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 291.5046920776367
+    "width": 265.511905670166
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -170,10 +180,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev/JavaScript/Electron/Console JS.md"
+                "file": "Dev/JavaScript/Electron/Unfocused elements.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Console JS"
+              "title": "Outline of Unfocused elements"
             }
           },
           {
@@ -182,8 +192,8 @@
             "state": {
               "type": "timer-view",
               "state": {},
-              "icon": "timer",
-              "title": "Timer"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -196,45 +206,57 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Меню быстрого перехода": false,
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
-      "markdown-importer:Импорт Markdown-файлов": false,
-      "zk-prefixer:Создать заметку с уникальным идентификатором": false,
-      "random-note:Открыть случайную заметку": false,
-      "audio-recorder:Начать/остановить запись": false,
-      "workspaces:Пространства": false,
-      "publish:Публикация изменений": false,
-      "obsidian-kanban:Создать новую доску": false,
-      "widgets:Add widget": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "zk-prefixer:Create new unique note": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
+      "obsidian-kanban:Create new board": false,
       "homepage:Open homepage": false,
+      "widgets:Add widget": false,
       "pomodoro-timer:Toggle timer panel": false,
       "dashboard-navigator:Open dashboard navigator": false,
       "translate:Open translation view": false
     }
   },
-  "active": "8ebf1958fd674c02",
+  "active": "c0155c15ea60e8cf",
   "lastOpenFiles": [
+    "Dev/JavaScript/Electron/Unfocused elements.md",
     "Dev/JavaScript/Electron/Electron window settings.md",
-    "Dev/JavaScript/Electron/Console JS.md",
-    "Dev/JavaScript/Electron/Electron.md",
-    "Dev/JavaScript/NodeJS",
+    "Dev/JavaScript/Electron/Get client platform.md",
     "Dev/JavaScript/Electron/Local API usage.md",
+    "Dev/JavaScript/Electron/Mac OS custom titlebar.md",
+    "Dev/JavaScript/Electron/Resizing window fix.md",
+    "Pasted image 20241230003451.png",
+    "Pasted image 20241230003418.png",
+    "Pasted image 20241230003013.png",
+    "Pasted image 20241230002956.png",
+    "Dev/JavaScript/Electron/Custom window control.md",
+    "imgs/Pasted image 20241230002223.png",
+    "Pasted image 20241230002201.png",
+    "imgs/Pasted image 20241230001433.png",
+    "imgs/Pasted image 20241230001403.png",
+    "imgs/Pasted image 20241230001349.png",
+    "Dev/JavaScript/Electron/Electron.md",
+    "Dev/JavaScript/Electron/Console JS.md",
+    "Home.md",
+    "Dev/JavaScript/NodeJS",
     "Dev/JavaScript/Other/HTMX.md",
     "Dev/JavaScript/Electron",
     "Dev/JavaScript/Other/Angular vs React.md",
     "Dev/Git/Markdown.md",
-    "Home.md",
     "Dev/Starship config.md",
     "Dev/JavaScript/NodeJS/NODE JS.md",
     "imgs/Pasted image 20241227102825.png",
     "Dev/JavaScript/NodeJS/NODE JS_.md",
     "Dev/JavaScript/Other/React vs Node.JS.md",
-    "imgs/Pasted image 20241227102647.png",
-    "imgs/Pasted image 20241227102639.png",
     "Dev/Python/AI/Графики обучения/Graphs.md",
     "Dev/JavaScript/Other",
     "Dev/JavaScript/Data caching/Data caching.md",
@@ -244,26 +266,13 @@
     "Dev/JavaScript/Working with Functions in JavaScript.md",
     "Dev/JavaScript/Working with data types in JavaScript.md",
     "Dev/JavaScript/Working with Conditionals in JavaScript.md",
-    "Dev/JavaScript/Variables in JavaScript.md",
-    "Dev/Python/AI/Обучение нейронных сетей.md",
-    "Dev/Python/AI/tensorflow usage.md",
-    "Dev/Алгоритмы/Рекурсия.md",
-    "Dev/Алгоритмы/Поиск в ширину ( граф ).md",
-    "Dev/Алгоритмы/Бинарный поиск.md",
     "Dev/С++/Двоичное дерево поиска.txt",
     "Dev/С++/Двоичное дерево поиска.docx",
     "Dev/С++/docx.txt",
-    "imgs/Pasted image 20241226174017.png",
     "Projects/CodeKeeper/BUGS",
     "Projects/SPM",
     "Olympics/Высший пилотаж",
     "Olympics",
-    "imgs/Pasted image 20241224175947.png",
-    "imgs/Figure_1.png",
-    "imgs/training_history2.png",
-    "imgs/Pasted image 20241203213227.png",
-    "imgs/Pasted image 20241203213104.png",
-    "imgs/Pasted image 20241203212942.jpg",
     "Без названия.canvas",
     "Untitled.canvas"
   ]
