@@ -7758,6 +7758,7 @@ Regularly
 Requests
 Ruby
 Rails
+Resizable
 created
 cssclasses
 customize
@@ -9998,6 +9999,7 @@ completing
 capabilities
 catch
 clicks
+cleaner
 hide
 hosted
 heading
@@ -21816,6 +21818,7 @@ familiar
 follow
 facilitates
 form
+fullscreen
 Obsidian
 Other
 Outline
@@ -23694,6 +23697,9 @@ Operators
 Operator
 Overview
 Often
+Options
+Opacity
+Opening
 Vault
 VB
 Vv
@@ -29483,6 +29489,7 @@ Choose
 Compatibility
 Callback
 Content
+Color
 out
 on
 of
@@ -35168,6 +35175,7 @@ Driven
 Dependencies
 Declarative
 Django
+Developer
 experience
 enlarges
 either
@@ -39286,6 +39294,7 @@ Applications
 Always
 Advanced
 Animations
+Allow
 you
 your
 yt
@@ -42983,6 +42992,7 @@ lifecycle
 leverage
 leveraging
 looking
+listeners
 and
 are
 across
@@ -45071,6 +45081,11 @@ adopted
 associated
 affecting
 animations
+angular
+along
+adjust
+above
+attach
 icon
 in
 if
@@ -46981,6 +46996,7 @@ independently
 initiate
 integrates
 integrating
+illustrate
 used
 using
 upon
@@ -54908,6 +54924,8 @@ decision
 detailed
 dependencies
 displayed
+disallow
+debugging
 snippets
 spans
 smaller
@@ -57120,6 +57138,7 @@ significant
 straightforward
 seamlessly
 supporting
+setting
 vault
 vn
 vY
@@ -61191,6 +61210,7 @@ refactoring
 reduces
 reliance
 reduced
+resizing
 work
 with
 within
@@ -68592,6 +68612,7 @@ Fast
 Follow
 Frameworks
 Flask
+Fullscreen
 Light
 Larger
 Line
@@ -70474,6 +70495,7 @@ Loop
 LTS
 Long
 Legacy
+Listeners
 Heading
 Horizontal
 Headings
@@ -75995,6 +76017,7 @@ MVC
 Maintained
 Microservices
 Monitor
+Minimizable
 Zoom
 ZTz
 ZW
