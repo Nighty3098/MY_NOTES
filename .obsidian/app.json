@@ -6,5 +6,6 @@
   "showLineNumber": false,
   "foldIndent": true,
   "foldHeading": true,
-  "spellcheck": false
+  "spellcheck": false,
+  "promptDelete": false
 }

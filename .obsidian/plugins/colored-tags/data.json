@@ -90,7 +90,8 @@
     "react": 76,
     "electron": 77,
     "angular": 78,
-    "htmx": 79
+    "htmx": 79,
+    "design_ideas": 80
   },
   "_version": 3
 }

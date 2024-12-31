@@ -64,5 +64,6 @@
   "DOCUMENTS/ДЗ.pdf": "LiBookMarked",
   "Education/Russian": "LiLanguages",
   "Dev/NEOVIM": "LiFolder",
-  "Olympics": "FarFlag"
+  "Olympics": "FarFlag",
+  "Dev/Design ideas": "LiFolder"
 }
