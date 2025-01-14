@@ -29,11 +29,11 @@ The following suffixes for DPI are also supported: `@1x`, `@1.25x`, `@1.33x`, `@
 
 The recommended file formats and icon sizes for each platform are as follows:
 
-| Operating System | Format | Size                          |
-|------------------|--------|-------------------------------|
+| Operating System | Format | Size                                           |
+| ---------------- | ------ | ---------------------------------------------- |
 | macOS            | .icns  | 512x512 pixels (1024x1024 for Retina displays) |
-| Windows          | .ico   | 256x256 pixels                |
-| Linux            | .png   | 512x512 pixels                |
+| Windows          | .ico   | 256x256 pixels                                 |
+| Linux            | .png   | 512x512 pixels                                 |
 
 ### Setting the App Icon
 

@@ -1,10 +1,10 @@
 {
-  "accentColor": "#58b9bb",
-  "cssTheme": "Minimal",
+  "accentColor": "#ffffff",
+  "cssTheme": "Things",
   "interfaceFontFamily": "SF Pro Display,Google Sans Text",
   "textFontFamily": "Cartograph CF",
   "monospaceFontFamily": "",
-  "baseFontSize": 17,
+  "baseFontSize": 18,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "banner",

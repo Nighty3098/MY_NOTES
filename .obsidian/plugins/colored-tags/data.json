@@ -91,7 +91,9 @@
     "electron": 77,
     "angular": 78,
     "htmx": 79,
-    "design_ideas": 80
+    "design_ideas": 80,
+    "JSX": 81,
+    "nvidia": 82
   },
   "_version": 3
 }
