@@ -24,17 +24,27 @@
             }
           },
           {
-            "id": "2383ac02a55d106d",
+            "id": "feb72bcb2ca1c910",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Education/Literature/Homework.md",
-                "mode": "source",
+                "file": "Dev/С++/Algorithmic paradigms.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework"
+              "title": "Algorithmic paradigms"
+            }
+          },
+          {
+            "id": "0b113221948be1c0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -57,7 +67,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -108,7 +119,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5
+    "width": 293.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -170,10 +182,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Education/Literature/Homework.md"
+                "file": "Dev/С++/Algorithmic paradigms.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Homework"
+              "title": "Outline of Algorithmic paradigms"
             }
           },
           {
@@ -216,11 +231,23 @@
       "translate:Open translation view": false
     }
   },
-  "active": "2383ac02a55d106d",
+  "active": "feb72bcb2ca1c910",
   "lastOpenFiles": [
+    "Home.md",
+    "Dev/С++/Algorithmic paradigms.md",
+    "Dev/С++/Binary search tree.md",
+    "Dev/С++/Двоичное дерево поиска.md",
+    "Dev/С++/Memory managment/Main Memory Management Operators.md",
+    "Dev/С++/Memory managment/Memory Management Libraries.md",
+    "Dev/С++/Using Pointers and Manual Memory Management in C++.md",
+    "Dev/Frontend/Fix hover effect on phone website version.md",
+    "Dev/Frontend/CSS/GRID/GRID.md",
+    "Dev/Frontend/CSS/GRID",
+    "Dev/Frontend/CSS",
+    "Dev/Frontend",
+    "Untitled.md",
     "Education/Literature/Homework.md",
     "Education/Literature",
-    "Home.md",
     "Dev/JavaScript/React/Create kanban board on React, TS.md",
     "Dev/Logo ideas.md",
     "Olympics/Высший пилотаж 2025 НСК/Высший пилотаж (Новосибирск).md",
@@ -236,16 +263,7 @@
     "Dev/JavaScript/Electron/Mac OS custom titlebar.md",
     "Dev/JavaScript/Electron/Notifications.md",
     "Dev/JavaScript/React/Integrate JSX to Electron NodeJS project.md",
-    "Dev/JavaScript/React/JSX.md",
-    "Dev/JavaScript/Electron/Electron window settings.md",
-    "Dev/JavaScript/Electron/Electron.md",
-    "Dev/JavaScript/Electron/Resizing window fix.md",
-    "Dev/JavaScript/Electron/Unfocused elements.md",
-    "Dev/JavaScript/Electron/How to Build and Sign an Electron JS Application for All Platforms.md",
-    "Dev/JavaScript/React/React.JS Test Project.md",
     "Dev/JavaScript/React",
-    "Dev/JavaScript/REACT, VUE, ANGULAR, SVELTE, SOLID, PREACT.md",
-    "Dev/JavaScript/Electron/Custom app icons.md",
     "imgs/Pasted image 20250104224818.png",
     "imgs/OWL.png",
     "imgs/var1.png",
@@ -261,9 +279,6 @@
     "Dev/JavaScript/Electron",
     "Dev/JavaScript/Other",
     "Dev/С++/Двоичное дерево поиска.txt",
-    "Dev/С++/Двоичное дерево поиска.docx",
-    "Dev/С++/docx.txt",
-    "Projects/CodeKeeper/BUGS",
     "Без названия.canvas",
     "Untitled.canvas"
   ]

@@ -2,6 +2,364 @@
 tags:
   - CPP
 ---
+# EN VERSION:
+
+## Complete Search
+
+Complete search (also known as "brute force" or "recursive backtracking") is a method of solving problems by traversing the entire search space. More precisely, throughout the algorithm, we prune parts of the search space that we believe will not lead to the desired solution. In competitive programming, using Complete Search will likely result in exceeding the time limit (Time Limit Exceeded — TLE). However, it is a good strategy for problems with small input sizes.
+
+### Example: The 8 Queens Problem
+
+We need to place 8 queens on a chessboard such that no queen attacks another. In the simplest solution, we would have to iterate through 64 billion combinations and select 8–4 billion possible arrangements. A better approach is to place each queen in a separate column, reducing the number of possibilities to 8⁸ — ~17 million. However, the best approach is to place each queen in a separate row and column, resulting in 8! — 40 thousand possible combinations. In the implementation below, we assume that each queen occupies a separate column and calculate the row number for each of the 8 queens.
+
+```cpp
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
+
+using namespace std;
+
+// row[8]: row number for each queen
+// TC: TraceBack counter
+// (a, b): position of the first queen at (r=a, c=b)
+int row[8], TC, a, b, line_counter;
+
+bool place(int r, int c)
+{  
+   // Check previously placed queens
+   for (int prev = 0; prev < c; prev++)
+   {
+       // Check if rows or diagonals match
+       if (row[prev] == r || (abs(row[prev] - r) == abs(prev - c)))
+           return false;
+   }
+   return true;
+}
+
+void backtrack(int c)
+{
+   // Possible solution; the first queen is at (a, b)
+   if (c == 8 && row[b] == a)
+   {
+       printf("%2d %d", ++line_counter, row[0] + 1);
+       for (int j = 1; j < 8; j++) printf(" %d", row[j] + 1);
+       printf("\n");
+   }
+   // Try all possible rows
+   for (int r = 0; r < 8; r++)
+   {
+       if (place(r, c))
+       {
+           row[c] = r; // place the queen in this column and row
+           backtrack(c + 1); // move to the next column and recurse
+       }
+   }
+}
+
+int main()
+{
+    scanf("%d", &TC);
+    while (TC--)
+    {
+       scanf("%d %d", &a, &b);
+       a--; b--; // zero-based indexing
+
+       memset(row, 0, sizeof(row));
+       line_counter = 0;
+       printf("SOLN\tCOLUMN\n");
+       printf(" # 1 2 3 4 5 6 7 8\n\n");
+       backtrack(0); // generate all 8! possible solutions
+       if (TC) printf("\n");
+    }
+    return 0;
+}
+```
+
+For TC = 8 and the initial queen position at (a, b) = (1, 1), the above code outputs the following:
+
+```
+SOLN        COLUMN
+#    1 2 3 4 5 6 7 8
+1    1 5 8 6 3 7 2 4
+2    1 6 8 3 7 4 2 5
+3    1 7 4 6 8 2 5 3
+4    1 7 5 8 2 4 6 3
+```
+
+It indicates that there are 4 possible arrangements with the initial queen position at (r = 1, c = 1).
+
+Using recursion makes it easier to partition the search space compared to an iterative solution.
+
+## Greedy Algorithm
+
+This [algorithm](https://en.wikipedia.org/wiki/Greedy_algorithm) makes a locally optimal choice at each step, hoping to eventually reach a globally optimal solution.
+
+### Example: Fractional Knapsack
+
+The problem is to select items with weight and value to place in a knapsack of limited capacity W, maximizing the total value of its contents. We can define the ratio of an item's value to its weight, i.e., "greedily" choose items with high value but low weight, and then sort them based on these criteria. In the fractional knapsack problem, we are allowed to take fractional parts of an item.
+
+```cpp
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+struct Item {
+   int value, weight;
+   Item(int value, int weight) : value(value), weight(weight) { }
+};
+
+bool cmp(struct Item a, struct Item b) {
+   double r1 = (double) a.value / a.weight;
+   double r2 = (double) b.value / b.weight;
+   return r1 > r2;
+}
+
+double fractional_knapsack(int W, struct Item arr[], int n)
+{
+   sort(arr, arr + n, cmp);
+   int cur_weight = 0; double tot_value = 0.0;
+   for (int i = 0; i < n; ++i)
+   {
+       if (cur_weight + arr[i].weight <= W)
+       {
+           cur_weight += arr[i].weight;
+           tot_value += arr[i].value;
+       }  
+       else
+       {   // Add a fraction of the next item
+           int rem_weight = W - cur_weight;
+           tot_value += arr[i].value *
+                       ((double) rem_weight / arr[i].weight);                    
+           break;
+       }
+   }
+   return tot_value;
+}
+int main()
+{
+   int W = 50; // knapsack capacity
+   Item arr[] = {{60, 10}, {100, 20}, {120, 30}}; // {value, weight}
+   int n = sizeof(arr) / sizeof(arr[0]);
+   cout << "greedy fractional knapsack" << endl;
+   cout << "maximum value: " << fractional_knapsack(W, arr, n);
+   cout << endl;
+   return 0;
+}
+```
+
+Since sorting is the most expensive operation, the algorithm runs in _O(n log n)_ time. Given three items in (value, weight) format — {(60, 10), (100, 20), (120, 30)} — and a knapsack capacity W = 50, the above code outputs:
+
+```
+greedy fractional knapsack
+maximum value: 240
+```
+
+We can observe that the input items are sorted in decreasing order of value/weight ratio. By selecting two whole items 1 and 2, we take ⅔ of the third item.  
+Total value = 60 + 100 + (2/3) * 120 = 240.
+
+> Read also: [Algorithm Complexity Explained, or What is O(log n)](https://tproger.ru/articles/computational-complexity-explained)
+
+## Divide and Conquer
+
+[Divide and Conquer](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm) is a strategy where a problem is divided into independent subproblems, and each is solved separately.
+
+Examples of this strategy include quicksort, merge sort, heap sort, and binary search.
+
+### Example: Binary Search
+
+Most commonly, [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm) is used to find an element in a sorted array. We start searching from the middle of the array. If we find what we need or if there is nothing left to consider, we stop. Otherwise, we decide in which direction — to the right or left of the middle — we should continue searching. Since the search space is halved after each check, the algorithm's runtime is _O(log n)_.
+
+```cpp
+#include <algorithm>
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+int bsearch(const vector<int> &arr, int l, int r, int q)
+{
+   while (l <= r)
+   {
+       int mid = l + (r-l)/2;
+       if (arr[mid] == q) return mid;
+      
+       if (q < arr[mid]) { r = mid - 1; }
+       else              { l = mid + 1; }
+   }
+   return -1; // not found
+}
+
+int main()
+{
+   int query = 10;
+   int arr[] = {2, 4, 6, 8, 10, 12};
+   int N = sizeof(arr) / sizeof(arr[0]);
+   vector<int> v(arr, arr + N);
+  
+   // Sort the input array
+   sort(v.begin(), v.end());
+   int idx;
+   idx = bsearch(v, 0, v.size(), query);
+   if (idx != -1)
+       cout << "binary search: found at index " << idx;   
+   else
+       cout << "binary search: not found";
+   return 0;
+}
+```
+
+The code outputs:
+
+```
+binary search: found at index 4
+```
+
+If the target element is not found, but we want to find the nearest element smaller or larger than the query, we can use the STL functions `lower_bound()` and `upper_bound()`.
+
+## Dynamic Programming
+
+[Dynamic Programming](https://en.wikipedia.org/wiki/Dynamic_programming) (DP) is a technique that breaks a problem into small overlapping subproblems, computes the solution for each, and stores it in a table. The final solution is then read from the table.
+
+The key feature of dynamic programming is the ability to define the state of entries in the table and the relationships or transitions between entries.  
+Then, by defining base and recursive cases, the table can be filled either top-down or bottom-up.
+
+In top-down DP, the table is filled recursively as needed, starting from the top and descending to smaller subproblems. In bottom-up DP, the table is filled in order, starting with smaller subproblems and using their solutions to build up to larger problems. In both cases, if a solution to a subproblem has already been computed, it is simply looked up in the table. This significantly reduces computational costs.
+
+### Example: Binomial Coefficients
+
+We use the example of [binomial coefficients](https://en.wikipedia.org/wiki/Binomial_coefficient) to illustrate the use of top-down and bottom-up DP. The code below is based on recursions for binomial coefficients with overlapping subproblems. Let _C(n, k)_ denote the number of ways to choose _k_ elements from _n_. Then we have:
+
+Base case: _C(n, 0) = C(n, n) = 1_  
+Recursion: _C(n, k) = C(n-1, k-1) + C(n-1, k)_
+
+We have several overlapping subproblems. For example, for _C(n = 5, k = 2)_, the recursion tree looks like this:
+
+```
+							C(5, 2)
+                     /                       \
+            C(4, 1)                            C(4, 2)
+           /      \                        /           \
+      C(3, 0)   C(3, 1)             C(3, 1)             C(3, 2)
+                /    \             /     \             /     \
+         C(2, 0)  C(2, 1)      C(2, 0) C(2, 1)    C(2, 1)  C(2, 2)
+                  /      \              /   \        /    \
+             C(1, 0)  C(1, 1)    C(1, 0)  C(1, 1) C(1, 0)  C(1, 1)
+```
+
+We can implement top-down and bottom-up DP as follows:
+
+```cpp
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+#define V 8
+
+int memo[V][V]; // table
+
+int min(int a, int b) { return (a < b) ? a : b; }
+
+void print_table(int memo[V][V])
+{
+   for (int i = 0; i < V; ++i)
+   {
+       for (int j = 0; j < V; ++j)
+       {
+           printf(" %2d", memo[i][j]);       
+       }
+       printf("\n");
+   }
+}
+
+int binomial_coeffs1(int n, int k)
+{
+   // Top-down DP
+   if (k == 0 || k == n) return 1; 
+   if (memo[n][k] != -1) return memo[n][k];
+   return memo[n][k] = binomial_coeffs1(n-1, k-1) +     
+                       binomial_coeffs1(n-1, k);
+}
+
+int binomial_coeffs2(int n, int k)
+{   
+   // Bottom-up DP
+   for (int i = 0; i <= n; ++i) 
+   {       
+       for (int j = 0; j <= min(i, k); ++j)
+       {           
+           if (j == 0 || j == i)
+           {               
+               memo[i][j] = 1;
+           } 
+           else
+           {
+               memo[i][j] = memo[i-1][j-1] + memo[i-1][j];                 
+           }
+       }
+   }
+   return memo[n][k];
+} 
+
+int main()
+{
+   int n = 5, k = 2;
+   printf("Top-down DP:\n");
+   memset(memo, -1, sizeof(memo));
+   int nCk1 = binomial_coeffs1(n, k);
+   print_table(memo);
+   printf("C(n = %d, k = %d): %d\n\n", n, k, nCk1);
+  
+   printf("Bottom-up DP:\n");
+   memset(memo, -1, sizeof(memo));
+   int nCk2 = binomial_coeffs2(n, k);
+   print_table(memo);
+   printf("C(n = %d, k = %d): %d\n", n, k, nCk2);
+  
+   return 0;
+}
+```
+
+For _C(n = 5, k = 2)_, the above code outputs:
+
+```
+Top-down DP:
+-1 -1 -1 -1 -1 -1 -1 -1
+-1 -1 -1 -1 -1 -1 -1 -1
+-1  2 -1 -1 -1 -1 -1 -1
+-1  3  3 -1 -1 -1 -1 -1
+-1  4  6 -1 -1 -1 -1 -1
+-1 -1 10 -1 -1 -1 -1 -1
+-1 -1 -1 -1 -1 -1 -1 -1
+-1 -1 -1 -1 -1 -1 -1 -1
+C(n = 5, k = 2): 10
+
+Bottom-up DP:
+ 1 -1 -1 -1 -1 -1 -1 -1
+ 1  1 -1 -1 -1 -1 -1 -1
+ 1  2  1 -1 -1 -1 -1 -1
+ 1  3  3 -1 -1 -1 -1 -1
+ 1  4  6 -1 -1 -1 -1 -1
+ 1  5 10 -1 -1 -1 -1 -1
+-1 -1 -1 -1 -1 -1 -1 -1
+-1 -1 -1 -1 -1 -1 -1 -1
+C(n = 5, k = 2): 10
+```
+
+The time and space complexity are both _O(n * k)_.
+
+In top-down DP, subproblem solutions are accumulated as needed, while in bottom-up DP, the table is filled starting from the base case.
+
+For printing, a small table size was chosen, but it is recommended to use a much larger size.
+
+
+
+---
+
+
+# RU VERSION:
+
 ## Полный поиск
 
 Complete search (он же «грубая сила» или «рекурсивный откат») — метод решения задачи путем пересечения всего пространства поиска. Точнее на протяжении всего алгоритма мы отсекаем те части пространства поиска, которые, как мы считаем, не приведут к требуемому решению. На соревнованиях по спортивному программированию использование Complete Search скорее всего приведёт к превышению лимита времени (Time Limit Exceeded — TLE), однако, это хорошая стратегия для задач с небольшим объёмом входных данных.

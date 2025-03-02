@@ -54,7 +54,6 @@
   "Dev/Python": "LiFolder",
   "Dev/MySQL": "LiFolder",
   "Dev/JavaScript": "LiFolder",
-  "Dev/Git": "LiFolder",
   "Dev/C": "LiFolder",
   "Dev/С++": "LiFolder",
   "Dev/ООП": "LiFolder",
@@ -66,5 +65,7 @@
   "Dev/NEOVIM": "LiFolder",
   "Olympics": "FarFlag",
   "Dev/Design ideas": "LiFolder",
-  "Education/Literature": "LiBook"
+  "Education/Literature": "LiBook",
+  "Dev/Frontend": "LiFolder",
+  "Dev/Git": "LiFolder"
 }

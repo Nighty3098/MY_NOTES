@@ -94,7 +94,10 @@
     "design_ideas": 80,
     "JSX": 81,
     "nvidia": 82,
-    "TS": 83
+    "TS": 83,
+    "frontend": 84,
+    "css": 85,
+    "Pointers": 86
   },
   "_version": 3
 }
