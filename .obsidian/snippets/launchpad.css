@@ -58,6 +58,8 @@
   background-color: var(--background-primary-alt);
   border-radius: 20px;
   padding: 30px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .launchpad .note_2 .note {

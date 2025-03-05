@@ -22,33 +22,8 @@
               "icon": "lucide-file",
               "title": "Home"
             }
-          },
-          {
-            "id": "feb72bcb2ca1c910",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dev/С++/Algorithmic paradigms.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Algorithmic paradigms"
-            }
-          },
-          {
-            "id": "0b113221948be1c0",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Optimization",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +73,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Поиск"
+              "title": "Search"
             }
           },
           {
@@ -119,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5,
-    "collapsed": true
+    "width": 270.5162162780762
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -129,6 +103,7 @@
       {
         "id": "a36ea1a514a5c682",
         "type": "tabs",
+        "dimension": 82.51992031872508,
         "children": [
           {
             "id": "a0b7bbbe68977914",
@@ -155,12 +130,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Education/Math/Theory/Derivative of a function/Геометрический смысл производной.md",
+                "file": "Dev/MySQL/MySQL_RU.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Геометрический смысл производной"
+              "title": "Outgoing links from MySQL_RU"
             }
           },
           {
@@ -170,10 +145,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Теги"
+              "title": "Tags"
             }
           },
           {
@@ -182,31 +159,38 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev/С++/Algorithmic paradigms.md",
+                "file": "Home.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Algorithmic paradigms"
+              "title": "Outline of Home"
             }
-          },
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "bac9acae3297dc63",
+        "type": "tabs",
+        "dimension": 17.48007968127491,
+        "children": [
           {
             "id": "ca07560dc23dc679",
             "type": "leaf",
             "state": {
               "type": "timer-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "timer",
+              "title": "Timer"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 280.5,
+    "width": 255.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -231,14 +215,19 @@
       "translate:Open translation view": false
     }
   },
-  "active": "feb72bcb2ca1c910",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Dev/Структуры данных в программировании.md",
     "Home.md",
-    "Dev/С++/Algorithmic paradigms.md",
     "Dev/С++/Binary search tree.md",
-    "Dev/С++/Двоичное дерево поиска.md",
-    "Dev/С++/Memory managment/Main Memory Management Operators.md",
+    "Dev/С++/C++.md",
+    "Dev/MySQL/MySQL_RU.md",
+    "Dev/MySQL/Запросы к БД.md",
+    "Dev/С++/Algorithmic paradigms.md",
     "Dev/С++/Memory managment/Memory Management Libraries.md",
+    "Dev/С++/Memory managment/Main Memory Management Operators.md",
+    "TOKEN.md",
+    "Dev/С++/Двоичное дерево поиска.md",
     "Dev/С++/Using Pointers and Manual Memory Management in C++.md",
     "Dev/Frontend/Fix hover effect on phone website version.md",
     "Dev/Frontend/CSS/GRID/GRID.md",
@@ -255,14 +244,9 @@
     "Olympics/Высший пилотаж 2025 НСК/Документация.md",
     "Olympics/Высший пилотаж 2025 НСК/Приложения.md",
     "Olympics/Высший пилотаж 2025 НСК/Текст для презентации проекта.md",
-    "TOKEN.md",
     "Dev/NEOVIM/Neovim JS Error.md",
     "Dev/JavaScript/Electron/Local API usage.md",
     "Dev/Python/AI/tensorrt installing error.md",
-    "Dev/JavaScript/Electron/Native File Drag&Drop.md",
-    "Dev/JavaScript/Electron/Mac OS custom titlebar.md",
-    "Dev/JavaScript/Electron/Notifications.md",
-    "Dev/JavaScript/React/Integrate JSX to Electron NodeJS project.md",
     "Dev/JavaScript/React",
     "imgs/Pasted image 20250104224818.png",
     "imgs/OWL.png",
