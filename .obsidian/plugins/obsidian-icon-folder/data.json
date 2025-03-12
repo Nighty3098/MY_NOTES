@@ -67,5 +67,7 @@
   "Dev/Design ideas": "LiFolder",
   "Education/Literature": "LiBook",
   "Dev/Frontend": "LiFolder",
-  "Dev/Git": "LiFolder"
+  "Dev/Git": "LiFolder",
+  "Dev/Client - Server apps": "LiFolder",
+  "Dev/React": "LiFolder"
 }

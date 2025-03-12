@@ -97,7 +97,9 @@
     "TS": 83,
     "frontend": 84,
     "css": 85,
-    "Pointers": 86
+    "Pointers": 86,
+    "SERVER": 87,
+    "TypeScript": 88
   },
   "_version": 3
 }

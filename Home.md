@@ -20,4 +20,3 @@ cssclasses:
 	<h1 class="note"> - Better late than never</h1>
 	<h3 class="author">~ Nighty3098 ~</h3>
 </div>
-
