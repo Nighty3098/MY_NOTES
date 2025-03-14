@@ -99,7 +99,9 @@
     "css": 85,
     "Pointers": 86,
     "SERVER": 87,
-    "TypeScript": 88
+    "TypeScript": 88,
+    "OWL": 89,
+    "TASKS": 90
   },
   "_version": 3
 }

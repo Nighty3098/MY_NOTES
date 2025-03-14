@@ -3983,6 +3983,8 @@ Securing
 SERVER
 SSL
 Styled
+Svelte
+SolidJS
 moc
 modified
 my
@@ -5949,6 +5951,7 @@ mentioned
 mandatory
 mysql
 maria
+margins
 Root
 Rectangular
 Relationships
@@ -10202,6 +10205,7 @@ characters
 coding
 correctly
 cyber
+changer
 hide
 hosted
 heading
@@ -26041,6 +26045,7 @@ Valgrind
 VERSION
 Visualize
 Vulnerabilities
+Vue
 Guide
 Graph
 Gee
@@ -29905,6 +29910,7 @@ CatsAndOwners
 CRUD
 Consistency
 Client
+Columns
 out
 on
 of
@@ -33702,6 +33708,7 @@ Please
 Petersburg
 Purple
 Pages
+Preact
 Depreciated
 Download
 Dark
@@ -57951,6 +57958,7 @@ sanitizers
 standards
 spies
 socket
+screenshots
 vault
 vn
 vY
@@ -75194,6 +75202,7 @@ Uncle
 Ubuntu
 Unit
 UDP
+Users
 Metadata
 Move
 Main
@@ -80832,6 +80841,7 @@ Brilliant
 Black
 Bella
 Bugs
+Boards
 Wider
 Wrapping
 WQQ

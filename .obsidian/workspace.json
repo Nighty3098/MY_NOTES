@@ -24,41 +24,17 @@
             }
           },
           {
-            "id": "7f38a76127729202",
+            "id": "ad00adb717a6e188",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev/Web site design examples.md",
+                "file": "Dev/Client - Server apps/Создание базового клиент-серверного приложения.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web site design examples"
-            }
-          },
-          {
-            "id": "c45ce8eea18a31ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dev/React/React.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "React"
-            }
-          },
-          {
-            "id": "45a17c45b62c05e7",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Создание базового клиент-серверного приложения"
             }
           }
         ],
@@ -133,7 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 363.5224418640137
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -198,13 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev/Web site design examples.md",
+                "file": "Dev/Client - Server apps/Создание базового клиент-серверного приложения.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Web site design examples"
+              "title": "Outline of Создание базового клиент-серверного приложения"
             }
           }
         ],
@@ -254,11 +230,27 @@
       "translate:Open translation view": false
     }
   },
-  "active": "7f38a76127729202",
+  "active": "ad00adb717a6e188",
   "lastOpenFiles": [
+    "Dev/Client - Server apps/Пример приложения.md",
+    "Projects/OWL/Backend/Documentation.md",
+    "Projects/OWL/Backend/Server DB.md",
+    "Projects/OWL/TASKS/TASKS ON 14.03.2025.md",
+    "Projects/OWL/TASKS/TASKS ON 15.03.2025.md",
+    "Home.md",
+    "imgs/drawSQL-image-export-2025-03-14.png",
+    "Projects/OWL/Backend",
+    "Projects/OWL/Documentation.md",
+    "Projects/OWL/TASKS",
+    "Projects/OWL",
+    "Dev/JavaScript/Working with data types in JavaScript.md",
+    "Dev/JavaScript/Working with Conditionals in JavaScript.md",
+    "Dev/JavaScript/JavaScript Programming Basics.md",
+    "Dev/JavaScript/REACT, VUE, ANGULAR, SVELTE, SOLID, PREACT.md",
+    "Dev/JavaScript/Variables in JavaScript.md",
+    "Dev/JavaScript/Working with Functions in JavaScript.md",
     "Dev/React/React.md",
     "Dev/Web site design examples.md",
-    "Home.md",
     "obsidian-banner-2.png",
     "imgs/Pasted image 20250311224410.png",
     "imgs/Pasted image 20250311200352.png",
@@ -274,33 +266,17 @@
     "Dev/QT/QThread.md",
     "Dev/QT/Simple Threads.md",
     "Dev/QT/QSQL.md",
-    "Dev/Client - Server apps/Пример приложения.md",
     "Dev/C/Управление памятью/Basic functions for memory management.md",
     "Dev/Client - Server apps",
     "Dev/C/Main C Vulnerabilities.md",
     "Dev/Design ideas/Account page.md",
-    "Dev/Frontend/Fix hover effect on phone website version.md",
-    "Dev/Frontend/CSS/GRID/GRID.md",
-    "Dev/Структуры данных в программировании.md",
-    "Dev/Logo ideas.md",
-    "Dev/С++/Binary search tree.md",
-    "Dev/С++/C++.md",
-    "Dev/MySQL/MySQL_RU.md",
-    "Dev/MySQL/Запросы к БД.md",
-    "Dev/С++/Algorithmic paradigms.md",
-    "Dev/С++/Memory managment/Memory Management Libraries.md",
-    "Dev/С++/Memory managment/Main Memory Management Operators.md",
     "Dev/Frontend/CSS/GRID",
     "Dev/Frontend/CSS",
     "Dev/Frontend",
     "Education/Literature",
     "Dev/React",
     "imgs/Pasted image 20250104224818.png",
-    "imgs/OWL.png",
     "Dev/Design ideas",
-    "Dev/JavaScript/NodeJS",
-    "Dev/JavaScript/Electron",
-    "Dev/JavaScript/Other",
     "Без названия.canvas",
     "Untitled.canvas"
   ]

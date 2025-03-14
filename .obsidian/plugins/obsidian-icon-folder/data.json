@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasCodeBranch",
+      "LiCheck",
+      "LiAtom",
       "FarFlag",
-      "LiLanguages",
-      "LiBook",
-      "LiCylinder",
-      "LiFolder"
+      "LiLanguages"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -33,9 +33,6 @@
     "lucideIconPackType": "native",
     "debugMode": false
   },
-  "Projects/TGSB/TGSB.md": "LiGithub",
-  "Projects/LogInsight/LogInsight.md": "LiGithub",
-  "Projects/IPSA/IPSA.md": "LiGithub",
   "Education/Math/Lesson_1/Lesson.md": "LiBookMarked",
   "Education/Math/Lesson_1/Теорема Безу.md": "LiBookMarked",
   "Education/Math/Lesson_1/Схема Горнера.md": "LiBookMarked",
@@ -69,5 +66,8 @@
   "Dev/Frontend": "LiFolder",
   "Dev/Git": "LiFolder",
   "Dev/Client - Server apps": "LiFolder",
-  "Dev/React": "LiFolder"
+  "Dev/React": "LiFolder",
+  "Projects/OWL": "LiAtom",
+  "Projects/OWL/TASKS": "LiCheck",
+  "Projects/OWL/Backend": "FasCodeBranch"
 }
