@@ -24,17 +24,31 @@
             }
           },
           {
-            "id": "ad00adb717a6e188",
+            "id": "5576c4e5e52646c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev/Client - Server apps/Создание базового клиент-серверного приложения.md",
+                "file": "Dev/Структуры данных в программировании.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Создание базового клиент-серверного приложения"
+              "title": "Структуры данных в программировании"
+            }
+          },
+          {
+            "id": "97e55fe9308d8a13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Education/ComputerScience/EGE/Задача 2/Пример решения.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Пример решения"
             }
           }
         ],
@@ -109,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 363.5224418640137
+    "width": 249.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -174,13 +188,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev/Client - Server apps/Создание базового клиент-серверного приложения.md",
+                "file": "Dev/Структуры данных в программировании.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Создание базового клиент-серверного приложения"
+              "title": "Outline of Структуры данных в программировании"
             }
           }
         ],
@@ -210,8 +224,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
@@ -230,54 +244,57 @@
       "translate:Open translation view": false
     }
   },
-  "active": "ad00adb717a6e188",
+  "active": "5576c4e5e52646c4",
   "lastOpenFiles": [
-    "Dev/Client - Server apps/Пример приложения.md",
-    "Projects/OWL/Backend/Documentation.md",
-    "Projects/OWL/Backend/Server DB.md",
-    "Projects/OWL/TASKS/TASKS ON 14.03.2025.md",
-    "Projects/OWL/TASKS/TASKS ON 15.03.2025.md",
+    "Education/Biology/Закон Харди-Вайнберга/Частоты аллелей.md",
+    "Education/Biology/Закон Харди-Вайнберга/Закон Харди-Вайнберга.md",
+    "Education/ComputerScience/EGE/Задача 2/Пример решения 2.md",
+    "Education/ComputerScience/EGE/Задача 2/Пример решения.md",
     "Home.md",
-    "imgs/drawSQL-image-export-2025-03-14.png",
+    "Untitled 2.canvas",
+    "imgs/Pasted image 20250322160311.png",
+    "imgs/Pasted image 20250322160235.png",
+    "Education/ComputerScience/EGE/Задача 2/Задача 2.md",
+    "Education/ComputerScience/EGE/Задача 2",
+    "imgs/Pasted image 20250322155502.png",
+    "imgs/Pasted image 20250322155458.png",
+    "imgs/Pasted image 20250322155453.png",
+    "imgs/Pasted image 20250322155448.png",
+    "imgs/Pasted image 20250322155434.png",
+    "imgs/Pasted image 20250322155425.png",
+    "imgs/Pasted image 20250322155414.png",
+    "imgs/Pasted image 20250322154603.png",
+    "Dev/JavaScript/Working with Functions in JavaScript.md",
+    "Education/ComputerScience/EGE",
+    "Dev/JavaScript/Working with data types in JavaScript.md",
+    "Dev/Client - Server apps/Создание backend на python.md",
+    "Dev/Design ideas/Account page.md",
+    "Dev/Design ideas/Web site.md",
+    "Dev/Design ideas/Desktop apps.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "Dev/JavaScript/Working with Loops in JavaScript.md",
+    "Dev/JavaScript/Working with Conditionals in JavaScript.md",
+    "Dev/JavaScript/Variables in JavaScript.md",
+    "Dev/JavaScript/REACT, VUE, ANGULAR, SVELTE, SOLID, PREACT.md",
+    "Dev/LeetCode/Median of Two Sorted Arrays.md",
+    "Education/Math/Lesson_1/Схема Горнера.md",
+    "Education/Math/Lesson_1/Lesson.md",
+    "Dev/Client - Server apps/Создание базового клиент-серверного приложения C++.md",
+    "Teamplates/TEST.md",
+    "Dev/LeetCode/Two Sum.md",
+    "Dev/LeetCode/Zigzag Conversion.md",
+    "Dev/LeetCode",
+    "Dev/Client - Server apps/Создание базового клиент-серверного приложения.md",
+    "Dev/Client - Server apps/Создание backend на python.md~",
+    "Dev/Client - Server apps/Создание backend на python",
+    "Dev/Client - Server apps/Пример приложения на C++.md",
+    "Dev/Client - Server apps/Пример приложения.md",
     "Projects/OWL/Backend",
-    "Projects/OWL/Documentation.md",
     "Projects/OWL/TASKS",
     "Projects/OWL",
-    "Dev/JavaScript/Working with data types in JavaScript.md",
-    "Dev/JavaScript/Working with Conditionals in JavaScript.md",
-    "Dev/JavaScript/JavaScript Programming Basics.md",
-    "Dev/JavaScript/REACT, VUE, ANGULAR, SVELTE, SOLID, PREACT.md",
-    "Dev/JavaScript/Variables in JavaScript.md",
-    "Dev/JavaScript/Working with Functions in JavaScript.md",
-    "Dev/React/React.md",
-    "Dev/Web site design examples.md",
-    "obsidian-banner-2.png",
-    "imgs/Pasted image 20250311224410.png",
-    "imgs/Pasted image 20250311200352.png",
-    "imgs/Pasted image 20250311200344.png",
-    "imgs/Pasted image 20250311200331.png",
-    "imgs/Pasted image 20250311200324.png",
-    "imgs/Pasted image 20250311200310.png",
-    "imgs/Pasted image 20250311200133.png",
-    "Dev/React/JSX.md",
-    "Dev/React/React.JS Test Project.md",
-    "Dev/React/Integrate JSX to Electron NodeJS project.md",
-    "Dev/Client - Server apps/Создание базового клиент-серверного приложения.md",
-    "Dev/QT/QThread.md",
-    "Dev/QT/Simple Threads.md",
-    "Dev/QT/QSQL.md",
-    "Dev/C/Управление памятью/Basic functions for memory management.md",
     "Dev/Client - Server apps",
-    "Dev/C/Main C Vulnerabilities.md",
-    "Dev/Design ideas/Account page.md",
     "Dev/Frontend/CSS/GRID",
-    "Dev/Frontend/CSS",
-    "Dev/Frontend",
-    "Education/Literature",
-    "Dev/React",
-    "imgs/Pasted image 20250104224818.png",
-    "Dev/Design ideas",
-    "Без названия.canvas",
-    "Untitled.canvas"
+    "Без названия.canvas"
   ]
 }

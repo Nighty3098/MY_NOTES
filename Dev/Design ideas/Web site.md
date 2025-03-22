@@ -1,6 +1,6 @@
 ---
 tags:
-  - JavaScript
+  - design_ideas
 ---
 ![[Pasted image 20250311200133.png]]
 

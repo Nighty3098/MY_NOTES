@@ -69,5 +69,7 @@
   "Dev/React": "LiFolder",
   "Projects/OWL": "LiAtom",
   "Projects/OWL/TASKS": "LiCheck",
-  "Projects/OWL/Backend": "FasCodeBranch"
+  "Projects/OWL/Backend": "FasCodeBranch",
+  "Dev/LeetCode": "LiCheck",
+  "Education/ComputerScience/EGE": "LiAtom"
 }
