@@ -14,45 +14,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "1-HOME.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "1-HOME"
             }
           },
           {
-            "id": "5576c4e5e52646c4",
+            "id": "40668b0bf7a519fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev/Структуры данных в программировании.md",
+                "file": "2-PROJECTS.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2-PROJECTS"
+            }
+          },
+          {
+            "id": "1686fd07c20744a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0-TASKS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Структуры данных в программировании"
-            }
-          },
-          {
-            "id": "97e55fe9308d8a13",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Education/ComputerScience/EGE/Задача 2/Пример решения.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Пример решения"
+              "title": "0-TASKS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Projects.md",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -123,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249.5
+    "width": 223.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -132,7 +131,7 @@
       {
         "id": "a36ea1a514a5c682",
         "type": "tabs",
-        "dimension": 82.51992031872508,
+        "dimension": 35.87896253602306,
         "children": [
           {
             "id": "a0b7bbbe68977914",
@@ -188,13 +187,23 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev/Структуры данных в программировании.md",
+                "file": "1-HOME.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Структуры данных в программировании"
+              "title": "Outline of 1-HOME"
+            }
+          },
+          {
+            "id": "9c56d6c26076e49f",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
@@ -203,7 +212,7 @@
       {
         "id": "bac9acae3297dc63",
         "type": "tabs",
-        "dimension": 17.48007968127491,
+        "dimension": 64.12103746397695,
         "children": [
           {
             "id": "ca07560dc23dc679",
@@ -219,8 +228,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5,
-    "collapsed": true
+    "width": 301.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,60 +249,61 @@
       "widgets:Add widget": false,
       "pomodoro-timer:Toggle timer panel": false,
       "dashboard-navigator:Open dashboard navigator": false,
-      "translate:Open translation view": false
+      "translate:Open translation view": false,
+      "obsidian-memos:Memos": false,
+      "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "5576c4e5e52646c4",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Education/Biology/Закон Харди-Вайнберга/Частоты аллелей.md",
-    "Education/Biology/Закон Харди-Вайнберга/Закон Харди-Вайнберга.md",
-    "Education/ComputerScience/EGE/Задача 2/Пример решения 2.md",
-    "Education/ComputerScience/EGE/Задача 2/Пример решения.md",
-    "Home.md",
+    "0-TASKS.md",
+    "1-HOME.md",
+    "2-PROJECTS.md",
+    "1-HOME.md~",
+    "2-PROJECTS.md~",
+    "Teamplates/2-PROJECTS.md",
+    "1-HOME (Copy).md",
+    "TOKEN.md",
+    "README.md",
+    "dss.md",
+    "Projects/IPSA/bugs/YFinance.md",
+    "Projects/IPSA/IPSA Documentation.md",
+    "Projects/IPSA/bugs",
+    "Projects/IPSA",
+    "Projects/Untitled.md",
+    "Home.md~",
+    "header.png",
+    "forest_stairs.jpg",
+    "heder.png",
+    "angel-warrior-anime-girl-sword-8k-wallpaper-uhdpaper.com-731@3@a.jpg",
+    "40 - Obsidian/Attachments/164431654583979_.pic.jpg",
+    "Frequently Asked Questions.md",
+    "Updates and Bug Fixes.md",
+    "User Showcases.md",
+    "40 - Obsidian/Attachments/1658115786245751.mp4",
+    "40 - Obsidian/Attachments/165511654585350_.pic.png",
+    "40 - Obsidian/Attachments/166451654587261_.pic_hd.jpg",
+    "40 - Obsidian/Attachments/Screen Shot 2022-06-02 at 15.08.21.png",
+    "40 - Obsidian/Attachments/Screen Shot 2022-06-02 at 15.08.45.png",
+    "40 - Obsidian/Attachments/Screen Shot 2022-06-02 at 15.10.29.png",
+    "40 - Obsidian/Homepages/00. Dashboard.md",
+    "40 - Obsidian/Homepages/00. Files.md",
+    "40 - Obsidian/Homepages/00. Homepage.md",
+    "40 - Obsidian/Homepages/00. References.md",
+    "40 - Obsidian/React components/music and birthday countdown 2.md",
+    "40 - Obsidian/React components/music and birthday countdown 1.md",
+    "40 - Obsidian/Templates/New Weekly template.md",
+    "40 - Obsidian/Templates/New Daily template.md",
+    "40 - Obsidian/Templates/New Code template.md",
+    "50 - Zettelkasten/cohort.md",
+    "50 - Zettelkasten/coral reef.md",
+    "50 - Zettelkasten",
+    "40 - Obsidian/Attachments/banners",
+    "40 - Obsidian/Templates",
+    "40 - Obsidian/React components",
     "Untitled 2.canvas",
-    "imgs/Pasted image 20250322160311.png",
-    "imgs/Pasted image 20250322160235.png",
-    "Education/ComputerScience/EGE/Задача 2/Задача 2.md",
-    "Education/ComputerScience/EGE/Задача 2",
-    "imgs/Pasted image 20250322155502.png",
-    "imgs/Pasted image 20250322155458.png",
-    "imgs/Pasted image 20250322155453.png",
-    "imgs/Pasted image 20250322155448.png",
-    "imgs/Pasted image 20250322155434.png",
-    "imgs/Pasted image 20250322155425.png",
-    "imgs/Pasted image 20250322155414.png",
-    "imgs/Pasted image 20250322154603.png",
-    "Dev/JavaScript/Working with Functions in JavaScript.md",
-    "Education/ComputerScience/EGE",
-    "Dev/JavaScript/Working with data types in JavaScript.md",
-    "Dev/Client - Server apps/Создание backend на python.md",
-    "Dev/Design ideas/Account page.md",
-    "Dev/Design ideas/Web site.md",
-    "Dev/Design ideas/Desktop apps.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "Dev/JavaScript/Working with Loops in JavaScript.md",
-    "Dev/JavaScript/Working with Conditionals in JavaScript.md",
-    "Dev/JavaScript/Variables in JavaScript.md",
-    "Dev/JavaScript/REACT, VUE, ANGULAR, SVELTE, SOLID, PREACT.md",
-    "Dev/LeetCode/Median of Two Sorted Arrays.md",
-    "Education/Math/Lesson_1/Схема Горнера.md",
-    "Education/Math/Lesson_1/Lesson.md",
-    "Dev/Client - Server apps/Создание базового клиент-серверного приложения C++.md",
-    "Teamplates/TEST.md",
-    "Dev/LeetCode/Two Sum.md",
-    "Dev/LeetCode/Zigzag Conversion.md",
-    "Dev/LeetCode",
-    "Dev/Client - Server apps/Создание базового клиент-серверного приложения.md",
-    "Dev/Client - Server apps/Создание backend на python.md~",
-    "Dev/Client - Server apps/Создание backend на python",
-    "Dev/Client - Server apps/Пример приложения на C++.md",
-    "Dev/Client - Server apps/Пример приложения.md",
-    "Projects/OWL/Backend",
-    "Projects/OWL/TASKS",
-    "Projects/OWL",
-    "Dev/Client - Server apps",
-    "Dev/Frontend/CSS/GRID",
     "Без названия.canvas"
   ]
 }

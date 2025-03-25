@@ -2,25 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Neonderthaw&family=Warnes&family=WindSong:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Rubik+Glitch&family=Tsukimi+Rounded&display=swap");
 
-.header_image {
-  width: 100%;
-  margin: 0px auto;
-  position: static;
-  top: 0;
-  left: 0;
-  border-radius: 30px;
-}
-
-.content {
-  margin-top: 200px;
-}
-
-.view-content {
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-}
-
 .launchpad .inline-title {
   display: none;
 }
@@ -33,23 +14,11 @@
   display: none;
 }
 
-.launchpad .main_header {
-  text-align: center;
-  font-size: 60px;
-  font-family: "Nova Mono", system-ui;
-  color: var(--text-accent);
-}
-
 .launchpad .main_header_2 {
   text-align: center;
   font-size: 35px;
   font-family: "Nova Mono", system-ui;
   color: var(--text-accent);
-}
-
-.launchpad .clock_widget {
-  display: flex;
-  justify-content: center;
 }
 
 .launchpad .note_2 {
@@ -100,4 +69,71 @@ a.tag {
   padding: 10px 10px 10px 10px;
   display: grid;
   grid-template-columns: auto auto;
+}
+
+.view-content {
+  z-index: 0;
+}
+
+.launchpad .inline-title {
+  display: none;
+  height: 0px;
+}
+
+.launchpad .view-header {
+  display: none;
+}
+
+.launchpad .block-language-dataviewjs {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  overflow: hidden;
+  background-color: var(--font-text);
+}
+
+.launchpad .banner-image {
+  width: 100%;
+  margin: 0px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.launchpad .widget {
+  height: 60px;
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.launchpad .widget h1 {
+  font-size: medium;
+}
+
+.launchpad .columnParent {
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.launchpad .columnParent .columnChild {
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
 }

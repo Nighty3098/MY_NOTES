@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🍀",
       "FasCodeBranch",
       "LiCheck",
       "LiAtom",
-      "FarFlag",
-      "LiLanguages"
+      "FarFlag"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -71,5 +71,6 @@
   "Projects/OWL/TASKS": "LiCheck",
   "Projects/OWL/Backend": "FasCodeBranch",
   "Dev/LeetCode": "LiCheck",
-  "Education/ComputerScience/EGE": "LiAtom"
+  "Education/ComputerScience/EGE": "LiAtom",
+  "Projects/IPSA": "LiAtom"
 }
