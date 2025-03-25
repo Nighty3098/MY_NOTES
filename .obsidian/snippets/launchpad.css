@@ -2,15 +2,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Neonderthaw&family=Warnes&family=WindSong:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Rubik+Glitch&family=Tsukimi+Rounded&display=swap");
 
-.launchpad .inline-title, .metadata-properties-heading, .metadata-content {
+.launchpad .inline-title {
   display: none;
 }
 
-.tasks .inline-title, .metadata-properties-heading, .metadata-content {
+.launchpad .metadata-properties-heading {
   display: none;
 }
 
-.projects .inline-title, .metadata-properties-heading, .metadata-content {
+.launchpad .metadata-content {
+  display: none;
+}
+
+.tasks .inline-title {
+  display: none;
+}
+
+.tasks .metadata-properties-heading {
+  display: none;
+}
+
+.tasks .metadata-content {
+  display: none;
+}
+
+.projects .inline-title {
+  display: none;
+}
+
+.projects .metadata-properties-heading {
+  display: none;
+}
+
+.projects .metadata-content {
   display: none;
 }
 
