@@ -24,17 +24,17 @@
             }
           },
           {
-            "id": "311274ebe3f1e23c",
+            "id": "fdb257179da3ce1a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
-                "mode": "preview",
-                "source": true
+                "file": "1-HOME.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "1-HOME"
             }
           }
         ],
@@ -53,7 +53,8 @@
         "state": {
           "type": "file-explorer",
           "state": {
-            "sortOrder": "alphabetical"
+            "sortOrder": "alphabetical",
+            "autoReveal": false
           },
           "icon": "lucide-folder-closed",
           "title": "Files"
@@ -159,10 +160,23 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Home.md"
+            "file": "1-HOME.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
           },
           "icon": "lucide-list",
           "title": "Outline"
+        }
+      },
+      {
+        "id": "1d34d36a225542fb",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {},
+          "icon": "calendar-with-checkmark",
+          "title": "Calendar"
         }
       }
     ],
@@ -170,16 +184,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "pexels-banner:🚩 Pixel Banner Menu": false,
       "pomodoro-timer:Toggle timer panel": false,
-      "dashboard-navigator:Open dashboard navigator": false,
-      "widgets:Add widget": false,
       "markdown-importer:Open format converter": false,
       "zk-prefixer:Create new unique note": false,
       "random-note:Open random note": false,
       "workspaces:Manage workspace layouts": false,
       "publish:Publish changes...": false,
       "obsidian-kanban:Create new board": false,
-      "homepage:Open homepage": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -189,9 +201,13 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "311274ebe3f1e23c",
+  "active": "fdb257179da3ce1a",
   "lastOpenFiles": [
+    "Dev/React/Integrate JSX to Electron NodeJS project.md",
+    "Dev/MySQL/MySQL_RU.md",
     "Home.md",
+    "Dev/Client - Server apps/Создание базового клиент-серверного приложения.md",
+    "Projects/OWL/Backend/Server DB.md",
     "Education/Math/Theory/Derivative of a function/Значения производных.md",
     "obsidian-banner-2.png",
     "Dev/JavaScript/Работа с типами данных в JavaScript.md",
@@ -214,10 +230,6 @@
     "Dev/Python/🐍 Modules/Работа с данными в Python используя Pydantic.md",
     "Dev/Python/🐍 Modules/Планировщик задач.md",
     "Dev/Python/🐍 Modules/Перегрузка операторов сравнения.md",
-    "Dev/Python/🐍 Modules/Обработка видео.md",
-    "Dev/Python/🐍 Modules/Обрабатываем номера телефонов.md",
-    "Dev/Python/🐍 Modules/Лямбда функции.md",
-    "Dev/Python/🐍 Modules/Копирование объектов.md",
     "imgs/Pasted image 20240529201026.png",
     "imgs/header.png",
     "🧭 Projects/TGSB"

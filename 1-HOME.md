@@ -4,7 +4,6 @@ cssclasses:
 tags:
   - home
 banner: "[[header.png]]"
-icon: 🍀
 banner-height: 550
 icon-x: 6
 icon-y: -100
