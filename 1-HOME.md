@@ -7,11 +7,12 @@ banner: "[[header.png]]"
 icon: 🍀
 banner-height: 550
 icon-x: 6
-icon-y: -100
+icon-y: -200
 icon-size: 45
 icon-border-radius: 21
 pixel-banner-flag-color: white
 ---
+
 
 ```dataviewjs
 const clockDiv = this.container.createDiv({ cls: "analog-clock-widget" });
