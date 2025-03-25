@@ -127,8 +127,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5,
-    "collapsed": true
+    "width": 223.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -256,17 +255,17 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "ed15b78cf26db7db",
   "lastOpenFiles": [
     "0-TASKS.md",
     "1-HOME.md",
     "2-PROJECTS.md",
     "0-TASKS.md~",
-    "mist_forest_2.png",
+    "imgs/mist_forest_2 1.png",
     "2-PROJECTS.md~",
-    "badges_python.png",
-    "badges_typescript.png",
-    "badges_cpp.png",
+    "imgs/badges_python.png",
+    "imgs/badges_typescript.png",
+    "imgs/badges_cpp.png",
     "Ideas",
     "imgs/waterfall_2.png",
     "imgs/rocky_beach_2.png",
