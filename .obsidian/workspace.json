@@ -53,8 +53,7 @@
               "title": "2-PROJECTS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -125,7 +124,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5
+    "width": 223.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -253,11 +253,11 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "1686fd07c20744a9",
   "lastOpenFiles": [
-    "1-HOME.md~",
     "2-PROJECTS.md",
     "1-HOME.md",
+    "1-HOME.md~",
     "2-PROJECTS.md~",
     "0-TASKS.md",
     "Teamplates/2-PROJECTS.md~",

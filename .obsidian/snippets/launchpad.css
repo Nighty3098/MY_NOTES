@@ -233,6 +233,10 @@ a.tag {
   overflow: hidden;
 }
 
+.tasks * {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 900px) {
   .tasks {
     height: 100%;
