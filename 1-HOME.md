@@ -4,6 +4,7 @@ cssclasses:
 tags:
   - home
 banner: "[[header.png]]"
+icon: 🍀
 banner-height: 550
 icon-x: 6
 icon-y: -100
@@ -132,5 +133,44 @@ async function main() {
 }
 main();
 ```
+````
+`````
+
+
+`````col
+````col-md
+flexGrow=1
+===
+![[mist_forest_2.png]]
+
+
+#TypeScript 
+#python 
+#CPP 
+#C 
+````
+
+````col-md
+flexGrow=1
+===
+![[rocky_beach_2.png]]
+
+
+#Trigonometry 
+#Math 
+#Geometry 
+#SocialStudies 
+````
+
+````col-md
+flexGrow=1
+===
+![[waterfall_2.png]]
+
+
+#DailyNote 
+#Tasks 
+#Project 
+#Ideas
 ````
 `````

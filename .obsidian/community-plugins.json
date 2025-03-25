@@ -4,13 +4,10 @@
   "obsidian-tikzjax",
   "obsidian-completr",
   "obsidian-columns",
-  "obsidian-icon-folder",
   "pomodoro-timer",
   "obsidian-latex-suite",
   "image2latex",
   "ai-latex-generator",
-  "colored-tags",
-  "obsidian-admonition",
   "obsidian-advanced-uri",
   "calendar",
   "obsidian-dynamic-toc",
@@ -18,6 +15,5 @@
   "obsidian-charts",
   "obsidian-react-components",
   "obsidian-style-settings",
-  "obsidian-tasks-plugin",
   "pexels-banner"
 ]

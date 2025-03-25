@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Neonderthaw&family=Warnes&family=WindSong:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Rubik+Glitch&family=Tsukimi+Rounded&display=swap");
 
-.launchpad .inline-title {
+.launchpad .inline-title, .metadata-properties-heading, .metadata-content {
   display: none;
 }
 
-.launchpad .metadata-properties-heading {
+.tasks .inline-title, .metadata-properties-heading, .metadata-content {
   display: none;
 }
 
-.launchpad .metadata-content {
+.projects .inline-title, .metadata-properties-heading, .metadata-content {
   display: none;
 }
 
@@ -21,17 +21,38 @@
   color: var(--text-accent);
 }
 
-.launchpad .note_2 {
+.tasks .callout {
   display: block;
   margin: auto auto;
   background-color: var(--background-primary-alt);
   border-radius: 20px;
   padding: 30px;
-  width: 100%;
-  max-width: 900px;
 }
 
-.launchpad .note_2 .note {
+.tasks .callout-title * {
+  text-align: center;
+  font-size: x-large;
+  font-family: "Nova Mono", system-ui;
+  color: var(--text-accent);
+}
+
+.tasks .contains-task-list .task-list-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.tasks .note_2 {
+  display: block;
+  margin: auto auto;
+  background-color: var(--background-primary-alt);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.tasks .note_2 .note {
   align-content: left;
   text-align: left;
   font-size: xx-large;
@@ -39,7 +60,7 @@
   color: var(--text-accent);
 }
 
-.launchpad .note_2 .author {
+.tasks .note_2 .author {
   align-content: right;
   text-align: right;
   font-size: medium;
@@ -56,9 +77,11 @@ a.tag {
 }
 
 .launchpad .callout {
+  align-items: center;
+  align-content: center;
   background-color: var(--background-primary-alt);
   border: none;
-  border-radius: 20px;
+  width: 100%;
 }
 
 .launchpad .callout-title {
@@ -112,7 +135,7 @@ a.tag {
 
 .launchpad .widget {
   height: 60px;
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary-alt);
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -136,4 +159,83 @@ a.tag {
   width: 100%;
   max-width: 400px;
   min-width: 300px;
+}
+
+.projects .columnParent {
+  width: 100%;
+  display: flex;
+  flex-direction: start;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.projects .columnParent .columnChild {
+  display: flex;
+  flex-direction: start;
+  width: 100%;
+  max-width: 250px;
+  min-width: 100px;
+}
+
+.launchpad img {
+  border-radius: 20px;
+}
+
+.launchpad a.tag {
+  width: auto;
+  padding: auto;
+  height: 35px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-size: small;
+  background-color: var(--background-primary-alt);
+  transition: all 0.5s ease-in-out;
+}
+
+.launchpad a.tag:hover {
+  color: var(--text-error);
+  background-color: var(--background-secondary);
+}
+
+
+.projects img {
+  border-radius: 20px;
+  max-width: 200px;
+}
+
+.projects a.tag {
+  width: auto;
+  padding: auto;
+  height: 35px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-size: small;
+  background-color: var(--background-primary-alt);
+  transition: all 0.5s ease-in-out;
+}
+
+.projects a.tag:hover {
+  color: var(--text-error);
+  background-color: var(--background-secondary);
+}
+
+.tasks {
+  height: 100%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.tasks {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .tasks {
+    height: 100%;
+    width: 100%;
+    margin-left: 0%;
+  }
 }
