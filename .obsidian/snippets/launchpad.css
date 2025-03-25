@@ -201,7 +201,8 @@ a.tag {
 
 
 .projects img {
-  border-radius: 20px;
+  border-radius: 30%;
+  border: none;
   max-width: 200px;
 }
 

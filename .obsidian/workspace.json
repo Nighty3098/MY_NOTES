@@ -40,9 +40,8 @@
             }
           },
           {
-            "id": "40668b0bf7a519fb",
+            "id": "9cb10855f61a26ed",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -50,7 +49,6 @@
                 "mode": "source",
                 "source": false
               },
-              "pinned": true,
               "icon": "lucide-file",
               "title": "2-PROJECTS"
             }
@@ -127,8 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5,
-    "collapsed": true
+    "width": 223.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -258,12 +255,15 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "0-TASKS.md",
-    "1-HOME.md",
+    "1-HOME.md~",
     "2-PROJECTS.md",
+    "1-HOME.md",
+    "2-PROJECTS.md~",
+    "0-TASKS.md",
+    "Teamplates/2-PROJECTS.md~",
+    "Teamplates/Project.md~",
     "0-TASKS.md~",
     "imgs/mist_forest_2 1.png",
-    "2-PROJECTS.md~",
     "imgs/badges_python.png",
     "imgs/badges_typescript.png",
     "imgs/badges_cpp.png",
@@ -274,7 +274,6 @@
     "331.png",
     "312.png",
     "345.png",
-    "1-HOME.md~",
     "Teamplates/2-PROJECTS.md",
     "1-HOME (Copy).md",
     "TOKEN.md",
@@ -301,8 +300,6 @@
     "40 - Obsidian/Templates/New Code template.md",
     "50 - Zettelkasten/cohort.md",
     "50 - Zettelkasten/coral reef.md",
-    "50 - Zettelkasten",
-    "40 - Obsidian/Attachments/banners",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",

@@ -13,7 +13,6 @@ icon-border-radius: 21
 pixel-banner-flag-color: white
 ---
 
-
 ```dataviewjs
 const clockDiv = this.container.createDiv({ cls: "analog-clock-widget" });
 clockDiv.innerHTML = `
@@ -108,24 +107,33 @@ if (page) {
 flexGrow=1
 ===
 ```dataviewjs
-const fileName = "2-PROJECTS.md";
-async function countTags() {
-    const page = dv.page(fileName);
-    if (page) {
-        const tags = page.file.tags || [];
-        return tags.length;
-    } else {
-        throw new Error(`File "${fileName}" not found.`);     }
+const TARGET_FILE = "2-PROJECTS.md";
+
+async function getTagData() {
+    try {
+        const content = await dv.io.load(TARGET_FILE);
+        const matches = content.match(/#([A-Za-z0-9_-]+)/g) || [];
+        const uniqueTags = [...new Set(matches)];
+        return {
+            count: uniqueTags.length,
+            tags: uniqueTags
+        };
+    } catch (error) {
+        throw new Error(`Файл "${TARGET_FILE}" не найден: ${error.message}`);
+    }
 }
+
 async function main() {
     try {
-        const tagCount = await countTags();
+        const {count, tags} = await getTagData();
+
         const div = document.createElement('div');
         div.className = "widget";
-        const h1 = document.createElement('h1');
-        h1.textContent = `PROJECTS: ${tagCount}`;
-        div.appendChild(h1);
-        dv.container.appendChild(div);
+        const h1 = document.createElement("h1");
+        h1.textContent = `PROJECTS: ${count}`
+        div.appendChild(h1)
+        dv.container.appendChild(div)
+
     } catch (error) {
         dv.el("div", `⚠️ ERROR: ${error.message}`, {
             attr: { style: "color: red; padding: 10px;" }
@@ -137,7 +145,6 @@ main();
 ````
 `````
 
-
 `````col
 ````col-md
 flexGrow=1
@@ -145,10 +152,10 @@ flexGrow=1
 ![[mist_forest_2.png]]
 
 
-#TypeScript 
-#python 
-#CPP 
-#C 
+#TypeScript
+#python
+#CPP
+#C
 ````
 
 ````col-md
@@ -157,10 +164,10 @@ flexGrow=1
 ![[rocky_beach_2.png]]
 
 
-#Trigonometry 
-#Math 
-#Geometry 
-#SocialStudies 
+#Trigonometry
+#Math
+#Geometry
+#SocialStudies
 ````
 
 ````col-md
@@ -169,9 +176,9 @@ flexGrow=1
 ![[waterfall_2.png]]
 
 
-#DailyNote 
-#Tasks 
-#Project 
+#DailyNote
+#Tasks
+#Project
 #Ideas
 ````
 `````

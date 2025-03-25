@@ -143,7 +143,13 @@
     "operator": 120,
     "mcl": 121,
     "mcl/list-grid": 1,
-    "home": 122
+    "home": 122,
+    "nFetch": 123,
+    "FileEncrypt": 124,
+    "Profile": 125,
+    "StyleShop": 126,
+    "OWL_BACKEND": 127,
+    "TechSupportBot": 128
   },
   "_version": 3
 }
