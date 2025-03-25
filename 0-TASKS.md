@@ -1,4 +1,14 @@
-- [ ] sfdfs
-- [ ] dsfsdf
-- [x] afgdfs
-- [ ] fdgsdgd
+- [x] Database design
+- [x] Table of projects
+- [x] Implementation of API for project management
+- [ ] Add project uniqueness check in OWL database
+- [ ] Fixing Docker containers
+- [x] Task table
+- [ ] Implementation of task management via API
+- [ ] Implementation of the settings table
+- [ ] API testing
+- [ ] Switching to https, improving security
+- [ ] Implementation of a test console client
+- [ ] Admin panel implementation
+- [ ] Statistics collection system
+- [ ] Connecting the backend to the application
