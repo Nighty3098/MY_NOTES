@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev/Python/Flask/Fask Backend.md",
+                "file": "Dev/Python/Flask/Docker for Flask apps.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fask Backend"
+              "title": "Docker for Flask apps"
             }
           }
         ],
@@ -271,8 +271,9 @@
   },
   "active": "57ebc712955479ac",
   "lastOpenFiles": [
-    "1-HOME.md",
+    "Dev/Python/Flask/Docker for Flask apps.md",
     "Dev/Python/Flask/Fask Backend.md",
+    "1-HOME.md",
     "Dev/Python/Flask",
     "0-TASKS.md",
     "2-PROJECTS.md",
@@ -316,7 +317,6 @@
     "40 - Obsidian/Templates/New Daily template.md",
     "40 - Obsidian/Templates/New Code template.md",
     "50 - Zettelkasten/cohort.md",
-    "50 - Zettelkasten/coral reef.md",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",

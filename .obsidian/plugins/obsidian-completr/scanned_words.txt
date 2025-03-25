@@ -40828,6 +40828,7 @@ PFH
 PRU
 PPE
 Periodics
+PostgreSQL
 Depreciated
 Download
 Dark
@@ -43194,6 +43195,7 @@ DGni
 DsV
 Dts
 Date
+Dockerfile
 experience
 enlarges
 either
@@ -100033,6 +100035,7 @@ WwG
 WaG
 WPI
 Welcome
+WSGI
 Quotation
 Query
 Qss
