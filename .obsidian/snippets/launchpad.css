@@ -223,7 +223,6 @@ a.tag {
   background-color: var(--background-secondary);
 }
 
-
 .projects img {
   border-radius: 30%;
   border: none;
@@ -254,10 +253,6 @@ a.tag {
 }
 
 .tasks {
-  overflow: hidden;
-}
-
-.tasks * {
   overflow: hidden;
 }
 

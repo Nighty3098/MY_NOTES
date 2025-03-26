@@ -61,16 +61,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev/Python/Flask/Docker for Flask apps.md",
+                "file": "Dev/Python/Flask/Fask Backend.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker for Flask apps"
+              "title": "Fask Backend"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -141,7 +140,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5
+    "width": 223.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -269,10 +269,10 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "57ebc712955479ac",
+  "active": "1686fd07c20744a9",
   "lastOpenFiles": [
-    "Dev/Python/Flask/Docker for Flask apps.md",
     "Dev/Python/Flask/Fask Backend.md",
+    "Dev/Python/Flask/Docker for Flask apps.md",
     "1-HOME.md",
     "Dev/Python/Flask",
     "0-TASKS.md",
