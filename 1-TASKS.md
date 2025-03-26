@@ -1,6 +1,7 @@
 ---
 banner: "[[header.png]]"
 cssclasses: tasks
+banner-display: cover
 ---
 
 <div class="note_2">

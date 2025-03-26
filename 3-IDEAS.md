@@ -1,8 +1,9 @@
 ---
-banner: "[[128.png]]"
+banner: "[[mist_forest_2.png]]"
 cssclasses:
   - projects
   - tasks
+banner-display: cover
 ---
 
 

@@ -6,6 +6,18 @@
   display: none;
 }
 
+.books .inline-title {
+  display: none;
+}
+
+.books .metadata-properties-heading {
+  display: none;
+}
+
+.books .metadata-content {
+  display: none;
+}
+
 .launchpad .inline-title {
   display: none;
 }
@@ -259,3 +271,31 @@ a.tag {
   justify-content: center;
   border-radius: 20px;
 }
+
+.books .table-view-thead {
+  display: none;
+  border: none;
+}
+
+.books .table-view-tbody tr td span {
+  width: 100%;
+}
+
+.books .dataview table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.books .dataview * {
+  outline: none;
+  text-decoration: none;
+  color: var(--text-normal);
+  font-size: medium;
+}
+
+
+.books .dataview th, .dataview td {
+  padding: 10px;
+  text-align: left;
+}
+

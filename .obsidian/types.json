@@ -3,6 +3,8 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "date": "datetime"
+    "date": "text",
+    "is_readed": "checkbox",
+    "sd": "number"
   }
 }

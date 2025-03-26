@@ -6,6 +6,7 @@ tags:
   - home
 banner-height: 460
 content-start: 81
+banner-display: cover
 ---
 
 ```dataviewjs
@@ -154,38 +155,20 @@ main();
 ````
 ````col-md
 ```dataviewjs
-const TARGET_FILE = "3-IDEAS.md";
-
-async function getTagData() {
-    try {
-        const content = await dv.io.load(TARGET_FILE);
-        const matches = content.match(/#([A-Za-z0-9_-]+)/g) || [];
-        const uniqueTags = [...new Set(matches)];
-        return {
-            count: uniqueTags.length,
-            tags: uniqueTags
-        };
-    } catch (error) {
-        throw new Error(`File "${TARGET_FILE}" not found: ${error.message}`);
-    }
+const folderPath = "Books";
+async function countFilesInFolder() {
+    const allFiles = dv.pages();
+    const filesInFolder = allFiles.filter(p => p.file.path.startsWith(folderPath + "/"));
+    return filesInFolder.length;
 }
-
 async function main() {
-    try {
-        const {count, tags} = await getTagData();
-
-        const div = document.createElement('div');
-        div.className = "widget";
-        const h1 = document.createElement("h1");
-        h1.textContent = `IDEAS: ${count}`
-        div.appendChild(h1)
-        dv.container.appendChild(div)
-
-    } catch (error) {
-        dv.el("div", `⚠️ ERROR: ${error.message}`, {
-            attr: { style: "color: red; padding: 10px;" }
-        });
-    }
+    const fileCount = await countFilesInFolder();
+    const div = document.createElement('div');
+    div.className = "widget";
+    const h1 = document.createElement('h1');
+    h1.textContent = `BOOKS: ${fileCount}`;
+    div.appendChild(h1);
+    dv.container.appendChild(div);
 }
 main();
 ```
