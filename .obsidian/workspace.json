@@ -29,16 +29,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0-HOME.md",
+                "file": "Dev/SQLAlchemy/Гайд + примеры.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0-HOME"
+              "title": "Гайд + примеры"
+            }
+          },
+          {
+            "id": "090ff3fc8d1c24e6",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,8 +119,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5,
-    "collapsed": true
+    "width": 223.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -238,13 +247,15 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "a5a4e8806047fc73",
+  "active": "090ff3fc8d1c24e6",
   "lastOpenFiles": [
+    "Dev/SQLAlchemy/Гайд + примеры.md",
+    "0-HOME.md",
+    "Dev/SQLAlchemy",
     "1-TASKS.md",
     "4-BOOKS.md",
     "3-IDEAS.md",
     "2-PROJECTS.md",
-    "0-HOME.md",
     "Books/Трое в лодке, не считая собаки.md",
     "Books/Таинственный остров.md",
     "Books/Двадцать тысяч льё под водой.md",
@@ -284,8 +295,6 @@
     "dss.md",
     "Projects/IPSA/bugs/YFinance.md",
     "Projects/IPSA/IPSA Documentation.md",
-    "Projects/IPSA/bugs",
-    "Projects/Untitled.md",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",
