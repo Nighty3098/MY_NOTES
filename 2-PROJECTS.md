@@ -11,6 +11,9 @@ flexGrow=1
 ===
 ![[badges_python.png]]
 
+
+
+
 #IPSA
 #OWL_BACKEND
 #TechSupportBot
@@ -21,6 +24,9 @@ flexGrow=1
 ===
 ![[badges_typescript.png]]
 
+
+
+
 #OWL
 #Profile
 #StyleShop
@@ -30,6 +36,9 @@ flexGrow=1
 flexGrow=1
 ===
 ![[badges_cpp.png]]
+
+
+
 
 #CodeKeeper
 #nFetch
