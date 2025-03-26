@@ -1,25 +1,20 @@
 ---
+banner: "[[mist_forest_2 1.png]]"
 cssclasses:
   - launchpad
 tags:
   - home
-banner: "[[header.png]]"
-icon: 🍀
-banner-height: 550
-icon-x: 6
-icon-y: -200
-icon-size: 45
-icon-border-radius: 21
-pixel-banner-flag-color: white
+banner-height: 460
+content-start: 81
 ---
 
 ```dataviewjs
 const clockDiv = this.container.createDiv({ cls: "analog-clock-widget" });
 clockDiv.innerHTML = `
-  <div style="position: relative; width: 200px; height: 200px; border-radius: 40px; border: 10px solid var(--text-normal); background-color: var(--text-normal); margin: auto;">
+  <div style="position: relative; width: 200px; height: 200px; min-width: 200px; min-height: 200px; border-radius: 40px; border: 10px solid var(--text-normal); background-color: var(--text-normal); margin: auto;">
     <div id="hour-hand" style="position: absolute; width: 6px; height: 50px; background-color: var(--background-primary-alt); border-radius: 50px; top: 50%; left: 50%; transform-origin: 50% 100%; transform: translateX(-50%) translateY(-100%);"></div>
     <div id="minute-hand" style="position: absolute; width: 4px; height: 70px; background-color:  var(--background-primary); top: 50%; left: 50%; border-radius: 50px; transform-origin: 50% 100%; transform: translateX(-50%) translateY(-100%);"></div>
-    <div id="second-hand" style="position: absolute; width: 2px; height: 90px; background-color:  var(--text-error); top: 50%; left: 50%; border-radius: 50px; transform-origin: 50% 100%; transform: translateX(-50%) translateY(-100%);"></div>
+    <div id="second-hand" style="position: absolute; width: 2px; height: 90px; background-color:  var(--text-error); top: 50%; left: 50%; border-radius: 50px; transform-origin: 50% 100%; transform: translateX(-50%) translateY(100%);"></div>
   </div>
 `;
 
@@ -44,11 +39,24 @@ function updateAnalogClock() {
 
 updateAnalogClock();
 ```
-
 `````col
 ````col-md
 flexGrow=1
 ===
+```dataviewjs
+const now = new Date();
+const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+const formattedDate = now.toLocaleDateString('en-EN', options);
+const container = dv.el("div", "", {
+    cls: "widget",
+});
+
+container.textContent = formattedDate;
+```
+````
+`````
+`````col
+````col-md
 ```dataviewjs
 const CACHE_DURATION = 60 * 60 * 1000;
 
@@ -81,8 +89,6 @@ countMdFiles().then(count => {
 ```
 ````
 ````col-md
-flexGrow=1
-===
 ```dataviewjs
 const fileName = "0-TASKS.md";
 const page = dv.page(fileName);
@@ -104,8 +110,6 @@ if (page) {
 ```
 ````
 ````col-md
-flexGrow=1
-===
 ```dataviewjs
 const TARGET_FILE = "2-PROJECTS.md";
 
@@ -182,3 +186,5 @@ flexGrow=1
 #Ideas
 ````
 `````
+
+

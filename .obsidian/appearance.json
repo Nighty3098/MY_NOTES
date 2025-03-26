@@ -4,7 +4,7 @@
   "interfaceFontFamily": "SF Pro Display,Google Sans Text",
   "textFontFamily": "Cartograph CF",
   "monospaceFontFamily": "",
-  "baseFontSize": 17,
+  "baseFontSize": 16,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "banner",
@@ -23,7 +23,8 @@
     "S - Checkboxes",
     "file_explorer",
     "style",
-    "launchpad"
+    "launchpad",
+    "safari_tabs"
   ],
   "nativeMenus": false,
   "theme": "system"

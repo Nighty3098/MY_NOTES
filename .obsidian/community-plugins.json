@@ -3,7 +3,6 @@
   "obsidian-kanban",
   "obsidian-tikzjax",
   "obsidian-completr",
-  "obsidian-columns",
   "pomodoro-timer",
   "obsidian-latex-suite",
   "image2latex",
@@ -13,7 +12,8 @@
   "obsidian-dynamic-toc",
   "obsidian-minimal-settings",
   "obsidian-charts",
-  "obsidian-react-components",
   "obsidian-style-settings",
+  "obsidian-columns",
+  "obsidian-react-components",
   "pexels-banner"
 ]
