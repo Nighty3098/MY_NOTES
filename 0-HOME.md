@@ -90,7 +90,7 @@ countMdFiles().then(count => {
 ````
 ````col-md
 ```dataviewjs
-const fileName = "0-TASKS.md";
+const fileName = "1-TASKS.md";
 const page = dv.page(fileName);
 if (page) {
     const tasks = page.file.tasks;
@@ -123,7 +123,7 @@ async function getTagData() {
             tags: uniqueTags
         };
     } catch (error) {
-        throw new Error(`Файл "${TARGET_FILE}" не найден: ${error.message}`);
+        throw new Error(`File "${TARGET_FILE}" not found: ${error.message}`);
     }
 }
 
@@ -135,6 +135,44 @@ async function main() {
         div.className = "widget";
         const h1 = document.createElement("h1");
         h1.textContent = `PROJECTS: ${count}`
+        div.appendChild(h1)
+        dv.container.appendChild(div)
+
+    } catch (error) {
+        dv.el("div", `⚠️ ERROR: ${error.message}`, {
+            attr: { style: "color: red; padding: 10px;" }
+        });
+    }
+}
+main();
+```
+````
+````col-md
+```dataviewjs
+const TARGET_FILE = "3-IDEAS.md";
+
+async function getTagData() {
+    try {
+        const content = await dv.io.load(TARGET_FILE);
+        const matches = content.match(/#([A-Za-z0-9_-]+)/g) || [];
+        const uniqueTags = [...new Set(matches)];
+        return {
+            count: uniqueTags.length,
+            tags: uniqueTags
+        };
+    } catch (error) {
+        throw new Error(`File "${TARGET_FILE}" not found: ${error.message}`);
+    }
+}
+
+async function main() {
+    try {
+        const {count, tags} = await getTagData();
+
+        const div = document.createElement('div');
+        div.className = "widget";
+        const h1 = document.createElement("h1");
+        h1.textContent = `IDEAS: ${count}`
         div.appendChild(h1)
         dv.container.appendChild(div)
 

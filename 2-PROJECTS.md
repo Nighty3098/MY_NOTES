@@ -1,4 +1,5 @@
 ---
+banner: "[[rocky_beach_2.png]]"
 cssclasses:
   - projects
 ---

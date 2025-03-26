@@ -8,55 +8,22 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1686fd07c20744a9",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0-TASKS.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "0-TASKS"
-            }
-          },
-          {
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1-HOME.md",
+                "file": "0-HOME.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "1-HOME"
-            }
-          },
-          {
-            "id": "9cb10855f61a26ed",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2-PROJECTS.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "2-PROJECTS"
+              "title": "0-HOME"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -127,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5,
-    "collapsed": true
+    "width": 223.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -258,9 +224,19 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "0-TASKS.md",
-    "1-HOME.md",
+    "TOKEN.md",
+    "3-IDEAS.md",
+    "Untitled Kanban.md",
+    "0-HOME.md",
     "2-PROJECTS.md",
+    "1-TASKS.md",
+    "Ideas/RaspberryPi server/Raspberry Pi server.md",
+    "imgs/128.png",
+    "Ideas/Untitled.md",
+    "imgs/Pasted image 20250326210559.png",
+    "imgs/Pasted image 20250326210555.png",
+    "imgs/Pasted image 20250326210552.png",
+    "Ideas/RaspberryPi server",
     "Dev/Python/Flask/Flask Backend.md",
     "Dev/Python/Flask/Docker for Flask apps.md",
     "Dev/Python/Flask",
@@ -276,13 +252,8 @@
     "Ideas",
     "imgs/waterfall_2.png",
     "imgs/rocky_beach_2.png",
-    "imgs/mist_forest_2.png",
-    "331.png",
-    "312.png",
-    "345.png",
     "Teamplates/2-PROJECTS.md",
     "1-HOME (Copy).md",
-    "TOKEN.md",
     "README.md",
     "dss.md",
     "Projects/IPSA/bugs/YFinance.md",
@@ -290,7 +261,6 @@
     "Projects/IPSA/bugs",
     "Projects/IPSA",
     "Projects/Untitled.md",
-    "Home.md~",
     "Frequently Asked Questions.md",
     "Updates and Bug Fixes.md",
     "User Showcases.md",
@@ -299,11 +269,6 @@
     "40 - Obsidian/Homepages/00. Homepage.md",
     "40 - Obsidian/Homepages/00. References.md",
     "40 - Obsidian/React components/music and birthday countdown 2.md",
-    "40 - Obsidian/React components/music and birthday countdown 1.md",
-    "40 - Obsidian/Templates/New Weekly template.md",
-    "40 - Obsidian/Templates/New Daily template.md",
-    "40 - Obsidian/Templates/New Code template.md",
-    "50 - Zettelkasten/cohort.md",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",
