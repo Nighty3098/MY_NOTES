@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1-HOME.md",
-                "mode": "source",
+                "file": "0-HOME.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1-HOME"
+              "title": "0-HOME"
             }
           }
         ],
@@ -203,6 +203,11 @@
   },
   "active": "fdb257179da3ce1a",
   "lastOpenFiles": [
+    "3-IDEAS.md",
+    "2-PROJECTS.md",
+    "1-TASKS.md",
+    "0-HOME.md",
+    "4-BOOKS.md",
     "Dev/React/Integrate JSX to Electron NodeJS project.md",
     "Dev/MySQL/MySQL_RU.md",
     "Home.md",
@@ -225,11 +230,6 @@
     "Dev/Python/🐍 Modules/Скачиваем вебсайты целиком.md",
     "Dev/Python/🐍 Modules/Сделать список плоским.md",
     "Dev/Python/🐍 Modules/Работаем с буфером обмена.md",
-    "Dev/Python/🐍 Modules/Работаем с JSON Web Tokens в Python.md",
-    "Dev/Python/🐍 Modules/Работа с регулярными выражениями.md",
-    "Dev/Python/🐍 Modules/Работа с данными в Python используя Pydantic.md",
-    "Dev/Python/🐍 Modules/Планировщик задач.md",
-    "Dev/Python/🐍 Modules/Перегрузка операторов сравнения.md",
     "imgs/Pasted image 20240529201026.png",
     "imgs/header.png",
     "🧭 Projects/TGSB"
