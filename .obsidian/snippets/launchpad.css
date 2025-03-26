@@ -161,6 +161,9 @@ a.tag {
 
 .launchpad .columnParent {
   width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -170,6 +173,9 @@ a.tag {
   width: 100%;
   max-width: 400px;
   min-width: 300px;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
 }
 
 .projects .columnParent {
@@ -180,6 +186,12 @@ a.tag {
   align-content: center;
   justify-content: center;
 }
+
+.projects .columnParent img {
+  width: 200px;
+  aspect-ratio: 1/1;
+}
+
 
 .projects .columnParent .columnChild {
   display: flex;

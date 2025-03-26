@@ -47,8 +47,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -247,17 +246,17 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "2b5dff1bdf965f88",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "Dev/Структуры данных в программировании.md",
+    "0-HOME.md",
+    "2-PROJECTS.md",
+    "1-TASKS.md",
     "Ideas/RaspberryPi server/Raspberry Pi server.md",
     "imgs/Pasted image 20241120164316.png",
-    "0-HOME.md",
     "TOKEN.md",
     "3-IDEAS.md",
     "Untitled Kanban.md",
-    "2-PROJECTS.md",
-    "1-TASKS.md",
     "imgs/128.png",
     "Ideas/Untitled.md",
     "imgs/Pasted image 20250326210559.png",

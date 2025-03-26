@@ -55,6 +55,9 @@ container.textContent = formattedDate;
 ```
 ````
 `````
+
+
+
 `````col
 ````col-md
 ```dataviewjs
@@ -109,6 +112,8 @@ if (page) {
 }
 ```
 ````
+`````
+`````col
 ````col-md
 ```dataviewjs
 const TARGET_FILE = "2-PROJECTS.md";
@@ -186,6 +191,9 @@ main();
 ```
 ````
 `````
+
+
+
 
 `````col
 ````col-md
