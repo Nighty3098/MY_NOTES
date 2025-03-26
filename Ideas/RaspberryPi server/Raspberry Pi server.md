@@ -1,6 +1,7 @@
 ---
 tags:
   - RaspberryPiServer
+  - ideas
 ---
 ## Components Used To Build The Ultimate Pi 5 Server
 
