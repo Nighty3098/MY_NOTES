@@ -2,280 +2,252 @@
 tags:
   - OWL
 ---
-## [[Server DB]]
+# API Documentation and Functional Extension
 
-## Install:
 
-```bash
+## Current API Endpoints
 
-git clone https://github.com/Nighty3098/OWL_BACKEND
-cd OWL_BACKEND
+### 1. `GET /`
+- **Description**: Redirects to an external website.
+- **Response**: Redirect (HTTP 302) to `https://owl-gamma.vercel.app/`.
+- **Example**:
+  ```
+  curl http://localhost:5000/
+  ```
 
-docker-compose down -v
-docker-compose up --build
+---
 
-docker-compose up
+### 2. `GET /api/health`
+- **Description**: Checks the API status and database connection.
+- **Response**:
+  - `200 OK`: `{ "status": "OK", "database": "CONNECTED" }` or `{ "status": "OK", "database": "DISCONNECTED" }`
+- **Example**:
+  ```
+  curl http://localhost:5000/api/health
+  ```
 
+---
+
+### 3. `GET /api/version`
+- **Description**: Returns the API version.
+- **Response**:
+  - `200 OK`: `{ "version": "1.0.0" }`
+- **Example**:
+  ```
+  curl http://localhost:5000/api/version
+  ```
+
+---
+
+### 4. `POST /api/register`
+- **Description**: Registers a new user.
+- **Request Body** (JSON):
+  - `email` (string, required)
+  - `name` (string, required)
+  - `password_hash` (string, required)
+- **Response**:
+  - `201 Created`: `{ "message": "Registration successful", "user": { "id": <int>, "email": <string>, "name": <string> } }`
+  - `400 Bad Request`: `{ "message": "Missing fields: <fields>" }`
+  - `409 Conflict`: `{ "message": "<error_message>" }`
+- **Example**:
+  ```
+  curl -X POST -H "Content-Type: application/json" -d '{"email": "test@example.com", "name": "Test", "password_hash": "password123"}' http://localhost:5000/api/register
+  ```
+
+---
+
+### 5. `POST /api/login`
+- **Description**: Authenticates a user and issues a JWT token.
+- **Request Body** (JSON):
+  - `email` (string, required)
+  - `password_hash` (string, required)
+- **Response**:
+  - `200 OK`: `{ "message": "Login successful", "token": <jwt_token>, "user": { "id": <int>, "email": <string>, "name": <string> } }`
+  - `400 Bad Request`: `{ "message": "Missing fields: <fields>" }`
+  - `401 Unauthorized`: `{ "message": "Invalid credentials" }`
+- **Example**:
+  ```
+  curl -X POST -H "Content-Type: application/json" -d '{"email": "test@example.com", "password_hash": "password123"}' http://localhost:5000/api/login
+  ```
+
+---
+
+### 6. `POST /api/delete`
+- **Description**: Deletes a user account (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `password_hash` (string, required)
+- **Response**:
+  - `200 OK`: `{ "message": "Account deleted successfully" }`
+  - `400 Bad Request`: `{ "message": "Password is required" }`
+  - `401 Unauthorized`: `{ "message": "Invalid password" }` or token errors
+  - `500 Internal Server Error`: `{ "message": "Failed to delete account" }`
+- **Example**:
+  ```
+  curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"password_hash": "password123"}' http://localhost:5000/api/delete
+  ```
+
+---
+
+### 7. `POST /api/get_projects`
+- **Description**: Retrieves a list of user projects (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Response**:
+  - `200 OK`: `{ "projects": [<project_data>] }`
+  - Token errors: `401 Unauthorized` or `404 Not Found`
+- **Example**:
+  ```
+  curl -X POST -H "Authorization: <jwt_token>" http://localhost:5000/api/get_projects
+  ```
+
+---
+
+### 8. `POST /api/save_projects`
+- **Description**: Saves a new project (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `title` (string, required)
+  - `about` (string, required)
+  - `deadline` (string, format `YYYY-MM-DD`, required)
+  - `status` (string, required)
+  - `priority` (string, required)
+  - `link_to` (string, required)
+  - `estimated_time` (string, required)
+  - `created_at` (string, required)
+  - `updated_at` (string, required)
+- **Response**:
+  - `200 OK`: `{ "message": "<success_message>" }`
+  - `400 Bad Request`: `{ "message": "Missing fields: <fields>" }` or `{ "message": "Invalid deadline format. Use YYYY-MM-DD" }` or `{ "message": "<error_message>" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+  ```
+  curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"title": "Project", "about": "Test", "deadline": "2025-12-31", "status": "active", "priority": "high", "link_to": "http://example.com", "estimated_time": "10h", "created_at": "2025-03-27", "updated_at": "2025-03-27"}' http://localhost:5000/api/save_projects
+  ```
+
+---
+
+## Functional Extension
+
+### 1. Adding New Endpoints
+To extend the API, add new resources using `api.add_resource`. Example of adding an endpoint to update a project:
+
+```python
+class UpdateProject(Resource):
+    @token_required
+    def put(self, current_user):
+        data = request.get_json()
+        if not data or "project_id" not in data:
+            return {"message": "Project ID is required"}, 400
+        
+        # Logic to update the project in the database
+        success, message = update_project(current_user.id, data["project_id"], data)
+        if success:
+            return {"message": message}, 200
+        return {"message": message}, 400
+
+api.add_resource(UpdateProject, "/api/update_project")
 ```
 
+- Implement the `update_project` function in `db/db.py`.
+- Add necessary field checks and validation.
 
-## API:
+---
 
-#### `GET /`
+### 2. Enhancing Authentication
+- **Refresh Tokens**: Add support for refresh tokens to extend sessions without re-entering passwords.
+  - New endpoint: `POST /api/refresh`.
+  - Logic: Verify the old token and issue a new one with an updated `exp`.
+- **User Roles**: Add a `role` field to the `User` model and check permissions in the `@token_required` decorator.
 
-**Response:**
-```json
-{
-  "message": "Welcome to OWL!"
-}
+```python
+def token_required(roles=None):
+    @wraps(f)
+    def decorated(self, *args, **kwargs):
+        # Current token validation logic
+        if roles and current_user.role not in roles:
+            return {"message": "Insufficient permissions"}, 403
+        return f(self, current_user, *args, **kwargs)
+    return decorated
 ```
 
 ---
-#### `GET /api/version`
 
-**Response:**
-```json
-{
-  "version": "1.0.0"
-}
-```
+### 3. Extending the Project Model
+Add new fields to the project model (e.g., `tags`, `assignees`) and update `SaveProject` and `GetProjects` to support them.
 
----
-#### `GET /api/health`
-
-**Response:**
-```json
-{
-  "status": "OK",
-  "database": "CONNECTED"
-}
-```
-
----
-#### `POST /api/register`
-
-**Request:**
-```json
-{
-  "email": "example@example.com",
-  "name": "Name",
-  "password_hash": "hashed_password"
-}
-```
-
-**Response:**
-```json
-{
-  "message": "Registration successful",
-  "user": {
-    "email": "example@example.com",
-    "name": "Name"
-  }
-}
-```
-
-**Error Response:**
-```json
-{
-  "message": "No data provided"
-}
-```
-```json
-{
-  "message": "Missing fields: email, name, password_hash"
-}
-```
-```json
-{
-  "message": "User already exists"
-}
+```python
+# In db/db.py
+class Project(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
+    title = db.Column(db.String(100), nullable=False)
+    about = db.Column(db.Text, nullable=False)
+    deadline = db.Column(db.Date, nullable=False)
+    status = db.Column(db.String(20), nullable=False)
+    priority = db.Column(db.String(20), nullable=False)
+    link_to = db.Column(db.String(200))
+    estimated_time = db.Column(db.String(50))
+    created_at = db.Column(db.DateTime, nullable=False)
+    updated_at = db.Column(db.DateTime, nullable=False)
+    tags = db.Column(db.String(200))  # New field
 ```
 
 ---
-#### `POST /api/login`
 
-**Request:**
-```json
-{
-  "email": "example@example.com",
-  "password_hash": "hashed_password"
-}
-```
-
-**Response:**
-```json
-{
-  "message": "Login successful",
-  "user": {
-    "email": "example@example.com",
-    "name": "Name"
-  }
-}
+### 4. Pagination Support
+Add `page` and `per_page` parameters to `GetProjects`:
+```python
+class GetProjects(Resource):
+    @token_required
+    def post(self, current_user):
+        page = request.args.get("page", 1, type=int)
+        per_page = request.args.get("per_page", 10, type=int)
+        projects = get_projects(current_user.id, page, per_page)
+        return {"projects": projects, "page": page, "per_page": per_page}, 200
 ```
 
-**Error Response:**
-```json
-{
-  "message": "No data provided"
-}
-```
-```json
-{
-  "message": "Missing credentials"
-}
-```
-```json
-{
-  "message": "Invalid credentials"
-}
+- Update `get_projects` in `db/db.py` to support pagination using `paginate`.
+
+---
+
+### 5. Error Handling
+Add more custom error handlers:
+```python
+@app.errorhandler(400)
+def bad_request(error):
+    logger.error(f"Error: 400 - {error}")
+    return {"message": "Bad request"}, 400
 ```
 
 ---
-#### `POST /api/delete`
 
-**Request:**
-```json
-{
-  "email": "example@example.com",
-  "password_hash": "hashed_password"
-}
-```
+### 6. Testing
+Add unit tests using `unittest` or `pytest` to validate the API:
+```python
+import unittest
+from app import app
 
-**Response:**
-```json
-{
-  "message": "Account deleted successfully"
-}
-```
+class TestAPI(unittest.TestCase):
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.app = app.test_client()
 
-**Error Response:**
-```json
-{
-  "message": "No data provided"
-}
-```
-```json
-{
-  "message": "Missing credentials"
-}
-```
-```json
-{
-  "message": "Invalid credentials"
-}
-```
-```json
-{
-  "message": "Deletion failed"
-}
+    def test_health(self):
+        response = self.app.get("/api/health")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("status", response.json)
+
+if __name__ == "__main__":
+    unittest.main()
 ```
 
 ---
-#### `POST /api/get_projects`
 
+## Notes
+- **Security**: Replace `SECRET_KEY` in the configuration with a secure key from an environment variable (`os.getenv("SECRET_KEY")`).
+- **Logging**: Configure log rotation in `logger` to prevent file overflow.
+- **Documentation**: Use Swagger (e.g., via `flask-swagger-ui`) for automatic API documentation generation.
 
-**Request**
-```json
-{
-  "email": "example@example.com",
-  "password_hash": "hashed_password"
-}
-```
-
-**Response:**
-```json
-[
-  {
-    "about": "Project Description",
-    "created_at": "2023-01-01",
-    "deadline": "2023-12-31",
-    "estimated_time": "5 hours",
-    "id": null,
-    "link_to": "http://example.com",
-    "priority": "high",
-    "status": "In Progress",
-    "title": "Project Title",
-    "updated_at": "2023-01-01",
-    "user_id": "4"
-  },
-  {
-    "about": "Project Description",
-    "created_at": "2023-01-01",
-    "deadline": "2023-12-31",
-    "estimated_time": "5 hours",
-    "id": null,
-    "link_to": "http://example.com",
-    "priority": "high",
-    "status": "In Progress",
-    "title": "Project Title",
-    "updated_at": "2023-01-01",
-    "user_id": "4"
-  }
-]
-```
-
-**Error Response:**
-```json
-{
-  "message": "Incorrect password"
-}
-```
-```json
-{
-  "message": "No data provided"
-}
-```
-```json
-{
-  "message": "Missing fields"
-}
-```
-```json
-{
-  "message": "Missing credentials"
-}
-```
-
----
-#### `POST /api/save_projects`
-
-**Request**
-```json
-{
-  "email": "example@example.com",
-  "password_hash": "12345678",
-  "title": "Project Title",
-  "about": "Project Description",
-  "deadline": "2023-12-31",
-  "status": "In Progress",
-  "priority": "high",
-  "link_to": "http://example.com",
-  "estimated_time": "5 hours",
-  "created_at": "2023-01-01",
-  "updated_at": "2023-01-01"
-}
-```
-
-**Response:**
-```json
-{
-  "message": "Saved project successfully"
-}
-```
-
-**Error Response:**
-```json
-{
-  "message": "Incorrect password"
-}
-```
-```json
-{
-  "message": "No data provided"
-}
-```
-```json
-{
-  "message": str
-}
-```

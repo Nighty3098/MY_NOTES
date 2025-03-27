@@ -60,7 +60,12 @@ container.textContent = formattedDate;
 
 
 
+
+
 `````col
+````col-md
+![[forest_stairs.jpg]]
+````
 ````col-md
 ```dataviewjs
 const CACHE_DURATION = 60 * 60 * 1000;
@@ -92,17 +97,15 @@ countMdFiles().then(count => {
     dv.container.appendChild(div);
 });
 ```
-````
-````col-md
 ```dataviewjs
-const fileName = "1-TASKS.md";
-const page = dv.page(fileName);
+const page = dv.current();
 if (page) {
-    const tasks = page.file.tasks;
+    const tasks = page.file.tasks || [];
     const completedTasks = tasks.filter(task => task.completed).length;
     const uncompletedTasks = tasks.filter(task => !task.completed).length;
     const tasksCount = completedTasks + uncompletedTasks;
     const percentage = tasksCount > 0 ? (completedTasks / tasksCount) * 100 : 0;
+
     const div = document.createElement('div');
     div.className = "widget";
     const h1 = document.createElement('h1');
@@ -110,11 +113,9 @@ if (page) {
     div.appendChild(h1);
     dv.container.appendChild(div);
 } else {
-    dv.paragraph(`FILE "${fileName}" NOT FOUND.`);
+    dv.paragraph(`CURRENT FILE NOT FOUND.`);
 }
 ```
-````
-````col-md
 ```dataviewjs
 const TARGET_FILE = "2-PROJECTS.md";
 
@@ -151,8 +152,6 @@ async function main() {
 }
 main();
 ```
-````
-````col-md
 ```dataviewjs
 const folderPath = "Books";
 async function countFilesInFolder() {
@@ -177,9 +176,11 @@ main();
 
 
 
+
 `````col
 ````col-md
 flexGrow=1
+textAlign=center
 ===
 ![[mist_forest_2.png]]
 
@@ -187,19 +188,9 @@ flexGrow=1
 #TypeScript
 #python
 #CPP
-#C
-````
-
-````col-md
-flexGrow=1
-===
-![[rocky_beach_2.png]]
+#C 
 
 
-#Trigonometry
-#Math
-#Geometry
-#SocialStudies
 ````
 
 ````col-md
@@ -208,11 +199,32 @@ flexGrow=1
 ![[waterfall_2.png]]
 
 
-#DailyNote
-#Tasks
-#Project
-#Ideas
+#Trigonometry
+#Math
+#Geometry
+#SocialStudies
+
 ````
 `````
 
 
+
+
+
+> [!todo] TODO
+>
+> - [x] Database design
+> - [x] Table of projects
+> - [x] Implementation of API for project management
+> - [ ] Login / Register page
+> - [ ] Add project uniqueness check in OWL database
+> - [ ] Fixing Docker containers
+> - [ ] Task table
+> - [ ] Implementation of task management via API
+> - [ ] Implementation of the settings table
+> - [ ] API testing
+> - [ ] Switching to https, improving security
+> - [ ] Implementation of a test console client
+> - [ ] Admin panel implementation
+> - [ ] Statistics collection system
+> - [ ] Connecting the backend to the application

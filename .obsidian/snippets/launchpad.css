@@ -156,7 +156,7 @@ a.tag {
 }
 
 .launchpad .widget {
-  height: 50px;
+  height: 42px;
   background-color: var(--background-secondary-alt);
   color: var(--text-normal);
   display: flex;
@@ -308,3 +308,8 @@ a.tag {
   text-align: left;
 }
 
+.launchpad .callout {
+  font-size: medium;
+  border-radius: 20px;
+  width: 100%;
+}
