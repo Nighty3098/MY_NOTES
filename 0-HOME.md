@@ -40,7 +40,6 @@ function updateAnalogClock() {
 
 updateAnalogClock();
 ```
-
 `````col
 ````col-md
 flexGrow=1
@@ -214,6 +213,5 @@ flexGrow=1
 #Ideas
 ````
 `````
-
 
 

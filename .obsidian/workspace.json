@@ -47,7 +47,8 @@
               "title": "3-BOOKS"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -241,8 +242,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "45ab8bcdc7450eb0",
   "lastOpenFiles": [
+    "0-HOME.md",
     "3-BOOKS.md",
     "Books/Трое в лодке, не считая собаки.md",
     "Books/35 кило надежды.md",
@@ -252,7 +254,6 @@
     "Books/Таинственный остров.md",
     "Teamplates/Book.md",
     "Teamplates/Daily note.md",
-    "0-HOME.md",
     "Projects/OWL/Backend/Server DB.md",
     "Dev/SQLAlchemy/Гайд + примеры.md",
     "Dev/SQLAlchemy",
