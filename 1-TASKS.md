@@ -14,6 +14,7 @@ banner-display: cover
 > - [x] Database design
 > - [x] Table of projects
 > - [x] Implementation of API for project management
+> - [ ] Login / Register page
 > - [ ] Add project uniqueness check in OWL database
 > - [ ] Fixing Docker containers
 > - [ ] Task table
