@@ -214,7 +214,6 @@ a.tag {
   aspect-ratio: 1/1;
 }
 
-
 .projects .columnParent .columnChild {
   display: flex;
   flex-direction: start;
@@ -269,7 +268,6 @@ a.tag {
   background-color: var(--background-secondary);
 }
 
-
 .styled-date {
   height: 60px;
   width: auto;
@@ -303,7 +301,8 @@ a.tag {
   font-size: medium;
 }
 
-.books .dataview th, .dataview td {
+.books .dataview th,
+.dataview td {
   padding: 10px;
   text-align: left;
 }
@@ -312,4 +311,11 @@ a.tag {
   font-size: medium;
   border-radius: 20px;
   width: 100%;
+}
+
+.launchpad .view-content {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }

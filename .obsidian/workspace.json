@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/OWL/Backend/Backend documentation.md",
+                "file": "Books/День триффидов.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Backend documentation"
+              "title": "День триффидов"
             }
           }
         ]
@@ -230,15 +230,17 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Projects/OWL/Backend/Backend documentation.md",
+    "Books/День триффидов.md",
     "0-HOME.md",
+    "Projects/OWL/TASKS/TASKS ON 14.03.2025.md",
+    "Projects/OWL/TASKS/TASKS ON 15.03.2025.md",
+    "Projects/OWL/Backend/Backend documentation.md",
     "Projects/OWL/Backend/Server DB.md",
     "1-TASKS.md",
     "imgs/forest_stairs.jpg",
     "2-HOME.md",
     "imgs/green_forest_2.png",
     "Projects/OWL/Documentation.md",
-    "Books/День триффидов.md",
     "Books/Голос монстра.md",
     "Books/Двадцать тысяч льё под водой.md",
     "Books/Таинственный остров.md",
@@ -265,7 +267,6 @@
     "imgs/Pasted image 20250326210552.png",
     "Ideas/RaspberryPi server",
     "Dev/Python/Flask/Flask Backend.md",
-    "Dev/Python/Flask/Docker for Flask apps.md",
     "Dev/Python/Flask",
     "1-HOME.md~",
     "2-PROJECTS.md~",

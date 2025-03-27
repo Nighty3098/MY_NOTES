@@ -9,6 +9,7 @@ content-start: 81
 banner-display: cover
 ---
 
+
 ```dataviewjs
 const clockDiv = this.container.createDiv({ cls: "analog-clock-widget" });
 clockDiv.innerHTML = `
@@ -208,15 +209,14 @@ flexGrow=1
 `````
 
 
-
 > [!todo] TODO
 >
 > - [x] Database design
 > - [x] Table of projects
 > - [x] Implementation of API for project management
-> - [ ] Login / Register page
-> - [ ] Add project uniqueness check in OWL database
-> - [ ] Fixing Docker containers
+> - [x] Login / Register page
+> - [x] Add project uniqueness check in OWL database
+> - [x] Fixing Docker containers
 > - [ ] Task table
 > - [ ] Implementation of task management via API
 > - [ ] Implementation of the settings table
