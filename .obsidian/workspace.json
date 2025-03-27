@@ -24,13 +24,27 @@
             }
           },
           {
-            "id": "a5a4e8806047fc73",
+            "id": "265dc18533c8a537",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
               "title": "Graph view"
+            }
+          },
+          {
+            "id": "45ab8bcdc7450eb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3-BOOKS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3-BOOKS"
             }
           }
         ]
@@ -104,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5
+    "width": 223.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -113,7 +128,6 @@
       {
         "id": "a36ea1a514a5c682",
         "type": "tabs",
-        "dimension": 35.87896253602306,
         "children": [
           {
             "id": "a0b7bbbe68977914",
@@ -187,17 +201,9 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "bac9acae3297dc63",
-        "type": "tabs",
-        "dimension": 64.12103746397695,
-        "children": [
+          },
           {
-            "id": "ca07560dc23dc679",
+            "id": "4ee0bab142e134ff",
             "type": "leaf",
             "state": {
               "type": "timer-view",
@@ -206,7 +212,8 @@
               "title": "Timer"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -234,22 +241,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ed15b78cf26db7db",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Dev/SQLAlchemy/Гайд + примеры.md",
-    "0-HOME.md",
-    "Dev/SQLAlchemy",
-    "1-TASKS.md",
     "3-BOOKS.md",
-    "3-IDEAS.md",
-    "2-PROJECTS.md",
     "Books/Трое в лодке, не считая собаки.md",
-    "Books/Таинственный остров.md",
-    "Books/Двадцать тысяч льё под водой.md",
     "Books/35 кило надежды.md",
     "Books/Голос монстра.md",
+    "Books/Двадцать тысяч льё под водой.md",
     "Books/День триффидов.md",
+    "Books/Таинственный остров.md",
     "Teamplates/Book.md",
+    "Teamplates/Daily note.md",
+    "0-HOME.md",
+    "Projects/OWL/Backend/Server DB.md",
+    "Dev/SQLAlchemy/Гайд + примеры.md",
+    "Dev/SQLAlchemy",
+    "1-TASKS.md",
+    "3-IDEAS.md",
+    "2-PROJECTS.md",
     "Dev/Структуры данных в программировании.md",
     "Pasted image 20250326214109.png",
     "Books",
@@ -280,8 +289,6 @@
     "1-HOME (Copy).md",
     "README.md",
     "dss.md",
-    "Projects/IPSA/bugs/YFinance.md",
-    "Projects/IPSA/IPSA Documentation.md",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",

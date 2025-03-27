@@ -3,5 +3,6 @@ tags:
 author: Text
 picture: Link
 date: Date
-progress:
+progress: 
+rating: 0/10
 ---

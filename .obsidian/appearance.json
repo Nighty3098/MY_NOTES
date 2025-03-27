@@ -26,5 +26,6 @@
     "launchpad"
   ],
   "nativeMenus": false,
-  "theme": "system"
+  "theme": "system",
+  "showRibbon": false
 }

@@ -171,14 +171,24 @@ a.tag {
   font-size: medium;
 }
 
+.launchpad .columnParent .block-language-col-md .block-language-dataviewjs {
+  padding: 4px;
+  margin: 0px;
+}
+
 .launchpad .columnParent {
   width: 100%;
   height: auto;
   margin: 0px;
   padding: 0px;
+  gap: 0px;
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+.block-language-col .columnParent {
+  gap: 10px;
 }
 
 .launchpad .columnParent .columnChild {
@@ -292,7 +302,6 @@ a.tag {
   color: var(--text-normal);
   font-size: medium;
 }
-
 
 .books .dataview th, .dataview td {
   padding: 10px;

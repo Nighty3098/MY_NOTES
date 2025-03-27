@@ -40,6 +40,7 @@ function updateAnalogClock() {
 
 updateAnalogClock();
 ```
+
 `````col
 ````col-md
 flexGrow=1
@@ -113,8 +114,6 @@ if (page) {
 }
 ```
 ````
-`````
-`````col
 ````col-md
 ```dataviewjs
 const TARGET_FILE = "2-PROJECTS.md";
@@ -215,5 +214,6 @@ flexGrow=1
 #Ideas
 ````
 `````
+
 
 
