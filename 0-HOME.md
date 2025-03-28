@@ -214,9 +214,10 @@ flexGrow=1
 > - [x] Database design
 > - [x] Table of projects
 > - [x] Implementation of API for project management
-> - [x] Login / Register page
-> - [x] Add project uniqueness check in OWL database
-> - [x] Fixing Docker containers
+> - [x] Migrate to MySQL DB with SQLALCHEMY
+> - [ ] Login / Register page
+> - [ ] Add project uniqueness check in OWL database
+> - [ ] Fixing Docker containers
 > - [ ] Task table
 > - [ ] Implementation of task management via API
 > - [ ] Implementation of the settings table
@@ -226,3 +227,6 @@ flexGrow=1
 > - [ ] Admin panel implementation
 > - [ ] Statistics collection system
 > - [ ] Connecting the backend to the application
+
+
+

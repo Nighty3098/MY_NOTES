@@ -8,38 +8,45 @@ tags:
 ## Current API Endpoints
 
 ### 1. `GET /`
+
 - **Description**: Redirects to an external website.
 - **Response**: Redirect (HTTP 302) to `https://owl-gamma.vercel.app/`.
 - **Example**:
-  ```
+
+```bash
   curl http://localhost:5000/
-  ```
+```
 
 ---
 
 ### 2. `GET /api/health`
+
 - **Description**: Checks the API status and database connection.
 - **Response**:
   - `200 OK`: `{ "status": "OK", "database": "CONNECTED" }` or `{ "status": "OK", "database": "DISCONNECTED" }`
 - **Example**:
-  ```
+
+```bash
   curl http://localhost:5000/api/health
-  ```
+```
 
 ---
 
 ### 3. `GET /api/version`
+
 - **Description**: Returns the API version.
 - **Response**:
   - `200 OK`: `{ "version": "1.0.0" }`
 - **Example**:
-  ```
+
+```bash
   curl http://localhost:5000/api/version
-  ```
+```
 
 ---
 
 ### 4. `POST /api/register`
+
 - **Description**: Registers a new user.
 - **Request Body** (JSON):
   - `email` (string, required)
@@ -50,13 +57,15 @@ tags:
   - `400 Bad Request`: `{ "message": "Missing fields: <fields>" }`
   - `409 Conflict`: `{ "message": "<error_message>" }`
 - **Example**:
-  ```
+
+```bash
   curl -X POST -H "Content-Type: application/json" -d '{"email": "test@example.com", "name": "Test", "password_hash": "password123"}' http://localhost:5000/api/register
-  ```
+```
 
 ---
 
 ### 5. `POST /api/login`
+
 - **Description**: Authenticates a user and issues a JWT token.
 - **Request Body** (JSON):
   - `email` (string, required)
@@ -66,13 +75,15 @@ tags:
   - `400 Bad Request`: `{ "message": "Missing fields: <fields>" }`
   - `401 Unauthorized`: `{ "message": "Invalid credentials" }`
 - **Example**:
-  ```
+
+```bash
   curl -X POST -H "Content-Type: application/json" -d '{"email": "test@example.com", "password_hash": "password123"}' http://localhost:5000/api/login
-  ```
+```
 
 ---
 
 ### 6. `POST /api/delete`
+
 - **Description**: Deletes a user account (requires token).
 - **Headers**:
   - `Authorization: <jwt_token>`
@@ -84,13 +95,15 @@ tags:
   - `401 Unauthorized`: `{ "message": "Invalid password" }` or token errors
   - `500 Internal Server Error`: `{ "message": "Failed to delete account" }`
 - **Example**:
-  ```
+
+```bash
   curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"password_hash": "password123"}' http://localhost:5000/api/delete
-  ```
+```
 
 ---
 
 ### 7. `POST /api/get_projects`
+
 - **Description**: Retrieves a list of user projects (requires token).
 - **Headers**:
   - `Authorization: <jwt_token>`
@@ -98,13 +111,15 @@ tags:
   - `200 OK`: `{ "projects": [<project_data>] }`
   - Token errors: `401 Unauthorized` or `404 Not Found`
 - **Example**:
-  ```
+
+```bash
   curl -X POST -H "Authorization: <jwt_token>" http://localhost:5000/api/get_projects
-  ```
+```
 
 ---
 
 ### 8. `POST /api/save_projects`
+
 - **Description**: Saves a new project (requires token).
 - **Headers**:
   - `Authorization: <jwt_token>`
@@ -123,15 +138,184 @@ tags:
   - `400 Bad Request`: `{ "message": "Missing fields: <fields>" }` or `{ "message": "Invalid deadline format. Use YYYY-MM-DD" }` or `{ "message": "<error_message>" }`
   - Token errors: `401 Unauthorized`
 - **Example**:
-  ```
+
+```bash
   curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"title": "Project", "about": "Test", "deadline": "2025-12-31", "status": "active", "priority": "high", "link_to": "http://example.com", "estimated_time": "10h", "created_at": "2025-03-27", "updated_at": "2025-03-27"}' http://localhost:5000/api/save_projects
-  ```
+```
+
+---
+
+### 9. `POST /api/create_board`
+
+- **Description**: Creates a new board for the authenticated user (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `title` (string, required) - The title of the board.
+- **Response**:
+  - `201 Created`: `{ "message": "Board created successfully", "board_id": "<board_id>" }`
+  - `400 Bad Request`: `{ "message": "Title is required" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"title": "New Board"}' http://localhost:5000/api/create_board
+```
+
+---
+
+### 10. `POST /api/create_column`
+
+- **Description**: Creates a new column within a specified board (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `board_id` (string, required) - The ID of the board to add the column to.
+  - `title` (string, required) - The title of the column.
+  - `color` (string, optional) - The color of the column (e.g., "var(--blur)").
+- **Response**:
+  - `201 Created`: `{ "message": "Column created successfully", "column_id": "<column_id>" }`
+  - `400 Bad Request`: `{ "message": "Board ID and title are required" }`
+  - `404 Not Found`: `{ "message": "Board not found" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"board_id": "abc123xyz", "title": "New Column", "color": "var(--blur)"}' http://localhost:5000/api/create_column
+```
+
+---
+
+### 11. `POST /api/create_task`
+
+- **Description**: Creates a new task within a specified column (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `column_id` (string, required) - The ID of the column to add the task to.
+  - `content` (string, required) - The content/description of the task.
+- **Response**:
+  - `201 Created`: `{ "message": "Task created successfully", "task_id": "<task_id>" }`
+  - `400 Bad Request`: `{ "message": "Column ID and content are required" }`
+  - `404 Not Found`: `{ "message": "Column not found" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"column_id": "def456uvw", "content": "New Task"}' http://localhost:5000/api/create_task
+```
+
+---
+
+### 12. `POST /api/delete_board`
+
+- **Description**: Deletes a specified board and all its columns and tasks (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `board_id` (string, required) - The ID of the board to delete.
+- **Response**:
+  - `200 OK`: `{ "message": "Board deleted successfully" }`
+  - `400 Bad Request`: `{ "message": "Board ID is required" }`
+  - `404 Not Found`: `{ "message": "Board not found" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"board_id": "abc123xyz"}' http://localhost:5000/api/delete_board
+```
+
+---
+
+### 13. `POST /api/delete_column`
+
+- **Description**: Deletes a specified column and all its tasks (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `column_id` (string, required) - The ID of the column to delete.
+- **Response**:
+  - `200 OK`: `{ "message": "Column deleted successfully" }`
+  - `400 Bad Request`: `{ "message": "Column ID is required" }`
+  - `404 Not Found`: `{ "message": "Column not found" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"column_id": "def456uvw"}' http://localhost:5000/api/delete_column
+```
+
+---
+
+### 14. `POST /api/delete_task`
+
+- **Description**: Deletes a specified task (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `task_id` (string, required) - The ID of the task to delete.
+- **Response**:
+  - `200 OK`: `{ "message": "Task deleted successfully" }`
+  - `400 Bad Request`: `{ "message": "Task ID is required" }`
+  - `404 Not Found`: `{ "message": "Task not found" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"task_id": "ghi789rst"}' http://localhost:5000/api/delete_task
+```
+
+---
+
+### 15. `GET /api/get_boards`
+
+- **Description**: Retrieves all boards, their columns, and tasks for the authenticated user (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body**: None
+- **Response**:
+  - `200 OK`: `{ "boards": [<board_data>] }` where `<board_data>` matches the provided JSON structure:
+
+    ```json
+    {
+      "id": "pnbtm1v6s",
+      "title": "OWL PROJECT",
+      "columns": [
+        {
+          "id": "8rcx96kp2",
+          "title": "UI",
+          "tasks": [
+            {
+              "id": "x37zchdqe",
+              "content": "Update the statistics display",
+              "createdAt": "2025-02-05T13:36:57.104Z",
+              "updatedAt": "2025-02-07T10:06:05.332Z",
+              "completed": true,
+              "boardId": "pnbtm1v6s"
+            }
+          ],
+          "boardId": "pnbtm1v6s",
+          "color": "var(--blur)"
+        }
+      ]
+    }
+    ```
+
+- Token errors: `401 Unauthorized`
+
+- **Example**:
+
+```bash
+curl -X GET -H "Authorization: <jwt_token>" http://localhost:5000/api/get_boards
+```
+
 
 ---
 
 ## Functional Extension
 
 ### 1. Adding New Endpoints
+
 To extend the API, add new resources using `api.add_resource`. Example of adding an endpoint to update a project:
 
 ```python
@@ -157,6 +341,7 @@ api.add_resource(UpdateProject, "/api/update_project")
 ---
 
 ### 2. Enhancing Authentication
+
 - **Refresh Tokens**: Add support for refresh tokens to extend sessions without re-entering passwords.
   - New endpoint: `POST /api/refresh`.
   - Logic: Verify the old token and issue a new one with an updated `exp`.
@@ -176,6 +361,7 @@ def token_required(roles=None):
 ---
 
 ### 3. Extending the Project Model
+
 Add new fields to the project model (e.g., `tags`, `assignees`) and update `SaveProject` and `GetProjects` to support them.
 
 ```python
@@ -198,7 +384,9 @@ class Project(db.Model):
 ---
 
 ### 4. Pagination Support
+
 Add `page` and `per_page` parameters to `GetProjects`:
+
 ```python
 class GetProjects(Resource):
     @token_required
@@ -214,7 +402,9 @@ class GetProjects(Resource):
 ---
 
 ### 5. Error Handling
+
 Add more custom error handlers:
+
 ```python
 @app.errorhandler(400)
 def bad_request(error):
@@ -225,7 +415,9 @@ def bad_request(error):
 ---
 
 ### 6. Testing
+
 Add unit tests using `unittest` or `pytest` to validate the API:
+
 ```python
 import unittest
 from app import app
@@ -247,6 +439,7 @@ if __name__ == "__main__":
 ---
 
 ## Notes
+
 - **Security**: Replace `SECRET_KEY` in the configuration with a secure key from an environment variable (`os.getenv("SECRET_KEY")`).
 - **Logging**: Configure log rotation in `logger` to prevent file overflow.
 - **Documentation**: Use Swagger (e.g., via `flask-swagger-ui`) for automatic API documentation generation.

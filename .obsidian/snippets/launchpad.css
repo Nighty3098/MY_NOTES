@@ -233,9 +233,10 @@ a.tag {
   text-align: center;
   align-items: center;
   align-content: center;
-  font-size: small;
   background-color: var(--background-secondary-alt);
   color: var(--text-normal);
+  text-transform: uppercase;
+  font-size: medium;
   transition: all 0.5s ease-in-out;
 }
 
@@ -311,6 +312,10 @@ a.tag {
   font-size: medium;
   border-radius: 20px;
   width: 100%;
+  line-height: 1.5rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .launchpad .view-content {
