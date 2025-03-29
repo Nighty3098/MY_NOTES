@@ -202,6 +202,7 @@ a.tag {
 
 .projects .columnParent {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: start;
   align-items: center;
@@ -218,6 +219,10 @@ a.tag {
   display: flex;
   flex-direction: start;
   width: 100%;
+  min-height: 90vh;
+  max-height: 100%;
+  justify-content: flex-start;
+  margin-top: 0px;
   max-width: 250px;
   min-width: 100px;
 }
