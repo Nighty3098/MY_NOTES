@@ -65,8 +65,6 @@ container.textContent = formattedDate;
 
 
 
-
-
 `````col
 ````col-md
 ![[forest_stairs.jpg]]

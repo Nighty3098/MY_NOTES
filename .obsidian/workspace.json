@@ -43,16 +43,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-PROJECTS.md",
+                "file": "Projects/OWL/Backend/Backend documentation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2-PROJECTS"
+              "title": "Backend documentation"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -77,53 +76,13 @@
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
-          },
-          {
-            "id": "2fa4125bc6b5d053",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
-          },
-          {
-            "id": "f6a598ceafb5e60c",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "tag:#SocialStudies",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
-            }
-          },
-          {
-            "id": "b707947905ecfcb2",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 212.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -243,15 +202,24 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "6b7499f1bb8da70f",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "0-HOME.md",
     "3-BOOKS.md",
-    "Books/Мифы Ктулху.md",
-    "Books/Пятнадцатилетний капитан.md",
-    "Books/Зов Ктулху.md",
-    "4-FREELANCE.md",
+    "0-HOME.md",
+    "Books/35 кило надежды.md",
     "Projects/OWL/Backend/Backend documentation.md",
+    "Books/Голос монстра.md",
+    "Books/Двадцать тысяч льё под водой.md",
+    "Books/Трое в лодке, не считая собаки.md",
+    "Books/Таинственный остров.md",
+    "Books/Пятнадцатилетний капитан.md",
+    "Books/Мифы Ктулху.md",
+    "Books/Зов Ктулху.md",
+    "Books/День триффидов.md",
+    "Projects/OWL/Backend/Server DB.md",
+    "Projects/OWL/Backend/Utils.md",
+    "2-PROJECTS.md",
+    "4-FREELANCE.md",
     "README.md",
     "TOKEN.md",
     "Teamplates/Freelance.md",
@@ -263,19 +231,10 @@
     "Freelance/Untitled",
     "Freelance",
     "Dev/Docker",
-    "Books/День триффидов.md",
     "Projects/OWL/TASKS/TASKS ON 14.03.2025.md",
     "Projects/OWL/TASKS/TASKS ON 15.03.2025.md",
-    "Projects/OWL/Backend/Server DB.md",
-    "1-TASKS.md",
     "imgs/forest_stairs.jpg",
-    "2-HOME.md",
     "imgs/green_forest_2.png",
-    "Books/Голос монстра.md",
-    "Books/Двадцать тысяч льё под водой.md",
-    "Books/Таинственный остров.md",
-    "Teamplates/Book.md",
-    "Books/Трое в лодке, не считая собаки.md",
     "Dev/SQLAlchemy",
     "Pasted image 20250326214109.png",
     "Books",
