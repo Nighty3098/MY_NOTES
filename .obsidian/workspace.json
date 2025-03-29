@@ -36,9 +36,22 @@
               "icon": "lucide-file",
               "title": "Backend documentation"
             }
+          },
+          {
+            "id": "cc325ab5ecd3e0b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4-FREELANCE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4-FREELANCE"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 245.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -229,20 +243,22 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "a64306d7e583c114",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Projects/OWL/Documentation.md",
+    "4-FREELANCE.md",
+    "README.md",
+    "TOKEN.md",
+    "Teamplates/Freelance.md",
     "0-HOME.md",
+    "Projects/OWL/Backend/Backend documentation.md",
+    "Projects/OWL/Documentation.md",
     "Freelance/Cource work.md",
     "Freelance/Saikt register bot.md",
-    "Teamplates/Freelance.md",
-    "4-FREELANCE.md",
     "3-BOOKS.md",
     "Dev/Docker/Docker build problems with pip install -r requirements.md",
     "Freelance/Untitled/Untitled.md",
     "Freelance/Untitled",
     "Freelance",
-    "Projects/OWL/Backend/Backend documentation.md",
     "Dev/Docker",
     "Books/День триффидов.md",
     "Projects/OWL/TASKS/TASKS ON 14.03.2025.md",
@@ -261,8 +277,6 @@
     "Teamplates/Daily note.md",
     "Dev/SQLAlchemy/Гайд + примеры.md",
     "Dev/SQLAlchemy",
-    "3-IDEAS.md",
-    "2-PROJECTS.md",
     "Pasted image 20250326214109.png",
     "Books",
     "imgs/Pasted image 20241120164316.png",

@@ -3,9 +3,9 @@ tags:
   - Freelance
 date: 
 deadline: 
-price: 
-git: 
-link: 
+price: "0"
+git: "NULL"
+link: "NULL"
 completed: false
 ---
 
