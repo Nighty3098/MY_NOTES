@@ -3,8 +3,11 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "date": "text",
+    "date": "date",
     "is_readed": "checkbox",
-    "sd": "number"
+    "sd": "number",
+    "deadline": "date",
+    "price": "number",
+    "completed": "checkbox"
   }
 }
