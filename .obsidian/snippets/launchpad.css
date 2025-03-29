@@ -157,7 +157,7 @@ a.tag {
 
 .launchpad .widget {
   height: 42px;
-  background-color: var(--background-secondary-alt);
+  background-color: var(--background-primary-alt);
   color: var(--text-normal);
   display: flex;
   flex-direction: column;
@@ -233,7 +233,7 @@ a.tag {
   text-align: center;
   align-items: center;
   align-content: center;
-  background-color: var(--background-secondary-alt);
+  background-color: var(--background-primary-alt);
   color: var(--text-normal);
   text-transform: uppercase;
   font-size: medium;

@@ -10,6 +10,8 @@ banner-display: cover
 ---
 
 
+
+
 ```dataviewjs
 const clockDiv = this.container.createDiv({ cls: "analog-clock-widget" });
 clockDiv.innerHTML = `
@@ -58,6 +60,8 @@ container.textContent = formattedDate;
 ```
 ````
 `````
+
+
 
 
 
@@ -173,6 +177,8 @@ main();
 ```
 ````
 `````
+
+
 
 
 
