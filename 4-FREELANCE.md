@@ -1,10 +1,10 @@
 ---
+banner: "[[green_forest_2.png]]"
 cssclasses:
   - books
 ---
 
-
-
+# FREELANCE PROJECTS 
 ```dataview
 TABLE WITHOUT ID
     "<br /><br />TITLE:<br /><br />" + file.link AS Book,
