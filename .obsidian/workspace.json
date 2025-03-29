@@ -27,13 +27,18 @@
             "id": "a64306d7e583c114",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Projects/OWL/Backend/Backend documentation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Backend documentation"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5,
-    "collapsed": true
+    "width": 245.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -225,11 +229,12 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "a64306d7e583c114",
   "lastOpenFiles": [
+    "Projects/OWL/Documentation.md",
+    "0-HOME.md",
     "Freelance/Cource work.md",
     "Freelance/Saikt register bot.md",
-    "0-HOME.md",
     "Teamplates/Freelance.md",
     "4-FREELANCE.md",
     "3-BOOKS.md",
@@ -239,7 +244,6 @@
     "Freelance",
     "Projects/OWL/Backend/Backend documentation.md",
     "Dev/Docker",
-    "Projects/OWL/Documentation.md",
     "Books/День триффидов.md",
     "Projects/OWL/TASKS/TASKS ON 14.03.2025.md",
     "Projects/OWL/TASKS/TASKS ON 15.03.2025.md",

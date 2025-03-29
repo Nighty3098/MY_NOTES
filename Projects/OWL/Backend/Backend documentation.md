@@ -2,8 +2,11 @@
 tags:
   - OWL
 ---
-# API Documentation and Functional Extension
+Вот обновленная документация с добавленным пунктом про новый запрос изменения пароля. Новый пункт интегрирован в раздел "Current API Endpoints" под номером 16, с учетом последовательности нумерации и особенностей вашего API, таких как использование Flask-RESTful и аутентификация через JWT-токен.
 
+---
+
+# API Documentation and Functional Extension
 
 ## Current API Endpoints
 
@@ -14,7 +17,7 @@ tags:
 - **Example**:
 
 ```bash
-  curl http://localhost:5000/
+curl http://localhost:5000/
 ```
 
 ---
@@ -27,7 +30,7 @@ tags:
 - **Example**:
 
 ```bash
-  curl http://localhost:5000/api/health
+curl http://localhost:5000/api/health
 ```
 
 ---
@@ -40,7 +43,7 @@ tags:
 - **Example**:
 
 ```bash
-  curl http://localhost:5000/api/version
+curl http://localhost:5000/api/version
 ```
 
 ---
@@ -59,7 +62,7 @@ tags:
 - **Example**:
 
 ```bash
-  curl -X POST -H "Content-Type: application/json" -d '{"email": "test@example.com", "name": "Test", "password_hash": "password123"}' http://localhost:5000/api/register
+curl -X POST -H "Content-Type: application/json" -d '{"email": "test@example.com", "name": "Test", "password_hash": "password123"}' http://localhost:5000/api/register
 ```
 
 ---
@@ -77,7 +80,7 @@ tags:
 - **Example**:
 
 ```bash
-  curl -X POST -H "Content-Type: application/json" -d '{"email": "test@example.com", "password_hash": "password123"}' http://localhost:5000/api/login
+curl -X POST -H "Content-Type: application/json" -d '{"email": "test@example.com", "password_hash": "password123"}' http://localhost:5000/api/login
 ```
 
 ---
@@ -97,7 +100,7 @@ tags:
 - **Example**:
 
 ```bash
-  curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"password_hash": "password123"}' http://localhost:5000/api/delete
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"password_hash": "password123"}' http://localhost:5000/api/delete
 ```
 
 ---
@@ -113,7 +116,7 @@ tags:
 - **Example**:
 
 ```bash
-  curl -X POST -H "Authorization: <jwt_token>" http://localhost:5000/api/get_projects
+curl -X POST -H "Authorization: <jwt_token>" http://localhost:5000/api/get_projects
 ```
 
 ---
@@ -140,7 +143,7 @@ tags:
 - **Example**:
 
 ```bash
-  curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"title": "Project", "about": "Test", "deadline": "2025-12-31", "status": "active", "priority": "high", "link_to": "http://example.com", "estimated_time": "10h", "created_at": "2025-03-27", "updated_at": "2025-03-27"}' http://localhost:5000/api/save_projects
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"title": "Project", "about": "Test", "deadline": "2025-12-31", "status": "active", "priority": "high", "link_to": "http://example.com", "estimated_time": "10h", "created_at": "2025-03-27", "updated_at": "2025-03-27"}' http://localhost:5000/api/save_projects
 ```
 
 ---
@@ -309,6 +312,27 @@ curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json"
 curl -X GET -H "Authorization: <jwt_token>" http://localhost:5000/api/get_boards
 ```
 
+---
+
+### 16. `POST /api/change_password`
+
+- **Description**: Changes the password for the authenticated user.
+- **Headers**:
+  - `Authorization: <jwt_token>` (required)
+- **Request Body** (JSON):
+  - `old_password` (string, required) — The user's current password.
+  - `new_password` (string, required) — The new password to set.
+- **Response**:
+  - `200 OK`: `{ "message": "Password changed successfully" }`
+  - `400 Bad Request`: `{ "error": "No data provided" }` or `{ "error": "Missing fields: <fields>" }` or `{ "error": "Incorrect old password" }` or `{ "error": "Error changing password: <error_message>" }`
+  - `401 Unauthorized`: Token errors (e.g., `{ "message": "Token is missing" }`, `{ "message": "Token has expired" }`, `{ "message": "Token is invalid" }`)
+  - `404 Not Found`: `{ "message": "User not found" }`
+  - `500 Internal Server Error`: `{ "message": "Unexpected error: <error_message>" }`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"old_password": "old_password123", "new_password": "new_password123"}' http://localhost:5000/api/change_password
+```
 
 ---
 
@@ -443,4 +467,4 @@ if __name__ == "__main__":
 - **Security**: Replace `SECRET_KEY` in the configuration with a secure key from an environment variable (`os.getenv("SECRET_KEY")`).
 - **Logging**: Configure log rotation in `logger` to prevent file overflow.
 - **Documentation**: Use Swagger (e.g., via `flask-swagger-ui`) for automatic API documentation generation.
-
+- **Password Security**: Ensure that password transmission occurs over a secure channel (HTTPS). If there are specific password complexity requirements (e.g., minimum length, special characters), consider adding them as a note or implementing server-side validation.
