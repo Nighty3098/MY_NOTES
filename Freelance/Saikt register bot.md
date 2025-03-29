@@ -1,9 +1,9 @@
 ---
 tags:
   - Freelance
-date: 
+date: 2024-02-08
 deadline: 
-price: 
+price: 1500p
 git: 
 link: 
 completed: false
@@ -33,7 +33,7 @@ if (page) {
 ---
 # TASKS 
 
-- [ ] Checkout
-- [ ] Getting started
-- [ ] Making a plan
+- [x] Checkout
+- [x] Getting started
+- [x] Making a plan
 

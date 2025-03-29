@@ -155,7 +155,7 @@ a.tag {
   background-color: var(--font-text);
 }
 
-.launchpad .widget {
+.widget {
   height: 42px;
   background-color: var(--background-primary-alt);
   color: var(--text-normal);
@@ -167,7 +167,7 @@ a.tag {
   border-radius: 20px;
 }
 
-.launchpad .widget h1 {
+.widget h1 {
   font-size: medium;
 }
 

@@ -2521,6 +2521,7 @@ twtlGbTz
 textAlign
 token
 tokens
+tasksCount
 Statistic
 SlRvb
 Story
@@ -37546,6 +37547,7 @@ Current
 Checks
 Configure
 Checkout
+CURRENT
 out
 on
 of
@@ -62471,6 +62473,7 @@ uPh
 usWKnscpVTr
 uzdVg
 uuKmWREZQqBSGte
+uncompletedTasks
 No
 Navigation
 NzZj
@@ -87208,6 +87211,7 @@ Fkctz
 FvBp
 FfOpv
 FFAGwUa
+Freelance
 Light
 Larger
 Line
@@ -94334,6 +94338,7 @@ UfwY
 UUUAZH
 UUAYO
 User
+Uncompleted
 Metadata
 Move
 Main

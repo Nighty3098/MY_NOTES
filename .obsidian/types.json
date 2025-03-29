@@ -7,7 +7,7 @@
     "is_readed": "checkbox",
     "sd": "number",
     "deadline": "date",
-    "price": "number",
+    "price": "text",
     "completed": "checkbox"
   }
 }

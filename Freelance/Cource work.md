@@ -1,12 +1,12 @@
 ---
 tags:
   - Freelance
-date: 
+date: 2024-06-24
 deadline: 
-price: 
+price: 2500p
 git: 
-link: 
-completed: false
+link: https://kwork.ru/inbox/svashes
+completed: true
 ---
 
 
@@ -33,7 +33,7 @@ if (page) {
 ---
 # TASKS 
 
-- [ ] Checkout
-- [ ] Getting started
-- [ ] Making a plan
+- [x] Checkout
+- [x] Getting started
+- [x] Making a plan
 
