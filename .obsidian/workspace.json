@@ -51,7 +51,8 @@
               "title": "Backend documentation"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -202,24 +202,24 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "a64306d7e583c114",
   "lastOpenFiles": [
+    "2-PROJECTS.md",
+    "4-FREELANCE.md",
     "3-BOOKS.md",
+    "Books/Таинственный остров.md",
+    "Books/Трое в лодке, не считая собаки.md",
     "0-HOME.md",
     "Books/35 кило надежды.md",
     "Projects/OWL/Backend/Backend documentation.md",
     "Books/Голос монстра.md",
     "Books/Двадцать тысяч льё под водой.md",
-    "Books/Трое в лодке, не считая собаки.md",
-    "Books/Таинственный остров.md",
     "Books/Пятнадцатилетний капитан.md",
     "Books/Мифы Ктулху.md",
     "Books/Зов Ктулху.md",
     "Books/День триффидов.md",
     "Projects/OWL/Backend/Server DB.md",
     "Projects/OWL/Backend/Utils.md",
-    "2-PROJECTS.md",
-    "4-FREELANCE.md",
     "README.md",
     "TOKEN.md",
     "Teamplates/Freelance.md",
