@@ -6,7 +6,7 @@ deadline:
 price: 1500p
 git: 
 link: 
-completed: false
+completed: true
 ---
 
 

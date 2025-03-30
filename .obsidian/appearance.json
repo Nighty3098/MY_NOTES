@@ -1,5 +1,5 @@
 {
-  "accentColor": "rgba(0, 0, 0, 0)",
+  "accentColor": "",
   "cssTheme": "Things",
   "interfaceFontFamily": "SF Pro Display,Google Sans Text",
   "textFontFamily": "Cartograph CF",
@@ -10,7 +10,6 @@
     "banner",
     "command_pallete",
     "checkbox",
-    "rounded_table",
     "list_styling",
     "S - Callouts",
     "S - Encoded Fonts",
@@ -21,11 +20,12 @@
     "S - Folder Styles Rewritten",
     "S - Images Adjustments",
     "S - Checkboxes",
-    "file_explorer",
-    "style",
-    "launchpad"
+    "launchpad",
+    "rounded_table",
+    "style"
   ],
   "nativeMenus": false,
   "theme": "system",
-  "showRibbon": false
+  "showRibbon": false,
+  "showViewHeader": false
 }

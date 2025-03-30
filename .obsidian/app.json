@@ -1,5 +1,5 @@
 {
-  "readableLineLength": false,
+  "readableLineLength": true,
   "vimMode": false,
   "alwaysUpdateLinks": true,
   "strictLineBreaks": false,
@@ -16,5 +16,6 @@
   },
   "userIgnoreFilters": [
     "Teamplates/"
-  ]
+  ],
+  "showInlineTitle": true
 }
