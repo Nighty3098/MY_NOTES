@@ -167,6 +167,11 @@ a.tag {
   border-radius: 20px;
 }
 
+.callout {
+  border-radius: 20px;
+  border: none;
+}
+
 .widget h1 {
   font-size: medium;
 }
