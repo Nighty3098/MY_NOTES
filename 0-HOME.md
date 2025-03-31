@@ -231,7 +231,6 @@ flexGrow=1
 > - [ ] Implementation of the settings table
 > - [ ] API testing
 > - [ ] Switching to https, improving security
-> - [ ] Implementation of a test console client
 > - [ ] Admin panel implementation
 > - [ ] Statistics collection system
 > - [ ] Connecting the backend to the application
