@@ -223,11 +223,11 @@ flexGrow=1
 > - [x] Table of projects
 > - [x] Implementation of API for project management
 > - [x] Migrate to MySQL DB with SQLALCHEMY
-> - [ ] Login / Register page
+> - [x] Login / Register page
 > - [ ] Add project uniqueness check in OWL database
 > - [ ] Fixing Docker containers
-> - [ ] Task table
-> - [ ] Implementation of task management via API
+> - [x] Task table
+> - [x] Implementation of task management via API
 > - [ ] Implementation of the settings table
 > - [ ] API testing
 > - [ ] Switching to https, improving security
