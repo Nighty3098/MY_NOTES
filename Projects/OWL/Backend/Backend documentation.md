@@ -332,6 +332,90 @@ curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json"
 
 ---
 
+### 17. `GET /api/check_auth`
+
+- **Description**: Checks if the user is authenticated and returns user information.
+- **Headers**:
+  - `Authorization: <jwt_token>` (required)
+- **Response**:
+  - `200 OK`: 
+    ```json
+    {
+      "authenticated": true,
+      "token": "<jwt_token>",
+      "user": {
+        "email": "user@example.com",
+        "name": "username"
+      }
+    }
+    ```
+  - `401 Unauthorized`: Token errors (missing/expired/invalid)
+  - `404 Not Found`: User not found
+- **Example**:
+```bash
+curl -X GET -H "Authorization: <jwt_token>" http://localhost:5000/api/check_auth
+```
+
+### 18. `POST /api/change_username`
+
+- **Description**: Changes the username of the authenticated user.
+- **Headers**:
+  - `Authorization: <jwt_token>` (required)
+- **Request Body** (JSON):
+  - `new_username` (string, required) - New username (3-20 characters)
+- **Response**:
+  - `200 OK`: `{ "message": "Username changed successfully" }`
+  - `400 Bad Request`: 
+    - `{ "message": "No data provided" }`
+    - `{ "message": "New username is required" }`
+    - `{ "message": "Username must be between 3 and 20 characters" }`
+  - `401 Unauthorized`: Token errors
+  - `409 Conflict`: `{ "error": "Username already taken" }`
+- **Example**:
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"new_username": "new_username"}' http://localhost:5000/api/change_username
+```
+
+### Login History
+
+The system automatically records login history for security purposes:
+- IP address of each login attempt
+- Timestamp of the login
+- User ID associated with the login
+
+This data is stored in the `user_login` table and can be used for:
+- Security auditing
+- Detecting suspicious login patterns
+- Tracking user activity
+
+---
+
+## Security Recommendations
+
+1. **Password Policy**:
+   - Minimum length: 8 characters
+   - Should contain: uppercase, lowercase, numbers, special characters
+   - Regular password change requirements
+
+2. **Token Security**:
+   - Tokens expire after 10 years
+   - Store securely on client side
+   - Clear on logout
+   - Refresh mechanism for long-term sessions
+
+3. **API Security**:
+   - All endpoints except /login and /register require authentication
+   - Use HTTPS in production
+   - Rate limiting recommended
+   - Input validation on all endpoints
+
+4. **Data Protection**:
+   - User passwords are hashed using werkzeug.security
+   - Sensitive data encrypted in transit
+   - Login history maintained for audit
+
+---
+
 ## Functional Extension
 
 ### 1. Adding New Endpoints
