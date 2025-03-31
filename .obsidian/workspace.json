@@ -24,35 +24,16 @@
             }
           },
           {
-            "id": "a64306d7e583c114",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teamplates/Daily note.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Daily note"
-            }
-          },
-          {
             "id": "6b7499f1bb8da70f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0-HOME.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0-HOME"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +63,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.5
+    "width": 204.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -202,13 +184,14 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "a64306d7e583c114",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Ideas/RaspberryPi server/Raspberry Pi server.md",
+    "0-HOME.md",
+    "Teamplates/Daily note.md",
     "Teamplates/Freelance.md",
     "Teamplates/Book.md",
-    "Teamplates/Daily note.md",
     "Teamplates/Daily.md",
-    "0-HOME.md",
     "Daily",
     "4-FREELANCE.md",
     "3-BOOKS.md",
@@ -231,7 +214,6 @@
     "README.md",
     "TOKEN.md",
     "Projects/OWL/Documentation.md",
-    "Freelance/Cource work.md",
     "Freelance/Untitled",
     "Freelance",
     "Dev/Docker",

@@ -1,4 +1,5 @@
 ---
+banner: "[[mist_forest_2 1.png]]"
 tags:
   - DailyNote
 date:
