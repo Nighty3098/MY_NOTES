@@ -47,8 +47,7 @@
               "title": "Backend documentation"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236.5
+    "width": 236.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -198,8 +198,9 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "c60774321720c6c0",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Projects/OWL/Backend/Backend documentation.md",
     "0-HOME.md",
     "Ideas/RaspberryPi server/Raspberry Pi server.md",
     "Teamplates/Daily note.md",
@@ -215,7 +216,6 @@
     "Freelance/Saikt register bot.md",
     "Books/Трое в лодке, не считая собаки.md",
     "Books/Зов Ктулху.md",
-    "Projects/OWL/Backend/Backend documentation.md",
     "Books/Таинственный остров.md",
     "Books/35 кило надежды.md",
     "Books/Голос монстра.md",
