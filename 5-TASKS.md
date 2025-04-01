@@ -7,6 +7,8 @@ cssclasses:
 `````col
 ````col-md
 
+# TASKS
+
  - [x] Database design
  - [x] Table of projects
  - [x] Implementation of API for project management
