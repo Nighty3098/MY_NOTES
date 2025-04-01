@@ -1,6 +1,6 @@
 {
   "accentColor": "",
-  "cssTheme": "Things",
+  "cssTheme": "Borealis",
   "interfaceFontFamily": "SF Pro Display,Google Sans Text",
   "textFontFamily": "Cartograph CF",
   "monospaceFontFamily": "",
@@ -26,6 +26,6 @@
   ],
   "nativeMenus": false,
   "theme": "system",
-  "showRibbon": false,
+  "showRibbon": true,
   "showViewHeader": false
 }

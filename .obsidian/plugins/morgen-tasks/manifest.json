@@ -1,0 +1,10 @@
+{
+	"id": "morgen-tasks",
+	"name": "Morgen Tasks",
+	"version": "1.0.7",
+	"minAppVersion": "0.15.0",
+	"description": "Plan, time block, and track tasks from your vault in any calendar using Morgen.",
+	"author": "Morgen AG",
+	"authorUrl": "https://morgen.so",
+	"isDesktopOnly": false
+}

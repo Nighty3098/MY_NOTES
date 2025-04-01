@@ -1,0 +1,25 @@
+@container style(--morgen-tasks-decorate-ids: hide) {
+	/** Hide ID spans completely in both Kanban and Tasks plugins */
+	.kanban-plugin__inline-metadata__id, .task-id {
+		display: none;
+	}
+}
+
+@container style(--morgen-tasks-decorate-ids: replace_with_emoji) {
+	/** Replace ID spans with emoji in Tasks plugin */
+	.task-id {
+		font-size: 0pt;
+	}
+
+	.task-id::before {
+		font-size: initial;
+		content: '▫️';
+	}
+
+	/** Hide IDs in Kanban plugin (doesn't make sense to use emoji here) */
+	.kanban-plugin__inline-metadata__id {
+		display: none;
+	}
+}
+
+

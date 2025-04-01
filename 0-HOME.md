@@ -12,6 +12,8 @@ banner-display: cover
 
 
 
+
+
 ```dataviewjs
 const clockDiv = this.container.createDiv({ cls: "analog-clock-widget" });
 clockDiv.innerHTML = `
@@ -62,13 +64,7 @@ container.textContent = formattedDate;
 `````
 
 
-
-
-
 `````col
-````col-md
-![[forest_stairs.jpg]]
-````
 ````col-md
 ```dataviewjs
 const CACHE_DURATION = 60 * 60 * 1000;
@@ -99,25 +95,6 @@ countMdFiles().then(count => {
     div.appendChild(h1);
     dv.container.appendChild(div);
 });
-```
-```dataviewjs
-const page = dv.current();
-if (page) {
-    const tasks = page.file.tasks || [];
-    const completedTasks = tasks.filter(task => task.completed).length;
-    const uncompletedTasks = tasks.filter(task => !task.completed).length;
-    const tasksCount = completedTasks + uncompletedTasks;
-    const percentage = tasksCount > 0 ? (completedTasks / tasksCount) * 100 : 0;
-
-    const div = document.createElement('div');
-    div.className = "widget";
-    const h1 = document.createElement('h1');
-    h1.textContent = `TASKS: ${percentage.toFixed(0)}% (${completedTasks}/${tasksCount})`;
-    div.appendChild(h1);
-    dv.container.appendChild(div);
-} else {
-    dv.paragraph(`CURRENT FILE NOT FOUND.`);
-}
 ```
 ```dataviewjs
 const TARGET_FILE = "2-PROJECTS.md";
@@ -181,7 +158,6 @@ main();
 
 
 
-
 `````col
 ````col-md
 flexGrow=1
@@ -211,29 +187,6 @@ flexGrow=1
 
 ````
 `````
-
-
-
-
-
-
-> [!todo] TODO
->
-> - [x] Database design
-> - [x] Table of projects
-> - [x] Implementation of API for project management
-> - [x] Migrate to MySQL DB with SQLALCHEMY
-> - [x] Login / Register page
-> - [ ] Add project uniqueness check in OWL database
-> - [ ] Fixing Docker containers
-> - [x] Task table
-> - [x] Implementation of task management via API
-> - [ ] Implementation of the settings table
-> - [ ] API testing
-> - [ ] Switching to https, improving security
-> - [ ] Admin panel implementation
-> - [ ] Statistics collection system
-> - [ ] Connecting the backend to the application
 
 
 
