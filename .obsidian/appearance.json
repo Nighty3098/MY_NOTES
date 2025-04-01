@@ -26,6 +26,6 @@
   ],
   "nativeMenus": false,
   "theme": "system",
-  "showRibbon": true,
+  "showRibbon": false,
   "showViewHeader": false
 }

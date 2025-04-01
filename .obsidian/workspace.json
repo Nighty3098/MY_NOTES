@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5-TASKS.md",
+                "file": "Books/Зов Ктулху.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5-TASKS"
+              "title": "Зов Ктулху"
             }
           },
           {
@@ -43,16 +43,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-PROJECTS.md",
+                "file": "3-BOOKS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2-PROJECTS"
+              "title": "3-BOOKS"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5
+    "width": 290.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -144,12 +145,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "5-TASKS.md",
+                "file": "3-BOOKS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 5-TASKS"
+              "title": "Outgoing links from 3-BOOKS"
             }
           },
           {
@@ -173,13 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5-TASKS.md",
+                "file": "3-BOOKS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 5-TASKS"
+              "title": "Outline of 3-BOOKS"
             }
           },
           {
@@ -233,14 +234,14 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "832b475bcf603b21",
+  "active": "14c0f24249856ed6",
   "lastOpenFiles": [
-    "0-HOME.md",
-    "5-TASKS.md",
-    "5-TASKS.md",
     "2-PROJECTS.md",
+    "Books/Зов Ктулху.md",
     "3-BOOKS.md",
     "4-FREELANCE.md",
+    "5-TASKS.md",
+    "0-HOME.md",
     "Untitled Kanban.md",
     "Dev/Design ideas/Web site.md",
     "imgs/Pasted image 20250401213110.png",
@@ -255,7 +256,6 @@
     "Books/Человек, который смеётся.md",
     "Freelance/Saikt register bot.md",
     "Books/Трое в лодке, не считая собаки.md",
-    "Books/Зов Ктулху.md",
     "Books/Таинственный остров.md",
     "Books/35 кило надежды.md",
     "Books/Голос монстра.md",
