@@ -24,20 +24,6 @@
             }
           },
           {
-            "id": "832b475bcf603b21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/Зов Ктулху.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Зов Ктулху"
-            }
-          },
-          {
             "id": "14c0f24249856ed6",
             "type": "leaf",
             "state": {
@@ -49,6 +35,20 @@
               },
               "icon": "lucide-file",
               "title": "3-BOOKS"
+            }
+          },
+          {
+            "id": "201856269eca2c64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/OWL/Backend/Backend documentation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Backend documentation"
             }
           }
         ],
@@ -109,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5,
-    "collapsed": true
+    "width": 290.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -145,12 +144,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3-BOOKS.md",
+                "file": "Projects/OWL/Backend/Backend documentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 3-BOOKS"
+              "title": "Outgoing links from Backend documentation"
             }
           },
           {
@@ -174,13 +173,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3-BOOKS.md",
+                "file": "Projects/OWL/Backend/Backend documentation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 3-BOOKS"
+              "title": "Outline of Backend documentation"
             }
           },
           {
@@ -234,14 +233,14 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "14c0f24249856ed6",
+  "active": "201856269eca2c64",
   "lastOpenFiles": [
-    "2-PROJECTS.md",
+    "0-HOME.md",
     "Books/Зов Ктулху.md",
     "3-BOOKS.md",
+    "2-PROJECTS.md",
     "4-FREELANCE.md",
     "5-TASKS.md",
-    "0-HOME.md",
     "Untitled Kanban.md",
     "Dev/Design ideas/Web site.md",
     "imgs/Pasted image 20250401213110.png",
