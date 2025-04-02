@@ -19,14 +19,9 @@ Neural networks are a powerful tool for solving machine learning problems by mim
 ### **** Mathematical Functions and Matrices
 
 1. **Activation Function**: Used to transform a weighted sum of inputs into an output. The most common functions are:
-- Sigmoid:
-$$
-\sigma(x) = \frac{1}{1 + e^{-x}}
-$$
-- Tangent hyperbolic:
-$$
-\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
-$$
+
+- Sigmoid: $\sigma(x) = \frac{1}{1 + e^{-x}}$
+- Tangent hyperbolic: $\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}$
 
 2. **Weight matrices**: Used to store the weights between neurons. For example, if we have 3 inputs and 1 output, the weight matrix will have dimensions $3 \times 1$.
 

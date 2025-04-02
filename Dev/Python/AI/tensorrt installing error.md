@@ -157,3 +157,7 @@ Package operations: 17 installs, 0 updates, 0 removals
 Note: This error originates from the build backend, and is likely not a problem with poetry but with tensorrt-cu12 (10.7.0) not supporting PEP 517 builds. You can verify this by running 'pip wheel --no-cache-dir --use-pep517 "tensorrt-cu12 (==10.7.0)"'.
 
 ```
+
+
+
+# NEED PYTHON 3.12
