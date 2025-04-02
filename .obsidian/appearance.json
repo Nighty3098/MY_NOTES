@@ -20,12 +20,12 @@
     "S - Folder Styles Rewritten",
     "S - Images Adjustments",
     "S - Checkboxes",
-    "launchpad",
     "rounded_table",
-    "style"
+    "style",
+    "launchpad"
   ],
   "nativeMenus": false,
   "theme": "system",
   "showRibbon": false,
-  "showViewHeader": false
+  "showViewHeader": true
 }
