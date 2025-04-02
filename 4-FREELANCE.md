@@ -14,5 +14,6 @@ TABLE WITHOUT ID
     "<br /><br />DATE:<br /><br />" + date AS Date,
     "<br /><br />COMPLETED:<br /><br />" + completed AS completed
 FROM #Freelance AND -#Extras
-SORT file.name ASC
+SORT file.ctime desc
+where file.folder!="Templates"
 ```
