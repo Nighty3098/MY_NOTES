@@ -6,11 +6,7 @@ banner-height: 550
 banner-display: cover
 ---
 
-
-
-# FREELANCE PROJECTS 
-
-
+# FREELANCE PROJECTS
 
 ```dataviewjs
 const freelanceProjects = dv.pages('#Freelance AND !#Extras')
@@ -43,4 +39,3 @@ freelanceProjects.forEach(p => {
 
 dv.container.appendChild(gridContainer);
 ```
-

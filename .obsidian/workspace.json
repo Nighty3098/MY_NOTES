@@ -29,22 +29,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Daily note.md",
+                "file": "3-BOOKS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily note"
+              "title": "3-BOOKS"
             }
           },
           {
             "id": "10429211a9de4513",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "4-FREELANCE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4-FREELANCE"
             }
           }
         ],
@@ -231,19 +235,24 @@
   },
   "active": "1f973213ed76b9f1",
   "lastOpenFiles": [
-    "Templates/Freelance.md",
+    "4-FREELANCE.md",
+    "3-BOOKS.md~",
+    "4-FREELANCE.md~",
+    "Dev/Client - Server apps/Создание backend на python.md",
+    "Dev/LeetCode/Two Sum.md",
+    "Olympics/Высший пилотаж 2025 НСК/Текст для презентации проекта.md",
+    "0-HOME.md",
+    "3-BOOKS.md",
     "Templates/Daily note.md",
+    "Templates/Freelance.md",
     "Dev/С++/Binary search tree.md",
     "Dev/С++/Memory managment/Main Memory Management Operators.md",
-    "3-BOOKS.md",
     "Templates/Book.md",
-    "4-FREELANCE.md",
     "Dev/postgres/Create PostgreSQL database with cyrillic encoding.md.md",
     "Books/Зов Ктулху.md",
     "Dev/postgres",
     "Education/Math/Lesson_1/Схема Горнера.md",
     "Daily/02.04.2025.md",
-    "0-HOME.md",
     "Books/Человек, который смеётся.md",
     "5-TASKS.md",
     "Books/Трое в лодке, не считая собаки.md",
@@ -254,10 +263,6 @@
     "Books/Двадцать тысяч льё под водой.md",
     "Books/Голос монстра.md",
     "Books/35 кило надежды.md",
-    "2-PROJECTS.md",
-    "Freelance/Saikt register bot.md",
-    "Freelance/Cource work.md",
-    "Ideas/RaspberryPi server/Raspberry Pi server.md",
     "imgs/Pasted image 20250401213110.png",
     "Daily",
     "header.png",
@@ -275,8 +280,6 @@
     "imgs/Pasted image 20250326210555.png",
     "imgs/Pasted image 20250326210552.png",
     "Ideas/RaspberryPi server",
-    "Dev/Python/Flask",
-    "1-HOME.md~",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",

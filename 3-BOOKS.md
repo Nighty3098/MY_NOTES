@@ -24,7 +24,7 @@ gridContainer.style.padding = '10px';
 const addBooksToGrid = (bookList) => {
     bookList.forEach(p => {
         const percent = Math.round((p.progress / p.total_pages) * 100);
-        
+
         const card = document.createElement('div');
         card.style.borderRadius = '10px';
         card.style.padding = '10px';
@@ -48,7 +48,7 @@ const addBooksToGrid = (bookList) => {
                 <img src='${p.picture}' style='height: 300px; object-fit: cover; border-radius: 10px;'/>
             </div>
         `;
-        
+
         gridContainer.appendChild(card);
     });
 };
