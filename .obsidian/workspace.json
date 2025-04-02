@@ -43,16 +43,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4-FREELANCE.md",
+                "file": "2-PROJECTS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4-FREELANCE"
+              "title": "2-PROJECTS"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -233,36 +233,38 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "1f973213ed76b9f1",
+  "active": "10429211a9de4513",
   "lastOpenFiles": [
-    "4-FREELANCE.md",
-    "3-BOOKS.md~",
-    "4-FREELANCE.md~",
-    "Dev/Client - Server apps/Создание backend на python.md",
-    "Dev/LeetCode/Two Sum.md",
-    "Olympics/Высший пилотаж 2025 НСК/Текст для презентации проекта.md",
-    "0-HOME.md",
-    "3-BOOKS.md",
-    "Templates/Daily note.md",
-    "Templates/Freelance.md",
-    "Dev/С++/Binary search tree.md",
-    "Dev/С++/Memory managment/Main Memory Management Operators.md",
-    "Templates/Book.md",
-    "Dev/postgres/Create PostgreSQL database with cyrillic encoding.md.md",
-    "Books/Зов Ктулху.md",
-    "Dev/postgres",
-    "Education/Math/Lesson_1/Схема Горнера.md",
-    "Daily/02.04.2025.md",
-    "Books/Человек, который смеётся.md",
+    "2-PROJECTS.md~",
     "5-TASKS.md",
+    "5-TASKS.md~",
+    "4-FREELANCE.md",
+    "4-FREELANCE.md~",
+    "3-BOOKS.md",
+    "3-BOOKS.md~",
+    "Books/Человек, который смеётся.md",
     "Books/Трое в лодке, не считая собаки.md",
     "Books/Таинственный остров.md",
     "Books/Пятнадцатилетний капитан.md",
     "Books/Мифы Ктулху.md",
+    "Books/Зов Ктулху.md",
     "Books/День триффидов.md",
     "Books/Двадцать тысяч льё под водой.md",
     "Books/Голос монстра.md",
     "Books/35 кило надежды.md",
+    "Templates/Book.md",
+    "Templates/Daily note.md",
+    "Templates/Freelance.md",
+    "Dev/Client - Server apps/Создание backend на python.md",
+    "Dev/LeetCode/Two Sum.md",
+    "Olympics/Высший пилотаж 2025 НСК/Текст для презентации проекта.md",
+    "0-HOME.md",
+    "Dev/С++/Binary search tree.md",
+    "Dev/С++/Memory managment/Main Memory Management Operators.md",
+    "Dev/postgres/Create PostgreSQL database with cyrillic encoding.md.md",
+    "Dev/postgres",
+    "Education/Math/Lesson_1/Схема Горнера.md",
+    "Daily/02.04.2025.md",
     "imgs/Pasted image 20250401213110.png",
     "Daily",
     "header.png",
@@ -279,7 +281,6 @@
     "imgs/Pasted image 20250326210559.png",
     "imgs/Pasted image 20250326210555.png",
     "imgs/Pasted image 20250326210552.png",
-    "Ideas/RaspberryPi server",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",

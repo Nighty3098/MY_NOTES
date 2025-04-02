@@ -1,5 +1,4 @@
 ---
-banner: "[[green_forest_2.png]]"
 cssclasses:
   - books
 banner-height: 550

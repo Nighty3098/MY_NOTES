@@ -1,5 +1,4 @@
 ---
-banner: "[[waterfall_2.png]]"
 cssclasses:
   - launchpad
 ---
