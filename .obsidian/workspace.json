@@ -64,6 +64,20 @@
               "icon": "lucide-file",
               "title": "02.04.2025"
             }
+          },
+          {
+            "id": "8f2f4fc6ea01cd0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/Зов Ктулху.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Зов Ктулху"
+            }
           }
         ],
         "currentTab": 3
@@ -249,6 +263,8 @@
   },
   "active": "2cdf95f5b3696369",
   "lastOpenFiles": [
+    "Books/Зов Ктулху.md",
+    "Daily/02.04.2025.md",
     "3-BOOKS.md",
     "0-HOME.md",
     "4-FREELANCE.md",
@@ -258,14 +274,12 @@
     "Books/Таинственный остров.md",
     "Books/Пятнадцатилетний капитан.md",
     "Books/Мифы Ктулху.md",
-    "Books/Зов Ктулху.md",
     "Books/День триффидов.md",
     "Books/Двадцать тысяч льё под водой.md",
     "Books/Голос монстра.md",
     "Books/35 кило надежды.md",
     "Templates/Book.md",
     "2-PROJECTS.md",
-    "Daily/02.04.2025.md",
     "Freelance/Saikt register bot.md",
     "Freelance/Cource work.md",
     "Ideas/RaspberryPi server/Raspberry Pi server.md",
