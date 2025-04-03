@@ -37,8 +37,7 @@
               "title": "03.04.2025"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -219,10 +218,10 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "ed15b78cf26db7db",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Daily/02.04.2025.md",
     "Daily/03.04.2025.md",
+    "Daily/02.04.2025.md",
     "3-BOOKS.md",
     "Books/Зов Ктулху.md",
     "Freelance/Saikt register bot.md",
