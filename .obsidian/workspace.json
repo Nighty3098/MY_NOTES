@@ -87,8 +87,7 @@
               "title": "5-TASKS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -279,12 +278,13 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "5c8d0063b99afcc2",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "0-HOME.md",
-    "4-FREELANCE.md",
     "2-PROJECTS.md",
     "3-BOOKS.md",
+    "Books/Зов Ктулху.md",
+    "0-HOME.md",
+    "4-FREELANCE.md",
     "Daily/03.04.2025.md",
     "5-TASKS.md",
     "Templates/Daily note.md",
@@ -295,7 +295,6 @@
     "imgs/285.png",
     "5-TASKS.md~",
     "Daily/02.04.2025.md",
-    "Books/Зов Ктулху.md",
     "Freelance/Saikt register bot.md",
     "Freelance/Cource work.md",
     "Education/Biology/Закон Харди-Вайнберга/Частоты аллелей.md",
