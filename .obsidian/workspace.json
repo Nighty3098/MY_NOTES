@@ -37,7 +37,8 @@
               "title": "03.04.2025"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -218,8 +219,9 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "1f973213ed76b9f1",
   "lastOpenFiles": [
+    "0-HOME.md",
     "Daily/03.04.2025.md",
     "Daily/02.04.2025.md",
     "3-BOOKS.md",
@@ -245,7 +247,6 @@
     "Education/Russian/Homework/9 Dec.md",
     "Education/Math/Trigonometry/Trigonometry.md",
     "Education/Math/Trigonometry/Свойства/Свойства тангенса.md",
-    "Education/Math/Trigonometry/Свойства/Свойства синуса.md",
     "DOCUMENTS/ДЗ.pdf",
     "2-PROJECTS.md~",
     "5-TASKS.md~",
