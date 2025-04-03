@@ -29,12 +29,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3-BOOKS.md",
+                "file": "Daily/03.04.2025.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3-BOOKS"
+              "title": "03.04.2025"
             }
           }
         ],
@@ -219,10 +219,12 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "1f973213ed76b9f1",
+  "active": "ed15b78cf26db7db",
   "lastOpenFiles": [
-    "Books/Зов Ктулху.md",
+    "Daily/02.04.2025.md",
+    "Daily/03.04.2025.md",
     "3-BOOKS.md",
+    "Books/Зов Ктулху.md",
     "Freelance/Saikt register bot.md",
     "Freelance/Cource work.md",
     "Education/Biology/Закон Харди-Вайнберга/Частоты аллелей.md",
@@ -245,8 +247,6 @@
     "Education/Math/Trigonometry/Trigonometry.md",
     "Education/Math/Trigonometry/Свойства/Свойства тангенса.md",
     "Education/Math/Trigonometry/Свойства/Свойства синуса.md",
-    "Education/Math/Trigonometry/Свойства/Свойства котангенса.md",
-    "Education/Math/Theory/Derivative of a function/Физический смысл производной.md",
     "DOCUMENTS/ДЗ.pdf",
     "2-PROJECTS.md~",
     "5-TASKS.md~",
