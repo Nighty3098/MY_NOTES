@@ -1,18 +1,19 @@
 ---
-banner: "[[mist_forest_2 1.png]]"
+banner: "[[285.png]]"
 cssclasses:
   - launchpad
 tags:
   - home
-banner-height: 460
-content-start: 81
+banner-height: 400
+content-start: 100
 banner-display: cover
 ---
 
 
 
+``````col
 
-
+`````col-md
 
 ```dataviewjs
 const clockDiv = this.container.createDiv({ cls: "analog-clock-widget" });
@@ -46,26 +47,12 @@ function updateAnalogClock() {
 updateAnalogClock();
 ```
 
-`````col
-````col-md
-flexGrow=1
-===
-```dataviewjs
-const now = new Date();
-const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
-const formattedDate = now.toLocaleDateString('en-EN', options);
-const container = dv.el("div", "", {
-    cls: "widget",
-});
-
-container.textContent = formattedDate;
-```
-````
 `````
 
+`````col-md
 
-`````col
-````col-md
+
+
 ```dataviewjs
 const CACHE_DURATION = 60 * 60 * 1000;
 
@@ -150,8 +137,13 @@ async function main() {
 }
 main();
 ```
-````
+
+
+
 `````
+
+``````
+
 
 
 
@@ -163,13 +155,13 @@ main();
 flexGrow=1
 textAlign=center
 ===
-![[mist_forest_2.png]]
 
+![[352.jpg]]
 
 #TypeScript
 #python
 #CPP
-#C 
+#C
 
 
 ````
@@ -177,8 +169,8 @@ textAlign=center
 ````col-md
 flexGrow=1
 ===
-![[waterfall_2.png]]
 
+![[366.jpg]]
 
 #Trigonometry
 #Math
@@ -190,3 +182,27 @@ flexGrow=1
 
 
 
+
+
+```dataview
+CALENDAR file.ctime
+```
+
+
+
+
+````col-md
+flexGrow=1
+textAlign=center
+===
+
+![[285.png]]
+
+```dataview
+TASK
+FROM !"Templates"
+WHERE !completed
+GROUP BY header
+```
+
+````
