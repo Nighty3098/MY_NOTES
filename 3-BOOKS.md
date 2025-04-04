@@ -36,6 +36,7 @@ const addBooksToGrid = (bookList) => {
         card.innerHTML = `
             <div style='flex-grow: 1;'>
                 <h3><a href="${p.file.link}" target="_blank">${p.file.name}</a></h3>
+                <hr />
                 <p>${p.author || "?"}</p>
                 <p>${dv.date(p.file.ctime).toLocaleString({ dateStyle: 'medium' })}</p>
                 <p>${p.rating || "?"} ⭐</p>
