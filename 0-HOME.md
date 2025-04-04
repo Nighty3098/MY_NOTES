@@ -185,8 +185,9 @@ flexGrow=1
 
 
 ```dataview
-CALENDAR file.ctime
+CALENDAR file.cday
 ```
+
 
 
 
