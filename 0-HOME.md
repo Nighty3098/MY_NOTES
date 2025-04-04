@@ -155,7 +155,7 @@ main();
 
 
 
-![[8Bit _ Pixel _ Spring.gif]]
+![[8Bit _ Pixel _ Spring 1.gif]]
 
 `````col
 ````col-md
