@@ -158,6 +158,7 @@ textAlign=center
 
 ![[352.jpg]]
 
+#DailyNote 
 #TypeScript
 #python
 #CPP
@@ -172,6 +173,7 @@ flexGrow=1
 
 ![[366.jpg]]
 
+#book 
 #Trigonometry
 #Math
 #Geometry
