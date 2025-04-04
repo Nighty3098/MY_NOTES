@@ -1,5 +1,5 @@
 ---
-banner: "[[285.png]]"
+banner: "[[040.png]]"
 cssclasses:
   - launchpad
 tags:
@@ -156,7 +156,7 @@ flexGrow=1
 textAlign=center
 ===
 
-![[352.jpg]]
+![[081.jpg]]
 
 #DailyNote 
 #TypeScript
@@ -171,7 +171,7 @@ textAlign=center
 flexGrow=1
 ===
 
-![[366.jpg]]
+![[035.jpg]]
 
 #book 
 #Trigonometry
@@ -199,7 +199,7 @@ flexGrow=1
 textAlign=center
 ===
 
-![[285.png]]
+![[023.gif]]
 
 ```dataview
 TASK
