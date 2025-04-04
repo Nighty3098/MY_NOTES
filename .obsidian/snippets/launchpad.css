@@ -233,6 +233,7 @@ a.tag {
 }
 
 .launchpad img {
+  width: 100%;
   border-radius: 20px;
 }
 

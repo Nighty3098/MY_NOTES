@@ -7,6 +7,8 @@ banner-display: cover
 
 # FREELANCE PROJECTS
 
+
+
 ```dataviewjs
 const freelanceProjects = dv.pages('#Freelance AND !#Extras')
     .where(p => p.file.folder !== "Templates")

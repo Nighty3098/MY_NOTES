@@ -1,13 +1,16 @@
 ---
-banner: "[[040.png]]"
 cssclasses:
   - launchpad
 tags:
   - home
-banner-height: 400
-content-start: 100
+banner-height: 480
+content-start: 276
 banner-display: cover
 ---
+
+
+
+
 
 
 
@@ -49,9 +52,13 @@ updateAnalogClock();
 
 `````
 
+``````
+
+
+
+``````col
+
 `````col-md
-
-
 
 ```dataviewjs
 const CACHE_DURATION = 60 * 60 * 1000;
@@ -138,8 +145,6 @@ async function main() {
 main();
 ```
 
-
-
 `````
 
 ``````
@@ -150,15 +155,15 @@ main();
 
 
 
+![[8Bit _ Pixel _ Spring.gif]]
+
 `````col
 ````col-md
 flexGrow=1
 textAlign=center
 ===
 
-![[081.jpg]]
-
-#DailyNote 
+#DailyNote
 #TypeScript
 #python
 #CPP
@@ -171,9 +176,7 @@ textAlign=center
 flexGrow=1
 ===
 
-![[035.jpg]]
-
-#book 
+#book
 #Trigonometry
 #Math
 #Geometry
@@ -186,11 +189,6 @@ flexGrow=1
 
 
 
-```dataview
-CALENDAR file.cday
-```
-
-
 
 
 
@@ -199,7 +197,7 @@ flexGrow=1
 textAlign=center
 ===
 
-![[023.gif]]
+![[@mejwh · mejwh.gif]]
 
 ```dataview
 TASK
@@ -209,3 +207,15 @@ GROUP BY header
 ```
 
 ````
+
+
+
+
+
+
+
+
+
+```dataview
+CALENDAR file.cday
+```

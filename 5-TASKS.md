@@ -7,7 +7,7 @@ tags:
 
 # TASKS
 
-![[285.png]]
+![[@mejwh · mejwh.gif]]
 
  - [x] Database design
  - [x] Table of projects
