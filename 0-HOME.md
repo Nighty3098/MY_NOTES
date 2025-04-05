@@ -90,6 +90,7 @@ countMdFiles().then(count => {
     dv.container.appendChild(div);
 });
 ```
+
 ```dataviewjs
 const TARGET_FILE = "2-PROJECTS.md";
 
@@ -126,6 +127,7 @@ async function main() {
 }
 main();
 ```
+
 ```dataviewjs
 const folderPath = "Books";
 async function countFilesInFolder() {
