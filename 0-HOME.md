@@ -61,8 +61,30 @@ updateAnalogClock();
 `````col-md
 
 ```dataviewjs
-const CACHE_DURATION = 60 * 60 * 1000;
+async function countMdFiles() {
+    const currentFile = dv.current().file;
+    const folderPath = currentFile.path.includes('/')
+        ? currentFile.path.split('/').slice(0, -1).join('/') + '/'
+        : 'Daily';
+    const allFiles = dv.pages().filter(p =>
+        p.file.path.startsWith(folderPath) &&
+        p.file.path.endsWith('.md')
+    );
+    const count = allFiles.length;
+    return count;
+}
 
+countMdFiles().then(count => {
+    const div = document.createElement('div');
+    div.className = "widget";
+    const h1 = document.createElement('h1');
+    h1.textContent = `${count} DAILY NOTES`;
+    div.appendChild(h1);
+    dv.container.appendChild(div);
+});
+```
+
+```dataviewjs
 async function countMdFiles() {
     const cacheKey = 'mdCountCache';
     const currentFile = dv.current().file;
@@ -74,10 +96,6 @@ async function countMdFiles() {
         p.file.path.endsWith('.md')
     );
     const count = allFiles.length;
-    dv.page(currentFile.path)[cacheKey] = {
-        timestamp: Date.now(),
-        count: count
-    };
     return count;
 }
 
