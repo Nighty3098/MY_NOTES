@@ -7,27 +7,18 @@ banner-display: cover
 ---
 
 
+````col-md
+flexGrow=1
+textAlign=center
+alignItems=center
+alignContent=center
+justifyContent=center
+===
 
 ![[121.gif]]
-```dataviewjs
-const freelanceProjects = dv.pages('#Freelance AND !#Extras')
-    .where(p => p.file.folder !== "Templates")
-    .sort(p => p.file.ctime, 'desc');
 
-let price = 0
 
-freelanceProjects.forEach(p => {
-	price = price + p.price
-});
-
-const div = document.createElement('div');
-div.className = "widget";
-const h1 = document.createElement('h1');
-h1.textContent = `TOTAL INCOME ${price}р`;
-div.appendChild(h1);
-dv.container.appendChild(div);
-```
-
+````
 
 
 ```dataviewjs

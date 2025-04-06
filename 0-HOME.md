@@ -14,8 +14,6 @@ banner-display: cover
 
 
 
-
-
 ``````col
 
 `````col-md
@@ -54,13 +52,9 @@ updateAnalogClock();
 
 `````
 
-``````
-
-
-
-``````col
 
 `````col-md
+
 
 ```dataviewjs
 async function countMdFiles() {
@@ -87,28 +81,22 @@ countMdFiles().then(count => {
 ```
 
 ```dataviewjs
-async function countMdFiles() {
-    const cacheKey = 'mdCountCache';
-    const currentFile = dv.current().file;
-    const folderPath = currentFile.path.includes('/')
-        ? currentFile.path.split('/').slice(0, -1).join('/') + '/'
-        : '';
-    const allFiles = dv.pages().filter(p =>
-        p.file.path.startsWith(folderPath) &&
-        p.file.path.endsWith('.md')
-    );
-    const count = allFiles.length;
-    return count;
+const folderPath = "Books";
+async function countFilesInFolder() {
+    const allFiles = dv.pages();
+    const filesInFolder = allFiles.filter(p => p.file.path.startsWith(folderPath + "/"));
+    return filesInFolder.length;
 }
-
-countMdFiles().then(count => {
+async function main() {
+    const fileCount = await countFilesInFolder();
     const div = document.createElement('div');
     div.className = "widget";
     const h1 = document.createElement('h1');
-    h1.textContent = `${count} NOTES`;
+    h1.textContent = `BOOKS: ${fileCount}`;
     div.appendChild(h1);
     dv.container.appendChild(div);
-});
+}
+main();
 ```
 
 ```dataviewjs
@@ -149,22 +137,22 @@ main();
 ```
 
 ```dataviewjs
-const folderPath = "Books";
-async function countFilesInFolder() {
-    const allFiles = dv.pages();
-    const filesInFolder = allFiles.filter(p => p.file.path.startsWith(folderPath + "/"));
-    return filesInFolder.length;
-}
-async function main() {
-    const fileCount = await countFilesInFolder();
-    const div = document.createElement('div');
-    div.className = "widget";
-    const h1 = document.createElement('h1');
-    h1.textContent = `BOOKS: ${fileCount}`;
-    div.appendChild(h1);
-    dv.container.appendChild(div);
-}
-main();
+const freelanceProjects = dv.pages('#Freelance AND !#Extras')
+    .where(p => p.file.folder !== "Templates")
+    .sort(p => p.file.ctime, 'desc');
+
+let price = 0
+
+freelanceProjects.forEach(p => {
+	price = price + p.price
+});
+
+const div = document.createElement('div');
+div.className = "widget";
+const h1 = document.createElement('h1');
+h1.textContent = `TOTAL INCOME ${price}р`;
+div.appendChild(h1);
+dv.container.appendChild(div);
 ```
 
 `````
@@ -174,11 +162,17 @@ main();
 
 
 
-
-
-
+````col-md
+flexGrow=1
+textAlign=center
+===
 
 ![[gifgdsfgsd.gif]]
+
+
+````
+
+
 
 `````col
 ````col-md
@@ -186,7 +180,11 @@ flexGrow=1
 textAlign=center
 ===
 
-#DailyNote
+#book
+#DailyNote 
+
+<br /><br />
+
 #TypeScript
 #python
 #CPP
@@ -199,7 +197,11 @@ textAlign=center
 flexGrow=1
 ===
 
-#book
+#Freelance 
+#ideas 
+
+<br /><br />
+
 #Trigonometry
 #Math
 #Geometry
@@ -212,13 +214,12 @@ flexGrow=1
 
 
 
-
-
-
-
 ````col-md
 flexGrow=1
 textAlign=center
+alignItems=center
+alignContent=center
+justifyContent=center
 ===
 
 ![[@mejwh · mejwh.gif]]
@@ -233,14 +234,3 @@ GROUP BY header
 ````
 
 
-
-
-
-
-
-
-
-
-```dataview
-CALENDAR file.cday
-```

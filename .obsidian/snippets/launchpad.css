@@ -57,6 +57,16 @@
   color: var(--text-accent);
 }
 
+.daily img {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 40px;
+}
+
+.daily .widget {
+  background-color: transparent;
+}
+
 .tasks .callout {
   display: block;
   margin: auto auto;
@@ -102,6 +112,11 @@
   font-size: medium;
   font-family: "Nova Mono", monospace;
   color: var(--text-normal);
+}
+
+.tasks img {
+  width: 100%;
+  max-width: 1200px;
 }
 
 a.tag {
@@ -201,6 +216,19 @@ a.tag {
   margin: 0px;
 }
 
+.launchpad .columnParent img {
+  max-width: 1000px;
+}
+
+.launchpad .internal-embed img {
+  max-width: 1000px;
+}
+
+.launchpad .calendar {
+  max-width: 1000px;
+  width: 90%;
+}
+
 .projects .columnParent {
   width: 100%;
   height: 100%;
@@ -230,7 +258,8 @@ a.tag {
 
 .launchpad img {
   width: 100%;
-  border-radius: 20px;
+  max-width: 1200px;
+  border-radius: 30px;
 }
 
 .launchpad a.tag {
@@ -252,11 +281,26 @@ a.tag {
   background-color: var(--background-secondary);
 }
 
+.launchpad .dataview-container {
+  max-width: 1000px;
+}
+
 .freelance img {
   border-radius: 30px;
   padding: 0px;
   margin: 0px;
   width: 100%;
+  max-width: 1200px;
+}
+
+.freelance .widget {
+  width: 100%;
+  max-width: 700px;
+}
+
+.freelance {
+  align-content: center;
+  text-align: center;
 }
 
 .projects img {
@@ -295,7 +339,12 @@ a.tag {
   border-radius: 20px;
 }
 
+.books {
+  text-align: center;
+}
+
 .books img {
+  max-width: 1200px;
   border-radius: 20px;
 }
 

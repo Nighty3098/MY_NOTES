@@ -1,9 +1,12 @@
 ---
-banner: "[[mist_forest_2 1.png]]"
 tags:
   - DailyNote
-date:
+date: 
+cssclasses:
+  - daily
 ---
+
+![[8Bit _ Pixel _ Spring.gif]]
 
 ```dataviewjs
 const page = dv.current();
