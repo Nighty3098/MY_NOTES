@@ -152,8 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208.5,
-    "collapsed": true
+    "width": 208.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -279,17 +278,17 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "3-BOOKS.md",
+    "0-HOME.md",
     "4-FREELANCE.md",
     "5-TASKS.md",
     "Daily/06.04.2025.md",
-    "0-HOME.md",
     "5-TASKS.md~",
     "Daily/05.04.2025.md",
     "Daily/04.04.2025.md",
     "Daily/03.04.2025.md",
     "Daily/02.04.2025.md",
     "Templates/Daily note.md",
-    "8Bit _ Pixel _ Spring.gif",
+    "imgs/8Bit _ Pixel _ Spring.gif",
     "imgs/Pasted image 20250406133327.png",
     "Freelance/Java console app.md",
     "Templates/Freelance.md",
