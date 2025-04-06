@@ -1,12 +1,12 @@
 ---
 tags:
   - Freelance
-date: 
+date: 2024-06-11
 deadline: 
-price: 0
+price: 2500
 git: "NULL"
 link: "NULL"
-completed: false
+completed: true
 ---
 
 ```dataviewjs
@@ -33,6 +33,6 @@ if (page) {
 
 # TASKS
 
-- [ ] Checkout
-- [ ] Getting started
-- [ ] Making a plan
+- [x] Checkout
+- [x] Getting started
+- [x] Making a plan

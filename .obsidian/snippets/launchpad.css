@@ -252,6 +252,13 @@ a.tag {
   background-color: var(--background-secondary);
 }
 
+.freelance img {
+  border-radius: 30px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
 .projects img {
   border-radius: 30%;
   border: none;
@@ -285,6 +292,10 @@ a.tag {
   align-content: center;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+}
+
+.books img {
   border-radius: 20px;
 }
 

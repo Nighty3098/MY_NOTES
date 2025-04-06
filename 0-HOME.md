@@ -14,6 +14,8 @@ banner-display: cover
 
 
 
+
+
 ``````col
 
 `````col-md
@@ -175,7 +177,8 @@ main();
 
 
 
-![[8Bit _ Pixel _ Spring 1.gif]]
+
+![[gifgdsfgsd.gif]]
 
 `````col
 ````col-md
@@ -212,6 +215,7 @@ flexGrow=1
 
 
 
+
 ````col-md
 flexGrow=1
 textAlign=center
@@ -227,6 +231,7 @@ GROUP BY header
 ```
 
 ````
+
 
 
 

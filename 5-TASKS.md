@@ -5,9 +5,10 @@ tags:
   - tasks
 ---
 
-# TASKS
+
 
 ![[@mejwh · mejwh.gif]]
+
 
  - [x] Database design
  - [x] Table of projects

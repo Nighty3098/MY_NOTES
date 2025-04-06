@@ -3,7 +3,7 @@ tags:
   - Freelance
 date: 2024-02-08
 deadline: 
-price: 1500p
+price: 1500
 git: 
 link: 
 completed: true

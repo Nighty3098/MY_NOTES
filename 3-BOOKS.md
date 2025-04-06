@@ -4,7 +4,11 @@ cssclasses:
 banner-display: cover
 ---
 
-# BOOKS
+
+
+<img src="8Bit _ Pixel _ Spring 1.gif" width="100%"  />
+
+
 
 ```dataviewjs
 const books = dv.pages('#Book AND !#Extras')

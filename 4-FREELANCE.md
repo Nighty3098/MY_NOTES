@@ -1,11 +1,32 @@
 ---
 cssclasses:
-  - books
+  - freelance
+  - launchpad
 banner-height: 550
 banner-display: cover
 ---
 
-# FREELANCE PROJECTS
+
+
+![[121.gif]]
+```dataviewjs
+const freelanceProjects = dv.pages('#Freelance AND !#Extras')
+    .where(p => p.file.folder !== "Templates")
+    .sort(p => p.file.ctime, 'desc');
+
+let price = 0
+
+freelanceProjects.forEach(p => {
+	price = price + p.price
+});
+
+const div = document.createElement('div');
+div.className = "widget";
+const h1 = document.createElement('h1');
+h1.textContent = `TOTAL INCOME ${price}р`;
+div.appendChild(h1);
+dv.container.appendChild(div);
+```
 
 
 
@@ -30,7 +51,7 @@ freelanceProjects.forEach(p => {
 
     card.innerHTML = `
         <h3><a href="${p.file.link}" style="text-decoration: none;">${p.file.name}</a></h3>
-        <p><strong>Price:</strong> ${p.price || "?"}</p>
+        <p><strong>Price:</strong> ${p.price || "?"}р</p>
         <p><strong>Date:</strong> ${dv.date(p.date).toLocaleString({ dateStyle: 'medium' })}</p>
         <p><strong>Completed:</strong> ${p.completed ? "Yes" : "No"}</p>
     `;

@@ -31,7 +31,7 @@
               "type": "markdown",
               "state": {
                 "file": "3-BOOKS.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "pinned": true,
@@ -71,7 +71,8 @@
               "title": "5-TASKS"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -138,7 +139,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5
+    "width": 208.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -262,22 +263,38 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "53531d7ab3228d92",
   "lastOpenFiles": [
+    "Freelance/Java console app.md",
+    "4-FREELANCE.md",
     "3-BOOKS.md",
     "5-TASKS.md",
+    "Templates/Freelance.md",
+    "Freelance/Saikt register bot.md",
+    "Freelance/Telegram spam bot.md",
+    "Freelance/Cource work.md",
+    "0-HOME.md",
+    "b.md",
+    "3-BOOKS.md~",
+    "imgs/gifgdsfgsd.gif",
+    "gif(1).md",
+    "gif(1)",
+    "Templates/Freelance.md~",
+    "4-FREELANCE.md~",
+    "imgs/121.gif",
+    "Books/Судьба человека.md",
+    "Books/Робинзон Крузо.md",
+    "Books/Путешествие и приключения капитана Гаттераса.md",
+    "Books/Тень над Инсмутом.md",
     "Education/Russian/EGE/1/Текст.md",
     "Education/Russian/EGE/1/Сочинение.md",
     "Books/Голос монстра.md",
-    "Books/Тень над Инсмутом.md",
     "Daily/05.04.2025.md",
     "Education/Russian/EGE/Untitled/Untitled",
     "Education/Russian/EGE/1",
-    "0-HOME.md",
     "Education/Russian/EGE",
     "Daily/Untitled.md",
     "imgs/Pasted image 20250405190219.png",
-    "4-FREELANCE.md",
     "2-PROJECTS.md",
     "Books/Двадцать тысяч льё под водой.md",
     "Books/Дети капитана Гранта.md",
@@ -287,29 +304,13 @@
     "imgs/8Bit _ Pixel _ Spring 1.gif",
     "imgs/@mejwh · mejwh.gif",
     "8Bit _ Pixel _ Spring.gif",
-    "121.gif",
     "0-HOME.md~",
     "scene from Mr Saitou by Laura Shigihara.jpg",
     "gif",
     "Pasted image 20250405001613.png",
     "Pasted image 20250405001514.png",
-    "Pasted image (10).png",
     "Books/Ужас Данвича.md",
-    "Books/Зов Ктулху.md",
-    "Books/Хребты безумия.md",
-    "Daily/03.04.2025.md",
-    "Templates/Daily note.md",
-    "Templates/Freelance.md",
     "5-TASKS.md~",
-    "Daily/02.04.2025.md",
-    "Freelance/Saikt register bot.md",
-    "Freelance/Cource work.md",
-    "Education/Biology/Закон Харди-Вайнберга/Частоты аллелей.md",
-    "Education/Biology/Закон Харди-Вайнберга/Закон Харди-Вайнберга.md",
-    "DOCUMENTS/ДЗ.pdf",
-    "2-PROJECTS.md~",
-    "4-FREELANCE.md~",
-    "3-BOOKS.md~",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",

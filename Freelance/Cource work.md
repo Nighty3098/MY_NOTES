@@ -3,7 +3,7 @@ tags:
   - Freelance
 date: 2024-06-24
 deadline: 
-price: 2500p
+price: 2500
 git: 
 link: https://kwork.ru/inbox/svashes
 completed: true
