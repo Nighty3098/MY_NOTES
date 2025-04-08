@@ -174,7 +174,6 @@ textAlign=center
 
 
 ````
-
 `````col
 ````col-md
 flexGrow=1

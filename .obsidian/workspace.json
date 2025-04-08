@@ -85,8 +85,7 @@
               "title": "09.04.2025"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,7 +152,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208.5
+    "width": 255.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -276,10 +276,10 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "0fca38aaa6756dad",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "0-HOME.md",
     "Daily/09.04.2025.md",
+    "0-HOME.md",
     "3-BOOKS.md",
     "5-TASKS.md",
     "Хребты безумия.pptx",
