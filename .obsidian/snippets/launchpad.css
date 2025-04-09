@@ -26,6 +26,14 @@
   display: none;
 }
 
+.nav-buttons-container {
+  display: none;
+}
+
+.view-header {
+  display: none;
+}
+
 .tasks .inline-title {
   display: none;
 }
