@@ -18,7 +18,7 @@ tags:
 - [x] Add project uniqueness check in OWL database
 - [ ] Fixing Docker containers
 - [ ] Implementation of the settings table
-- [ ] API testing
+- [x] API testing
 - [ ] Switching to https, improving security
 - [ ] Admin panel implementation
 - [ ] Statistics collection system

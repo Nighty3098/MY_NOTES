@@ -13,17 +13,20 @@ banner-display: cover
 ```dataviewjs
 const books = dv.pages('#Book AND !#Extras')
     .where(p => p.file.folder !== "Templates")
-    .sort(p => p.file.ctime, 'desc');
+    .sort(p => p.progress, 'asc');
 
+// Разделяем книги на непрочитанные и прочитанные
 const unreadBooks = books.where(p => !p.read);
 const readBooks = books.where(p => p.read);
 
+// Создаем контейнер для отображения книг
 const gridContainer = document.createElement('div');
 gridContainer.style.display = 'grid';
 gridContainer.style.gridTemplateColumns = 'repeat(auto-fill, minmax(250px, 1fr))';
 gridContainer.style.gap = '20px';
 gridContainer.style.padding = '10px';
 
+// Функция для добавления книг в сетку
 const addBooksToGrid = (bookList) => {
     bookList.forEach(p => {
         const percent = Math.round((p.progress / p.total_pages) * 100);
@@ -57,9 +60,13 @@ const addBooksToGrid = (bookList) => {
     });
 };
 
+// Сначала добавляем непрочитанные книги
 addBooksToGrid(unreadBooks);
 
+// Затем добавляем прочитанные книги
 addBooksToGrid(readBooks);
 
+// Добавляем контейнер в Dataview
 dv.container.appendChild(gridContainer);
+
 ```
