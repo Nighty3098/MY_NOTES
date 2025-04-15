@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Тень над Инсмутом.md",
+                "file": "0-HOME.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Тень над Инсмутом"
+              "title": "0-HOME"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "Текст для презентации проекта"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -125,7 +124,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "3-BOOKS.md",
+            "file": "Olympics/Высший пилотаж 2025 НСК/Текст для презентации проекта.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -199,13 +198,30 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "a1efa68aea7d5f48",
+  "active": "fdb257179da3ce1a",
   "lastOpenFiles": [
-    "3-BOOKS.md",
     "Books/Тень над Инсмутом.md",
+    "Olympics/Высший пилотаж 2025 НСК/Текст для презентации проекта.md",
+    "imgs/gifgdsfgsd.gif",
+    "imgs/Pasted image 20250406133327.png",
+    "imgs/8Bit _ Pixel _ Spring.gif",
+    "imgs/121.gif",
+    "Freelance/Telegram spam bot.md",
+    "Freelance/Java console app.md",
+    "Education/Literature/Хребты безумия.pptx",
+    "Education/Literature/Хребты безумия 1.pptx",
+    "Daily/09.04.2025.md",
+    "Daily/06.04.2025.md",
+    "Books/Судьба человека.md",
+    "Books/Робинзон Крузо.md",
+    "Books/Путешествие и приключения капитана Гаттераса.md",
+    "Books/От джуна до сеньора.md",
+    "Books/Мёртвые души.md",
+    "Books/Маленький принц.md",
+    "Books/Грокаем алгоритмы.md",
+    "3-BOOKS.md",
     "Daily/05.04.2025.md",
     "0-HOME.md",
-    "Olympics/Высший пилотаж 2025 НСК/Текст для презентации проекта.md",
     "Books/Зов Ктулху.md",
     "3-IDEAS.md",
     "2-PROJECTS.md",
@@ -215,19 +231,7 @@
     "Dev/MySQL/MySQL_RU.md",
     "Home.md",
     "Dev/Client - Server apps/Создание базового клиент-серверного приложения.md",
-    "Projects/OWL/Backend/Server DB.md",
-    "Education/Math/Theory/Derivative of a function/Значения производных.md",
     "obsidian-banner-2.png",
-    "Dev/JavaScript/Работа с типами данных в JavaScript.md",
-    "Dev/Python/🐍 Modules/dateparser.md",
-    "Dev/Python/🐍 Modules/Работа со временем.md",
-    "Dev/С++/Работа с памятью/Управление памятью в C++.md",
-    "Dev/С++/Двоичное дерево поиска.md",
-    "Projects/IPSA/Tasks.md",
-    "Projects/LogInsight/LogInsight_README.md",
-    "Dev/Git/README TEAMPLATE GIT.md",
-    "Dev/C/Безопасность С.md",
-    "Teamplates/License.md",
     "imgs/Pasted image 20240529201026.png",
     "imgs/header.png",
     "🧭 Projects/TGSB"
