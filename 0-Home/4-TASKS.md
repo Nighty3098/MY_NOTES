@@ -8,6 +8,7 @@ tags:
 
 ![[@mejwh · mejwh.gif]]
 
+
 - [x] Database design
 - [x] Table of projects
 - [x] Implementation of API for project management

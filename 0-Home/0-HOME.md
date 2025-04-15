@@ -14,6 +14,8 @@ banner-display: cover
 
 
 
+
+
 ``````col
 
 `````col-md
@@ -61,7 +63,7 @@ async function countMdFiles() {
     const currentFile = dv.current().file;
     const folderPath = currentFile.path.includes('/')
         ? currentFile.path.split('/').slice(0, -1).join('/') + '/'
-        : 'Daily';
+        : '1-Daily';
     const allFiles = dv.pages().filter(p =>
         p.file.path.startsWith(folderPath) &&
         p.file.path.endsWith('.md')
@@ -100,7 +102,7 @@ dv.container.appendChild(div);
 ```
 
 ```dataviewjs
-const folderPath = "Books";
+const folderPath = "3-Resources/Books";
 async function countFilesInFolder() {
     const allFiles = dv.pages();
     const filesInFolder = allFiles.filter(p => p.file.path.startsWith(folderPath + "/"));
@@ -118,46 +120,11 @@ async function main() {
 main();
 ```
 
-```dataviewjs
-const TARGET_FILE = "2-PROJECTS.md";
-
-async function getTagData() {
-    try {
-        const content = await dv.io.load(TARGET_FILE);
-        const matches = content.match(/#([A-Za-z0-9_-]+)/g) || [];
-        const uniqueTags = [...new Set(matches)];
-        return {
-            count: uniqueTags.length,
-            tags: uniqueTags
-        };
-    } catch (error) {
-        throw new Error(`File "${TARGET_FILE}" not found: ${error.message}`);
-    }
-}
-
-async function main() {
-    try {
-        const {count, tags} = await getTagData();
-
-        const div = document.createElement('div');
-        div.className = "widget";
-        const h1 = document.createElement("h1");
-        h1.textContent = `PROJECTS: ${count}`
-        div.appendChild(h1)
-        dv.container.appendChild(div)
-
-    } catch (error) {
-        dv.el("div", `⚠️ ERROR: ${error.message}`, {
-            attr: { style: "color: red; padding: 10px;" }
-        });
-    }
-}
-main();
-```
-
 `````
 
 ``````
+
+
 
 
 
@@ -174,6 +141,7 @@ textAlign=center
 
 
 ````
+
 `````col
 ````col-md
 flexGrow=1
@@ -183,7 +151,7 @@ textAlign=center
 #book
 #DailyNote 
 
-<br /><br />
+<br />
 
 #TypeScript
 #python
@@ -200,7 +168,7 @@ flexGrow=1
 #Freelance 
 #ideas 
 
-<br /><br />
+<br />
 
 #Trigonometry
 #Math
@@ -228,7 +196,7 @@ justifyContent=center
 
 ```dataview
 TASK
-FROM !"Templates"
+FROM !"3-Resources/Templates"
 WHERE !completed
 GROUP BY header
 ```

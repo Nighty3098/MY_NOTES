@@ -23,7 +23,7 @@ justifyContent=center
 
 ```dataviewjs
 const freelanceProjects = dv.pages('#Freelance AND !#Extras')
-    .where(p => p.file.folder !== "Templates")
+    .where(p => p.file.folder !== "3-Resources/Templates")
     .sort(p => p.file.ctime, 'desc');
 
 const gridContainer = document.createElement('div');

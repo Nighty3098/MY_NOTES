@@ -12,7 +12,7 @@ banner-display: cover
 
 ```dataviewjs
 const books = dv.pages('#Book AND !#Extras')
-    .where(p => p.file.folder !== "Templates")
+    .where(p => p.file.folder !== "3-Resources/Templates")
     .sort(p => p.progress, 'asc');
 
 // Разделяем книги на непрочитанные и прочитанные
