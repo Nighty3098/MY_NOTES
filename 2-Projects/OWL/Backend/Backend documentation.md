@@ -129,7 +129,7 @@ curl -X POST -H "Authorization: <jwt_token>" http://localhost:5000/api/get_proje
   - `status` (string, required)
   - `priority` (string, required)
   - `link_to` (string, required)
-  - `estimated_time` (string, required)
+  - `board_id` (string, required)
   - `created_at` (string, required)
   - `updated_at` (string, required)
 - **Response**:
@@ -139,12 +139,31 @@ curl -X POST -H "Authorization: <jwt_token>" http://localhost:5000/api/get_proje
 - **Example**:
 
 ```bash
-curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"title": "Project", "about": "Test", "deadline": "2025-12-31", "status": "active", "priority": "high", "link_to": "http://example.com", "estimated_time": "10h", "created_at": "2025-03-27", "updated_at": "2025-03-27"}' http://localhost:5000/api/save_projects
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"title": "Project", "about": "Test", "deadline": "2025-12-31", "status": "active", "priority": "high", "link_to": "http://example.com", "board_id": "abc123", "created_at": "2025-03-27", "updated_at": "2025-03-27"}' http://localhost:5000/api/save_projects
 ```
 
 ---
 
-### 9. `POST /api/create_board`
+### 9. `POST /api/delete_project`
+
+- **Description**: Deletes a specified project (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `project_id` (string, required) - The ID of the project to delete.
+- **Response**:
+  - `200 OK`: `{ "message": "<success_message>" }`
+  - `400 Bad Request`: `{ "message": "Missing fields: project_id" }` or `{ "message": "<error_message>" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"project_id": "xyz789"}' http://localhost:5000/api/delete_project
+```
+
+---
+
+### 10. `POST /api/create_board`
 
 - **Description**: Creates a new board for the authenticated user (requires token).
 - **Headers**:
@@ -163,7 +182,7 @@ curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json"
 
 ---
 
-### 10. `POST /api/create_column`
+### 11. `POST /api/create_column`
 
 - **Description**: Creates a new column within a specified board (requires token).
 - **Headers**:
@@ -185,7 +204,7 @@ curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json"
 
 ---
 
-### 11. `POST /api/create_task`
+### 12. `POST /api/create_task`
 
 - **Description**: Creates a new task within a specified column (requires token).
 - **Headers**:
@@ -206,7 +225,7 @@ curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json"
 
 ---
 
-### 12. `POST /api/delete_board`
+### 13. `POST /api/delete_board`
 
 - **Description**: Deletes a specified board and all its columns and tasks (requires token).
 - **Headers**:
@@ -226,7 +245,49 @@ curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json"
 
 ---
 
-### 13. `POST /api/delete_column`
+### 14. `POST /api/rename_board`
+
+- **Description**: Renames a specified board (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `board_id` (string, required) - The ID of the board to rename.
+  - `new_title` (string, required) - The new title for the board.
+- **Response**:
+  - `200 OK`: `{ "message": "Board renamed successfully" }`
+  - `400 Bad Request`: `{ "message": "Board ID is required" }`
+  - `404 Not Found`: `{ "message": "Board not found" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"board_id": "abc123xyz", "new_title": "Updated Board"}' http://localhost:5000/api/rename_board
+```
+
+---
+
+### 15. `POST /api/rename_column`
+
+- **Description**: Renames a specified column (requires token).
+- **Headers**:
+  - `Authorization: <jwt_token>`
+- **Request Body** (JSON):
+  - `column_id` (string, required) - The ID of the column to rename.
+  - `new_title` (string, required) - The new title for the column.
+- **Response**:
+  - `200 OK`: `{ "message": "Column renamed successfully" }`
+  - `400 Bad Request`: `{ "message": "Column ID is required" }`
+  - `404 Not Found`: `{ "message": "Column not found" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"column_id": "def456uvw", "new_title": "Updated Column"}' http://localhost:5000/api/rename_column
+```
+
+---
+
+### 16. `POST /api/delete_column`
 
 - **Description**: Deletes a specified column and all its tasks (requires token).
 - **Headers**:
@@ -246,7 +307,7 @@ curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json"
 
 ---
 
-### 14. `POST /api/delete_task`
+### 17. `POST /api/delete_task`
 
 - **Description**: Deletes a specified task (requires token).
 - **Headers**:
@@ -266,13 +327,18 @@ curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json"
 
 ---
 
-### 15. `GET /api/get_boards`
+### 18. `GET /api/get_boards`
 
 - **Description**: Retrieves all boards, their columns, and tasks for the authenticated user (requires token).
+
 - **Headers**:
+
   - `Authorization: <jwt_token>`
+
 - **Request Body**: None
+
 - **Response**:
+
   - `200 OK`: `{ "boards": [<board_data>] }` where `<board_data>` matches the provided JSON structure:
 
     ```json
@@ -310,7 +376,7 @@ curl -X GET -H "Authorization: <jwt_token>" http://localhost:5000/api/get_boards
 
 ---
 
-### 16. `POST /api/change_password`
+### 19. `POST /api/change_password`
 
 - **Description**: Changes the password for the authenticated user.
 - **Headers**:
@@ -332,13 +398,14 @@ curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json"
 
 ---
 
-### 17. `GET /api/check_auth`
+### 20. `GET /api/check_auth`
 
 - **Description**: Checks if the user is authenticated and returns user information.
 - **Headers**:
   - `Authorization: <jwt_token>` (required)
 - **Response**:
-  - `200 OK`: 
+  - `200 OK`:
+
     ```json
     {
       "authenticated": true,
@@ -352,11 +419,39 @@ curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json"
   - `401 Unauthorized`: Token errors (missing/expired/invalid)
   - `404 Not Found`: User not found
 - **Example**:
+
 ```bash
 curl -X GET -H "Authorization: <jwt_token>" http://localhost:5000/api/check_auth
 ```
 
-### 18. `POST /api/change_username`
+---
+
+### 21. `GET /api/usage`
+
+- **Description**: Provides information about server load (admin access only).
+- **Headers**:
+  - `Authorization: <jwt_token>` (required)
+- **Response**:
+  - `200 OK`:
+
+    ```json
+    {
+        "cpu_usage": "float",
+        "ram_usage": "float",
+        "disk_usage": "float"
+    }
+    ```
+  - `401 Unauthorized`: Token errors (missing/expired/invalid)
+  - `403 Forbidden`: `{ "message": "Unauthorized access!" }` (non-admin token)
+- **Example**:
+
+```bash
+curl -X GET -H "Authorization: <admin_jwt_token>" http://localhost:5000/api/usage
+```
+
+---
+
+### 22. `POST /api/change_username`
 
 - **Description**: Changes the username of the authenticated user.
 - **Headers**:
@@ -365,25 +460,136 @@ curl -X GET -H "Authorization: <jwt_token>" http://localhost:5000/api/check_auth
   - `new_username` (string, required) - New username (3-20 characters)
 - **Response**:
   - `200 OK`: `{ "message": "Username changed successfully" }`
-  - `400 Bad Request`: 
+  - `400 Bad Request`:
     - `{ "message": "No data provided" }`
     - `{ "message": "New username is required" }`
     - `{ "message": "Username must be between 3 and 20 characters" }`
   - `401 Unauthorized`: Token errors
   - `409 Conflict`: `{ "error": "Username already taken" }`
 - **Example**:
+
 ```bash
 curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"new_username": "new_username"}' http://localhost:5000/api/change_username
 ```
 
+---
+
+### 23. `POST /api/change_email`
+
+- **Description**: Changes the email of the authenticated user.
+- **Headers**:
+  - `Authorization: <jwt_token>` (required)
+- **Request Body** (JSON):
+  - `new_email` (string, required) - New email address
+- **Response**:
+  - `200 OK`: `{ "message": "Email changed successfully" }`
+  - `400 Bad Request`:
+    - `{ "message": "No data provided" }`
+    - `{ "message": "Missing fields: new_email" }`
+  - `401 Unauthorized`: Token errors
+  - `409 Conflict`: `{ "error": "Email already taken" }`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"new_email": "new_email@example.com"}' http://localhost:5000/api/change_email
+```
+
+---
+
+### 24. `POST /api/reorder_board`
+
+- **Description**: Reorders the boards for the authenticated user.
+- **Headers**:
+  - `Authorization: <jwt_token>` (required)
+- **Request Body** (JSON):
+  - Array of objects, each containing:
+    - `board_id` (string, required) - The ID of the board.
+    - `order` (integer, required) - The new order position.
+- **Response**:
+  - `200 OK`: `{ "messages": [<message_for_each_board>] }`
+  - `400 Bad Request`: `{ "message": "Data is required" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '[{"board_id": "abc123", "order": 1}, {"board_id": "def456", "order": 2}]' http://localhost:5000/api/reorder_board
+```
+
+---
+
+### 25. `POST /api/reorder_column`
+
+- **Description**: Reorders the columns within boards for the authenticated user.
+- **Headers**:
+  - `Authorization: <jwt_token>` (required)
+- **Request Body** (JSON):
+  - Array of objects, each containing:
+    - `column_id` (string, required) - The ID of the column.
+    - `order` (integer, required) - The new order position.
+- **Response**:
+  - `200 OK`: `{ "messages": [<message_for_each_column>] }`
+  - `400 Bad Request`: `{ "message": "Data is required" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '[{"column_id": "ghi789", "order": 1}, {"column_id": "jkl012", "order": 2}]' http://localhost:5000/api/reorder_column
+```
+
+---
+
+### 26. `POST /api/reorder_task`
+
+- **Description**: Reorders a task within its column for the authenticated user.
+- **Headers**:
+  - `Authorization: <jwt_token>` (required)
+- **Request Body** (JSON):
+  - `task_id` (string, required) - The ID of the task.
+  - `new_order` (integer, required) - The new order position.
+- **Response**:
+  - `200 OK`: `{ "message": "<success_message>" }`
+  - `400 Bad Request`: `{ "message": "Data is required" }`
+  - `404 Not Found`: `{ "message": "<error_message>" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '{"task_id": "mno345", "new_order": 3}' http://localhost:5000/api/reorder_task
+```
+
+---
+
+### 27. `POST /api/reorder_projects`
+
+- **Description**: Reorders the projects for the authenticated user.
+- **Headers**:
+  - `Authorization: <jwt_token>` (required)
+- **Request Body** (JSON):
+  - Array of objects, each containing:
+    - `project_id` (string, required) - The ID of the project.
+    - `order` (integer, required) - The new order position.
+- **Response**:
+  - `200 OK`: `{ "messages": [<message_for_each_project>] }`
+  - `400 Bad Request`: `{ "message": "Data is required" }`
+  - Token errors: `401 Unauthorized`
+- **Example**:
+
+```bash
+curl -X POST -H "Authorization: <jwt_token>" -H "Content-Type: application/json" -d '[{"project_id": "pqr678", "order": 1}, {"project_id": "stu901", "order": 2}]' http://localhost:5000/api/reorder_projects
+```
+
+---
+
 ### Login History
 
 The system automatically records login history for security purposes:
+
 - IP address of each login attempt
 - Timestamp of the login
 - User ID associated with the login
 
 This data is stored in the `user_login` table and can be used for:
+
 - Security auditing
 - Detecting suspicious login patterns
 - Tracking user activity
@@ -393,24 +599,28 @@ This data is stored in the `user_login` table and can be used for:
 ## Security Recommendations
 
 1. **Password Policy**:
+
    - Minimum length: 8 characters
    - Should contain: uppercase, lowercase, numbers, special characters
    - Regular password change requirements
 
 2. **Token Security**:
+
    - Tokens expire after 10 years
    - Store securely on client side
    - Clear on logout
    - Refresh mechanism for long-term sessions
 
 3. **API Security**:
-   - All endpoints except /login and /register require authentication
+
+   - All endpoints except `/login` and `/register` require authentication
    - Use HTTPS in production
    - Rate limiting recommended
    - Input validation on all endpoints
 
 4. **Data Protection**:
-   - User passwords are hashed using werkzeug.security
+
+   - User passwords are hashed using `werkzeug.security`
    - Sensitive data encrypted in transit
    - Login history maintained for audit
 
