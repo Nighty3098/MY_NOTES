@@ -3,7 +3,6 @@
   "obsidian-kanban",
   "obsidian-tikzjax",
   "obsidian-completr",
-  "pomodoro-timer",
   "obsidian-latex-suite",
   "image2latex",
   "ai-latex-generator",
@@ -19,5 +18,6 @@
   "morgen-tasks",
   "obsidian-mind-map",
   "obsidian-overdue",
-  "file-explorer-plus"
+  "file-explorer-plus",
+  "pomodoro-timer"
 ]
