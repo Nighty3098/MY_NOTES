@@ -99,7 +99,8 @@
               "title": "Backend documentation"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -166,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5,
-    "collapsed": true
+    "width": 247.5
   },
   "right": {
     "id": "c3afcab963e39ab3",
@@ -201,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0-Home/0-HOME.md",
+                "file": "0-Home/3-FREELANCE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +211,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 0-HOME"
+              "title": "Backlinks for 3-FREELANCE"
             }
           },
           {
@@ -220,12 +220,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0-Home/0-HOME.md",
+                "file": "0-Home/3-FREELANCE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 0-HOME"
+              "title": "Outgoing links from 3-FREELANCE"
             }
           },
           {
@@ -249,13 +249,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0-Home/0-HOME.md",
+                "file": "0-Home/3-FREELANCE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0-HOME"
+              "title": "Outline of 3-FREELANCE"
             }
           },
           {
@@ -309,9 +309,10 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "53531d7ab3228d92",
   "lastOpenFiles": [
     "0-Home/2-BOOKS.md",
+    "0-Home/0-HOME.md",
     "0-Home/3-FREELANCE.md",
     "0-Home/4-TASKS.md",
     "3-Resources/Dev/SQLAlchemy/Гайд + примеры.md",
@@ -319,7 +320,6 @@
     "2-Projects/OWL/Backend/Backend documentation.md",
     "Pasted image 20250416140008.png",
     "1-Daily/16.04.2025.md",
-    "0-Home/0-HOME.md",
     "2-Projects/OWL/OWL_BACKEND.md",
     "2-Projects/OWL/Backend/Utils.md",
     "2-Projects/OWL/Backend/Server DB.md",
