@@ -141,7 +141,6 @@ textAlign=center
 
 
 ````
-
 `````col
 ````col-md
 flexGrow=1
@@ -181,7 +180,7 @@ flexGrow=1
 
 
 
-
+	
 
 
 ````col-md
@@ -193,7 +192,6 @@ justifyContent=center
 ===
 
 ![[@mejwh · mejwh.gif]]
-
 ```dataview
 TASK
 FROM !"3-Resources/Templates"
