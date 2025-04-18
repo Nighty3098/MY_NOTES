@@ -71,7 +71,8 @@
               "title": "4-TASKS"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -173,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0-Home/0-HOME.md",
+                "file": "0-Home/2-BOOKS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +184,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 0-HOME"
+              "title": "Backlinks for 2-BOOKS"
             }
           },
           {
@@ -192,12 +193,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0-Home/0-HOME.md",
+                "file": "0-Home/2-BOOKS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 0-HOME"
+              "title": "Outgoing links from 2-BOOKS"
             }
           },
           {
@@ -221,13 +222,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0-Home/0-HOME.md",
+                "file": "0-Home/2-BOOKS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0-HOME"
+              "title": "Outline of 2-BOOKS"
             }
           },
           {
@@ -281,12 +282,12 @@
       "pexels-banner:🚩 Pixel Banner Menu": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "452db7b7f026e13b",
   "lastOpenFiles": [
+    "0-Home/0-HOME.md",
     "0-Home/4-TASKS.md",
     "0-Home/3-FREELANCE.md",
     "0-Home/2-BOOKS.md",
-    "0-Home/0-HOME.md",
     "3-Resources/Dev/Frontend/Ошибка с несоответствием данных фронтенда и бэкэнда.md",
     "2-Projects/OWL/Backend/Backend documentation.md",
     "3-Resources/Dev/SQLAlchemy/Гайд + примеры.md",
